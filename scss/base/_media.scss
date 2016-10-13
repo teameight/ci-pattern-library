@@ -1,0 +1,166 @@
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+
+.entry-content img {
+	max-width: 100%;
+    height: auto;
+}
+
+img.alignleft,
+a img.alignleft {
+    margin:0 2em 1.5em 0;
+    float:left;
+    max-width:$col-1*8;
+}
+
+img.alignright,
+a img.alignright {
+    margin:0 0 1.5em 2em;
+    float:right;
+    max-width:$col-1*5;
+}
+
+img.aligncenter, a img.aligncenter {
+    display: block; margin-left: auto; margin-right: auto
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container + p,
+.video-container + h1,
+.video-container + h2,
+.video-container + h3,
+.video-container + h4,
+.video-container + h5 {
+	margin-top:2em;
+}
+
+/**
+ * chart-pie charts — with SVG
+ */
+
+.chart-pie {
+    width: 158px;
+    height: 158px;
+    display: inline-block;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+
+.chart-pie svg {
+    background: transparent;
+    border-radius: 50%;
+}
+
+.chart-pie circle {
+    fill: transparent;
+    stroke: $green-lt;
+    stroke-width: 6;
+}
+@keyframes grow { to { stroke-dasharray: 100 100 } }
+
+.chart-pie.animated circle {
+    animation: grow 3.3s 1ms 1 linear forwards;
+}
+
+#homepage-impact {
+
+    .circle div.ground {
+        position:absolute;
+        top:0;
+        left:0;
+        padding: 1px;
+        box-sizing: border-box;
+
+        circle {
+            stroke: rgba(100,100,100,0.5);
+            stroke-width: 5.25;
+        }
+
+    }
+
+}
+
+.acf-map {
+    width: 100%;
+    height: 440px;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+.site-content .soliloquy-container {
+
+    margin: $padpx 0 $padpx*2;
+
+    .soliloquy-prev, .soliloquy-next {
+        width: 40px;
+        height: 100%;
+        top: 0;
+        margin-top: 0;
+        left: -40px;
+        background: transparent;
+    }
+    a.soliloquy-prev:after,
+    a.soliloquy-next:after {
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-left: 2px solid $grey-lt;
+        border-bottom: 2px solid $grey-lt;
+        position: absolute;
+        top: 48%;
+        left: 45%;
+        transform: rotate(45deg);
+    }
+    a.soliloquy-prev:hover:after,
+    a.soliloquy-next:hover:after {
+        border-color:$grey-med;
+    }
+
+    .soliloquy-next {
+        right: -40px;
+        left:inherit;
+        background: transparent;
+    }
+    a.soliloquy-next:after {
+        right: 45%;
+        transform: rotate(225deg);
+        left:inherit;
+    }
+    .soliloquy-pager {
+        opacity:0.4;
+    }
+}
+
+.long-form-post .soliloquy-container, .long-form-post .video-container, .long-form-post .video-container + h6 {
+    clear: both;
+    max-width: none !important;
+    max-height: none !important;
+
+    @media screen and (min-width: $bp-med) {
+        margin: 20px -10% 40px;
+        width: 110%;
+
+        img {
+            max-width: none;
+            width: 100%;
+        }
+    }
+}

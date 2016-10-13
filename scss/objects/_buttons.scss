@@ -1,0 +1,197 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+.menu li.buttonwrap {
+	a:hover {
+		background-color:$green;
+		color:$white;
+	}
+
+	&.blue a {
+		color:$blue;
+		border-color:$blue;
+
+		&:hover {
+			background-color:$blue;
+			color:$white	}
+	}
+	&.white a {
+		color:$white;
+		border-color:$white;
+
+		&:hover {
+			background-color:$white;
+			color:$black;	}
+	}
+	&.full a {
+		width:100%;
+		text-align:center;
+    	box-sizing: border-box;
+	}
+	&.small a {
+		font-size: 14px;
+	}
+}
+.c-block input[type=submit] {
+	background:#ffffff;
+}
+a.button, .button, .menu li.buttonwrap a, .c-block input[type=submit] {
+	color:$green;
+	font-family:$titlefont;
+	border:2px solid $green;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:$title-spacing;
+	padding:10px 2em;
+	font-size:18px;
+	display: inline-block;
+	line-height:2;
+
+	margin-top:1em;
+
+	#header & {
+		font-size:14px;
+		margin:0;
+	}
+
+    -moz-transition: color $transition, background-color $transition;
+    -o-transition: color $transition, background-color $transition;
+    -webkit-transition: color $transition, background-color $transition;
+	transition: color $transition, background-color $transition;
+
+	&:hover {
+		background-color:$green;
+		color:$white;
+	}
+
+	&.blue {
+		color:$blue;
+		border-color:$blue;
+
+		&:hover {
+			background-color:$blue;
+			color:$white;
+		}
+	}
+	&.grey {
+		color:$grey-med;
+		border-color:$grey-med;
+
+		&:hover {
+			background-color:$grey-med;
+			color:$white	}
+	}
+	&.white {
+		color:$white;
+		border-color:$white;
+
+		&:hover {
+			background-color:$white;
+			color:$black;
+			}
+	}
+	&.full {
+		width:100%;
+		text-align:center;
+    	box-sizing: border-box;
+	}
+	&.small {
+		font-size: 14px;
+	}
+
+	&.icon {
+		color:$white;
+		border-color:$white;
+		position:relative;
+		border-right:0;
+		padding-right: 1.5em;
+
+		&:after {
+			position:absolute;
+			right:-52px;
+			top:-2px;
+			height:100%;
+			width:52px;
+			border:2px solid $white;
+			border-left:0;
+			content:'';
+			background: url("../images/handheart-icon.png") center center no-repeat;
+			background-size: 34px;
+
+		}
+
+		&:hover {
+			background-color:$white;
+			color:$black-lt;
+		}
+
+		&.center {
+			margin-left:-52px;
+		}
+
+		&.doc,
+		&.exclamation,
+		&.ex,
+		&.group,
+		&.whistle {
+			display:block;
+			width:100%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 55px;
+			padding-right: 55px;
+			text-align: center;
+			box-sizing:border-box;
+
+			&:after {
+				background-image:url(../images/button-icon-sheet.png);
+				color:$blue;
+				border-color:$blue;
+				background-size: 104px;
+				right:0;
+			}
+		}
+
+
+		&.doc:after {
+			background-position: 0 -200px;
+		}
+		&.exclamation:after {
+			background-position: 0 0;
+		}
+		&.ex:after {
+			background-position: 0 -98px;
+		}
+		&.group:after {
+			background-position: 0 -148px;
+		}
+		&.whistle:after {
+			background-position: 0 -48px;
+		}
+	}
+
+}
+.white, .two-free, .single-free {
+	a.button, .button {
+		&.icon {
+			color:$blue;
+			border-color:$blue;
+			clear:both;
+		}
+	}
+}
+
+a.back-button {
+	color: white;
+	font-family: 'halisgr book', Impact, Charcoal, sans-serif;
+	border: 2px solid;
+	padding: 0px 14px;
+	font-size: 28px;
+	line-height: 2;
+	position: absolute;
+	top: -64px;
+	right: -4px;
+	margin-top: 0;
+}
+

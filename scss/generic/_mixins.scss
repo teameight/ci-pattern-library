@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin aspect-ratio-half($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 50%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+@mixin columns($count, $float: left) {
+  width: 100%;
+  box-sizing: border-box;
+  float: $float;
+
+  @media screen and (min-width:$bp-med){
+    width: ($count / 12) * 100%;
+  }
+}
+
+@mixin font-sizing($fsize, $lheight) {
+    font-size: $fsize/16 * 1em;
+    line-height: $lheight/$fsize;
+}
+@mixin labelfont() {
+  font-family:$titlefont-book;
+  text-transform:uppercase;
+  font-size:.875em;
+  letter-spacing: .08em;
+}
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

@@ -1,0 +1,77 @@
+/*------------------------------------*\
+    $Sections
+\*------------------------------------*/
+
+#solution-projects {
+	text-align:left;
+	> h2, > h3 {
+		text-align:center;
+	}
+}
+
+.sidebar-inner {
+	h3 {
+		color:$blue;
+		margin-bottom:.5em;
+	}
+	.widget {
+		margin-bottom:2em;
+	}
+	.button {
+		margin-top:0;
+	}
+}
+
+.recent-posts {
+
+    .post-item {
+    	position:relative;
+    	margin-bottom:12px;
+    	background-color:$green;
+		min-height:6em;
+
+    	&:hover .post-details {
+    		background: $green-trans;
+    	}
+    }
+
+    .post-img {
+    	@include aspect-ratio(1.85, 1);
+	    overflow: hidden;
+	    border: 1px solid $grey-lt;
+
+	    img {
+	    	width:100%;
+	    	height:auto;
+	    	position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+	    }
+    }
+
+    .post-details {
+    	position: absolute;
+		bottom: 0;
+		left: 0;
+		background: $grey-dk-trans;
+		color: $white;
+		width: 100%;
+		margin: 0;
+		padding: 1em;
+		text-align:right;
+		box-sizing:border-box;
+
+		h4, h4 a, a {
+			color:$white;
+		}
+
+		.sb-more-link{
+			padding-bottom:1em;
+			font-style:italic;
+			font-size:.875em;
+		}
+
+    }
+
+
+}

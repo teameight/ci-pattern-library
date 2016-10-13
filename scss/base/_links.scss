@@ -1,0 +1,72 @@
+/* Links */ 
+
+a {
+	color:$green-dark;
+	text-decoration:none;
+	transition:color $transition, background $transition;
+
+	&:hover {
+		color:$blue;
+	}
+
+	.c-block.green &, .c-block.blue &, .c-block.grey & {
+		color:$white;
+		text-decoration:underline;
+		&:hover {
+			color:$black;
+		}
+		&.button {
+			text-decoration:none;
+		}
+
+	}
+
+	.h-landmark & {
+		color:$white;
+		&:hover {
+			color:$grey-dark;
+		}
+
+	}
+}
+.c-block.green, .c-block.blue, .c-block.grey {
+	h1, h2, h3, h4 {
+		a {
+			text-decoration:none;
+		}
+	}
+}
+.more-linkold {
+	float:right;
+	display:block;
+	font-family:$titlefont-book;
+
+	&::before {
+		content:"\000BB";
+		margin-right:.25em;
+		font-size:1.25em;
+	}
+}
+.more-link {
+	position: relative;
+    top: 8px;
+    text-align:center;
+
+    right:0;
+    padding: 8px 2em;
+	display:block;
+	font-family:$titlefont-book;
+	color:$white;
+	background:$green;
+
+	@media screen and (min-width:$bp-med){
+		position: absolute;
+    	top: 0;
+	}
+
+	&:hover {
+		background:$blue;
+		color:$white;
+	}
+}
+

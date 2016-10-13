@@ -1,0 +1,143 @@
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+#header { 
+	background:$white; 
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 300;
+
+	p {
+		padding: 0;
+	}
+	.inner {
+		position: relative;
+		z-index: 3;
+		padding: 24px 0;
+		margin:0 auto;
+		background: #fff;
+	}
+
+
+	.logo {
+		width: 198px;
+		height: 70px;
+		margin:0;
+		float: left;
+
+		@media screen and (min-width:$bp-large) {
+			margin: 0;
+		}
+
+		
+		a {
+			outline: 0 none;
+
+			img {
+				width:100%;
+				height:auto;
+			}
+		}
+	}
+
+	.menu li.buttonwrap a {
+		padding: 8px 1.75em;
+	}
+
+
+		@media screen and (max-width:$bp-large) {
+
+			background: $black-lt;
+
+			.inner {
+				width:100%;
+				padding:20px 5%;
+				box-sizing: border-box;
+			}
+
+			.left-menu{
+
+				display:none;
+
+				.top-menu a.button {
+					font-family:$font;
+					border:0;
+					color:$grey-lt;
+					font-style:italic;
+					font-weight:normal;
+					font-size:.825em;
+					text-transform:none;
+					width: auto;
+				    background: transparent;
+					padding:1.5em 0;
+				}
+
+				.bottom-menu {
+					padding: 2em 0;
+					margin: 0;
+					border-top:1px solid $grey-dark;
+					border-bottom:1px solid $grey-dark;
+				}
+
+				width:100%;
+				text-align:center;
+
+				.menu li {
+					text-align:center;
+					display:block;
+					padding: 10px 0;
+					a {
+						font-size: 1.25em;
+					}
+				}
+			}
+			.right-menu {
+				display:none;
+				width:100%;
+				text-align:center;
+				box-sizing:border-box;
+				
+				.top-menu {
+					border-bottom:1px solid $grey-dark;
+					padding:2em;
+				}
+
+				.bottom-menu {
+					margin:2em 0;
+				}
+				@media screen and (max-width:$bp-large) {
+					
+					background: #454545;
+					margin: 12px -6% -20px;
+					width: 112%;
+					padding-top: 24px;
+
+					.menu li {
+						display: inline-block;
+						padding: .5em;
+					}
+					
+				}
+				
+			}
+
+			.menu {
+				li {
+					a {
+						color:$grey-lt;
+						&:hover{
+							color:$white;
+						}
+						
+					}
+					&:after {
+						content:'';
+						display:none;
+					}
+				}
+			}
+
+		}
+}

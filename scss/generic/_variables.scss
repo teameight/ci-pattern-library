@@ -1,0 +1,104 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+//Colors
+$blue : #4F8BCA;
+$blue-dark : #18528e;
+$blue-high : #5ebfb8;
+$blue-lt : #9ebede;
+
+$green : #74b638;
+$green-lt : #85cc45;
+$green-dark : #5ea142;
+
+
+$grey : #454545;
+$grey-med : #888;
+$grey-lt : #cccccc;
+$grey-lt-2 : #e5e5e5;
+$grey-dark : #383535;
+$grey-dark-2 : #606060;
+
+$white : #fff;
+$black : #000;
+$black-lt : #222222;
+
+$green-trans: rgba(116, 182, 56, 0.9);
+$grey-dk-trans: rgba(96, 96, 96, 0.9);
+$blue-trans: rgba(24, 82, 142, 0.7);
+
+$dim : rgba(0,0,0,0.5);
+$dimmer : rgba(0,0,0,0.8);
+
+$error : #f00;
+$valid : #089e00;
+
+//Typography
+
+$font : 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+$titlefont : 'halisgr bold', Impact, Charcoal, sans-serif;
+$titlefont-book : 'halisgr book', Impact, Charcoal, sans-serif;
+
+$title-spacing: 0.03em;
+
+$font-size-norm : 1em;
+$font-size-slightly-larger : 1.0625em;
+$font-size-slightly-smaller : 0.875em;
+$font-size-sm : 0.875em;
+$font-size-large : 1.4375em;
+
+//Animation
+$transition: .3s ease;
+
+//Layout
+$max-width: 1300px;
+$offset-left-1: 4.5rem;
+
+$l-sidebar-width: 19.75rem;
+
+$col-1 : 100/12 * 1%;
+
+//Defaults
+$space : 1rem;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-triple : $space*3;
+$space-quad : $space*4;
+$space-half : $space/2;
+$space-quarter : $space/4;
+$pad : 1rem;
+$pad-and-half : $pad*1.5;
+$pad-double : $pad*2;
+$pad-half : $pad/2;
+$pad-quarter :$pad/4;
+
+$padpx : 20px;
+$padpx-half : $padpx/2;
+$padpx-and-half : $padpx*1.5;
+$padpx-double : $padpx*2;
+$padpx-dub-half : $padpx*2.5;
+$padpx-triple : $padpx*3;
+$padpx-quad : $padpx*4;
+$padpx-quarter :$padpx/4;
+
+//Borders
+$border-med: 3px;
+$border-thick: 7px;
+
+
+//Breakpoints
+$bp-small : 24em;
+$bp-small-2 : 500px;
+$bp-small-3 : 600px;
+$bp-med : 767px;
+$bp-med-2 : 1024px;
+
+$bp-large : 1200px;
+$bp-full : 1360px;
+
+$bp-xl : 1500px;
+$bp-xxl : 1700px;
+$bp-xxxl : 93em;
+
+//
