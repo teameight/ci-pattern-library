@@ -26,55 +26,56 @@
 
 
 
-@import "scss/generic/variables";
-@import "scss/generic/mixins";
+@import "generic/variables";
+@import "generic/mixins";
 
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
-@import "scss/base/main";
-@import "scss/base/links";
-@import "scss/base/headings";
-@import "scss/base/text";
-@import "scss/base/media";
+@import "base/pattern-library";
+@import "base/main";
+@import "base/links";
+@import "base/headings";
+@import "base/text";
+@import "base/media";
 
 
 
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
-@import "scss/objects/layout";
+@import "objects/layout";
 
 
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
-@import "scss/objects/header";
-@import "scss/objects/nav";
-@import "scss/objects/main";
-@import "scss/objects/jumpnav";
-@import "scss/objects/footer";
+@import "objects/header";
+@import "objects/nav";
+@import "objects/main";
+@import "objects/jumpnav";
+@import "objects/footer";
 
 
 
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
-@import "scss/objects/text";
+@import "objects/text";
 
 
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-@import "scss/objects/buttons";
-@import "scss/objects/sections";
-@import "scss/objects/article";
+@import "objects/buttons";
+@import "objects/sections";
+@import "objects/article";
 
 /*------------------------------------*\
     $TEMPLATES
 \*------------------------------------*/
-@import "scss/templates/default";
-@import "scss/templates/faqs";
-@import "scss/templates/on-the-road";
+@import "templates/default";
+@import "templates/faqs";
+@import "templates/on-the-road";
 

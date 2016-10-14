@@ -29,6 +29,23 @@
 \*------------------------------------*/
 /*------------------------------------*    $GLOBAL ELEMENTS
 \*------------------------------------*/
+body {
+  padding: 20px !important; }
+
+.pl-label {
+  font-size: .7em;
+  color: #606060;
+  border-bottom: 1px solid #888;
+  padding-bottom: 0;
+  margin-bottom: 32px;
+  margin-top: 36px; }
+  .pl-label:first-of-type {
+    margin-top: 0; }
+
+.pl-bg-blue {
+  background-color: #4F8BCA;
+  padding: 20px; }
+
 /* Main */
 body {
   line-height: 1;
