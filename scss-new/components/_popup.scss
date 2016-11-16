@@ -1,0 +1,72 @@
+.ci-subscription-popup {
+	max-width: 633px;
+
+	@media screen and (min-width: $bp-small-3) {
+		-webkit-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.18);
+		-moz-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.18);
+		box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.18);
+	}
+
+	.close {
+		display: block;
+		background-color: $green;
+		text-align: right;
+		color: $white;
+		padding: 14px 40px;
+		font-size: 14px;
+		font-family: $titlefont;
+	}
+
+	.close-text {
+		cursor: pointer;
+	}
+
+	form {
+		padding: 20px 40px;
+
+		input[type=text] {
+			width: calc(100% - 44px);
+			padding: 14px 20px 16px;
+			font-family: $font;
+			font-size: 15px;
+			font-style: italic;
+			border: 2px solid $grey-med;
+		}
+
+		input[type=submit] {
+			@extend .button.blue;
+			width: 100%;
+			background-color: transparent;
+			cursor: pointer;
+		}
+	}
+
+	.cc_safesubscribe {
+		text-align: right;
+		display: block;
+		padding-top: 10px;
+		color: $grey-med;
+		font-size: 11px;
+	}
+}
+
+	.ci-subscription-popup-header {
+		display: none;
+		padding: 20px 40px;
+		align-items: center;
+		justify-content: space-between;
+
+		h2 {
+			font-size: 2.25em;
+			color: $blue;
+			display: inline-block;
+		}
+
+		@media screen and (min-width: $bp-small-3) {
+			display: flex;
+		}
+	}
+
+	.ci-subscription-popup-text {
+		padding: 20px 40px 0;
+	}

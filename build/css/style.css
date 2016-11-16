@@ -4795,7 +4795,7 @@ img.aligncenter, a img.aligncenter {
     height: 70px;
     margin: 0;
     float: left; }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1024px) {
       #header .logo {
         margin: 0; } }
     #header .logo a {
@@ -4805,7 +4805,7 @@ img.aligncenter, a img.aligncenter {
         height: auto; }
   #header .menu li.buttonwrap a {
     padding: 8px 1.75em; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     #header {
       background: #222222; }
       #header .inner {
@@ -4848,7 +4848,7 @@ img.aligncenter, a img.aligncenter {
           padding: 2em; }
         #header .right-menu .bottom-menu {
           margin: 2em 0; } }
-    @media screen and (max-width: 1200px) and (max-width: 1200px) {
+    @media screen and (max-width: 1024px) and (max-width: 1024px) {
       #header .right-menu {
         background: #454545;
         margin: 12px -6% -20px;
@@ -4857,7 +4857,7 @@ img.aligncenter, a img.aligncenter {
         #header .right-menu .menu li {
           display: inline-block;
           padding: .5em; } }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
       #header .menu li a {
         color: #cccccc; }
         #header .menu li a:hover {
@@ -4883,7 +4883,7 @@ a#open-menu {
   -moz-transition: top 0.3s ease;
   -o-transition: top 0.3s ease;
   transition: top 0.3s ease; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
     a#open-menu {
       display: none; } }
   a#open-menu:before, a#open-menu:after {

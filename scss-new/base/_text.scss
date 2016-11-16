@@ -1,0 +1,133 @@
+/* Text-Related Elements */
+
+
+body {
+	font-size:16px;
+	font-family:$font;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+.entry,
+.header-landmark,
+.bfilter-wrap,
+.nav-links  {
+	@include font-smoothing();
+	text-rendering: optimizeLegibility;
+}
+
+em {
+	font-style: italic;
+}
+
+.c-block p {
+	margin-bottom:.75em;
+}
+.c-block em {
+	font-style:italic;
+}
+
+p.emphasized,
+.single p.emphasized {
+	font-size: 20px;
+	line-height:32px;
+}
+
+.entry,
+#solution .inner,
+.gm-style {
+	color: $white;
+	line-height: 1.8em;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+}
+#solution .inner {
+	@include font-smoothing();
+}
+
+#homepage-slider p {
+	font-family:'halisgr book';
+	-webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: initial;
+}
+#main .guest-border {
+  border-top:1px solid #ffffff;
+	width: 5em;
+	margin:2em auto 2em;
+	height:1px;
+}
+#homepage-impact {
+	h1,h2,h3, p {
+		padding-bottom: 0;
+	}
+}
+.gm-style {
+	font-size:16px;
+	font-family:$font;
+	color: $black-lt;
+	line-height: 1.8em;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+
+	h3 {
+		color:$blue;
+		font-size:18px;
+	}
+
+	.gm-style-iw {
+		padding:1em;
+		box-sizing:border-box;
+		> div > div {
+			max-width: 400px;
+			margin:0 auto;
+		}
+	}
+}
+
+.single {
+
+	h3, h4 {
+		color:$grey-dark-2;
+	}
+
+	em {
+		font-style:italic;
+	}
+
+	blockquote {
+		margin: 24px 0 32px 10%;
+
+		p {
+			font-family: $titlefont-book;
+			@include font-sizing(24, 32);
+			color:$blue;
+		}
+
+		h4 {
+			color:$blue;
+			margin-top:-8px;
+		}
+	}
+}
+article {
+	ul,
+	ol {
+		@include font-sizing(16, 28);
+	    list-style: initial;
+	    margin-left: 1em;
+
+	    li {
+
+	    }
+	}
+	ol {
+		list-style-type:decimal;
+	}
+	pre {
+		font-family: monospace;
+    	color: #94520f;
+	}
+}

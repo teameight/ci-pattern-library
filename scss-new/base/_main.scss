@@ -1,0 +1,3457 @@
+/* Main */
+
+body {
+	line-height: 1;
+	background-color: $white;
+	min-width: 320px;
+	font-family: $font;
+}
+
+.c-block .entry:before,
+.c-block .entry:after,
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.c-block .entry:after,
+.cf:after {
+    clear: both;
+}
+
+.inner {
+	padding: 60px 0;
+}
+.inner, .c-block .entry {
+	padding-left: 5%;
+	padding-right:5%;
+	width: 90%;
+
+	@media screen and (min-width:$bp-full) {
+		width:$max-width;
+		margin:0 auto;
+		padding-left:0;
+		padding-right:0;
+	}
+
+}
+.visually-hidden {
+	display:none;
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: 'halisgr bold';
+	src: url('fonts/halisgr-bold-webfont.eot');
+	src: url('fonts/halisgr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/halisgr-bold-webfont.woff') format('woff'),
+		url('fonts/halisgr-bold-webfont.ttf') format('truetype'),
+		url('fonts/halisgr-bold-webfont.svg#halis_grbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'halisgr book';
+	src: url('fonts/halisgr-book-webfont.eot');
+	src: url('fonts/halisgr-book-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/halisgr-book-webfont.woff') format('woff'),
+		url('fonts/halisgr-book-webfont.ttf') format('truetype'),
+		url('fonts/halisgr-book-webfont.svg#halis_grbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	src: url('fonts/halisgr-book-webfont.eot');
+	src: url('fonts/halisgr-book-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/halisgr-book-webfont.woff') format('woff'),
+		url('fonts/halisgr-book-webfont.ttf') format('truetype'),
+		url('fonts/halisgr-book-webfont.svg#halis_grbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Fixed footer */
+
+/*body, html { height: 100%;}
+.main-wrapper { min-height: 100%; height: auto !important;  height: 100%; margin: 0 0 -378px;}
+.footer { height: 378px; }
+#main {padding-bottom: 378px;}*/
+
+
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************/
+/* Content
+/************************/
+
+
+h1,h2,h3, p {
+	padding: 0 0 30px;
+}
+h1,h2,h3,h4,h5 {
+	font-family: 'halisgr bold';
+	line-height: 100%;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.btn {
+	background-image: url(images/buttons_sprite.png);
+	background-repeat: no-repeat;
+	text-indent: -99999px;
+	outline: 0 none;
+	width: 350px;
+	height: 68px;
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.btn:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.btn.sponsor-child,
+.btn.sponsor-a-child {
+	background-position: 0 0;
+}
+.btn.take-action {
+	background-position: 0 -68px;
+}
+.btn.take-action-big {
+	background-position: 0 -544px;
+	width: 494px;
+}
+.btn.watch-the-video {
+	background-position: 0 -136px;
+}
+.btn.play-the-video {
+	background-position: 0 -204px;
+}
+.btn.donate-now {
+	background-position: 0 -272px;
+	width: 409px;
+}
+.btn.continue-reading {
+  background-position: 0 -340px;
+  width: 344px;
+}
+.btn.share-with-post,
+.btn.share-with-a-post {
+	background-position: 0 -408px;
+	height: 68px;
+	width: 330px;
+}
+.btn.donate-tweet,
+.btn.donate-a-tweet {
+	background-position: 0 -476px;
+	height: 68px;
+	width: 310px;
+}
+.btn.the-solution {
+	background-position: 0 -612px;
+	width: 494px;
+}
+.btn.buy-vip-hour-tickets-online {
+	background-position: 0 -982px;
+	height: 68px;
+	width: 408px;
+}
+.btn.facebook-event-page {
+	background-position: 0 -1050px;
+	height: 68px;
+	width: 408px;
+}
+.btn.twitter-updates {
+	background-position: 0 -1118px;
+	height: 68px;
+	width: 408px;
+}
+.btn.view-more-children {
+  background-position: 0 -2006px;
+  width: 494px;
+}
+.btn2 {
+	background: url(images/white_btn_sprite.png) repeat-x;
+	text-indent: -9999px;
+	display: block;
+	height: 68px;
+	width: 380px;
+	outline: 0 none;
+}
+.btn2:hover {
+	opacity: 0.8;
+}
+.btn2.form-990 {	
+	background-position: 0 -204px;
+}
+.btn2.staff-directory {	
+	background-position: 0 0;
+}
+.btn2.board-of-directors{	
+	background-position: 0 -68px;
+}
+.btn2.privacy-policy {	
+	background-position: 0 -136px;
+}
+.btn2.conflict-of-interest {	
+	background-position: -380px 0;
+}
+.btn2.whistleblower-policy {	
+	background-position: -380px -68px;
+}
+.btn2.document-retention {	
+	background-position: -380px -136px;
+}
+.clear {
+	overflow: hidden;
+	float: none;
+	clear: both;
+}
+.pagination {
+	position: relative;
+	z-index: 300;
+}
+.wp-pagenavi {
+	position: relative;
+	overflow: hidden;
+	height: 64px;
+	padding-right: 150px;
+}
+.wp-pagenavi span.pages {
+	display: none;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	border: 3px solid #FFF !important;
+	padding: 15px 22px !important;
+	color: #FFF !important;
+	margin: 0 5px !important;
+	font-size: 20px !important;
+	font-family: 'halisgr bold';
+	float: left;
+}
+.wp-pagenavi span.current {
+	background-color: #FFF !important;
+	color: #7ac142 !important;
+}
+.wp-pagenavi .previouspostslink {
+	position: absolute;
+	right: 71px;
+	top: 0;	
+}
+.wp-pagenavi .nextpostslink {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+a.center {
+	margin: 0 auto;
+	display: block;
+}
+/* blue block  */
+
+.blue-block {
+	background: url(images/blue_bg.jpg) repeat;
+	margin-top: 0;
+	position: relative;
+}
+.blue-block .top {
+	background: url(images/blue_top_bg_4.png) repeat-x 50% 0;
+	height: 60px;
+	position: absolute;
+	top: -12px;
+	width: 100%;
+}
+.blue-block .bottom {
+  background: url(images/blue_bottom_bg.png) repeat-x 50%;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+.page-template-template-take-action-php .blue-block .entry,
+.page-template-template-take-action-php .green-block .entry {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 50px 0 70px;
+	overflow: hidden;
+}
+.page-template-template-take-action-php .entry h2.title {
+	font-size: 65px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.page-template-template-take-action-php .green-block  .one_fourth a {
+	text-decoration: none;
+}
+.page-template-template-take-action-php .green-block  .one_fourth a:hover {
+	text-decoration: underline;
+}
+ 
+/* white block  */
+.white-block {
+	position: relative;
+	background-color: #FFF;
+}
+.page-template-template-contact-us-php .white-block  {
+	margin-top: -40px;
+}
+.white-block .top {
+ background: url(images/white_top_bg.png) repeat-x scroll 50% 0;
+ height: 58px;
+ position: absolute;
+ top: -58px;
+ width: 100%;
+}
+.white-block .bottom {
+ background: url(images/white_bottom_bg.png) repeat-x scroll 50% 0;
+ height: 58px;
+ position: absolute;
+ bottom: -58px;
+ width: 100%;
+}
+/* grey block */
+.grey-block {
+	position: relative;
+	background-color: #f9f9f9;
+}
+.grey-block .top {
+ background: url(images/grey_top_bg.png) repeat-x scroll 50% 0;
+ height: 33px;
+ position: absolute;
+ top: -33px;
+ width: 100%;
+}
+
+/* green block */
+.green-block {
+	background: url(images/green_bg.jpg) repeat;
+  padding: 50px 0 30px;
+  position: relative;
+}
+.green-block .top {
+	background: url(images/green_top_bg.png) repeat-x 50% 0;
+	height: 60px;
+	position: absolute;
+	top: -60px;
+	width: 100%;
+}
+.green-block .bottom {
+	background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
+	height: 60px;
+	position: absolute;
+	width: 100%;
+	bottom: -60px;
+	z-index: 100;
+}
+
+/* green block2 */
+.green-block2 {
+	background: url(images/green_bg.jpg) repeat;
+  padding: 50px 0 30px;
+  position: relative;
+}
+.green-block2 .top {
+	background: url(images/green_top_bg_2.png) repeat-x 50% 0;
+	height: 93px;
+	width: 100%;
+	position: absolute;
+	top: -93px;
+}
+.green-block2 .bottom {
+	background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
+	height: 60px;
+	position: absolute;
+	width: 100%;
+	bottom: -60px;
+	z-index: 100;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-o-input-placeholder,
+textarea:focus::-o-input-placeholder {
+  color: transparent;
+}
+input:focus::-ms-input-placeholder,
+textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder{
+  color: transparent;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder{
+  color: transparent;
+}
+.nsu-field:invalid {
+  box-shadow:none;
+}
+
+/************************/
+/* Homepage
+/************************/
+
+html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.curtains{
+    width: 100%;
+    z-index:1;
+    position:relative;
+}
+
+.curtains>li{
+    -webkit-transform:translateZ(0);
+    background: white;
+    position: fixed;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index:1;
+}
+.curtains>li.hidden{display:none;}
+.curtains>li:first-child{z-index:2;}
+#homepage-mission {	
+	background: url(images/green_bg.jpg) repeat;
+	z-index: 200;
+	margin-top: 0;
+	position: relative;
+}
+#homepage-mission .top {
+  background: url(images/green_top_bg.png) repeat-x;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+	top: -60px;
+}
+#homepage-mission .entry {
+	padding-top: 110px;
+	padding-bottom: 100px;
+	margin: 0 auto;
+	max-width: 620px;
+}
+#homepage-mission .columns {
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	overflow: hidden;
+	color: #FFF;
+	line-height: 1.9em;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+}
+#homepage-mission .columns .left,
+#homepage-mission .columns .right {
+	float: left;
+	width: 290px;
+	font-size: 15px;
+}
+#homepage-mission .columns .left {	
+  margin-right: 40px;
+}
+#homepage-mission h3.title,
+#homepage-stories h3.title,
+#homepage-testimonials h3.title,
+#homepage-social h3.title,
+#homepage-get-involved h3.title  {
+	font-family: 'halisgr bold';
+	font-size: 45px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+#homepage-mission a.btn {
+	margin: 0 auto;
+}
+	
+#homepage-sponsors {
+	background: url(images/blue_bg.jpg) repeat;
+	position: relative;
+	min-height: 622px;
+	margin-top: -20px;
+	z-index: 100;
+}
+#homepage-sponsors .top {
+	background: url(images/blue_top_bg.png) repeat-x 50% 0;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	height:60px;
+	top: -50px;
+}
+#homepage-sponsors .bottom {
+	background: url(images/blue_bottom_bg.png) repeat-x 50% 0 transparent;
+	bottom: -31px;
+	height: 31px;
+	position: absolute;
+	width: 100%;	 	 
+}
+*+html  #homepage-sponsors .bottom {
+	z-index: 10;
+	display: block;
+}
+#homepage-sponsors .girl {
+	left: 0;
+	position: absolute;
+	top: -47px;
+	width: 795px;
+	height: 710px;
+	left:-100px;	
+}
+#homepage-sponsors .girl-small {
+	background: url(images/homepage_girl_small.jpg) no-repeat;
+	width: 303px;
+	height: 358px;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	display: none;
+}
+#homepage-sponsors .girl-top {
+  background: url(images/homepage_girl_top.png) no-repeat 240px 0;
+  height: 53px;
+  width: 795px;
+}
+#homepage-sponsors .girl-center {
+	background: url(images/homepage_girl.jpg) no-repeat;
+	height:617px;
+	width: 795px;
+	position: relative;
+	z-index: 10;
+}
+#homepage-sponsors .girl-bottom {
+  background: url(images/homepage_girl_bottom.png) no-repeat 0 100%;
+	height: 42px;
+	width: 795px;
+	z-index: 10;
+	position: relative;	
+}
+#homepage-sponsors .entry {
+	max-width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+#homepage-sponsors .text-holder {
+  color: #FFFFFF;
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  line-height: 2em;
+  padding: 100px 0 0 488px;
+  position: relative;
+  text-align: right;
+  z-index: 20;
+}
+#homepage-sponsors .entry .title {
+	font-family: 'halisgr bold';
+	font-size: 68px;
+	color: #FFF;
+	text-transform: uppercase;
+	margin: 20px 0 0;
+	line-height: 1.1em;
+}
+#homepage-sponsors .btn.sponsor-child {
+	margin-top: 50px;
+	float: right;
+}
+#homepage-stories {
+	background: url(images/homepage_stories_bg.jpg) no-repeat 0 0 transparent;
+	background-size: cover;
+} 
+#homepage-stories .columns {
+  color: #FFFFFF;
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 1px;
+  line-height: 1.9em;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+#homepage-stories .columns .left {
+  margin-right: 40px;
+}
+#homepage-stories .columns .left, 
+#homepage-stories .columns .right {
+  float: left;
+  font-size: 15px;
+  width: 290px;
+}
+#homepage-stories .entry {
+  margin: 0 auto;
+  max-width: 620px;
+  padding-bottom: 100px;
+  padding-top: 110px;
+} 
+#homepage-stories h4 {
+	font-family: 'halisgr bold';
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 25px;
+	color: #FFF;
+	line-height: 1.1em;
+}
+#homepage-stories .btn.continue-reading {
+	margin: 0 auto;
+}
+#homepage-testimonials {
+	background: url(images/green_bg.jpg) repeat;
+	margin-top: -110px;
+	position: relative;
+	z-index: 200;
+}
+#homepage-testimonials .top {
+  background: url(images/green_top_bg.png) repeat-x 50% 0;
+  height: 66px;
+  position: absolute;
+  top: -66px;
+  width: 100%;
+}
+#homepage-testimonials .entry {
+	padding: 100px 0 100px;
+	max-width: 720px;
+	margin: 0 auto;
+	color: #FFF;
+	text-align: center;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	line-height: 1.9em;
+}
+#homepage-testimonials h4 {
+	font-family: 'halisgr bold';
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+/* testimonials */
+.top-quote {
+	background: url(images/home_testimonials_quote1.png)no-repeat 50% 0;
+	height: 20px;
+	width: 100%;	
+}
+.bottom-quote {
+	background: url(images/home_testimonials_quote2.png)no-repeat 50% 0;
+	height: 20px;
+	width: 100%;
+}
+.slider2 .flex-control-nav {
+	margin-top: 40px;
+}
+.slider2 p {
+	padding: 0 0 10px;
+}
+.slider2 .flex-control-nav li {
+	display: inline-block;
+}
+.slider2 .flex-control-nav li a {
+	background: url(images/slider_one_pagi_two.png)no-repeat 50% 0;
+	position: relative;
+	display: inline-block;
+	height: 14px;
+	position: relative;
+	width: 35px;
+	text-indent: -9999px;
+	cursor: pointer;
+} 
+.slider2 .flex-control-nav li a.flex-active {
+  background-position: 50% 100%;
+}
+.slider2 .flex-control-nav li.first a {
+	width: 26px;
+	background-position: 0 0;
+}
+.slider2 .flex-control-nav li.first a.flex-active {
+	background-position: 0 100%;
+}
+.slider2 .flex-control-nav li.last a {
+	width: 25px; 
+	background-position: 100% 0;
+}
+.slider2 .flex-control-nav li.last a.flex-active {
+	background-position: 100% 100%;
+}
+#homepage-social {
+	 background: url(images/homepage_social_bg.jpg) no-repeat;
+	 background-size: cover;
+}
+#homepage-social .top {
+  background: url(images/green_bottom_bg.png) repeat-x 50% 0;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+#homepage-social .entry {
+	padding: 100px 0 100px;
+	margin: 0 auto;
+	max-width: 720px;
+}
+#homepage-social h3.title {
+	letter-spacing: normal;
+}
+#homepage-social .columns {
+	overflow: hidden;
+	display: none;
+}
+#homepage-social .columns .left,
+#homepage-social .columns .right {
+	float: left;
+	width: 333px;
+}
+#homepage-social .columns .left {
+  margin-right: 30px;
+}
+#homepage-social .btn.share-with-post {
+	margin: 60px 0 0;
+}
+#homepage-social .btn.donate-tweet {
+	margin: 55px 0 0;
+}
+#homepage-social .holder {
+	position: relative;
+}
+#homepage-social  .holder .line {
+	background-color: #333333;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	top: 69px;
+	width: 331px;
+	z-index: 999;
+}
+#homepage-get-involved {
+	background: url(images/blue_bg_2.jpg) repeat;
+	position: relative;
+}
+#homepage-get-involved .top {
+  background: url(images/blue_top_bg_2.png) repeat-x 50% 0;
+  height: 60px;
+  position: absolute;
+  top: -60px;
+  width: 100%;
+}
+#homepage-get-involved .entry {
+	color: #FFF;
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 100px 0;
+	text-align: center;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	line-height: 1.8em;
+}
+#homepage-get-involved .entry .btn {
+	margin: 0 auto;
+}
+#homepage-get-involved h3.title {
+	font-size: 68px;
+	letter-spacing: normal;
+	padding-bottom: 25px;
+	line-height: 100%;
+}
+#homepage-get-involved .entry .btn.take-action-big {
+	margin-top: 30px;
+}
+#homepage-get-involved .btn.the-solution {
+	margin-top: 20px;
+}
+.page-template-template-take-action-php .blue-block .entry {
+  padding-top: 100px;
+	padding-bottom: 100px; 	
+}
+
+/************************/
+/* Take action 
+/************************/
+
+.children-list {
+	width: 862px;
+	margin: 0 auto;
+	text-align: center;
+}
+.children-list .column {
+	margin: 0 26px;
+	width: 155px;
+	text-align: center;
+	display: inline-block;
+}
+.children-list h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.children-list .column img {
+	width: 155px;
+	height: 155px;
+	border-radius: 155px;
+	-moz-border-radius: 155px;
+	-webkit-border-radius: 155px;
+	display: block;
+}
+.children-list .text-holder {
+	margin-top: 10px;
+	height: 100px;
+}
+.children-list .text-holder span {
+	text-transform: uppercase;
+	font-family: 'halisgr bold';
+} 
+.children-list a {
+	text-decoration: none;
+}
+.children-list a:hover {
+	text-decoration: underline;
+}
+.children-list .btn.view-more-children {
+	margin: 0 auto;
+}
+.donate-now-form .text {
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	font-size: 15px;
+	background: 0 none;
+	padding: 20px 15px;
+	color: #FFFFFF !important;
+	border: 3px solid #FFF;
+	margin: 0 0 20px;
+	display: block;
+	width: 395px;	
+}
+.donate-now-form .drop-down-container {
+  margin: 0 0 20px;
+  padding: 0;
+  width: 430px !important;
+}
+.drop-down-container option {
+	text-align: left;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	font-size: 15px;
+}
+.donate-now-form .customSelect {
+	background: url("images/custom_select_transp.png") no-repeat;
+	padding: 0 20px;
+	text-align: left;
+	width: 391px !important;
+}
+.donate-now-form .drop-down-container select {
+  border: 0 none;
+  width: 431px !important;
+}
+.donate-now-form .drop-down-container option {
+	text-align: left;
+	padding: 20px;
+}
+.donate-now-form .submit {
+  background: url(images/buttons_sprite.png) no-repeat scroll 0 -2142px;
+  border: 0 none;
+  display: block;
+  height: 68px;
+  width: 430px;
+	outline: 0 none;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.donate-now-form .submit:hover {
+	opacity: 0.8;
+}
+/* inputs */
+.donate-now-form ::-webkit-input-placeholder,
+.donate-now-form textarea:focus::-webkit-input-placeholder {
+	color: #FFF !important;
+	opacity: 1;
+}
+.donate-now-form ::-o-input-placeholder,
+.donate-now-form ::-o-input-placeholder {
+  color: #FFF !important;
+	opacity: 1;
+}
+.donate-now-form ::-ms-input-placeholder,
+.donate-now-form ::-ms-input-placeholder {
+ 	color: #FFF !important;
+	opacity: 1;
+}
+.donate-now-form ::-moz-placeholder,
+.donate-now-form ::-moz-placeholder{
+ 	color: #FFF !important;
+	opacity: 1;
+}
+.donate-now-form ::-moz-placeholder,
+.donate-now-form ::-moz-placeholder{
+  color: #FFF !important;
+	opacity: 1;
+}
+
+.donate-now-form input:focus::-webkit-input-placeholder,
+.donate-now-form textarea:focus::-webkit-input-placeholder {
+  color: transparent !important;
+	opacity: 0  !important;
+}
+.donate-now-form input:focus::-o-input-placeholder,
+.donate-now-form textarea:focus::-o-input-placeholder {
+  color: transparent !important;
+	opacity: 0  !important;
+}
+.donate-now-form input:focus::-ms-input-placeholder,
+.donate-now-form textarea:focus::-ms-input-placeholder {
+  color: transparent !important;
+	opacity: 0  !important;
+}
+.donate-now-form input:focus::-moz-placeholder,
+.donate-now-form textarea:focus::-moz-placeholder{
+ color: transparent !important;
+	opacity: 0  !important;
+}
+.donate-now-form input:focus::-moz-placeholder,
+.donate-now-form textarea:focus::-moz-placeholder{
+  color: transparent !important;
+	opacity: 0  !important;
+}
+
+/************************/
+/* 404 error 
+/************************/
+  
+.error404 .entry  {
+	max-width: 964px;
+	margin: 0 auto;
+	color: #000;	
+	padding: 50px 12px;
+}
+.category .entry.pagination {
+	width:100%;
+}
+.error404 #main,
+.category  #main {
+	min-height:450px;
+}
+.error404 h1.title,
+.category h1.title {
+	color: #000;
+	text-shadow: none !important;
+	font-size: 45px;
+}
+.category h2.title {
+	font-size: 35px;
+	text-transform: uppercase;
+}
+.category .entry .inner {
+	color: #000;
+	max-width:964px;
+	padding: 50px 12px; 	
+	margin: 0 auto;
+}
+.category .wp-pagenavi {
+	max-width:794px;
+	margin: 0 auto;	
+}
+.category h2.title a {
+	color: #000;
+	text-decoration: underline;
+}
+
+
+/************************/
+/* The problem , About us
+/************************/
+
+#the-problem {
+	background: url(images/problem_bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+#the-problem.take-action {
+	background-position: 50% 0;
+}
+#about-us .photo{
+	background: url(images/about_bg.jpg) no-repeat 50% 60%;
+}
+.ie8 #about-us .photo{
+	background: url(images/about_bg.jpg) no-repeat center center;
+}
+#the-problem,
+#about-us .photo {	
+	background-size: cover;
+	margin-top: -25px;
+}
+#the-problem .entry,
+#about-us .entry {
+	color: #FFF;
+	font-size: 16px;
+	max-width: 870px;
+	margin: 0 auto;	
+	padding: 120px 0;
+}
+h1.title {	
+	font-size: 67px;
+	text-transform: uppercase;
+	line-height: 67px;
+}
+#the-problem .columns,
+#about-us .columns {
+	overflow: hidden;
+}
+#the-problem .column,
+#about-us .column {
+	width: 450px; 
+	line-height: 1.8em;
+}
+#the-problem .column.left,
+#about-us .column.left {
+	font-family: 'halisgr bold';
+	width: 39%;
+	line-height: 2.1em;
+}
+#the-problem .column.right,
+#about-us .column.right {
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;	
+	width: 53%;
+}
+.page-template-template-events-php #the-problem .column.right {
+	overflow-y: auto;
+}
+#the-problem h3,
+#about-us h3 {
+	font-size: 25px;	
+}
+#about-us .white-block {
+	min-height: 400px;
+	padding: 60px 0;
+	background-color: #FFF;
+}
+#about-us .accountability,
+#about-us .financials,
+#about-us .administration,
+#about-us .community-partners {
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	max-width: 845px;
+	margin: 0 auto;
+	padding: 50px 0 0;
+	line-height: 1.8em;
+	color: #666;
+}
+#about-us .administration  {
+	max-width: 803px;
+}
+#about-us .accountability .title,
+#about-us .financials .title,
+#about-us .administration .title, 
+#about-us .community-partners .title {
+	font-family: 'halisgr bold';
+	font-size: 65px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+}
+#about-us .financials .title,
+#about-us .administration .title {
+	font-size: 45px;
+}
+#about-us .community-partners {
+	max-width: 842px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 100px 0;
+	text-align: center;	 
+}
+#about-us .community-partners strong {
+	font-family: 'halisgr bold';
+	color: #000;
+}
+#about-us .community-partners .image-holder {
+  float: left;
+	padding: 20px;
+	text-align: center;
+	width: 240px;
+	height: 185px;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 185px;
+}
+#about-us .community-partners .line {	
+	display: table;
+}
+#about-us .community-partners .last {
+	border-bottom:0 none;;
+}
+#about-us .community-partners .last.center-block {
+	margin: 0 auto;
+	display: block;
+	float: none;
+}
+#about-us .community-partners .image-holder.center-block {
+	border-left:1px solid #CCC;
+  border-right:1px solid #CCC;
+}
+#about-us .community-partners .clear {
+	 border-bottom:1px solid #CCC; 
+}
+
+/************************/
+/* Stories of hope
+/************************/ 
+
+#stories-of-hope {
+  margin-top: -31px;	
+} 
+#stories-of-hope .entry {	
+	position: relative;	
+} 
+#stories-of-hope .entry.last .bottom {
+	display: none;
+}
+#stories-of-hope .photo {
+	background-repeat: no-repeat;
+	background-position: 50% -30px;
+	background-size: cover;
+	min-height: 570px;
+}
+.ie8 #stories-of-hope .photo {
+	background-position: center 0;
+}
+.ie8 #stories-of-hope .green .bottom {
+	z-index: 300;
+	background: url(images/green_bottom_bg.png) repeat-x scroll center 0;
+}
+#stories-of-hope .green .top {
+	background: url(images/green_top_bg_2.png) repeat-x 50% 0;
+	height: 93px;
+	width: 100%;
+	position: absolute;
+	top: -93px;
+}
+#stories-of-hope .green .drop-down-block ,
+.green .drop-down-block {
+	background: url(images/green_bg.jpg) repeat;
+	position: relative;
+	padding: 50px 0 30px;
+}
+#stories-of-hope .green .bottom,
+.green .bottom {
+	background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
+	height: 60px;
+	position: absolute;
+	width: 100%;
+	bottom: -60px;
+	z-index: 100;
+}
+#stories-of-hope .blue .top {
+	background: url(images/blue_top_bg_3.png) repeat-x 50% 0;
+	height: 45px;
+	width: 100%;
+	position: absolute;
+	top: -45px;
+}
+#stories-of-hope .blue .drop-down-block {
+	background: url(images/blue_bg_2.jpg) repeat;
+	position: relative;
+	padding: 80px 0;
+}
+#stories-of-hope .blue .bottom {
+	background: url(images/blue_bottom_bg.png) repeat-x 50% 0;
+	height: 60px;
+	position: absolute;
+	width: 100%;
+	bottom: -60px;
+	z-index: 100;
+}
+#stories-of-hope .title {
+	font-family: 'halisgr bold';
+	font-size: 57px;
+	text-transform: uppercase;
+	z-index: 200;
+	color: #FFF;
+	width: 480px;
+	padding: 150px 0 0;
+	margin-left: 24%;
+	text-shadow: 1px 1px 2px #333, 0 0 15px black;
+	-moz-text-shadow: 1px 1px 2px #333, 0 0 15px black;
+	-webkit-text-shadow: 1px 1px 2px #333, 0 0 15px black;
+}
+#stories-of-hope .short-story,
+#stories-of-hope .full-story {
+	max-width: 950px;
+	margin: 0 auto;
+	font-size: 15px;
+}
+#stories-of-hope .full-story,
+#stories-of-hope .entry.black {
+	display: none; 
+}
+#stories-of-hope .drop-down-block .btn.view-more{
+	background-position: 0 -680px;
+	height: 58px;
+	width: 307px;
+}
+#stories-of-hope .share {
+	text-align: center;
+	max-width: 731px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+#stories-of-hope .share h3 {
+ font-family: 'halisgr bold';
+ font-size: 45px;
+ text-transform: uppercase;	 
+}
+#stories-of-hope .btn.share-facebook {
+	background-position: 0 -738px;
+	width: 361px;
+	float: left;
+}
+#stories-of-hope .btn.share-twitter {
+	background-position: 0 -806px;
+  width: 360px;
+	float: right;
+}
+#stories-of-hope .green.pagination .top,
+.green.pagination .top {
+	background: url(images/green_top_bg.png) repeat-x 50%;
+	height: 60px;
+	position: absolute;
+	top: -60px;
+	width: 100%;
+}
+#stories-of-hope .blue.pagination .top {
+	background: url(images/blue_top_bg_2.png) repeat-x 50% 0;
+	height: 60px;
+	position: absolute;
+	top: -60px;
+	width: 100%;
+}
+#stories-of-hope .black {
+	z-index: 400;
+}
+div.black,
+article.black  {
+	background: url(images/black_bg.jpg) repeat;
+	position: relative;
+	min-height:300px;
+}
+div.black .top,
+article.black .top {
+	background: url(images/black_top_bg.png) repeat-x 20%;
+	height: 31px;
+	position: absolute;
+	top: -31px;
+	width: 100%;
+}
+div.black .bottom,
+article.black .bottom {
+	background: url(images/black_bottom_bg.png) repeat-x;
+	height: 31px;
+	position: absolute;
+	bottom: -31px;
+	width: 100%;
+}
+#stories-of-hope .black .title {
+	font-size: 36px;
+	margin: 0 0 30px;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+#stories-of-hope .entry.black {
+  padding: 50px 0;	
+}
+#stories-of-hope .entry.black .short-story {
+  max-width: 732px;
+}
+#stories-of-hope a.prev-story,
+#stories-of-hope a.next-story,
+#stories-of-hope a.close-story {
+	background-image: url(images/post_buttons_sprite.png);
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+	margin-bottom: 10px;
+}
+#stories-of-hope a.prev-story:hover,
+#stories-of-hope a.next-story:hover,
+#stories-of-hope a.close-story:hover {
+  opacity: 0.8;
+}
+#stories-of-hope a.prev-story {
+  background-position: 0 -234px;
+  float: left;
+  height: 68px;
+  width: 359px;	
+}
+#stories-of-hope a.next-story {
+  background-position: -359px -234px;
+	float: right;
+	height: 68px;
+	width: 360px;	
+}
+#stories-of-hope a.close-story {
+	clear: both;
+	display: block;
+	float: none;
+	height: 68px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 732px;
+}
+ 
+/************************/
+/*  F.A.Q 
+/************************/
+
+#faq {
+	background-color: #FFF;
+	margin-top: -40px;
+}
+#faq-intro {
+	padding:  70px 0 0;
+	position:  relative;	
+}
+#faq-intro .entry {
+	z-index:  200;
+	position: relative;
+	color:  #000;
+	max-width:  710px;
+	margin: 0 auto;
+		padding-top: 40px;
+}
+#faq-intro h1.title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 65px;
+}
+#faq .accordion {
+	text-align: center;
+	line-height:  1.8em;
+	max-width: 710px;
+	margin: 0 auto;
+}
+#faq .accordion .question {
+	font-size: 25px;
+	color: #000;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: 'halisgr bold';
+	margin: 25px 0;
+	overflow: hidden;
+}
+#faq .accordion .answer {
+	background: url(images/accordion_hidden_bg.png) no-repeat 50% 0;
+	min-height:10px; 
+}
+#faq .accordion .answer .in {
+	display: none;
+}
+#faq .accordion .collapsed {
+	background: none;
+}
+#faq .accordion .row {
+	display: none;
+}
+#faq .accordion {
+	padding: 0 0 100px
+}
+.drop-down-container {	
+	height: 68px !important;
+	line-height: 68px;
+	padding-left: 0;
+	padding-right: 68px;
+	text-align: center;
+	width: 313px !important;
+	margin: 20px auto 0;
+	padding-bottom: 50px;	
+}
+.customSelect {
+	background: url(images/custom_select.png)no-repeat;
+	width:  380px !important;
+}
+.customSelectOpen {
+	background: url(images/custom_select_hover.png)no-repeat;
+}
+.drop-down-container select {
+	width:  379px !important;
+	border: 0 none;
+	ackground: transparent;
+}
+.drop-down-container option {
+	padding: 20px 0 ;
+	text-align: center;
+	border: 2px solid #666;
+} 
+.drop-down-container option:hover {
+	background-color: #666;
+}
+
+/************************/
+/*  Contact Us
+/************************/
+
+#contact-us .entry {
+	max-width: 741px;
+	padding: 0 15px;
+	margin: 0 auto;
+	padding: 100px 0;
+	position: relative;
+	z-index: 200;
+	color: #666;
+}
+#contact-us .entry h1.title {
+	color: #000;
+	font-size: 65px;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+}
+#contact-us .white-block .bottom {
+	z-index: 100;
+}
+.wpcf7-form-control,
+.wpcf7-textarea {
+	font-size: 14px;
+	border: 2px solid #454545;
+	padding: 17px 20px;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+   color: #888;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #888;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #888;
+}
+
+:-ms-input-placeholder {
+   color: #888;
+}
+
+.wpcf7-form span.wpcf7-not-valid-tip {
+	border: 1px solid #FFFFFF;
+	color: #FF0000;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+	font-size: 14px;
+	left: 3px;
+	padding: 12px;
+	top: -16px;
+	width: 72%;
+}
+.wpcf7-form .full span.wpcf7-not-valid-tip {
+	width: 94%;
+}
+.wpcf7-form .wpcf7-form-control-wrap.message span.wpcf7-not-valid-tip {
+    background: none repeat scroll 0 0 #FFFFFF;
+    top: -244px;
+}
+.wpcf7-form-control, .wpcf7-textarea {
+	resize: none;
+}
+.wpcf7-form div.wpcf7-response-output {
+	margin: 10px 0;
+	padding: 15px 20px;
+	font-size: 14px;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+}
+.wpcf7-form .left.first {
+	margin-right: 19px;
+}
+.half .wpcf7-form-control, .half .wpcf7-textarea {
+	width: 315px;
+}
+.wpcf7-form .wpcf7-submit {
+	/*background:url(images/wpcf_submit_bg.png) no-repeat 100% 50% #FFF;*/
+	width: 100%;
+	margin-bottom: 10px;
+	border: 3px solid #7ac142;
+	color: #7ac142;
+	background-color: #FFF;
+	cursor: pointer;
+}
+div.wpcf7 img.ajax-loader {
+	display: none;
+}
+#contact-us span.come {
+	font-family: 'halisgr bold';
+	font-size: 65px;
+	left: 50%;
+	margin-left: -300px;
+	position: absolute;
+	text-transform: uppercase;
+	width: 600px;
+	z-index: 100;
+	text-align: center;
+	margin-top: 68px;
+}
+#contact-us .infoBox {
+	width: 520px;
+	color: #e5e5e5;
+}
+#contact-us .infoBox strong {
+	color:#FFF;
+}
+#contact-us .infoBox div  {
+	font-size: 14px !important;
+	font-family: 'halisgr book' !important;
+}
+
+/************************/
+/*  Events
+/************************/
+
+.event-link {
+	color: #FFF;
+	text-decoration: none;
+	margin-bottom: 35px;
+	display: block;
+	outline: 0 none;
+}
+.event-link:hover {
+	color: #8dc95a;
+}
+.event-link .big {
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: 'halisgr bold';
+  line-height: 100%;
+}
+#events .entry {
+	max-width: 940px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	position: relative;
+}
+#events h2.title {
+	text-align: center;
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+#events .columns {
+	overflow: hidden;
+}
+#events .columns h3.title {
+	text-transform: uppercase;
+	font-size: 25px;
+	padding: 10px 0;
+}
+#events .columns .text {
+	padding: 0 0 30px;
+	overflow: hidden;
+}
+#events .columns .text p {
+	padding-bottom: 10px;
+}
+#events .columns .left,
+#events .columns .right {
+	width: 45%;
+}
+#events .columns strong {
+	font-family: 'halisgr bold';
+	text-transform: uppercase;
+}
+strong, b  {
+	font-weight: bold;
+}
+#events .sponsored {
+	width: 440px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#events .sponsored h3.title {
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#events .sponsored .col {
+	display: table;
+}
+#events .sponsored .image-holder {
+	display: table;
+	width: 208px;
+	height: 208px;
+	border:3px solid #FFF;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+#events .sponsored .image-holder img {
+	max-width: 122px;
+	height: auto;
+}
+#events .green-block2 {
+	display: none;
+}
+
+#events .close-btn {
+  background: url(images/close-btn.png) no-repeat;
+	cursor: pointer;
+	display: block;
+	height: 41px;
+	position: absolute;
+	right: 8px;
+	top: -47px;
+	width: 41px;
+}
+
+/************************/
+/*  Woo commerce pages
+/************************/
+
+.woocommerce-page #main .entry,
+div.type-product,
+.woocommerce-checkout #main .entry {
+	max-width: 940px !important;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+.woocommerce-breadcrumb {
+	display: none;
+}
+.woocommerce-account #main,
+.woocommerce-checkout #main{
+  background: url("images/green_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  margin-top: -30px;
+  position: relative;
+	padding: 100px 0; 
+}
+.woocommerce-account h1.title,
+.woocommerce-page h1.title {
+	font-size: 65px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.woocommerce-account .myaccount_user {
+	margin: 0 auto;
+	max-width: 637px;
+	text-align: center;
+}
+.woocommerce-account .myaccount_user a {
+	text-transform: uppercase;
+	font-family: 'halisgr bold';
+}
+h2.account-info,
+.woocommerce-checkout h2 {
+	font-size: 45px;
+	font-family: 'halisgr bold';
+	text-transform: uppercase;
+	text-align: center;
+}
+h3.account-info,
+.woocommerce-checkout h3 {
+	font-size: 19px;
+	font-family: 'halisgr bold';
+	text-transform: uppercase;
+}
+.customer_details {
+	padding: 0 0 20px;
+}
+.addresses a.edit {
+	text-transform: uppercase;
+	font-family: 'halisgr bold'
+}
+.woocommerce .addresses .title h3, .woocommerce-page .addresses .title h3 {
+	padding-bottom: 0;
+}
+p.myaccount_address,
+p.no-subscriptions {
+	text-align: center;
+	padding: 0 0 50px;
+}
+.woocommerce table.my_account_orders, .woocommerce-page table.my_account_orders {
+	font-size: 1em !important;
+}
+.woocommerce div.product div.images img, 
+.woocommerce #content div.product div.images img, 
+.woocommerce-page div.product div.images img, 
+.woocommerce-page #content div.product div.images img {
+	width: 150px !important;
+	height: 150px !important;
+	border: 0 none !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	border-radius: 150px;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+}
+.woocommerce table.my_account_orders, 
+.woocommerce-page table.my_account_orders,
+.woocommerce table.shop_table, .woocommerce-page table.shop_table {
+	border: 0 none !important;
+}
+.woocommerce table.my_account_orders th, 
+.woocommerce table.my_account_orders td, 
+.woocommerce-page table.my_account_orders th, 
+.woocommerce-page table.my_account_orders td {
+	padding: 4px 8px 10px 0 !important;
+} 
+.woocommerce-account th, 
+.woocommerce-checkout th {
+	font-size: 19px;
+	text-transform: uppercase;
+	font-family: 'halisgr bold';
+}
+.woocommerce-checkout table thead th,
+.woocommerce-account table  thead th,
+.woocommerce table  tr.order td {
+	border-bottom: 2px solid #FFF;
+}
+.order-info {
+	display: none;
+}
+.woocommerce .order_details th,
+.woocommerce .order_details .product-name {
+	paddingt: 0 0 10px 0 !important;
+}
+.woocommerce table.shop_table td, .woocommerce-page table.shop_table td,
+.woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th, .woocommerce-page table.shop_table tfoot td, .woocommerce-page table.shop_table tfoot th{
+	border-top: 0 none !important;
+}
+.woocommerce table tr td.subscription-actions {
+	padding: 0 !important;
+}
+.woocommerce table.my_account_orders th, .woocommerce table.my_account_orders td, .woocommerce-page table.my_account_orders th, .woocommerce-page table.my_account_orders td {
+	 vertical-align: top !important;	
+} 
+.woocommerce  a.button-all {
+	display: block;
+	line-height: 1.2em;
+}
+.post-type-archive-product #main {
+	background: url(images/green_bg.jpg) repeat;
+	margin: -25px 0;
+	overflow: hidden;
+}
+.post-type-archive-product #main .entry {
+	padding: 100px 0;
+} 
+.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count,
+.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering {
+	display: none;
+}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price,
+.woocommerce ul.products li.product .price .from, .woocommerce-page ul.products li.product .price .from {
+	color: #FFF !important;	
+}
+.woocommerce ul.products li.product a img, .woocommerce-page ul.products li.product a img {
+	box-shadow: none !important;
+}
+.woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {
+	text-align: center;
+}
+.post-type-archive-product .product span.price,
+.post-type-archive-product .product_type_variable-subscription {
+	display: none !important;
+}
+.woocommerce ul.products li.product a img, .woocommerce-page ul.products li.product a img {
+	height:auto !important;
+	max-width: 150px !important;
+	margin-bottom: 30px !important;
+	border-radius: 150px;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+}
+.woocommerce ul.products li.product a, .woocommerce-page ul.products li.product a {
+	outline: 0 none;
+	text-align: center;
+	display: block;
+}.woocommerce ul.products li.product a:hover, .woocommerce-page ul.products li.product a:hover {
+	text-decoration: underline;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+	width: 150px !important;
+	margin: 0 25px 15px !important;
+	height: 290px;
+	float: none  !important;
+	display: inline-block;
+	vertical-align: top;
+}
+.woocommerce h1.page-title,
+.woocommerce h2.page-title  {
+	font-size: 65px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.post-type-archive-product  h1.page-title {
+	padding: 0 0 80px;
+}
+.woocommerce-page #main .entry, div.type-product, .woocommerce-checkout #main .entry {
+	/*max-width: 820px !important;*/
+}
+#solution-how-work .top, #solution-more .top {
+  background: url(../images/green_top_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
+  height: 60px;
+  position: absolute;
+  top: -60px;
+  width: 100%;
+}
+.post-type-archive-product h1.title {
+	text-align: left;
+}
+.post-type-archive-product #the-problem {
+	background-position: 0 0;
+}
+
+/***************
+/* Child
+/**************/
+
+.single-children #main {
+	margin: -25px 0;
+	background-color: #4d8bc2;
+}
+.single-children .entry{
+  max-width: 925px !important;
+  padding: 100px 30px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.8em;
+}
+.single-children h1.title {
+  text-align: center;
+	padding: 0 0 50px !important;
+}
+.single-children .images  {
+  float: left;
+  margin-bottom: 2em;
+  width: 48%;
+}
+.single-children .images .custom-fields {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.single-children .images .images-holder, 
+.single-children .images .custom-fields {
+  float: left;
+  width: 45%;
+}
+.single-children .images .custom-fields div {
+  line-height: 1.3em;
+  padding: 0 0 20px;
+}
+.single-children .images .custom-fields div span,
+.single-children .images .text-holder strong {
+  font-size: 25px;
+	font-family: 'halisgr bold';
+	text-transform: uppercase;
+}
+.single-children .images .custom-fields .country span {
+	display: block;
+	margin-bottom: 5px;
+}
+.single-children .images .text-holder {
+  margin-top: 30px;
+	font-size: 1.1em;
+}
+.single-children .summary {
+	float: right;
+	margin-bottom: 2em;
+	width: 42%; 
+}
+.single-children h3.title {
+	font-family: 'halisgr bold';
+	font-size: 45px;
+	padding: 15px 0 70px;
+	text-transform: uppercase;
+}
+.single-children .price-item {
+  float: left;
+  margin-bottom: 20px;
+  width: 150px;
+	font-size: 14px;
+	font-family: 'halisgr bold';
+	text-transform: uppercase;
+}
+div.radio span.radio-container {
+  float: left;
+  margin-right: 3px;
+  position: relative;
+}
+.single-children button.single_add_to_cart_button {
+  background: url(images/buttons_sprite.png) no-repeat 0 -1598px !important;
+  border: 0 none !important;
+  height: 68px;
+  margin-top: 25px;
+  outline: medium none;
+  text-indent: -9999px;
+  text-shadow: none !important;
+  width: 401px !important;
+	cursor: pointer;
+}
+.single-children button.single_add_to_cart_button:hover {
+	opacity: 0.8;
+}
+.single-children .amount {
+	border: 3px solid #FFFFFF;
+	font-size: 25px;
+	margin-top: 60px;
+	width: 395px;
+}
+.single-children .amount input {
+  padding: 0 10px;
+	border: 0 none;
+  height: 51px;
+  width: 308px;
+	font-size: 25px;
+	font-family: 'halisgr bold';
+	color:#FFF;
+	background: none;
+}
+
+/****************
+/*  Product
+/***************/
+
+.single-product #main{
+	margin: -25px 0;
+	background-color: #4d8bc2;
+}
+.single-product .product {
+	padding: 100px 30px;
+	max-width: 925px !important;
+}
+.single-product .product h3.title {
+	font-family: 'halisgr bold';
+	font-size: 45px;
+	padding: 15px 0 50px;
+	text-transform: uppercase;
+}
+.variations label,
+.variations .value strong,
+.single-product .product p.price {
+	display: none;
+}
+.woocommerce-tabs {
+	display: none;
+}
+.woocommerce div.product, .woocommerce #content div.product, .woocommerce-page div.product, .woocommerce-page #content div.product {
+	overflow: hidden;
+}
+.single-product  {
+	color: #FFF;
+}
+.single-product .images .images-holder,
+.single-product .images .custom-fileds {
+	float: left;
+	width: 45%;
+}
+.single-product .images .custom-fileds {
+	padding-top: 20px;
+	padding-left: 25px;
+}
+.single-product .images .text-holder  {
+	margin-top: 30px;
+}
+.single-product .images .text-holder strong {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.single-product .product {
+	line-height: 1.8em;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+}
+.single-product .images .custom-fileds div {
+	padding: 0 0 20px;
+	line-height: 1.3em;
+}
+.single-product .images .custom-fileds div span{
+	font-size: 25px;
+}
+.single-product h1.page-title {
+	padding:  0 0 50px !important;
+}
+.woocommerce div.product div.images, .woocommerce #content div.product div.images, .woocommerce-page div.product div.images, .woocommerce-page #content div.product div.images {
+	width: 54% !important;
+} 
+.woocommerce div.product div.summary, .woocommerce #content div.product div.summary, .woocommerce-page div.product div.summary, .woocommerce-page #content div.product div.summary {
+	width: 42% !important;
+}
+.single-product div.product table  tr td {
+	padding: 0  !important;
+}
+.woocommerce div.product span.price, .woocommerce div.product p.price, .woocommerce #content div.product span.price, .woocommerce #content div.product p.price, .woocommerce-page div.product span.price, .woocommerce-page div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page #content div.product p.price {
+	color: #FFF !important;
+}
+.woocommerce div.product .variations_button  button.single_add_to_cart_button {
+	background: url(images/buttons_sprite.png) no-repeat 0 -1598px !important;
+	border: 0 none !important;
+	height: 68px;
+	outline: medium none;
+	text-indent: -9999px;
+	text-shadow: none !important;
+	-moz-text-shadow: none !important;
+	-webkit-text-shadow: none !important;
+	width: 338px !important;
+	margin-top: 25px;
+}
+.woocommerce div.product .variations_button  button.single_add_to_cart_button:hover {
+	opacity: 0.8;
+}
+.woocommerce div.product .price-items {
+	overflow: hidden;
+}
+.woocommerce div.product .price-items .price-item {
+	width: 150px;
+	float: left;
+	margin-bottom: 20px;
+}
+.woocommerce div.product span.price, .woocommerce div.product p.price, .woocommerce #content div.product span.price, .woocommerce #content div.product p.price, .woocommerce-page div.product span.price, .woocommerce-page div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page #content div.product p.price {
+	font-size: 1em !important;
+}
+.woocommerce .price-item {
+	line-height: 1.2em;
+}
+div.radio input { 
+	margin: 0; 
+	padding: 0; 
+	float: left; 
+}
+div.radio label { 
+	display: block; 
+	float: left; 
+	margin-right: 15px; 
+	cursor: pointer;
+}
+.payment_methods label  {
+	float: none !important;
+}
+div.radio span.radio-container { 
+	position: relative; 
+	float: left; 
+	margin-right: 3px; 
+}
+div.radio span.radio-container span.radio { 
+	display: block; 
+	width: 22px; 
+	height: 22px;  
+	background: url(images/radio.png) no-repeat top left; 
+	margin-right: 13px;
+}
+div.radio span.radio-container span.radio.selected { 
+	background-position: top right; 
+}
+div.radio span.radio-container input { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	opacity: 0; 
+	filter: alpha(opacity=0); 
+	z-index: 101; 
+	cursor: pointer;
+	width: 22px; 
+	height: 22px;   
+}
+.woocommerce-info:before {
+	background: none !important;
+	content: ""  !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	
+}
+.woocommerce-info {
+	border: 3px solid #FFF !important;
+	border-radius: 0 !important;
+	background: none !important;
+	box-shadow: none !important;
+	padding: 15px 20px !important;
+	text-align: center !important;
+	text-shadow: none !important;
+	color: #FFF !important;
+}
+.woocommerce form .form-row.validate-required.woocommerce-invalid .chzn-single, 
+.woocommerce form .form-row.validate-required.woocommerce-invalid .chzn-drop, 
+.woocommerce form .form-row.validate-required.woocommerce-invalid input.input-text, 
+/*.woocommerce form .form-row.validate-required.woocommerce-invalid select, */
+.woocommerce-page form .form-row.validate-required.woocommerce-invalid .chzn-single, 
+.woocommerce-page form .form-row.validate-required.woocommerce-invalid .chzn-drop, 
+.woocommerce-page form .form-row.validate-required.woocommerce-invalid input.input-text  
+/*.woocommerce-page form .form-row.validate-required.woocommerce-invalid select */{
+	border: 3px solid #FFF !important;
+	padding: 15px 20px !important;
+	font-size: 1em !important;
+}
+.woocommerce form .form-row.validate-required.woocommerce-invalid input.input-text, 
+.woocommerce-page form .form-row.validate-required.woocommerce-invalid input.input-text,
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea, 
+.woocommerce-page form .form-row input.input-text, 
+.woocommerce-page form .form-row textarea {
+	border: 3px solid #FFF !important;
+	padding: 20px 20px !important;
+	background-color: transparent !important;
+	color: #FFF  !important;
+	font-size: 1em !important;
+}
+.woocommerce form .form-row textarea, .woocommerce-page form .form-row textarea {
+	height: 200px !important;
+	resize: none !important;
+	color: #FFF;
+  font-size: 1em !important;
+	overflow-y: auto;
+}
+.woocommerce .checkout .col-2 h3, 
+.woocommerce-page .checkout .col-2 h3,
+.woocommerce .checkout #shiptobilling, 
+.woocommerce-page .checkout #shiptobilling {
+	float: none !important;
+}
+.woocommerce table.shop_table td, .woocommerce-page table.shop_table td,
+.woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th, .woocommerce-page table.shop_table tfoot td, .woocommerce-page table.shop_table tfoot th {
+	padding: 5px 0 !important;
+}
+.woocommerce #payment, .woocommerce-page #payment,
+.woocommerce #payment div.payment_box:after, .woocommerce-page #payment div.payment_box:after,
+.woocommerce #payment div.payment_box, .woocommerce-page #payment div.payment_box {
+	background: none !important;
+	box-shadow: none !important;
+	color: #FFF !important;
+  font-size: 1em !important;
+	text-shadow: none !important;
+}
+.woocommerce #payment div.payment_box p , 
+.woocommerce-page #payment div.payment_box p { 
+	padding: 0;
+}
+.woocommerce #payment div.payment_box:after, .woocommerce-page #payment div.payment_box:after {
+	border: none !important; 
+	margin: 0 !important; 
+}
+.woocommerce #payment div.payment_box, .woocommerce-page #payment div.payment_box {
+	margin: 0 !important; 
+}
+.woocommerce-checkout  table.shop_table th, .woocommerce-page table.shop_table th {
+	padding: 5px 0 10px !important; 
+	border-bottom:0 !important;
+}
+h3#order_review_heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 35px;
+	margin: 60px 0 30px; 
+}
+.payment_methods label {
+	font-family: 'halisgr bold';
+	text-transform: uppercase;
+}
+label[for="payment_method_paypal"] img {
+	display: none;
+}
+.woocommerce #payment ul.payment_methods, .woocommerce-page #payment ul.payment_methods {
+	border-bottom: 0 !important;
+}
+.woocommerce-checkout h1.title {
+	font-size: 45px !important;
+}
+.woocommerce-checkout #customer_details label {
+	text-transform: uppercase !important;
+	font-family: 'halisgr bold' !important;
+}
+.woocommerce form .form-row .required, .woocommerce-page form .form-row .required {
+	color: #FFF !important;
+}
+.woocommerce-message, .woocommerce-error, .woocommerce-info {
+	background: none !important;
+	color: #FFF !important;
+  font-size: 1em !important;
+	text-shadow: none !important;
+	box-shadow: none !important;	
+	border-radius: 0 !important;
+}
+.woocommerce-error {
+	border: 3px solid #B81C23 !important;
+}
+.woocommerce-message, 
+.woocommerce-info {
+	border: 3px solid #FFF !important;
+}
+.woocommerce .checkout #shiptobilling label, .woocommerce-page .checkout #shiptobilling label {
+	font-size: 1em !important;
+}
+.nobr {
+	padding: 0 10px 0 0;
+}
+.woocommerce-checkout table.my_account_subscriptions th, .woocommerce-page table.shop_table th {
+	border-bottom: 2px solid #FFF !important;
+}
+.woocommerce-account h2 {
+	text-align: center;
+	font-size: 35px;
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+.woocommerce-account h3 {
+	text-transform: uppercase;
+}
+.woocommerce-page table.order_details th,
+.woocommerce-page table.cart th,
+.woocommerce-page table.shop_table .cart-subtotal th ,
+.woocommerce-page table.shop_table .shipping th,
+.woocommerce-page table.shop_table .total th,
+.woocommerce-page table.shop_table  th.product-name,
+.woocommerce-page table.shop_table  th.product-total  {
+	border-bottom: 0 none !important;
+}
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button {
+	border: 3px solid #FFF !important;
+	padding: 15px !important;
+	background: none !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: #FFF !important;
+	border-radius: 0 !important;
+}
+#order_comments_field,
+.shipping_address {
+	margin-top: 20px;
+}
+.chzn-container-single .chzn-single {
+	background: transparent  !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border: 3px solid #FFF !important;
+	padding: 15px 20px !important;
+	color: #FFF !important;
+	font-size: 1em !important;
+}
+.chzn-container-single .chzn-single {
+	background-image: none !important;
+	background-color: transparent !important;
+}
+.woocommerce-checkout .woocommerce  .form-row .chzn-container-single .chzn-single div b {
+	background-position: 0 19px !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+}
+.woocommerce-checkout .woocommerce .form-row .chzn-container .chzn-drop {
+	color: #000;
+}
+#payment_method_paypal {	
+	display: none;
+	padding-left: 60px;
+}
+label[for="payment_method_paypal"] {
+	background: url(images/paypal_radio.png) no-repeat 0 50%;
+	padding-left: 40px;
+}
+.woocommerce #payment div.form-row, .woocommerce-page #payment div.form-row {
+	border-top: none !important; 
+}
+ul.payment_methods.methods {
+	padding: 0 !important;
+}
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt, 
+.woocommerce #respond input#submit.alt, 
+.woocommerce #content input.button.alt, 
+.woocommerce-page a.button.alt, 
+.woocommerce-page button.button.alt, 
+.woocommerce-page input.button.alt, 
+.woocommerce-page #respond input#submit.alt, 
+.woocommerce-page #content input.button.alt {
+	background: none !important;
+	border-radius: 0 !important; 
+	border: 3px solid #FFF !important; 
+	width: 100% !important; 
+	box-shadow: none !important; 
+	text-shadow: none !important;
+	font-size: 14px !important;
+	text-transform: uppercase !important;
+	padding: 17px 60px 17px 17px !important;
+	position: relative;
+} 
+.woocommerce table.cart a.remove, 
+.woocommerce #content table.cart a.remove, 
+.woocommerce-page table.cart a.remove, 
+.woocommerce-page #content table.cart a.remove {
+	background: url(images/close_btn.png) no-repeat !important;
+	width: 30px  !important;
+	height:30px  !important;
+	text-indent: -9999px;
+	outline: 0 none;
+	border-radius: 0 !important;
+}
+.cart_table_item .product-name {
+	line-height: 1.3em;
+}
+.woocommerce .cart .button[name="update_cart"] {
+	background:url(images/buttons_sprite.png) no-repeat 0 -1666px !important;
+	border: 0 none!important;
+	border-radius: 0;
+	float: left;
+	height: 68px;
+	outline: 0 none;
+	text-indent: -9999px;
+	width: 407px;
+	margin-top: 30px;
+}
+.woocommerce .cart .actions .checkout-button {
+	background:url(images/buttons_sprite.png) no-repeat 0 -1734px !important;
+	border: 0 none !important;
+	border-radius: 0 !important;
+	float: right !important;
+	height: 68px !important;
+	outline: 0 none !important;
+	text-indent: -9999px !important;
+	width: 407px !important;
+	margin-top: 30px;
+}
+.woocommerce-cart h2 {
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 40px;
+}
+.woocommerce-cart h1.title {
+	font-size: 45px;
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+	float: none!important;
+	margin: 0 auto;
+}
+.woocommerce .cart-collaterals .cart_totals, 
+.woocommerce-page .cart-collaterals .cart_totals {
+	text-align: left !important;
+}
+.woocommerce .button:hover {
+	opacity: 0.8;
+}
+.woocommerce #payment div.form-row, .woocommerce-page #payment div.form-row {
+	padding: 0  !important;
+}
+.cart_totals .cart-subtotal table tr th, {	
+	text-transform: uppercase;
+}
+.cart_totals .total  th,
+.cart_totals .total  td {
+	font-size: 19px  !important;
+}
+.woocommerce .cart-collaterals .cart_totals tr td, 
+.woocommerce .cart-collaterals .cart_totals tr th, 
+.woocommerce-page .cart-collaterals .cart_totals tr td, 
+.woocommerce-page .cart-collaterals .cart_totals tr th{
+	border-top: 0 !important;
+}
+.cart_totals .cart-subtotal th.first {
+	width: 40%;
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+	width: 54% !important;
+}
+.cart_totals th {
+	text-transform: uppercase;
+	font-family: 'halisgr bold';
+}
+.cart-subtotal {
+	text-transform: uppercase;
+}
+.woocommerce-cart #main {
+	margin: -25px 0;
+	background:url(images/green_bg.jpg) repeat;
+}
+.woocommerce-cart #main .entry {
+	padding: 100px 0;
+}
+.woocommerce table.shop_table th, .woocommerce-page table.shop_table th {
+	text-transform: uppercase;
+	font-size: 19px;
+	font-family: 'halisgr bold';
+}
+.woocommerce form.login, 
+.woocommerce form.checkout_coupon, 
+.woocommerce form.register, 
+.woocommerce-page form.login, 
+.woocommerce-page form.checkout_coupon, 
+.woocommerce-page form.register {
+	border: none !important;
+}
+
+/* custom checkbox */
+
+label {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+input[type=checkbox].input-checkbox {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height:1px; 
+  width:1px; 
+  margin:-1px; 
+  padding:0;
+  border:0;
+}
+input[type=checkbox].input-checkbox + label.checkbox {
+	padding-left: 43px;
+	height:30px; 
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 -74px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+input[type=checkbox].input-checkbox:checked + label.checkbox {
+	background-position: 0 -44px;
+}
+label.checkbox{
+	background-image:url(images/custom-checkbox.png);
+	background-repeat: no-repeat;
+	height:44px;
+	display: block !important;
+}
+/* myaccount form */
+.page-id-351 #main {
+	background-image:url(images/myaccount_bg.jpg);
+	background-size: cover;
+}
+ 
+/************************/
+/*  TEAM PAGE
+/************************/
+
+#team {
+ background-color: #FFF;
+}
+
+#team h1 {
+	text-align: center;
+	margin-top: 72spx;
+	margin-bottom: 20px;
+}
+#team .team-holder,
+#team .item .inner{
+  max-width:835px;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+  position:relative;
+}
+#team .item .inner{
+  max-width:720px;
+}
+
+.team-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	margin: 60px 0;
+}
+
+#team .item img{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+   width:205px;
+   height:205px;
+   margin:0 0 4px;
+}
+
+#team .item .team-meta {
+	width: 205px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#team .item a:hover img,
+#team .item.expanded a img{
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+svg image {
+  transition: all .6s ease;
+}
+svg image:hover {
+  opacity: 0;
+}
+#team .item{
+  position:relative;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+	#team .item {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	#team .item {
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#team .item {
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#team .item {
+		width: 20%;
+	}
+}
+
+#team .item a{
+  cursor:pointer;
+  display:block;
+  text-decoration:none;
+}
+#team .item.expanded a{
+  background:url(images/arrow-01.png) no-repeat 50% 100%;
+  margin:0 0 -17px;
+  z-index:999;
+  position:relative;
+}
+#team .item.item-director a,
+#team .item.item-director {
+  width:183px;
+}
+#team .item.item-manager a{
+  width:155px;
+}
+#team .item.item-director img{
+  width:183px;
+  height:183px;
+}
+#team .item.item-ceo img{
+  width:205px;
+  height:205px;
+}
+#team .item.item-ceo{
+  width:205px;
+}
+#team .item strong{
+  display:block;
+  font:16px/16px 'halisgr bold';
+  color:#1f1f1f;
+  padding:0 0 6px;
+  text-transform: uppercase;
+}
+#team .item span{
+  display:block;
+  font:15px/17px 'Merriweather';
+  color:#666;
+  min-height:51px;
+}
+#team .hide-part{
+  display:none;
+  position:relative;
+}
+#team .close-btn{
+  display:block;
+  position:absolute;
+  top:-80px;
+  right:30px;
+  width:41px;
+  height:41px;
+  cursor:pointer;
+  background:url(images/close-btn.png) no-repeat;  
+}
+#team .team-info .name{
+  display:block;
+  color:#1f1f1f;
+  font:45px/47px 'halisgr bold';
+  padding:0 0 30px;
+  text-transform:uppercase;
+}
+#team .team-info{
+  color:#666;  
+  font:15px/30px 'halisgr book';
+  padding:120px 0 50px;
+  background:#f9f9f9 url(images/bg-team-grey.png) no-repeat 50% 0;
+}
+#team .quote-top{
+  display:block;
+  width:100%;
+  height:20px;
+  background:url(images/quotes-top.png) no-repeat 50% 0;
+}
+#team .quote-bottom{
+  display:block;
+  width:100%;
+  height:20px;
+  background:url(images/quotes-bottom.png) no-repeat 50% 0;
+}
+#team .quote {
+  background:url(images/bg-quotes.jpg) no-repeat 50% 0;
+  height:347px;
+}
+#team .quote .inner{
+  display:table;
+  height:347px;
+}
+#team .quote .inner .quote-entry{
+  display:table-cell;
+  color:#fff;  
+  font:15px/30px 'halisgr book';
+  vertical-align:middle;
+}
+
+/************************/
+/*  SINGLE TEAM
+/************************/
+.single-team #main {
+	background-color: #74b638;
+	color: #fff;
+	padding: 0 0 5em;
+}
+
+@media screen and (min-width: 767px) {
+	.single-team #main {
+		padding: 5em 0;
+	}
+}
+
+/************************/
+/*  SOLUTION PAGE
+/************************/
+
+#solution .inner{
+  width:100%;
+  max-width:905px;
+  margin:0 auto;
+  overflow:hidden;
+  color:#fff;
+  font:15px/30px 'halisgr book';
+}
+#solution-intro{  
+  background:url(images/bg_solution.jpg) no-repeat;
+  background-size:cover;
+  min-height:390px;
+  margin:-22px 0 0;
+  padding:101px 0 0;
+}
+#solution-intro .col-l{
+  float:left;
+  width:40%;
+}
+#solution-intro .col-r{
+  float:right;
+  width:44%;
+  padding:5px 2% 0 0;
+}
+#solution-intro h1{
+  font:68px/69px 'halisgr bold';
+  text-transform:uppercase;
+  padding:0 0 20px;
+}
+#solution-intro h2{
+  font:16px/30px 'halisgr bold';
+  padding:0 20% 0 0;    
+}
+#solution-intro .col-r h2,
+#solution-intro .col-r h3{
+  font:25px/27px 'halisgr bold';
+  text-transform:uppercase;
+  padding:0 0 35px;    
+}
+#solution-how-work,
+#solution-more{
+	background: url(images/green_bg.jpg) repeat scroll 0 0;
+	margin-top: 0;   
+	position: relative;   
+	text-align:center;
+}
+#solution-how-work .inner,
+#solution-more .inner{
+  padding:100px 0;  
+}
+#solution-how-work p{
+  width:60%;
+  margin: 0 auto;
+}
+#solution-how-work .top,
+#solution-more  .top{
+  background: url(images/green_top_bg.png) repeat-x scroll 50% 0 ;
+  height: 60px;
+  position: absolute;
+  top: -60px;
+  width: 100%;
+}
+#solution-how-work .bottom {
+  background: url("images/green_bottom_bg.png") repeat-x scroll 50% 0;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+.ie8 #solution-how-work .bottom,
+.ie8 #solution-how-work .arrow {
+	z-index:300;
+}
+#solution-how-work h2{
+  font:45px/47px 'halisgr bold';
+  text-transform:uppercase;
+  padding:0 0 35px;    
+}
+#solution-how-work .arrow{
+  width:96px;
+  height:29px;
+  position:absolute;
+  display:block;
+  left:50%;
+  bottom:-41px;
+  margin:0 0 0 -48px;
+  background:url(images/arrow-02.png) no-repeat 50% 100%;
+}
+#solution-sponsor{
+  background:url(images/bg-sponsor.jpg) no-repeat ;
+  background-size:cover;
+  text-align:center;
+}
+#solution-sponsor h2{
+  padding:86px 0 50px;
+  font:45px/47px 'halisgr bold';
+  text-transform:uppercase;
+}
+#solution-sponsor h3{
+  padding:0 0 25px;
+  font:25px/27px 'halisgr bold';
+  text-transform:uppercase;
+}
+#solution-sponsor p{
+  padding-left:8%;
+  padding-right:8%;
+}
+#solution-sponsor .icons{
+  overflow:hidden;
+  margin:0 0 60px;
+}
+#solution-sponsor .icons .wp-caption {
+  display:inline-block;
+  vertical-align:top;
+  margin:0 26px 15px;
+}
+#solution-sponsor .icons .wp-caption img{
+  border:12px solid transparent;
+  border-radius:200px;
+  -moz-border-radius:200px;
+  -o-border-radius:200px;
+  -ms-border-radius:200px;
+  width:130px;
+  height:130px;
+  transition: border-color 1.5s ease-in-out;
+  -o-transition: border-color 1.5s ease-in-out;
+  -moz-transition: border-color 1.5s ease-in-out;
+  -webkit-transition: border-color 1.5s ease-in-out;
+  margin:0 0 32px;
+}
+#solution-sponsor .icons.animated .wp-caption img,
+#solution-sponsor .icons .wp-caption img.animated {
+  border:12px solid #77ba42;
+}
+#solution-sponsor .icons .wp-caption p{
+  padding:0;
+  font:14px/16px 'halisgr bold';
+  text-transform:uppercase;
+}
+#solution-sponsor .sponsor-child{
+  margin:0 auto;
+}
+#solution .sponsor-tabs > div{
+  display:none;
+  padding:0 0 60px;
+}
+#solution .sponsor-tabs >div.shown{
+  display:block;
+}
+#solution .sponsor-tabs li{
+  float:left;
+  width:50%;
+}
+#solution .sponsor-tabs li a{
+  display:block;
+  border:3px solid #fff;
+  color:#fff;
+  font:13px/20px 'halisgr bold';
+  padding:21px 0;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+}
+#solution .sponsor-tabs li a .arrow{
+  width:19px;
+  height:9px;
+  display:none;
+  margin:0 0 0 -10px;
+  top:-12px;
+  left:50%;
+  position:absolute;
+  background:url(images/arrow-03.png) no-repeat;
+}
+#solution .sponsor-tabs li a.active .arrow{
+  display:block;
+}
+#solution .sponsor-tabs li a.active{
+  background:#fff;
+  color:#000;
+}
+#solution-projects{
+   background: url("images/blue_bg.jpg") repeat scroll 0 0;
+   margin-top: 0;   
+   position: relative;
+   z-index: 200;
+   text-align:center;
+}
+#solution-projects .inner{
+  padding:100px 0;  
+}
+#solution-projects .top {
+  background: url(images/blue_top_bg_4.png) repeat-x scroll 50% 0 ;
+  height: 60px;
+  position: absolute;
+  top: -12px;
+  width: 100%;
+}
+#solution-projects .bottom {
+  background: url(images/blue_bottom_bg.png) repeat-x scroll 50% 0;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+#solution-projects h2{
+  padding:0 0 60px;
+  font:45px/47px 'halisgr bold';
+  text-transform:uppercase;
+}
+#solution-projects h3{
+  padding:0 12% 60px;
+  font:25px/30px 'halisgr bold';
+  text-transform:uppercase;
+}
+#solution-projects .col-50{
+  float:left;
+  width:48%;  
+  margin:0 0 29px;
+}
+#solution-projects .col-50.last{
+  float:right;
+}
+#solution-projects .col-25{
+  float:left;
+  width:22%;
+  margin:0 4% 29px 0;  
+}
+#solution-projects .col-25.last{
+  margin:0 0 29px;
+}
+#solution-projects .col-100{
+  width:100%;
+  margin:0 0 29px;
+  clear:both;
+}
+#solution-projects .col-inner{
+  vertical-align:middle;
+  display:table-cell;
+  height:222px;
+  padding:0 15px;
+  border:12px solid #fff;
+}
+#solution-projects .col-25 .col-inner{  
+  height:279px;  
+}
+#solution-projects .col-100 .col-inner{
+  height:27px;
+  padding:20px 0;
+  display:block;
+}
+#solution-projects .btn{
+  margin:37px auto 0;
+}
+#solution-coverage{
+  background:url(images/bg-coverage.jpg) no-repeat ;
+  background-size:cover;
+  text-align:center;
+}
+#solution-coverage .inner{
+  padding:150px 0 100px;
+}
+#solution-coverage h2{
+  padding:0 0 60px;
+  font:45px/47px 'halisgr bold';
+  text-transform:uppercase;
+}
+#solution-coverage p{
+  text-shadow:1px 1px 3px #000;
+  padding:0 9% 90px;
+}
+#solution .map-holder{
+  display:block;  
+  max-width:740px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+}
+#solution .map-hover{
+  position:relative;
+  width:260px;
+  position:absolute;
+  background:#181818;
+  padding:40px;
+  font:14px/30px 'halisgr book';
+  display:none;
+}
+#solution .map-hover.active{
+  display:block!important;
+}
+#solution-coverage .map-hover p{
+  padding:0;
+}
+
+.map .map-hover {    
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s;    
+}
+.map .map-hover.active,
+.map .map-hover:hover {    
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+#namerica-info{
+  top:-82px;
+  left:0;
+}
+#lamerica-info{
+  top:123px;
+  left:46px;
+}
+#africa-info{
+  top:0px;
+  left:213px;
+}
+#europe-info{
+  top:-60px;
+  left:385px;
+}
+#mexico-info{
+  top:50px;
+  left:-42px;
+}
+#solution .map-hover .arrow{
+  background:url(images/arrow-04.png) no-repeat;
+  display:block;
+  position:absolute;
+  bottom:-5px;
+  margin:0 0 0 -4px;
+  width:9px;
+  height:5px;
+  left:50%;  
+}
+#solution .map-hover strong{
+  text-transform:uppercase;
+  font:14px/30px 'halisgr bold';
+}
+#solution-more h2{
+  font:35px/56px 'halisgr bold';
+  text-transform:uppercase;
+  padding:0 0 35px;    
+}
+#solution-more h3{
+  font:25px/27px 'halisgr bold';
+  text-transform:uppercase;
+  padding:0 0 60px;    
+}
+#solution-more .quote-entry{
+  font:15px/30px 'halisgr bold';
+  text-transform:uppercase;
+  padding:0 18%;
+  margin:0 0 50px;
+}
+#solution-more .quote-entry .quote-top{
+  margin-bottom:9px; 
+}
+#solution-more .quote-entry .name{
+  font:14px/30px 'halisgr book';
+  display:block;
+  text-transform:none;
+  padding:0 0 15px;
+}
+#solution-more .btn{
+  margin:0 auto;
+}
+#solution .watch-heading {
+  font-family: 'halisgr bold';
+  text-align:center;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+
+
+/************************/
+/*  MEDIA QUERIES
+/************************/
+
+@media screen and (max-width: 1900px) {    
+	/* Homepage */
+	
+	 
+	 
+  /* The problem */
+  #the-problem .entry,#about-us .entry {padding: 80px 30px;} 	
+}
+
+@media screen and (max-width: 1650px) {    
+	/* Homepage */
+	 
+	/* Stories of hope */
+	#stories-of-hope .title {margin-left: 21%;}
+}
+
+@media screen and (max-width: 1400px) {    
+	/* Homepage */
+ 	 
+	/* Stories of hope */
+	#stories-of-hope .title {margin-left: 16%;}
+}
+
+@media screen and (max-width: 1200px) {    
+	/* Homepage */
+	#homepage-stories { min-height: 700px; }
+	/*.slider1 li .caption { top: 10% !important;}*/
+	/* Stories of hope */
+	#stories-of-hope .title {margin-left: 10%;}
+}
+
+@media screen and (max-width: 1024px) {    
+	/* Homepage */
+	
+	.slider1 li img { height: auto; } 
+	.slider1 { margin-bottom: -14px;}
+	.slider1 li .caption .text {width: 560px;}
+	.slider1 li .caption .title {font-size:45px;}
+	#homepage-sponsors .text-holder {padding-right: 50px;}	 
+	/* Stories of hope */
+	#stories-of-hope .title {margin-left: 3%;}
+	#stories-of-hope .short-story,#stories-of-hope .full-story { padding: 0 12px;}
+	
+}
+
+@media screen and (max-width : 969px) {
+  /* Solution */
+	#solution .item{display: inline-block;margin:70px 13px 17px;vertical-align:top;}
+  #solution .inner{width:94%;padding:30px 3%;}
+  #solution #solution-how-work .inner,#solution #solution-coverage .inner,
+  #solution #solution-projects .inner{padding:50px 3%;}
+}
+
+@media screen and (max-width: 968px) {  
+	/* Events */
+	#events .entry {margin: 0 20px;max-width: 100%;}
+	.btn.buy-vip-hour-tickets-online {background-position: 0 -1050px;width: 339px;}
+	.btn.buy-vip-hour-tickets-online {background-position: 0 -1186px;	width: 339px;}
+	.btn.facebook-event-page {background-position: 0 -1255px;width: 339px;}
+	.btn.twitter-updates {background-position: 0 -1324px;	width: 339px;}
+	/* Take action */
+	.page-template-template-take-action-php .blue-block .entry {padding: 60px 20px;} 
+	/* Child */	
+	.single-children button.single_add_to_cart_button {background-position: 0 -2278px !important;background-repeat: no-repeat; width: 304px !important;}
+	.single-children .amount {width: 299px;}
+	.single-children .amount input {width: 215px;}
+}
+
+@media screen and (max-width: 900px){ 
+	/* Homepage */
+	#homepage-sponsors {margin-top: -30px;}
+	#homepage-sponsors .text-holder {padding: 99px 50px 0 378px;}
+	/* Stories of hope */
+	#stories-of-hope .photo {margin-bottom: -50px;}
+	.main-menu-right {margin: 53px 13px 0 0;}
+	.main-menu-right .last a {margin-left: 18px;}
+	/* About us */
+	#about-us .accountability {	padding-left: 15px;	padding-right: 15px;}
+	.btn2.staff-directory {background-position: 0 -273px; height: 67px; width: 361px;}
+	.btn2.board-of-directors {background-position: 0 -341px;height: 67px;width: 361px;}
+	.btn2.privacy-policy {background-position: 0 -410px;height: 67px;width: 361px;}
+	.btn2.conflict-of-interest {background-position: -360px -273px;height: 67px;width: 361px; }
+	.btn2.whistleblower-policy {background-position: 0 -409px;height: 68px;width: 361px;}
+	.btn2.document-retention {background-position: -361px -409px;height: 68px;width: 361px;}
+	#about-us .administration {max-width: 733px;margin: 0 auto;}
+	#about-us .administration .one_half div {padding: 0 2px 10px !important;}
+	#about-us .community-partners {width: 722px;}
+	#about-us .community-partners .image-holder{width: 200px;}
+	#about-us .community-partners .image-holder.center{width: 216px;}
+	/* Take action */
+	.donate-now-form .submit {background: url(images/buttons_sprite.png) no-repeat 0 -272px;width: 409px !important;}
+	.donate-now-form .drop-down-container {width: 409px!important;}
+	.donate-now-form .drop-down-container select {width: 409px !important;}
+	.donate-now-form .customSelect {background-position: 0 -68px; width: 369px !important; margin: 0 0 20px;}
+	.donate-now-form .text{width: 373px;}
+	.page-template-template-take-action-php #the-problem .entry, #about-us .entry {padding: 80px 12px;}
+	.page-template-template-take-action-php #the-problem .column.right, #about-us .column.right {width: 411px;}
+	.children-list {width: auto;}
+	.slider1 li .caption .title{
+		margin-bottom: 15px;
+	}
+	.slider1 li .caption .text {
+		margin-bottom: 0;
+	}
+	 
+}
+
+@media screen and (max-width: 800px){ 
+	/* Homepage */
+	#homepage-sponsors .text-holder { padding: 99px 20px 0 400px;}
+	#homepage-sponsors .girl {left: -221px;}	
+	/* Events */
+	#events .columns .left, #events .columns .right {width: 47%;}
+	/* Child */	
+	.single-children .price-item {width: 145px;}
+}
+
+@media screen and (max-width: 768px) {   
+	/* Header */ 
+
+	/* Mobile menu */
+	.slider1 .flex-control-nav.left {left: 18px;}
+	/* Footer */
+	/* Homepage */		
+	.btn-play span {background: url(images/bg-btn-play.png) no-repeat 100% -124px; height: 30px;padding: 0;}	
+  #homepage-slider li .caption .title {left: 0!important;}
+	#homepage-mission {margin-top: -24px;	overflow: hidden;}
+	#homepage-mission .columns { padding: 0 40px; text-align: center;	margin-bottom: 20px;}
+	#homepage-mission .columns .left,	#homepage-mission .columns .right {	float: none;width: 100%;line-height: 1.5em;}	  
+	#homepage-mission {	background: #71b63b;margin-top: 0;}
+	#homepage-mission .entry {padding: 25px 30px;}  
+	#homepage-mission h3.title {
+		font-size: 33px;
+		letter-spacing: 		normal;	
+		margin-bottom: 20px;
+		
+	}
+	 
+	 
+	#homepage-mission .columns .left,#homepage-mission .columns .right {font-size: 13px;}	 	 
+	#homepage-mission .columns .left {margin-left: 0;}
+	#homepage-mission .top {display: none;top: 0;}
+	#homepage-mission a.btn {background: url(images/buttons_sprite_small.png) no-repeat 0 -38px; height: 38px; margin: 0 auto 20px; width: 226px;}	
+	#homepage-sponsors .top {top: 0;display: none;}
+	#homepage-sponsors .text-holder {float: right; margin-right: 20px; padding: 0;width: 350px;margin-top: 100px;}
+	#homepage-sponsors .entry .title {font-size: 33px;}
+	#homepage-sponsors .girl {display: none;}
+	#homepage-sponsors .girl-small {display: block;}
+	#homepage-sponsors {overflow: hidden;	position: relative;min-height: 0;}
+	#homepage-sponsors .text-holder {margin-top: 20px;line-height: 1.8em;	min-height:335px;}
+	#homepage-sponsors .bottom {display: none;}
+	#homepage-sponsors .entry {overflow: hidden;}
+	#homepage-sponsors .btn.sponsor-child {background: url(images/buttons_sprite_small.png) no-repeat 0 -76px;height: 38px; margin: 10px 0 20px; width: 192px;}
+	#homepage-stories h3.title {font-size: 33px;letter-spacing: normal;	margin-bottom: 20px;}
+	#homepage-stories h4 {font-size: 16px;}
+	#homepage-stories .entry {max-width: none;margin: 0 40px;	padding: 40px 0;}
+	#homepage-stories .columns {margin-bottom: 20px;}
+	#homepage-stories .columns .left, #homepage-stories .columns .right {float: none;width: 100%;}	
+	#homepage-stories .columns .left {margin-right: 0;}
+	#homepage-stories .btn.continue-reading {background: url(images/buttons_sprite_small.png) no-repeat 0 -114px;height: 38px;margin: 10px 0 20px;width: 191px;	margin: 0 auto;}
+	#homepage-stories .entry {padding: 40px 0;}
+	#homepage-stories {	min-height: 0;}
+	#homepage-testimonials {margin-top: 0;background: #71b63b; }
+	#homepage-testimonials .entry {padding: 40px 40px 30px;}
+	#homepage-testimonials .top {top: 0;display: none;}
+	#homepage-testimonials h3.title {font-size: 33px;letter-spacing: 0;	margin-bottom: 15px;}
+	#homepage-testimonials  .slider2 .flex-control-nav {margin-top: 20px;}	
+	#homepage-social {background-position: 50% 0; margin-top: -12px;}
+	#homepage-social .top {	top: 0;display: none;}
+	#homepage-social .columns .left {margin-right: 0;}
+	#homepage-social .holder,#homepage-social .twitterback {display: none;}
+	#homepage-social .entry {padding: 40px;}
+	#homepage-social h3.title {font-size: 33px;letter-spacing: normal;	margin-bottom: 0;}
+	#homepage-social .columns .left, #homepage-social .columns .right {	float: none;width: auto;}
+	#homepage-social .btn.share-with-post,#homepage-social .btn.share-with-a-post {background: url(images/buttons_sprite_small.png) no-repeat 0 -151px; height: 37px; margin: 20px auto 0; width: 191px;}
+	#homepage-social .btn.donate-tweet {background: url(images/buttons_sprite_small.png) no-repeat 0 -188px; height: 37px; margin: 20px auto 0; width: 191px;}
+	#homepage-get-involved{background: #4f91cd;}
+	#homepage-get-involved .top{display: none;top:none;}
+	#homepage-get-involved .entry{padding: 40px;}
+	#homepage-get-involved h3.title{font-size: 33px;letter-spacing: normal;margin-bottom:20px;line-height:1.1em;}
+	#homepage-get-involved .entry .btn.take-action-big{background: url(images/buttons_sprite_small.png) no-repeat 0 -38px; height: 38px; margin: 20px auto 0;width: 226px;}
+	#homepage-get-involved .btn.the-solution {background: url(images/buttons_sprite_small.png) no-repeat 0 -225px;height: 37px;margin: 20px auto 0;width: 226px;}
+	/* The-problem, About us */
+	#the-problem .column.left,#the-problem .column.right,#about-us .column.left,#about-us .column.right {float: none;width: 100%;} 
+	#the-problem h1.title,#about-us h1.title, #about-us h2.title , .page-template-template-take-action-php h2.title {font-size: 46px !important;}
+	#about-us h2.title {font-size: 32px !important}
+	#about-us .btn2 {margin: 0 auto;}
+	#about-us .administration .one_half div {padding: 0 !important;}
+	.btn2.staff-directory {background-position: 1px -482px;height: 68px;width: 300px;}
+	.btn2.board-of-directors {background-position: -299px -482px;height: 68px;width: 300px;}
+	.btn2.privacy-policy {background-position: 1px -550px;height: 68px;width: 300px;}
+	.btn2.conflict-of-interest {background-position: -299px -550px;height: 68px;width: 300px;}
+	.btn2.whistleblower-policy {background-position: 1px -618px; height: 68px;width: 300px;}
+	.btn2.document-retention {background-position: -299px -618px;height: 68px;width: 300px;}
+	.btn2.form-990{background-position: 1px -686px;height: 68px;width: 300px;}
+	#about-us .community-partners {width: 320px;}
+	#about-us .community-partners .image-holder {width: 119px;height: 105px;}
+	#about-us .community-partners .image-holder img {max-width: 119px;height: auto;}
+	#about-us .community-partners .image-holder.left-block {border-right: 1px solid #CCC;}	
+	/* Stories of hope */
+	#stories-of-hope .title {font-size: 36px; width: 90%;padding-top: 90px;}
+	#stories-of-hope .photo{min-height: 428px;}
+	#stories-of-hope .green .drop-down-block, #stories-of-hope .blue .drop-down-block {padding: 0 0 15px !important;} 
+	#stories-of-hope .btn.share-facebook  {background-position: 0 -874px;float: none;height: 54px;width: 304px;margin: 0 auto 20px ;}
+	#stories-of-hope .btn.share-twitter  {background-position: 0 -928px;float: none;height: 54px;width: 304px;margin: 0 auto;}
+	#stories-of-hope .share{margin: 30px auto 10px;}
+	#stories-of-hope .share h3 {font-size: 28px;}	
+	#stories-of-hope a.prev-story {background-position: 0 -68px; float: none;height: 68px;width: 300px;	margin: 0 auto 12px;display: block;}
+  #stories-of-hope a.next-story {background-position: -300px -68px;float: none;height: 68px;width: 300px;margin: 0 auto 12px;display: block;}
+  #stories-of-hope a.close-story {background-position: 0 -136px;clear: both;display: block;float: none;height: 98px;margin: 0 auto;overflow: hidden;width: 299px;}
+	#stories-of-hope .pagination .short-story {padding: 60px 0 0;}
+	#stories-of-hope .entry.pagination{display: none;}
+	#stories-of-hope .drop-down-block .btn.view-more{margin: 0 auto 25px;}
+	#stories-of-hope div.black .bottom, #stories-of-hope article.black .bottom {display: none;}
+	/* Events */
+	#events .columns .left, #events .columns .right {width: auto;float: none;}
+	/* Content */
+	.full_width, .one_half, .one_third, .two_third, .three_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth  {float: none !important; width: 100% !important; margin: 0 !important;}
+	.full_width div, .one_half div, .two_third div, .one_third div , .three_fourth div, .one_fifth div, .two_fifth div, .three_fifth div, .four_fifth div, .one_sixth div {padding-left: 0 !important;padding-right: 0 !important;padding-bottom: 30px!important;}
+  
+	.one_fourth { width: 50% !important; margin: 0 !important; }
+	.one_fourth div { padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 30px!important; }	
+	/* Contact us */
+	#contact-us .entry {width: auto;padding: 50px 15px;}
+	#contact-us .wpcf7-form .left {float: none;}
+	#contact-us .wpcf7-form .left.first {margin-right: 0;}
+	#contact-us .half .wpcf7-form-control,#contact-us .full .wpcf7-form-control,#contact-us .wpcf7-submit {width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+	#contact-us .entry  h1.title,#contact-us span.come {font-size: 44px;} 	
+	#contact-us .infoBox {width: 520px;color: #e5e5e5;}
+	/* Solution */	
+	#solution .item{display: inline-block;margin:70px 7px 17px;vertical-align:top;}   
+	#solution-intro .col-l,#solution-intro .col-r{width:100%;}
+	#solution-intro .col-r{padding:35px 0 20px;}.sponsor-tabs li{	width:100%;	margin:0 0 15px;}
+	#solution-projects .col-50,#solution-projects .col-25{width:100%;}
+	#solution-projects .col-inner{display:block;padding:20px;height:auto!important;}
+	#solution .map-hover{display:none!important;}
+	#solution .map-img{width:100%;height:auto;}
+	#solution h1.title {font-size: 45px;line-height: 1.2em;}
+	#solution-intro {padding: 50px 0 20px;}
+	#solution-how-work h2,#solution-sponsor h2 {font-size: 32px; }
+	#solution-sponsor h3 {font-size: 18px;}
+	/* Child */	 
+	.single-children .images,.single-children .summary {width: 100%;float: none;}
+	.single-children .price-items {max-width: 420px;}
+	.single-children h1.title, .single-children h3.title {font-size: 35px;text-align:left;}
+	.single-children h3.title  {padding: 0 0 30px;}
+	.single-children .entry {padding: 30px 15px;}	
+	.single-children .amount {margin-top: 20px;	}
+	.single-children .images .custom-fields div span, .single-children .images .text-holder strong {font-size: 18px;}	
+	
+}
+
+@media screen and (max-width: 600px){  
+  #contact-us .infoBox .left, #contact-us .infoBox .right {width:100%; float: none;font-size: 12px;} 	 
+	#contact-us span.come {position: static;margin: 0 auto;	padding-bottom: 30px;	display: block;	width: 90%;	text-align: center;	}
+	#google-popup-text {display: block !important;margin: 0 auto 30px;margin: 10px;padding:20px;background-color: #000;color: #FFF;line-height: 1.5em;}
+	#contact-us .infoBox {display: none;}
+	#map_canvas { width: auto;margin:0 12px;height: 350px !important;}
+	#contact-us span.come {padding-bottom: 0;}
+	#contact-us .white-block {padding-bottom: 20px;}
+	.one_fourth { width: 100% !important; }	 
+	
+}
+
+@media screen and (max-width: 480px){ 
+  /* Homepage */
+	#homepage-sponsors .text-holder {width: 250px;} 	
+	#homepage-sponsors .girl {display: none;}
+	#homepage-sponsors .text-holder {width: 177px;font-size: 13px;}
+	#homepage-stories .columns .left, #homepage-stories .columns .right {font-size: 13px; line-height: 1.8em;}	
+	#homepage-testimonials .entry{font-size: 13px;line-height: 1.8em;}	 
+	#homepage-get-involved .entry {font-size: 13px; max-width: none; }
+	#homepage-get-involved .entry .text {max-width:226px;margin: 0 auto; }
+	/* The problem , About Us*/
+	#the-problem, #about-us .photo {background-position: 50% 0;}
+	#the-problem h1.title, #about-us h1.title {line-height: 46px;}
+	#the-problem .column.left, #the-problem .column.right, #the-problem .column.left, #the-problem .column.right,	#about-us .column.left, #about-us .column.right {line-height: 1.5em;}
+	#about-us .entry p {padding: 0}
+	#the-problem h3, #about-us h3 {font-size: 20px; padding-bottom: 12px;font-family: 'halisgr bold';}
+	#the-problem .entry, #about-us .entry {padding: 80px 12px 30px;}
+	#the-problem .columns, #about-us .columns p {padding: 0 0 10px;}
+	/* Stories of hope */
+	#stories-of-hope .drop-down-block .btn.view-more {position: relative;left:-3px;}
+	/* Events */
+	#events .sponsored .image-holder {height: 147px;width: 147px;}
+	#events .sponsored {width: 312px;margin:0;}
+	#events .sponsored h3.title, #events h2.title {font-size:32px;}
+	#events .entry {margin: 0 0 0 10px;max-width: 100%;}
+	.btn.buy-vip-hour-tickets-online {background-position: 0 -1392px;width: 298px;}
+	.btn.facebook-event-page {background-position: 0 -1461px;width: 298px;}
+	.btn.twitter-updates {background-position: 0 -1530px;width: 298px;}
+	#events .sponsored {width: 298px;}
+	#events .sponsored .image-holder {height: 139px;width: 139px;}	
+	/* Contact us */
+	#contact-us span.come {font-size: 35px;}
+	.wpcf7-form .full span.wpcf7-not-valid-tip {width: 77%;} 	 
+	/* Solution */
+	#solution-sponsor .btn.sponsor-child, #solution-sponsor .btn.sponsor-a-child {background-position: 0 -1870px;width: 299px;}
+	#solution-projects .btn.donate-now {background-position: 0 -1802px;width: 299px;}
+	#solution-more .btn.take-action {background-position: 0 -1938px;width: 300px;}
+	#solution-sponsor p {padding-left: 0;padding-right: 0;}
+	#solution-more h2 {font-size:32px;line-height: 1.2em;margin-top: 20px;}
+	/* Team */
+	#team #faq-intro {padding: 30px 12px 0 0;}
+	#team h1.title {font-size: 35px;padding-bottom: 0;}
+	#team .item a {padding-bottom: 10px;}
+	#team .team-info .name {font-size: 28px;padding-bottom: 15px;}
+	/* Take action */
+	.donate-now-form .customSelect {background-position: 0 -136px; width: 260px !important;}
+	.donate-now-form .drop-down-container {width: 301px !important;}
+	.donate-now-form .drop-down-container select { width: 300px !important;}
+	.donate-now-form .text {padding: 20px 20px 20px 15px; width: 260px;}
+	.donate-now-form .submit {background-position: 0 -1802px;width: 300px !important;}
+	.btn.view-more-children {background-position: 0 -2210px;width: 300px;}
+	.page-template-template-take-action-php #the-problem .column.right, #about-us .column.right {width: auto;}
+	.donate-now-form { width: 302px;margin: 0 auto;}
+	/* Child */
+	.single-children .images .text-holder {font-size: 0.9em;line-height: 1.5em;}
+}
+
+@media screen and (max-width: 400px){  
+  /* Homepage */	 
+	#homepage-sponsors .girl-small {left: -10px;}
+	#homepage-stories .columns {letter-spacing: normal;}	
+  /* Solution */
+  #solution .sponsor-tabs li {float: none;width: 100%;}
+	/* Child */ 
+	.single-children .entry {padding: 30px 7px;}
+	.single-children .images .custom-fields div {font-size: 13px;}
+	.single-children .images .custom-fields div span, .single-children .images .text-holder strong {font-size: 17px;}	
+}
+
+@media screen and (max-width: 1024px){  
+   #homepage-stories, #homepage-social,.page-template-template-homepage-php .slider1 .slides > li {
+	  background-position: 0 0 !important; 
+	 }
+}
+	
+	 
+	 
+  #homepage-stories , #homepage-social, #homepage-slider, #footer { 
+  	background-color:  #000;
+  } 
+
+ 
+
+/* iPad in portrait & landscape */
+
+@media all 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+	#homepage-stories, #homepage-social, #homepage-slider, #footer {
+  	background-attachment: local !important;
+	}
+}
+
+/* custom header updates from clr @ ddi, 9/30/14 */
+
+#header-sponsor-btn {
+	color: #4F8BCA;
+	border: 3px solid #4F8BCA;
+	padding: 0 10px;
+}
+
+#header-donate-btn {
+	color: #74B638;
+	border: 3px solid #74B638;
+	padding: 0 10px;
+}
+
+/* css to mimic styles from white button sprite images, clr @ ddi, 12/12/14 */
+.white-btn {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	width: 380px;
+	height: 68px;
+	line-height: 68px; /* https://stackoverflow.com/questions/8865458/how-to-align-text-vertically-center-in-div-with-css */
+	text-align: center;
+	font-family: 'halisgr bold';
+	text-transform: uppercase;
+	letter-spacing: 4px;		
+	font-size: 14px;
+	background-image: url('//childrenincorporated.org/wp-content/uploads/2014/12/white-form-button-bg.png');
+}
+.white-btn-text {
+	padding-right: 65px;
+}
+#dmsLoginLink {
+	color: #74B638;
+	font-family: 'halisgr bold';
+	font-size: 13px;
+	line-height: 41px;
+	border: 3px solid #74B638;
+	padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

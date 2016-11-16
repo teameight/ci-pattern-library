@@ -5,5 +5,11 @@
     "@frctl/fractal": "^1.0.8",
     "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4"
   }
 }

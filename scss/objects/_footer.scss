@@ -3,6 +3,37 @@
 \*------------------------------------*/
 
 
+.footer-menu {
+
+	.menu {
+		width: 50%;
+		float: left;
+		text-align: center;
+
+		@media screen and (min-width: $bp-med) {
+			width: auto;
+			text-align: left;
+		}
+	}
+
+	.menu {
+		padding: 0;
+
+		@media screen and (min-width: $bp-med) {
+			padding-right: 4em;
+		}
+	}
+
+	.menu:last-of-type {
+		border-left: 1px solid $grey-lt;
+
+		@media screen and (min-width: $bp-med) {
+			padding-right: 0;
+		}
+	}
+}
+
+
 .menu-footer-left-menu-container,
 .menu-footer-right-menu-container {
 	width:50%;

@@ -1,0 +1,22 @@
+// Pattern Library-specific styles
+body {
+	padding: 20px !important;
+}
+
+.pl-label {
+	font-size: .7em;
+	color: $grey-dark-2;
+	border-bottom: 1px solid $grey-med;
+	padding-bottom: 0;
+	margin-bottom: 32px;
+	margin-top: 36px;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+}
+
+.pl-bg-blue {
+	background-color: $blue;
+	padding: 20px;
+}

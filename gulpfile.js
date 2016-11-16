@@ -3,6 +3,9 @@ var gulp = require('gulp');
 
 // Include Our Plugins
 var sass = require('gulp-sass');
+var jshint = require('gulp-jshint');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -13,7 +16,7 @@ gulp.task('lint', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('scss/*.scss')
+    return gulp.src('scss-new/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('public/css'));
 });
@@ -22,16 +25,16 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('public/js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('public/js'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('scss-new/**/*.scss', ['sass']);
 });
 
 // Default Task

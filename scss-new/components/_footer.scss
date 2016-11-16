@@ -1,0 +1,174 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+
+
+.footer-nav {
+
+	.menu {
+		width: 50%;
+		float: left;
+		text-align: center;
+
+		@media screen and (min-width: $bp-med) {
+			width: auto;
+			text-align: left;
+		}
+	}
+
+	.menu {
+		padding: 0;
+
+		@media screen and (min-width: $bp-med) {
+			padding-right: 4em;
+		}
+	}
+
+	.menu:last-of-type {
+		border-left: 1px solid $grey-lt;
+		width: calc(50% - 1px);
+
+		@media screen and (min-width: $bp-med) {
+			padding-right: 0;
+			width: auto;
+			border: none;
+		}
+	}
+}
+
+#footer {
+	background:#ffffff;
+	position: relative;
+	color: $green;
+	border-top: 1px solid $grey-lt;
+
+	.footer-nav {
+		line-height: 2;
+		overflow: hidden;
+		width:100%;
+
+		@media screen and (min-width:$bp-med) {
+			float: left;
+			width:auto;
+		}
+	}
+
+	.footer-logo {
+		width: 120px;
+		height: auto;
+		margin:0 auto 4em;
+
+		@media screen and (min-width:$bp-med-2) {
+			width: 162px;
+			position: absolute;
+			top: 60px;
+			left: 50%;
+			margin: 0 0 0 -81px;
+		}
+
+		a {
+			outline: 0 none;
+
+			img {
+				width:100%;
+				height:auto;
+			}
+		}
+
+	}
+
+	.footer-buttons {
+		float: right;
+		font-size: 12px;
+		margin-top: 10px;
+
+		@media screen and (max-width:$bp-med) {
+			float:none;
+
+			.badges,
+			.social {
+				float:none;
+				margin:2em auto;
+
+				> div {
+					margin:0 auto;
+					text-align:center;
+				}
+			}
+		}
+	}
+
+	.badges {
+		float:right;
+		clear:both;
+		margin-bottom:3em;
+		display: flex;
+		align-items: center;
+
+		> div {
+			margin-left:2em;
+
+			img {
+				max-width:90px;
+				height:auto;
+			}
+
+			&.bbb img {
+				max-width:50px;
+			}
+		}
+	}
+
+	.social {
+
+		float: right;
+		line-height: 24px;
+		position: relative;
+		margin-top: 20px;
+		clear:both;
+
+		.button {
+			font-size: 14px;
+			display: block;
+			float: right;
+			margin-top: -5px;
+			//margin-left: .75em;
+		}
+
+		> div {
+			float:right;
+		}
+
+
+		a:not(.button) {
+			display: inline-block;
+			background: url(../images/socialicons.png) no-repeat;
+			height: 40px;
+			width: 40px;
+			overflow: hidden;
+			text-indent: -999em;
+			margin-right: 11px;
+		}
+		a:hover {
+			opacity: 0.8;
+		}
+		a.fb {
+			//margin-left: 4px;
+		}
+		a.tw {
+			background-position: -45px 0;
+		}
+		a.ig {
+			background-position: -90px 0;
+		}
+	}
+
+	.footer-subfooter {
+		clear:both;
+		margin:3em auto 0;
+		text-align: center;
+		color: $grey;
+		font-size:.75em;
+	}
+
+}
