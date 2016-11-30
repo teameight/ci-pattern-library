@@ -7,7 +7,9 @@
     "gulp-sass": "^2.3.2"
   },
   "devDependencies": {
+    "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
     "gulp-jshint": "^2.0.4",
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.4"

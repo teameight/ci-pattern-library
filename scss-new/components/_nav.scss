@@ -10,13 +10,9 @@ a#open-menu {
 	text-indent: -9999px;
 	outline: 0 none;
 	overflow: hidden;
-	border: 10px solid white;
-	border-top: 29px solid white;
 	float: right;
-	-webkit-transition: top $transition;
-	-moz-transition: top $transition;
-	-o-transition: top $transition;
-	transition: top $transition;
+	margin-top: 30px;
+	transition: none;
 
 	@media screen and (min-width:$bp-med-2) {
 		display:none;
@@ -31,7 +27,7 @@ a#open-menu {
   	top:4px;
   	left:0;
   	background: $white;
-  }
+	}
 
   &:after {
   	top:12px;
@@ -39,20 +35,15 @@ a#open-menu {
 
   &.expanded {
 		background: transparent;
-		top: 97px;
 		border: 0;
-		padding: 10px;
-		right: -17px;
 
   	&:before, &:after {
 	    margin-top: -2px;
 	    content: '';
 	    position: absolute;
-	    width: 60%;
 	    top: 50%;
 	    left: 0;
-	    margin-top: -1px;
-			height:2px;
+			background: $grey;
   	}
 
   	&:before {
@@ -156,7 +147,12 @@ a#open-menu {
 	font-family: $font;
 	font-style: italic;
 	text-transform: none;
-	font-size: 16px;
+	font-size: 1em;
+	color: $blue;
+
+	&:hover {
+		color: darken($blue, 10%);
+	}
 }
 
 .menu-welcome {

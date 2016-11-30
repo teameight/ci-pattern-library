@@ -6,6 +6,8 @@ var sass = require('gulp-sass');
 var jshint = require('gulp-jshint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var concatCss = require('gulp-concat-css');
+var cleanCss = require('gulp-clean-css');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -18,6 +20,14 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('scss-new/*.scss')
         .pipe(sass())
+        .pipe(gulp.dest('public/css'));
+});
+
+// Concatenate CSS
+gulp.task('css', function() {
+    return gulp.src(['../../children-inc-dms/ChildrenIncorporated/Styles/**/*.css', 'public/css/style.css'])
+        .pipe(concatCss('concat.css'))
+        .pipe(cleanCss())
         .pipe(gulp.dest('public/css'));
 });
 
