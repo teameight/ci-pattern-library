@@ -29,8 +29,8 @@
 \*------------------------------------*/
 /*------------------------------------*    $GLOBAL ELEMENTS
 \*------------------------------------*/
-body {
-  padding: 20px !important; }
+.pl-body {
+  padding: 20px; }
 
 .pl-label {
   font-size: .7em;
@@ -4686,66 +4686,64 @@ img.aligncenter, a img.aligncenter {
         height: auto; }
   #header .menu li.buttonwrap a {
     padding: 8px 1.75em; }
+  #header .right-menu {
+    display: block; }
   @media screen and (max-width: 1024px) {
-    #header {
-      background: #222222; }
-      #header .inner {
-        width: 100%;
-        padding: 20px 5%;
-        box-sizing: border-box; }
-      #header .left-menu {
-        display: none;
-        width: 100%;
-        text-align: center; }
-        #header .left-menu .top-menu a.button {
-          font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
-          border: 0;
-          color: #cccccc;
-          font-style: italic;
-          font-weight: normal;
-          font-size: .825em;
-          text-transform: none;
-          width: auto;
-          background: transparent;
-          padding: 1.5em 0; }
-        #header .left-menu .bottom-menu {
-          padding: 2em 0;
-          margin: 0;
-          border-top: 1px solid #383535;
-          border-bottom: 1px solid #383535; }
-        #header .left-menu .menu li {
-          text-align: center;
-          display: block;
-          padding: 10px 0; }
-          #header .left-menu .menu li a {
-            font-size: 1.25em; }
-      #header .right-menu {
-        display: none;
-        width: 100%;
+    #header .inner {
+      width: 100%;
+      padding: 20px 5%;
+      box-sizing: border-box; }
+    #header .left-menu {
+      display: none;
+      width: 100%;
+      text-align: center; }
+      #header .left-menu .top-menu a.button {
+        font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+        border: 0;
+        font-style: italic;
+        font-weight: normal;
+        font-size: .825em;
+        text-transform: none;
+        width: auto;
+        background: transparent;
+        padding: 1.5em 0; }
+      #header .left-menu .bottom-menu {
+        padding: 2em 0;
+        margin: 0; }
+      #header .left-menu .menu li {
         text-align: center;
-        box-sizing: border-box; }
-        #header .right-menu .top-menu {
-          border-bottom: 1px solid #383535;
-          padding: 2em; }
-        #header .right-menu .bottom-menu {
-          margin: 2em 0; } }
-    @media screen and (max-width: 1024px) and (max-width: 1024px) {
-      #header .right-menu {
-        background: #454545;
-        margin: 12px -6% -20px;
-        width: 112%;
-        padding-top: 24px; }
-        #header .right-menu .menu li {
-          display: inline-block;
-          padding: .5em; } }
-  @media screen and (max-width: 1024px) {
-      #header .menu li a {
-        color: #cccccc; }
-        #header .menu li a:hover {
-          color: #fff; }
-      #header .menu li:after {
-        content: '';
-        display: none; } }
+        display: block;
+        padding: 10px 0; }
+        #header .left-menu .menu li a {
+          font-size: 1.25em; }
+    #header .right-menu {
+      display: none;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 12px -6% -20px;
+      width: 112%; }
+      #header .right-menu .top-menu {
+        order: 2;
+        padding: 12px 0; }
+      #header .right-menu .bottom-menu {
+        order: 1;
+        padding: 12px 0; }
+      #header .right-menu .menu li {
+        display: inline-block;
+        padding: .5em; }
+    #header .menu li:after {
+      content: '';
+      display: none; } }
+  @media screen and (max-width: 600px) {
+    #header .right-menu .menu li {
+      display: block; }
+      #header .right-menu .menu li a {
+        font-size: 1em; }
+    #header .right-menu .menu li .accent-nav-link {
+      font-size: 1.25em; } }
 
 /*------------------------------------*    $NAVIGATION
 \*------------------------------------*/
@@ -4757,13 +4755,9 @@ a#open-menu {
   text-indent: -9999px;
   outline: 0 none;
   overflow: hidden;
-  border: 10px solid white;
-  border-top: 29px solid white;
   float: right;
-  -webkit-transition: top 0.3s ease;
-  -moz-transition: top 0.3s ease;
-  -o-transition: top 0.3s ease;
-  transition: top 0.3s ease; }
+  margin-top: 30px;
+  transition: none; }
   @media screen and (min-width: 1024px) {
     a#open-menu {
       display: none; } }
@@ -4779,19 +4773,14 @@ a#open-menu {
     top: 12px; }
   a#open-menu.expanded {
     background: transparent;
-    top: 97px;
-    border: 0;
-    padding: 10px;
-    right: -17px; }
+    border: 0; }
     a#open-menu.expanded:before, a#open-menu.expanded:after {
       margin-top: -2px;
       content: '';
       position: absolute;
-      width: 60%;
       top: 50%;
       left: 0;
-      margin-top: -1px;
-      height: 2px; }
+      background: #454545; }
     a#open-menu.expanded:before {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
@@ -4869,7 +4858,10 @@ a#open-menu {
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   text-transform: none;
-  font-size: 16px; }
+  font-size: 1em;
+  color: #4F8BCA; }
+  .menu .accent-nav-link:hover {
+    color: #3571b1; }
 
 .menu-welcome {
   font-size: 14px; }

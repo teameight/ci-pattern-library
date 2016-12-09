@@ -10639,8 +10639,7 @@ function openMenu(){
    jQuery('a#open-menu').removeClass('expanded');
   }
   else{
-    jQuery('#header .mobile-menu').slideDown();
-    jQuery('#header .mobile-menu').addClass('expanded');
+    jQuery('#header .mobile-menu').slideDown().css('display', 'flex').addClass('expanded');
    	jQuery('a#open-menu').addClass('expanded');
   }
 }
