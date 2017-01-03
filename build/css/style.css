@@ -25,6 +25,28 @@
  */
 /*------------------------------------*    $VARIABLES
 \*------------------------------------*/
+/* Fonts */
+@font-face {
+  font-family: 'halisgr bold';
+  src: url("../fonts/halisgr-bold-webfont.eot");
+  src: url("../fonts/halisgr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/halisgr-bold-webfont.woff") format("woff"), url("../fonts/halisgr-bold-webfont.ttf") format("truetype"), url("../fonts/halisgr-bold-webfont.svg#halis_grbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'halisgr book';
+  src: url("../fonts/halisgr-book-webfont.eot");
+  src: url("../fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/halisgr-book-webfont.woff") format("woff"), url("../fonts/halisgr-book-webfont.ttf") format("truetype"), url("../fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  src: url("../fonts/halisgr-book-webfont.eot");
+  src: url("../fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/halisgr-book-webfont.woff") format("woff"), url("../fonts/halisgr-book-webfont.ttf") format("truetype"), url("../fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*------------------------------------*    $MIXINS
 \*------------------------------------*/
 /*------------------------------------*    $GLOBAL ELEMENTS
@@ -82,28 +104,6 @@ body {
 
 .visually-hidden {
   display: none; }
-
-/* Fonts */
-@font-face {
-  font-family: 'halisgr bold';
-  src: url("fonts/halisgr-bold-webfont.eot");
-  src: url("fonts/halisgr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/halisgr-bold-webfont.woff") format("woff"), url("fonts/halisgr-bold-webfont.ttf") format("truetype"), url("fonts/halisgr-bold-webfont.svg#halis_grbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'halisgr book';
-  src: url("fonts/halisgr-book-webfont.eot");
-  src: url("fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/halisgr-book-webfont.woff") format("woff"), url("fonts/halisgr-book-webfont.ttf") format("truetype"), url("fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
-  src: url("fonts/halisgr-book-webfont.eot");
-  src: url("fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/halisgr-book-webfont.woff") format("woff"), url("fonts/halisgr-book-webfont.ttf") format("truetype"), url("fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 
 /* Fixed footer */
 /*body, html { height: 100%;}
@@ -1418,7 +1418,7 @@ article.black .bottom {
 .drop-down-container select {
   width: 379px !important;
   border: 0 none;
-  ackground: transparent; }
+  background: transparent; }
 
 .drop-down-container option {
   padding: 20px 0;
@@ -4684,7 +4684,8 @@ img.aligncenter, a img.aligncenter {
       #header .logo a img {
         width: 100%;
         height: auto; }
-  #header .menu li.buttonwrap a {
+  #header .menu li.buttonwrap a,
+  #header .menu li.buttonwrap button {
     padding: 8px 1.75em; }
   #header .right-menu {
     display: block; }
@@ -4727,7 +4728,8 @@ img.aligncenter, a img.aligncenter {
       width: 112%; }
       #header .right-menu .top-menu {
         order: 2;
-        padding: 12px 0; }
+        padding: 12px 0;
+        margin-bottom: 20px; }
       #header .right-menu .bottom-menu {
         order: 1;
         padding: 12px 0; }
@@ -4833,7 +4835,7 @@ a#open-menu {
   display: none; }
 
 .menu-row li {
-  display: inline;
+  display: inline-block;
   padding: 10px;
   white-space: nowrap; }
 
@@ -4854,13 +4856,13 @@ a#open-menu {
 .bottom-menu {
   margin-top: 20px; }
 
-.menu .accent-nav-link {
+.menu .accent-nav-link a {
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   text-transform: none;
   font-size: 1em;
   color: #4F8BCA; }
-  .menu .accent-nav-link:hover {
+  .menu .accent-nav-link a:hover {
     color: #3571b1; }
 
 .menu-welcome {
@@ -5171,10 +5173,18 @@ a.button,
     .buttonwrap a.icon.whistle:after {
       background-position: 0 -48px; }
 
-.buttonwrap.blue a {
+.buttonwrap .button {
+  background-color: transparent;
+  cursor: pointer; }
+  .buttonwrap .button:hover {
+    background-color: #74b638; }
+
+.buttonwrap.blue a,
+.buttonwrap.blue .button {
   color: #4F8BCA;
   border-color: #4F8BCA; }
-  .buttonwrap.blue a:hover {
+  .buttonwrap.blue a:hover,
+  .buttonwrap.blue .button:hover {
     background-color: #4F8BCA;
     color: #fff; }
 

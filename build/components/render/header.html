@@ -26,8 +26,8 @@
 						<li class="buttonwrap blue">
 							<a href="https://dms.childrenincorporated.org/CI/Donor/CISponsorChild.aspx">Sponsor a Child</a>
 						</li>
-						<li>
-							<a class="accent-nav-link" href="https://dms.childrenincorporated.org/CI/Donor/Login.aspx">Login</a>
+						<li class="accent-nav-link">
+							<a href="https://dms.childrenincorporated.org/CI/Donor/Login.aspx">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -71,47 +71,93 @@
 
 <header id="header" class="cf">
 
-	<div class="inner cf">
+    <div class="inner cf">
 
-		<div class="logo">
+        <div class="logo">
 
-		 	<a href="#"><img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/logo.svg" alt="Children Incorporated"></a>
+            <a href="https://childrenincorporated.org/">
 
-		</div><!-- .logo -->
+                <img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/logo.svg" alt="Children Incorporated">
 
-		<a id="open-menu" href="javascript:openMenu();">Menu</a>
+            </a>
 
-		<section class="right-menu mobile-menu">
+        </div>
 
-			<nav class="top-menu">
+        <a href="javascript:openMenu();" id="open-menu">Menu</a>
 
-			  	<ul class="menu menu-row">
-			  		<li class="buttonwrap">
-			  			<a href="https://childrenincorporated.org/wont-you-join-us-in-our-efforts/">Donate</a>
-		  			</li>
-						<li class="buttonwrap blue">
-							<a href="https://dms.childrenincorporated.org/CI/Donor/CISponsorChild.aspx">Sponsor a Child</a>
-						</li>
-						<li>
-							<a class="accent-nav-link" href="https://dms.childrenincorporated.org/CI/Donor/Login.aspx">My Account</a>
-						</li>
-					</ul>
+        <section class="right-menu mobile-menu">
 
-			</nav>
+            <nav class="top-menu">
 
-			<nav class="bottom-menu">
+                <ul class="menu menu-row">
 
-				<ul class="menu menu-row dot-separated-list">
-					<li class="menu-welcome">Welcome username@email.com</li>
-					<li><a href="">Logout</a></li>
-					<li><a href="">View cart</a></li>
-				</ul>
+                    <li class="buttonwrap">
 
-			</nav>
+                        <button class="button" onclick="__doPostBack('ctl00$btnDonate','')" id="btnDonate">DONATE</button>
 
-		</section><!-- #right-menu -->
+                    </li>
 
-	</div>
+                    <li class="buttonwrap blue">
+
+                        <button class="button blue" onclick="__doPostBack('ctl00$btnSponsor','')" id="btnSponsor">SPONSOR A CHILD</button>
+
+                    </li>
+
+                    <li class="accent-nav-link">
+
+                        <div id="login">
+
+<!--                                 <a id="lnkLogin" class="login" href="Login.aspx">Login</a>
+-->
+                        </div>
+
+                        <div id="logout">
+
+                            <a id="lnkLogout" class="logout" href="CILogout.ashx">Logout</a>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </nav><!-- .top-menu -->
+
+            <nav class="bottom-menu">
+
+                <ul class="menu menu-row">
+
+                    <li class="menu-welcome">
+
+                        <div id="welcome">
+
+                            Welcome <span id="loginUsername">andrewmowe@gmail.com</span>
+
+                            <span id="donorAliasName"></span>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <a href="https://dms.childrenincorporated.org/CI/Donor/CIDonorProfile.aspx">My Account</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="https://dms.childrenincorporated.org/CI/Donor/CIDonorCart.aspx">View cart</a>
+
+                    </li>
+
+                </ul>
+
+            </nav> <!-- .bottom-menu -->
+
+        </section><!-- .right-menu -->
+
+    </div><!-- .inner -->
 
 </header>
 
@@ -119,45 +165,92 @@
 
 <header id="header" class="cf">
 
-	<div class="inner cf">
+    <div class="inner cf">
 
-		<div class="logo">
+        <div class="logo">
 
-		 	<a href="#"><img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/logo.svg" alt="Children Incorporated"></a>
+            <a href="https://childrenincorporated.org/">
 
-		</div><!-- .logo -->
+                <img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/logo.svg" alt="Children Incorporated">
 
-		<a id="open-menu" href="javascript:openMenu();">Menu</a>
+            </a>
 
-		<section class="right-menu mobile-menu">
+        </div>
 
-			<nav class="top-menu">
+        <a href="javascript:openMenu();" id="open-menu">Menu</a>
 
-			  	<ul class="menu menu-row">
-			  		<li class="buttonwrap">
-			  			<a href="https://childrenincorporated.org/wont-you-join-us-in-our-efforts/">Donate</a>
-		  			</li>
-						<li class="buttonwrap blue">
-							<a href="https://dms.childrenincorporated.org/CI/Donor/CISponsorChild.aspx">Sponsor a Child</a>
-						</li>
-						<li>
-							<a class="accent-nav-link" href="https://dms.childrenincorporated.org/CI/Donor/Login.aspx">My Account</a>
-						</li>
-					</ul>
+        <section class="right-menu mobile-menu">
 
-			</nav>
+            <nav class="top-menu">
 
-			<nav class="bottom-menu">
+                <ul class="menu menu-row">
 
-				<ul class="menu menu-row dot-separated-list">
-					<li><a href="">Login</a></li>
-					<li><a href="">View cart</a></li>
-				</ul>
+                    <li class="buttonwrap">
 
-			</nav>
+                        <button class="button" onclick="__doPostBack('ctl00$btnDonate','')" id="btnDonate">DONATE</button>
 
-		</section><!-- #right-menu -->
+                    </li>
 
-	</div>
+                    <li class="buttonwrap blue">
+
+                        <button class="button blue" onclick="__doPostBack('ctl00$btnSponsor','')" id="btnSponsor">SPONSOR A CHILD</button>
+
+                    </li>
+
+                    <li class="accent-nav-link">
+
+                        <div id="login">
+
+                            <a id="lnkLogin" class="login" href="Login.aspx">Login</a>
+                        
+                        </div>
+
+                        <div id="logout">
+
+                            <!-- <a id="lnkLogout" class="logout" href="CILogout.ashx">Logout</a> -->
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </nav><!-- .top-menu -->
+
+            <nav class="bottom-menu">
+
+                <ul class="menu menu-row">
+
+                    <li class="menu-welcome">
+
+                        <div id="welcome">
+
+                            <!-- Welcome <span id="loginUsername">andrewmowe@gmail.com</span>
+
+                            <span id="donorAliasName"></span> -->
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <a href="https://dms.childrenincorporated.org/CI/Donor/CIDonorProfile.aspx">My Account</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="https://dms.childrenincorporated.org/CI/Donor/CIDonorCart.aspx">View cart</a>
+
+                    </li>
+
+                </ul>
+
+            </nav> <!-- .bottom-menu -->
+
+        </section><!-- .right-menu -->
+
+    </div><!-- .inner -->
 
 </header>

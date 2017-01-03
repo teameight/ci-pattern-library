@@ -149,7 +149,17 @@ a.button,
 
 .buttonwrap {
 
-	&.blue a {
+	.button {
+		background-color: transparent;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $green;
+		}
+	}
+
+	&.blue a,
+	&.blue .button {
 		color:$blue;
 		border-color:$blue;
 

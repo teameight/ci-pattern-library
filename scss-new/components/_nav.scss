@@ -114,7 +114,7 @@ a#open-menu {
 
 .menu-row {
 	li {
-		display: inline;
+		display: inline-block;
 		padding: 10px;
 		white-space: nowrap;
 	}
@@ -143,7 +143,7 @@ a#open-menu {
 	margin-top: 20px;
 }
 
-.menu .accent-nav-link {
+.menu .accent-nav-link a {
 	font-family: $font;
 	font-style: italic;
 	text-transform: none;

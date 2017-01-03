@@ -25,10 +25,10 @@ gulp.task('sass', function() {
 
 // Concatenate CSS
 gulp.task('css', function() {
-    return gulp.src(['../../children-inc-dms/ChildrenIncorporated/Styles/**/*.css', 'public/css/style.css'])
-        .pipe(concatCss('concat.css'))
+    return gulp.src(['public/css/style.css'])
+        .pipe(concatCss('ci-17-style.css', { rebaseUrls : false} ))
         .pipe(cleanCss())
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('../../children-inc-dms/ChildrenIncorporated/Styles/pd'));
 });
 
 // Concatenate & Minify JS
@@ -41,10 +41,29 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('public/js'));
 });
 
+gulp.task('header', function() {
+    return gulp.src('scss-new/header.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('public/css'));
+});
+
+gulp.task('footer', function() {
+    return gulp.src('scss-new/footer.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('public/css'));
+});
+
+gulp.task('newstyle', function() {
+    return gulp.src('scss-new/ci-17.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('public/css'))
+        .pipe(gulp.dest('../../children-inc-dms/ChildrenIncorporated/Styles/pd'))
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss-new/**/*.scss', ['sass']);
+    gulp.watch('scss-new/**/*.scss', ['sass', 'css']);
 });
 
 // Default Task

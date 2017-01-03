@@ -42,8 +42,11 @@
 		}
 	}
 
-	.menu li.buttonwrap a {
-		padding: 8px 1.75em;
+	.menu li.buttonwrap {
+		a,
+		button {
+			padding: 8px 1.75em;
+		}
 	}
 
 	.right-menu {
@@ -92,6 +95,7 @@
 					}
 				}
 			}
+
 			.right-menu {
 				display:none;
 				width:100%;
@@ -103,6 +107,7 @@
 				.top-menu {
 					order: 2;
 					padding: 12px 0;
+					margin-bottom: 20px;
 				}
 
 				.bottom-menu {
