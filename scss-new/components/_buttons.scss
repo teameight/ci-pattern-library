@@ -4,10 +4,11 @@
 
 .button,
 a.button,
-.buttonwrap a {
+.buttonwrap a,
+.buttonwrap .button {
 	color: $green;
 	font-family:$titlefont;
-	border:2px solid $green;
+	border: 2px solid $green;
 	text-decoration:none;
 	text-transform:uppercase;
 	letter-spacing:$title-spacing;

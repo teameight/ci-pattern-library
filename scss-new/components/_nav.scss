@@ -70,10 +70,13 @@ a#open-menu {
 		position:relative;
 	}
 
-	a {
+	a,
+	button {
 		font-family: $titlefont;
 		text-decoration: none;
 		color: $green;
+		background-color: transparent;
+		border: none;
 		text-transform: uppercase;
 		font-size: 13px;
 		line-height: 24px;

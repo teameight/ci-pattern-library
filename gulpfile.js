@@ -63,7 +63,7 @@ gulp.task('newstyle', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss-new/**/*.scss', ['sass', 'css']);
+    gulp.watch('scss-new/**/*.scss', ['sass', 'newstyle']);
 });
 
 // Default Task

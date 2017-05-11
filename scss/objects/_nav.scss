@@ -107,7 +107,8 @@ a#open-menu {
 		position:relative;
 	}
 
-	a {
+	a,
+	button {
 		font-family: $titlefont;
 		text-decoration: none;
 		color: $green;

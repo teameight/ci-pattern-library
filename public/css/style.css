@@ -23,8 +23,6 @@
  * NAVIGATION------------------------------
  * TOC To Be Continued
  */
-/*------------------------------------*    $VARIABLES
-\*------------------------------------*/
 /* Fonts */
 @font-face {
   font-family: 'halisgr bold';
@@ -47,6 +45,8 @@
   font-weight: normal;
   font-style: normal; }
 
+/*------------------------------------*    $VARIABLES
+\*------------------------------------*/
 /*------------------------------------*    $MIXINS
 \*------------------------------------*/
 /*------------------------------------*    $GLOBAL ELEMENTS
@@ -4799,10 +4799,13 @@ a#open-menu {
 .menu li {
   position: relative; }
 
-.menu a {
+.menu a,
+.menu button {
   font-family: "halisgr bold", Impact, Charcoal, sans-serif;
   text-decoration: none;
   color: #74b638;
+  background-color: transparent;
+  border: none;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 24px;
@@ -4812,7 +4815,8 @@ a#open-menu {
   -o-transition: color 0.3s ease;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease; }
-  .menu a:hover {
+  .menu a:hover,
+  .menu button:hover {
     color: #4F8BCA; }
 
 .dot-separated-list li:after {
@@ -5021,7 +5025,8 @@ a#open-menu {
 \*------------------------------------*/
 .button,
 a.button,
-.buttonwrap a {
+.buttonwrap a,
+.buttonwrap .button {
   color: #74b638;
   font-family: "halisgr bold", Impact, Charcoal, sans-serif;
   border: 2px solid #74b638;
@@ -5039,57 +5044,72 @@ a.button,
   transition: color 0.3s ease, background-color 0.3s ease; }
   #header .button, #header
   a.button, #header
-  .buttonwrap a {
+  .buttonwrap a, #header
+  .buttonwrap .button {
     font-size: 14px;
     margin: 0; }
   .button:hover,
   a.button:hover,
-  .buttonwrap a:hover {
+  .buttonwrap a:hover,
+  .buttonwrap .button:hover {
     background-color: #74b638;
     color: #fff; }
   .button.blue, .ci-subscription-popup form input[type=submit],
   a.button.blue,
-  .buttonwrap a.blue {
+  .buttonwrap a.blue,
+  .buttonwrap .button.blue,
+  .buttonwrap .ci-subscription-popup form input[type=submit], .ci-subscription-popup form
+  .buttonwrap input[type=submit] {
     color: #4F8BCA;
     border-color: #4F8BCA; }
     .button.blue:hover, .ci-subscription-popup form input[type=submit]:hover,
     a.button.blue:hover,
-    .buttonwrap a.blue:hover {
+    .buttonwrap a.blue:hover,
+    .buttonwrap .button.blue:hover,
+    .buttonwrap .ci-subscription-popup form input[type=submit]:hover, .ci-subscription-popup form
+    .buttonwrap input[type=submit]:hover {
       background-color: #4F8BCA;
       color: #fff; }
   .button.grey,
   a.button.grey,
-  .buttonwrap a.grey {
+  .buttonwrap a.grey,
+  .buttonwrap .button.grey {
     color: #888;
     border-color: #888; }
     .button.grey:hover,
     a.button.grey:hover,
-    .buttonwrap a.grey:hover {
+    .buttonwrap a.grey:hover,
+    .buttonwrap .button.grey:hover {
       background-color: #888;
       color: #fff; }
   .button.white,
   a.button.white,
-  .buttonwrap a.white {
+  .buttonwrap a.white,
+  .buttonwrap .button.white {
     color: #fff;
     border-color: #fff; }
     .button.white:hover,
     a.button.white:hover,
-    .buttonwrap a.white:hover {
+    .buttonwrap a.white:hover,
+    .buttonwrap .button.white:hover {
       background-color: #fff;
       color: #000; }
   .button.full,
   a.button.full,
-  .buttonwrap a.full {
+  .buttonwrap a.full,
+  .buttonwrap .button.full {
     width: 100%;
     text-align: center;
     box-sizing: border-box; }
   .button.small,
   a.button.small,
-  .buttonwrap a.small {
+  .buttonwrap a.small,
+  .buttonwrap .button.small {
     font-size: 14px; }
   .button.icon,
   a.button.icon,
-  .buttonwrap a.icon {
+  .buttonwrap a.icon,
+  .buttonwrap .button.icon {
     color: #fff;
     border-color: #fff;
     position: relative;
@@ -5097,7 +5117,8 @@ a.button,
     padding-right: 1.5em; }
     .button.icon:after,
     a.button.icon:after,
-    .buttonwrap a.icon:after {
+    .buttonwrap a.icon:after,
+    .buttonwrap .button.icon:after {
       position: absolute;
       right: -52px;
       top: -2px;
@@ -5110,12 +5131,14 @@ a.button,
       background-size: 34px; }
     .button.icon:hover,
     a.button.icon:hover,
-    .buttonwrap a.icon:hover {
+    .buttonwrap a.icon:hover,
+    .buttonwrap .button.icon:hover {
       background-color: #fff;
       color: #222222; }
     .button.icon.center,
     a.button.icon.center,
-    .buttonwrap a.icon.center {
+    .buttonwrap a.icon.center,
+    .buttonwrap .button.icon.center {
       margin-left: -52px; }
     .button.icon.doc, .button.icon.exclamation, .button.icon.ex, .button.icon.group, .button.icon.whistle,
     a.button.icon.doc,
@@ -5127,7 +5150,12 @@ a.button,
     .buttonwrap a.icon.exclamation,
     .buttonwrap a.icon.ex,
     .buttonwrap a.icon.group,
-    .buttonwrap a.icon.whistle {
+    .buttonwrap a.icon.whistle,
+    .buttonwrap .button.icon.doc,
+    .buttonwrap .button.icon.exclamation,
+    .buttonwrap .button.icon.ex,
+    .buttonwrap .button.icon.group,
+    .buttonwrap .button.icon.whistle {
       display: block;
       width: 100%;
       margin-left: auto;
@@ -5146,7 +5174,12 @@ a.button,
       .buttonwrap a.icon.exclamation:after,
       .buttonwrap a.icon.ex:after,
       .buttonwrap a.icon.group:after,
-      .buttonwrap a.icon.whistle:after {
+      .buttonwrap a.icon.whistle:after,
+      .buttonwrap .button.icon.doc:after,
+      .buttonwrap .button.icon.exclamation:after,
+      .buttonwrap .button.icon.ex:after,
+      .buttonwrap .button.icon.group:after,
+      .buttonwrap .button.icon.whistle:after {
         background-image: url(../images/button-icon-sheet.png);
         color: #4F8BCA;
         border-color: #4F8BCA;
@@ -5154,23 +5187,28 @@ a.button,
         right: 0; }
     .button.icon.doc:after,
     a.button.icon.doc:after,
-    .buttonwrap a.icon.doc:after {
+    .buttonwrap a.icon.doc:after,
+    .buttonwrap .button.icon.doc:after {
       background-position: 0 -200px; }
     .button.icon.exclamation:after,
     a.button.icon.exclamation:after,
-    .buttonwrap a.icon.exclamation:after {
+    .buttonwrap a.icon.exclamation:after,
+    .buttonwrap .button.icon.exclamation:after {
       background-position: 0 0; }
     .button.icon.ex:after,
     a.button.icon.ex:after,
-    .buttonwrap a.icon.ex:after {
+    .buttonwrap a.icon.ex:after,
+    .buttonwrap .button.icon.ex:after {
       background-position: 0 -98px; }
     .button.icon.group:after,
     a.button.icon.group:after,
-    .buttonwrap a.icon.group:after {
+    .buttonwrap a.icon.group:after,
+    .buttonwrap .button.icon.group:after {
       background-position: 0 -148px; }
     .button.icon.whistle:after,
     a.button.icon.whistle:after,
-    .buttonwrap a.icon.whistle:after {
+    .buttonwrap a.icon.whistle:after,
+    .buttonwrap .button.icon.whistle:after {
       background-position: 0 -48px; }
 
 .buttonwrap .button {
@@ -5565,3 +5603,6 @@ a.back-button {
 
 /*------------------------------------*    $TEMPLATES
 \*------------------------------------*/
+#MainContent {
+  overflow: scroll;
+  margin: 40px 20px; }
