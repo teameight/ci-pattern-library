@@ -5604,5 +5604,8 @@ a.back-button {
 /*------------------------------------*    $TEMPLATES
 \*------------------------------------*/
 #MainContent {
-  overflow: scroll;
+  overflow-x: scroll;
   margin: 40px 20px; }
+  @media screen and (min-width: 1024px) {
+    #MainContent {
+      overflow-x: auto; } }

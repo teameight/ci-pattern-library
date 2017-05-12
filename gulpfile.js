@@ -8,6 +8,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var concatCss = require('gulp-concat-css');
 var cleanCss = require('gulp-clean-css');
+var rename = require('gulp-rename');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -33,7 +34,7 @@ gulp.task('css', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
+    return gulp.src(['js/*.js', '!js/PIE.js', '!js/google-map.js', '!js/google.infobox.js', '!js/markerwithlabel.js', '!js/theme-customizer.js'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('public/js'))
         .pipe(rename('all.min.js'))

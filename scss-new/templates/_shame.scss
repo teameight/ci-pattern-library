@@ -1,4 +1,8 @@
 #MainContent {
-	overflow: scroll;
+	overflow-x: scroll;
 	margin: 40px 20px;
+
+	@media screen and (min-width: $bp-med-2) {
+		overflow-x: auto;
+	}
 }
