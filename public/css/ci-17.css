@@ -1,26 +1,4 @@
 @charset "UTF-8";
-/* Fonts */
-@font-face {
-  font-family: 'halisgr bold';
-  src: url("../fonts/halisgr-bold-webfont.eot");
-  src: url("../fonts/halisgr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/halisgr-bold-webfont.woff") format("woff"), url("../fonts/halisgr-bold-webfont.ttf") format("truetype"), url("../fonts/halisgr-bold-webfont.svg#halis_grbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'halisgr book';
-  src: url("../fonts/halisgr-book-webfont.eot");
-  src: url("../fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/halisgr-book-webfont.woff") format("woff"), url("../fonts/halisgr-book-webfont.ttf") format("truetype"), url("../fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
-  src: url("../fonts/halisgr-book-webfont.eot");
-  src: url("../fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/halisgr-book-webfont.woff") format("woff"), url("../fonts/halisgr-book-webfont.ttf") format("truetype"), url("../fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /*------------------------------------*    $VARIABLES
 \*------------------------------------*/
 /*------------------------------------*    $MIXINS
@@ -4609,23 +4587,6 @@ img.aligncenter, a img.aligncenter {
         max-width: none;
         width: 100%; } }
 
-.pl-body {
-  padding: 20px; }
-
-.pl-label {
-  font-size: .7em;
-  color: #606060;
-  border-bottom: 1px solid #888;
-  padding-bottom: 0;
-  margin-bottom: 32px;
-  margin-top: 36px; }
-  .pl-label:first-of-type {
-    margin-top: 0; }
-
-.pl-bg-blue {
-  background-color: #4F8BCA;
-  padding: 20px; }
-
 /*------------------------------------*    $HEADER
 \*------------------------------------*/
 #header {
@@ -5510,40 +5471,6 @@ a.back-button {
     padding-left: 0; }
     .author-info.no-author .author-info-inner p {
       font-style: italic; }
-
-.ci-alert {
-  font-size: 1em;
-  color: #fff;
-  text-align: center;
-  line-height: 1.5;
-  padding: 15px 45px 17px 15px;
-  font-style: italic;
-  position: relative; }
-
-.ci-alert-normal {
-  background-color: #454545; }
-
-.ci-alert-urgent {
-  background-color: #E94348; }
-
-.ci-alert-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border: none;
-  padding: 0 10px;
-  background-color: transparent;
-  cursor: pointer; }
-  .ci-alert-close img {
-    position: absolute;
-    top: 15px;
-    right: 15px; }
-    @media screen and (min-width: 767px) {
-      .ci-alert-close img {
-        top: initial;
-        right: initial;
-        position: relative; } }
 
 #MainContent {
   overflow-x: scroll;
