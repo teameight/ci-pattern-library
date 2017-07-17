@@ -51,6 +51,10 @@
 
 	.right-menu {
 		display: block;
+
+		@media screen and (min-width: $bp-med-2) {
+			display: block !important;
+		}
 	}
 
 

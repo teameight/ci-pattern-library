@@ -34,7 +34,7 @@ gulp.task('css', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src(['js/*.js', '!js/PIE.js', '!js/google-map.js', '!js/google.infobox.js', '!js/markerwithlabel.js', '!js/theme-customizer.js'])
+    return gulp.src(['js/ci-17.js', 'js/ci-alert-box.js'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('public/js'))
         .pipe(rename('all.min.js'))
@@ -58,13 +58,13 @@ gulp.task('newstyle', function() {
     return gulp.src('scss-new/ci-17.scss')
         .pipe(sass())
         .pipe(gulp.dest('public/css'))
-        .pipe(gulp.dest('../../children-inc-dms/ChildrenIncorporated/Styles/pd'))
+        .pipe(gulp.dest('../../ci-inc-dms-test/children-inc-dms/ChildrenIncorporated/Styles/pd'))
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss-new/**/*.scss', ['sass', 'newstyle']);
+    gulp.watch('scss-new/**/*.scss', ['sass']);
 });
 
 // Default Task

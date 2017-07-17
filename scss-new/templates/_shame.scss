@@ -1,3 +1,7 @@
+// RESET
+
+
+
 #MainContent {
 	overflow-x: scroll;
 	margin: 40px 20px;
@@ -5,4 +9,36 @@
 	@media screen and (min-width: $bp-med-2) {
 		overflow-x: auto;
 	}
+}
+
+// TABLES
+
+table {
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+tbody,
+tr {
+	vertical-align: middle;
+}
+
+td {
+	vertical-align: inherit;
+	padding: 1px;
+
+	h3 {
+		margin-top: 1em !important;
+		margin-bottom: 1em;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+}
+
+// UTILITIES
+
+.left {
+	float: none;
 }

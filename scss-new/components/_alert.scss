@@ -8,6 +8,11 @@
 	padding: 15px 45px 17px 15px;
 	font-style: italic;
 	position: relative;
+	display: none;
+
+	&.show-alert {
+		display: block;
+	}
 }
 
 .ci-alert-normal {

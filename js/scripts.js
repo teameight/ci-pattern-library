@@ -16,8 +16,8 @@ jQuery(window).resize(function(){
 });
 */
 
-function openMenu(){
-  if(jQuery('#header .mobile-menu').hasClass('expanded')){
+function openMenu() {
+  if(jQuery('#header .mobile-menu').hasClass('expanded')) {
    jQuery('#header .mobile-menu').slideUp();
    jQuery('#header .mobile-menu').removeClass('expanded');
    jQuery('a#open-menu').removeClass('expanded');
@@ -27,7 +27,10 @@ function openMenu(){
    	jQuery('a#open-menu').addClass('expanded');
   }
 }
-function goBack(){window.history.back()}
+
+function goBack() {
+	window.history.back();
+}
 
 
 /************************************************/
