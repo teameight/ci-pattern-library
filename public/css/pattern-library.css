@@ -3887,16 +3887,7 @@ body {
   font-size: 16px;
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif; }
 
-h1,
-h2,
-h3,
-p,
-ul,
-ol,
-.entry,
-.header-landmark,
-.bfilter-wrap,
-.nav-links {
+h1, h2, h3, p, ul, ol, .entry, .header-landmark, .bfilter-wrap, .nav-links {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
@@ -3910,8 +3901,22 @@ em {
 .c-block em {
   font-style: italic; }
 
-p.emphasized,
-.single p.emphasized {
+.c-block blockquote {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+  .c-block blockquote p {
+    font-style: italic;
+    font-size: 1.325em;
+    line-height: 1.5; }
+  .c-block blockquote h4 {
+    font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+    text-transform: none;
+    font-size: 16px; }
+
+hr {
+  clear: both; }
+
+p.emphasized, .single p.emphasized {
   font-size: 20px;
   line-height: 32px; }
 
@@ -3937,7 +3942,10 @@ p.emphasized,
   margin: 2em auto 2em;
   height: 1px; }
 
-#homepage-impact h1, #homepage-impact h2, #homepage-impact h3, #homepage-impact p {
+#homepage-impact h1,
+#homepage-impact h2,
+#homepage-impact h3,
+#homepage-impact p {
   padding-bottom: 0; }
 
 .gm-style {
@@ -3969,13 +3977,13 @@ p.emphasized,
     font-family: "halisgr book", Impact, Charcoal, sans-serif;
     font-size: 1.5em;
     line-height: 1.33333;
-    color: #4F8BCA; }
+    color: #4F8BCA;
+    font-style: normal; }
   .single blockquote h4 {
     color: #4F8BCA;
     margin-top: -8px; }
 
-article ul,
-article ol {
+article ul, article ol {
   font-size: 1em;
   line-height: 1.75;
   list-style: initial;
@@ -3987,6 +3995,13 @@ article ol {
 article pre {
   font-family: monospace;
   color: #94520f; }
+
+.bigquote blockquote p {
+  font-family: "halisgr book", Impact, Charcoal, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.33333;
+  color: #4F8BCA;
+  font-style: normal; }
 
 /*------------------------------------*    $MEDIA ELEMENTS
 \*------------------------------------*/
@@ -5050,182 +5065,137 @@ a#open-menu {
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
-.button,
-a.button,
-.buttonwrap a,
-.buttonwrap .button {
+.menu li.buttonwrap a:hover {
+  background-color: #74b638;
+  color: #fff; }
+
+.menu li.buttonwrap.blue a {
+  color: #4F8BCA;
+  border-color: #4F8BCA; }
+  .menu li.buttonwrap.blue a:hover {
+    background-color: #4F8BCA;
+    color: #fff; }
+
+.menu li.buttonwrap.white a {
+  color: #fff;
+  border-color: #fff; }
+  .menu li.buttonwrap.white a:hover {
+    background-color: #fff;
+    color: #000; }
+
+.menu li.buttonwrap.full a {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box; }
+
+.menu li.buttonwrap.small a {
+  font-size: 14px; }
+
+.c-block input[type=submit] {
+  background: #ffffff; }
+
+.inlineform.pp-fund {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #fff;
+  justify-content: center; }
+  .inlineform.pp-fund div {
+    font-size: 16px;
+    font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+    color: #74b638;
+    background-color: #fff;
+    padding: 0 0 0 0.5em; }
+    .inlineform.pp-fund div input {
+      font-size: 16px;
+      font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+      border: none;
+      outline: none;
+      color: #888;
+      width: 8ch; }
+  .inlineform.pp-fund .button {
+    color: #fff;
+    font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+    border: 2px solid #74b638;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 10px .5em;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 2;
+    background-color: #74b638;
+    margin: 0 0 0 .5em; }
+    .inlineform.pp-fund .button:hover {
+      background-color: #FFC30E;
+      border: 2px solid #FFC30E; }
+  @media screen and (min-width: 1024px) {
+    .inlineform.pp-fund {
+      padding: 1.25em; }
+      .inlineform.pp-fund div {
+        font-size: 22px;
+        padding: 0 0 0 0.75em; }
+        .inlineform.pp-fund div input {
+          font-size: 20px; }
+      .inlineform.pp-fund .button {
+        padding: 10px 1em;
+        margin: 0 0 0 1em;
+        font-size: 18px; } }
+
+a.button, .button, .menu li.buttonwrap a, .c-block input[type=submit] {
   color: #74b638;
-  background-color: transparent;
   font-family: "halisgr bold", Impact, Charcoal, sans-serif;
   border: 2px solid #74b638;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  padding: 9px 1.6em 10px;
-  font-size: 16px;
+  padding: 10px 2em;
+  font-size: 18px;
   display: inline-block;
   line-height: 2;
-  margin: 0;
-  margin-top: 1em;
+  background-color: transparent;
   cursor: pointer;
-  -webkit-appearance: none;
-  border-radius: 0;
-  -moz-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-  -o-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-  -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; }
-  #header .button, #header
-  a.button, #header
-  .buttonwrap a, #header
-  .buttonwrap .button {
+  margin-top: 1em;
+  -moz-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease; }
+  #header a.button, #header .button, #header .menu li.buttonwrap a, #header .c-block input[type=submit] {
     font-size: 14px;
     margin: 0; }
-  .button.button-primary-solid,
-  a.button.button-primary-solid,
-  .buttonwrap a.button-primary-solid,
-  .buttonwrap .button.button-primary-solid {
-    color: #fff;
-    background-color: #74b638; }
-    .button.button-primary-solid:hover,
-    a.button.button-primary-solid:hover,
-    .buttonwrap a.button-primary-solid:hover,
-    .buttonwrap .button.button-primary-solid:hover {
-      background-color: #4F8BCA;
-      border-color: #4F8BCA; }
-  .button:hover,
-  a.button:hover,
-  .buttonwrap a:hover,
-  .buttonwrap .button:hover {
+  a.button:hover, .button:hover, .menu li.buttonwrap a:hover, .c-block input[type=submit]:hover {
     background-color: #74b638;
     color: #fff; }
-  .button.blue, .ci-subscription-popup form input[type=submit], .button.button-secondary,
-  a.button.blue,
-  a.button.button-secondary,
-  .buttonwrap a.blue,
-  .buttonwrap a.button-secondary,
-  .buttonwrap .button.blue,
-  .buttonwrap .ci-subscription-popup form input[type=submit], .ci-subscription-popup form
-  .buttonwrap input[type=submit],
-  .buttonwrap .button.button-secondary {
+  a.button.blue, .button.blue, .ci-subscription-popup form input[type=submit], .menu li.buttonwrap a.blue, .c-block input[type=submit].blue {
     color: #4F8BCA;
     border-color: #4F8BCA; }
-    .button.blue:hover, .ci-subscription-popup form input[type=submit]:hover, .button.button-secondary:hover,
-    a.button.blue:hover,
-    a.button.button-secondary:hover,
-    .buttonwrap a.blue:hover,
-    .buttonwrap a.button-secondary:hover,
-    .buttonwrap .button.blue:hover,
-    .buttonwrap .ci-subscription-popup form input[type=submit]:hover, .ci-subscription-popup form
-    .buttonwrap input[type=submit]:hover,
-    .buttonwrap .button.button-secondary:hover {
+    a.button.blue:hover, .button.blue:hover, .ci-subscription-popup form input[type=submit]:hover, .menu li.buttonwrap a.blue:hover, .c-block input[type=submit].blue:hover {
       background-color: #4F8BCA;
       color: #fff; }
-  .button.button-secondary-solid,
-  a.button.button-secondary-solid,
-  .buttonwrap a.button-secondary-solid,
-  .buttonwrap .button.button-secondary-solid {
-    color: #fff;
-    background-color: #4F8BCA;
-    border-color: #4F8BCA; }
-    .button.button-secondary-solid:hover,
-    a.button.button-secondary-solid:hover,
-    .buttonwrap a.button-secondary-solid:hover,
-    .buttonwrap .button.button-secondary-solid:hover {
-      color: #4F8BCA;
-      background-color: transparent; }
-  .button.grey,
-  a.button.grey,
-  .buttonwrap a.grey,
-  .buttonwrap .button.grey {
+  a.button.grey, .button.grey, .menu li.buttonwrap a.grey, .c-block input[type=submit].grey {
     color: #888;
     border-color: #888; }
-    .button.grey:hover,
-    a.button.grey:hover,
-    .buttonwrap a.grey:hover,
-    .buttonwrap .button.grey:hover {
+    a.button.grey:hover, .button.grey:hover, .menu li.buttonwrap a.grey:hover, .c-block input[type=submit].grey:hover {
       background-color: #888;
       color: #fff; }
-  .button.white, .button.button-tertiary,
-  a.button.white,
-  a.button.button-tertiary,
-  .buttonwrap a.white,
-  .buttonwrap a.button-tertiary,
-  .buttonwrap .button.white,
-  .buttonwrap .button.button-tertiary {
+  a.button.white, .button.white, .menu li.buttonwrap a.white, .c-block input[type=submit].white {
     color: #fff;
     border-color: #fff; }
-    .button.white:hover, .button.button-tertiary:hover,
-    a.button.white:hover,
-    a.button.button-tertiary:hover,
-    .buttonwrap a.white:hover,
-    .buttonwrap a.button-tertiary:hover,
-    .buttonwrap .button.white:hover,
-    .buttonwrap .button.button-tertiary:hover {
+    a.button.white:hover, .button.white:hover, .menu li.buttonwrap a.white:hover, .c-block input[type=submit].white:hover {
       background-color: #fff;
       color: #000; }
-  .button.button-tertiary-solid,
-  a.button.button-tertiary-solid,
-  .buttonwrap a.button-tertiary-solid,
-  .buttonwrap .button.button-tertiary-solid {
-    color: #000;
-    background-color: #fff;
-    border-color: #fff; }
-    .button.button-tertiary-solid:hover,
-    a.button.button-tertiary-solid:hover,
-    .buttonwrap a.button-tertiary-solid:hover,
-    .buttonwrap .button.button-tertiary-solid:hover {
-      color: #fff;
-      background-color: transparent; }
-  .button.button-accent,
-  a.button.button-accent,
-  .buttonwrap a.button-accent,
-  .buttonwrap .button.button-accent {
-    color: #FFC30E;
-    border-color: #FFC30E; }
-    .button.button-accent:hover,
-    a.button.button-accent:hover,
-    .buttonwrap a.button-accent:hover,
-    .buttonwrap .button.button-accent:hover {
-      color: #fff;
-      background-color: #FFC30E; }
-  .button.button-accent-solid,
-  a.button.button-accent-solid,
-  .buttonwrap a.button-accent-solid,
-  .buttonwrap .button.button-accent-solid {
-    color: #fff;
-    background-color: #FFC30E;
-    border-color: #FFC30E; }
-    .button.button-accent-solid:hover,
-    a.button.button-accent-solid:hover,
-    .buttonwrap a.button-accent-solid:hover,
-    .buttonwrap .button.button-accent-solid:hover {
-      background-color: #4F8BCA;
-      border-color: #4F8BCA; }
-  .button.full,
-  a.button.full,
-  .buttonwrap a.full,
-  .buttonwrap .button.full {
+  a.button.full, .button.full, .menu li.buttonwrap a.full, .c-block input[type=submit].full {
     width: 100%;
     text-align: center;
     box-sizing: border-box; }
-  .button.small,
-  a.button.small,
-  .buttonwrap a.small,
-  .buttonwrap .button.small {
+  a.button.small, .button.small, .menu li.buttonwrap a.small, .c-block input[type=submit].small {
     font-size: 14px; }
-  .button.icon,
-  a.button.icon,
-  .buttonwrap a.icon,
-  .buttonwrap .button.icon {
+  a.button.icon, .button.icon, .menu li.buttonwrap a.icon, .c-block input[type=submit].icon {
     color: #fff;
     border-color: #fff;
     position: relative;
     border-right: 0;
     padding-right: 1.5em; }
-    .button.icon:after,
-    a.button.icon:after,
-    .buttonwrap a.icon:after,
-    .buttonwrap .button.icon:after {
+    a.button.icon:after, .button.icon:after, .menu li.buttonwrap a.icon:after, .c-block input[type=submit].icon:after {
       position: absolute;
       right: -52px;
       top: -2px;
@@ -5236,33 +5206,12 @@ a.button,
       content: '';
       background: url("../images/handheart-icon.png") center center no-repeat;
       background-size: 34px; }
-    .button.icon:hover,
-    a.button.icon:hover,
-    .buttonwrap a.icon:hover,
-    .buttonwrap .button.icon:hover {
+    a.button.icon:hover, .button.icon:hover, .menu li.buttonwrap a.icon:hover, .c-block input[type=submit].icon:hover {
       background-color: #fff;
       color: #222222; }
-    .button.icon.center,
-    a.button.icon.center,
-    .buttonwrap a.icon.center,
-    .buttonwrap .button.icon.center {
+    a.button.icon.center, .button.icon.center, .menu li.buttonwrap a.icon.center, .c-block input[type=submit].icon.center {
       margin-left: -52px; }
-    .button.icon.doc, .button.icon.exclamation, .button.icon.ex, .button.icon.group, .button.icon.whistle,
-    a.button.icon.doc,
-    a.button.icon.exclamation,
-    a.button.icon.ex,
-    a.button.icon.group,
-    a.button.icon.whistle,
-    .buttonwrap a.icon.doc,
-    .buttonwrap a.icon.exclamation,
-    .buttonwrap a.icon.ex,
-    .buttonwrap a.icon.group,
-    .buttonwrap a.icon.whistle,
-    .buttonwrap .button.icon.doc,
-    .buttonwrap .button.icon.exclamation,
-    .buttonwrap .button.icon.ex,
-    .buttonwrap .button.icon.group,
-    .buttonwrap .button.icon.whistle {
+    a.button.icon.doc, a.button.icon.exclamation, a.button.icon.ex, a.button.icon.group, a.button.icon.whistle, .button.icon.doc, .button.icon.exclamation, .button.icon.ex, .button.icon.group, .button.icon.whistle, .menu li.buttonwrap a.icon.doc, .menu li.buttonwrap a.icon.exclamation, .menu li.buttonwrap a.icon.ex, .menu li.buttonwrap a.icon.group, .menu li.buttonwrap a.icon.whistle, .c-block input[type=submit].icon.doc, .c-block input[type=submit].icon.exclamation, .c-block input[type=submit].icon.ex, .c-block input[type=submit].icon.group, .c-block input[type=submit].icon.whistle {
       display: block;
       width: 100%;
       margin-left: auto;
@@ -5271,88 +5220,24 @@ a.button,
       padding-right: 55px;
       text-align: center;
       box-sizing: border-box; }
-      .button.icon.doc:after, .button.icon.exclamation:after, .button.icon.ex:after, .button.icon.group:after, .button.icon.whistle:after,
-      a.button.icon.doc:after,
-      a.button.icon.exclamation:after,
-      a.button.icon.ex:after,
-      a.button.icon.group:after,
-      a.button.icon.whistle:after,
-      .buttonwrap a.icon.doc:after,
-      .buttonwrap a.icon.exclamation:after,
-      .buttonwrap a.icon.ex:after,
-      .buttonwrap a.icon.group:after,
-      .buttonwrap a.icon.whistle:after,
-      .buttonwrap .button.icon.doc:after,
-      .buttonwrap .button.icon.exclamation:after,
-      .buttonwrap .button.icon.ex:after,
-      .buttonwrap .button.icon.group:after,
-      .buttonwrap .button.icon.whistle:after {
+      a.button.icon.doc:after, a.button.icon.exclamation:after, a.button.icon.ex:after, a.button.icon.group:after, a.button.icon.whistle:after, .button.icon.doc:after, .button.icon.exclamation:after, .button.icon.ex:after, .button.icon.group:after, .button.icon.whistle:after, .menu li.buttonwrap a.icon.doc:after, .menu li.buttonwrap a.icon.exclamation:after, .menu li.buttonwrap a.icon.ex:after, .menu li.buttonwrap a.icon.group:after, .menu li.buttonwrap a.icon.whistle:after, .c-block input[type=submit].icon.doc:after, .c-block input[type=submit].icon.exclamation:after, .c-block input[type=submit].icon.ex:after, .c-block input[type=submit].icon.group:after, .c-block input[type=submit].icon.whistle:after {
         background-image: url(../images/button-icon-sheet.png);
         color: #4F8BCA;
         border-color: #4F8BCA;
         background-size: 104px;
         right: 0; }
-    .button.icon.doc:after,
-    a.button.icon.doc:after,
-    .buttonwrap a.icon.doc:after,
-    .buttonwrap .button.icon.doc:after {
+    a.button.icon.doc:after, .button.icon.doc:after, .menu li.buttonwrap a.icon.doc:after, .c-block input[type=submit].icon.doc:after {
       background-position: 0 -200px; }
-    .button.icon.exclamation:after,
-    a.button.icon.exclamation:after,
-    .buttonwrap a.icon.exclamation:after,
-    .buttonwrap .button.icon.exclamation:after {
+    a.button.icon.exclamation:after, .button.icon.exclamation:after, .menu li.buttonwrap a.icon.exclamation:after, .c-block input[type=submit].icon.exclamation:after {
       background-position: 0 0; }
-    .button.icon.ex:after,
-    a.button.icon.ex:after,
-    .buttonwrap a.icon.ex:after,
-    .buttonwrap .button.icon.ex:after {
+    a.button.icon.ex:after, .button.icon.ex:after, .menu li.buttonwrap a.icon.ex:after, .c-block input[type=submit].icon.ex:after {
       background-position: 0 -98px; }
-    .button.icon.group:after,
-    a.button.icon.group:after,
-    .buttonwrap a.icon.group:after,
-    .buttonwrap .button.icon.group:after {
+    a.button.icon.group:after, .button.icon.group:after, .menu li.buttonwrap a.icon.group:after, .c-block input[type=submit].icon.group:after {
       background-position: 0 -148px; }
-    .button.icon.whistle:after,
-    a.button.icon.whistle:after,
-    .buttonwrap a.icon.whistle:after,
-    .buttonwrap .button.icon.whistle:after {
+    a.button.icon.whistle:after, .button.icon.whistle:after, .menu li.buttonwrap a.icon.whistle:after, .c-block input[type=submit].icon.whistle:after {
       background-position: 0 -48px; }
 
-.buttonwrap .button {
-  background-color: transparent;
-  cursor: pointer; }
-  .buttonwrap .button:hover {
-    background-color: #74b638; }
-
-.buttonwrap.blue a,
-.buttonwrap.blue .button {
-  color: #4F8BCA;
-  border-color: #4F8BCA; }
-  .buttonwrap.blue a:hover,
-  .buttonwrap.blue .button:hover {
-    background-color: #4F8BCA;
-    color: #fff; }
-
-.buttonwrap.grey a {
-  color: #888;
-  border-color: #888; }
-  .buttonwrap.grey a:hover {
-    background-color: #888;
-    color: #fff; }
-
-.buttonwrap.white a {
-  color: #fff;
-  border-color: #fff; }
-  .buttonwrap.white a:hover {
-    background-color: #fff;
-    color: #000; }
-
-.white a.button.icon,
-.white .button.icon,
-.two-free a.button.icon,
-.two-free .button.icon,
-.single-free a.button.icon,
-.single-free .button.icon {
+.white a.button.icon, .white .button.icon, .two-free a.button.icon, .two-free .button.icon, .single-free a.button.icon, .single-free .button.icon {
   color: #4F8BCA;
   border-color: #4F8BCA;
   clear: both; }
@@ -6408,20 +6293,22 @@ label[for="forgot-password-email"] {
 
 .shop-apparel input[type=submit],
 .shop-art input[type=submit] {
-  color: #74b638;
-  background-color: transparent;
+  color: #fff;
   font-family: "halisgr bold", Impact, Charcoal, sans-serif;
   border: 2px solid #74b638;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  padding: 9px 1.6em 10px;
-  font-size: 16px;
+  padding: 10px .5em;
+  font-size: 13px;
   display: inline-block;
   line-height: 2;
-  margin: 0;
-  margin-top: 1em;
-  cursor: pointer; }
+  background-color: #74b638;
+  margin: 0 0 0 .5em; }
+  .shop-apparel input[type=submit]:hover,
+  .shop-art input[type=submit]:hover {
+    background-color: #FFC30E;
+    border: 2px solid #FFC30E; }
 
 .header-full-width {
   background-color: #4F8BCA; }

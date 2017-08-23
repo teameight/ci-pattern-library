@@ -155,7 +155,6 @@
 			float:right;
 		}
 
-
 		a:not(.button) {
 			display: inline-block;
 			background: url(../images/socialicons.png) no-repeat;
@@ -165,18 +164,23 @@
 			text-indent: -999em;
 			margin-right: 8px;
 		}
+
 		a:hover {
 			opacity: 0.8;
 		}
+
 		a.fb {
 			//margin-left: 4px;
 		}
+
 		a.tw {
 			background-position: -45px 0;
 		}
+
 		a.ig {
 			background-position: -90px 0;
 		}
+
 	}
 
 	.footer-subfooter {

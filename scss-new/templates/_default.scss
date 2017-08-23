@@ -703,7 +703,23 @@
     }
 
     input[type=submit] {
-        @extend .button;
+        color:$white;
+        font-family:$titlefont;
+        border:2px solid $green;
+        text-decoration:none;
+        text-transform:uppercase;
+        letter-spacing:$title-spacing;
+        padding:10px .5em;
+        font-size:13px;
+        display: inline-block;
+        line-height:2;
+        background-color: $green;
+        margin:0 0 0 .5em; 
+
+        &:hover {
+            background-color:$yellow;
+            border:2px solid $yellow;
+        }
     }
 }
 
