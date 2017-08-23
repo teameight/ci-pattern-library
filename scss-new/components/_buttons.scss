@@ -2,52 +2,141 @@
     $BUTTONS
 \*------------------------------------*/
 
-.button,
-a.button,
-.buttonwrap a,
-.buttonwrap .button {
-	color: $green;
-	background-color: transparent;
-	font-family: $titlefont;
-	border: 2px solid $green;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: $title-spacing;
-	padding: 9px 1.6em 10px;
-	font-size: 16px;
+.menu li.buttonwrap {
+	a:hover {
+		background-color:$green;
+		color:$white;
+	}
+
+	&.blue a {
+		color:$blue;
+		border-color:$blue;
+
+		&:hover {
+			background-color:$blue;
+			color:$white	}
+	}
+	&.white a {
+		color:$white;
+		border-color:$white;
+
+		&:hover {
+			background-color:$white;
+			color:$black;	}
+	}
+	&.full a {
+		width:100%;
+		text-align:center;
+    	box-sizing: border-box;
+	}
+	&.small a {
+		font-size: 14px;
+	}
+}
+.c-block input[type=submit] {
+	background:#ffffff;
+}
+.inlineform.pp-fund {
 	display: inline-block;
-	line-height: 2;
-	margin: 0;
-	margin-top: 1em;
+	padding:1em;
+	border: 1px solid $white;
+	justify-content: center;
+
+
+	div {
+		
+		font-size:16px;
+		font-family:$titlefont;
+		color:$green;
+		background-color: $white;
+		padding:0 0 0 0.5em;
+
+		input {
+			font-size:16px;
+			font-family:$titlefont;    
+			border: none;
+    	outline: none;
+	    color:$grey-med;
+	    width: 8ch;
+		}
+	}
+
+	.button {
+		color:$white;
+		font-family:$titlefont;
+		border:2px solid $green;
+		text-decoration:none;
+		text-transform:uppercase;
+		letter-spacing:$title-spacing;
+		padding:10px .5em;
+		font-size:13px;
+		display: inline-block;
+		line-height:2;
+		background-color: $green;
+		margin:0 0 0 .5em; 
+
+		&:hover {
+			background-color:$yellow;
+			border:2px solid $yellow;
+		}
+	}
+
+	@media screen and (min-width: $bp-med-2) {
+
+		padding:1.25em;
+
+		div {
+			
+			font-size:22px;
+			padding:0 0 0 0.75em;
+
+			input {
+				font-size:20px;
+			}
+		}
+
+		.button {
+			padding:10px 1em;
+			margin:0 0 0 1em; 
+			font-size:18px;
+		}
+
+
+	}
+
+}
+a.button, .button, .menu li.buttonwrap a, .c-block input[type=submit] {
+	color:$green;
+	font-family:$titlefont;
+	border:2px solid $green;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:$title-spacing;
+	padding:10px 2em;
+	font-size:18px;
+	display: inline-block;
+	line-height:2;
+	background-color: transparent;
 	cursor: pointer;
-	-webkit-appearance: none;
-	border-radius: 0;
-	-moz-transition: color $transition, background-color $transition, border-color $transition;
-	-o-transition: color $transition, background-color $transition, border-color $transition;
-	-webkit-transition: color $transition, background-color $transition, border-color $transition;
-	transition: color $transition, background-color $transition, border-color $transition;
+
+	margin-top:1em;
 
 	#header & {
 		font-size:14px;
 		margin:0;
 	}
 
-	&.button-primary-solid {
-		color: $white;
-		background-color: $green;
-
-		&:hover {
-			background-color: $blue;
-			border-color: $blue;
-		}
-	}
+    -moz-transition: color $transition, background-color $transition;
+    -o-transition: color $transition, background-color $transition;
+    -webkit-transition: color $transition, background-color $transition;
+	transition: color $transition, background-color $transition;
 
 	&:hover {
 		background-color:$green;
 		color:$white;
 	}
 
-	&.blue, &.button-secondary {
+	&.blue {
 		color:$blue;
 		border-color:$blue;
 
@@ -56,18 +145,6 @@ a.button,
 			color:$white;
 		}
 	}
-
-	&.button-secondary-solid {
-		color: $white;
-		background-color: $blue;
-		border-color:$blue;
-
-		&:hover {
-			color: $blue;
-			background-color: transparent;
-		}
-	}
-
 	&.grey {
 		color:$grey-med;
 		border-color:$grey-med;
@@ -76,8 +153,7 @@ a.button,
 			background-color:$grey-med;
 			color:$white	}
 	}
-
-	&.white, &.button-tertiary {
+	&.white {
 		color:$white;
 		border-color:$white;
 
@@ -86,45 +162,11 @@ a.button,
 			color:$black;
 			}
 	}
-
-	&.button-tertiary-solid {
-		color: $black;
-		background-color: $white;
-		border-color: $white;
-
-		&:hover {
-			color: $white;
-			background-color: transparent;
-		}
-	}
-
-	&.button-accent {
-		color: $yellow;
-		border-color: $yellow;
-
-		&:hover {
-			color: $white;
-			background-color: $yellow;
-		}
-	}
-
-	&.button-accent-solid {
-		color: $white;
-		background-color: $yellow;
-		border-color: $yellow;
-
-		&:hover {
-			background-color: $blue;
-			border-color: $blue;
-		}
-	}
-
 	&.full {
 		width:100%;
 		text-align:center;
     	box-sizing: border-box;
 	}
-
 	&.small {
 		font-size: 14px;
 	}
@@ -186,73 +228,23 @@ a.button,
 		&.doc:after {
 			background-position: 0 -200px;
 		}
-
 		&.exclamation:after {
 			background-position: 0 0;
 		}
-
 		&.ex:after {
 			background-position: 0 -98px;
 		}
-
 		&.group:after {
 			background-position: 0 -148px;
 		}
-
 		&.whistle:after {
 			background-position: 0 -48px;
 		}
 	}
 
 }
-
-.buttonwrap {
-
-	.button {
-		background-color: transparent;
-		cursor: pointer;
-
-		&:hover {
-			background-color: $green;
-		}
-	}
-
-	&.blue a,
-	&.blue .button {
-		color:$blue;
-		border-color:$blue;
-
-		&:hover {
-			background-color:$blue;
-			color:$white;
-		}
-	}
-
-	&.grey a {
-		color:$grey-med;
-		border-color:$grey-med;
-
-		&:hover {
-			background-color:$grey-med;
-			color:$white	}
-	}
-
-	&.white a {
-		color:$white;
-		border-color:$white;
-
-		&:hover {
-			background-color:$white;
-			color:$black;
-		}
-	}
-}
-
-.white,
-.two-free,
-.single-free {
-	a.button,
-	.button {
+.white, .two-free, .single-free {
+	a.button, .button {
 		&.icon {
 			color:$blue;
 			border-color:$blue;

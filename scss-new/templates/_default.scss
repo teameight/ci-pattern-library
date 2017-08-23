@@ -703,20 +703,7 @@
     }
 
     input[type=submit] {
-        color: $green;
-        background-color: transparent;
-        font-family: $titlefont;
-        border: 2px solid $green;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: $title-spacing;
-        padding: 9px 1.6em 10px;
-        font-size: 16px;
-        display: inline-block;
-        line-height: 2;
-        margin: 0;
-        margin-top: 1em;
-        cursor: pointer;
+        @extend .button;
     }
 }
 

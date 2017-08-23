@@ -6,16 +6,7 @@ body {
 	font-family:$font;
 }
 
-h1,
-h2,
-h3,
-p,
-ul,
-ol,
-.entry,
-.header-landmark,
-.bfilter-wrap,
-.nav-links  {
+h1, h2, h3, p, ul, ol, .entry, .header-landmark, .bfilter-wrap, .nav-links  {
 	@include font-smoothing();
 	text-rendering: optimizeLegibility;
 }
@@ -23,16 +14,36 @@ ol,
 em {
 	font-style: italic;
 }
+.c-block {
+	p {
+		margin-bottom:.75em;
+	}
+	em {
+		font-style:italic;
+	}
+	blockquote {
+		padding-top: 1.5em;
+	    padding-bottom: 1.5em;
 
-.c-block p {
-	margin-bottom:.75em;
-}
-.c-block em {
-	font-style:italic;
+		p {
+		    font-style: italic;
+		    font-size: 1.325em;
+		    line-height: 1.5;
+		}
+		h4 {
+			font-family: $font;
+			text-transform: none;
+			font-size:16px;
+
+		}
+	}
 }
 
-p.emphasized,
-.single p.emphasized {
+hr {
+	clear: both;
+}
+
+p.emphasized, .single p.emphasized {
 	font-size: 20px;
 	line-height:32px;
 }
@@ -53,17 +64,23 @@ p.emphasized,
 	-webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: initial;
 }
+
 #main .guest-border {
-  border-top:1px solid #ffffff;
+    border-top:1px solid #ffffff;
 	width: 5em;
 	margin:2em auto 2em;
 	height:1px;
 }
+
 #homepage-impact {
-	h1,h2,h3, p {
+	h1,
+	h2,
+	h3,
+	p {
 		padding-bottom: 0;
 	}
 }
+
 .gm-style {
 	font-size:16px;
 	font-family:$font;
@@ -98,12 +115,14 @@ p.emphasized,
 	}
 
 	blockquote {
+
 		margin: 24px 0 32px 10%;
 
 		p {
 			font-family: $titlefont-book;
 			@include font-sizing(24, 32);
 			color:$blue;
+			font-style: normal;
 		}
 
 		h4 {
@@ -112,9 +131,9 @@ p.emphasized,
 		}
 	}
 }
+
 article {
-	ul,
-	ol {
+	ul, ol {
 		@include font-sizing(16, 28);
 	    list-style: initial;
 	    margin-left: 1em;
@@ -130,4 +149,13 @@ article {
 		font-family: monospace;
     	color: #94520f;
 	}
+}
+
+.bigquote blockquote {
+	p {
+			font-family: $titlefont-book;
+			@include font-sizing(24, 32);
+			color:$blue;
+			font-style:normal;
+		}
 }
