@@ -1,0 +1,19 @@
+#region-how-tos {
+
+	h1 {
+		text-align: center;
+	}
+
+	img {
+		float: none;
+		margin-bottom: 20px;
+		height: auto;
+
+		@media screen and (min-width: $bp-large) {
+			float: right;
+			max-width: 350px;
+			margin-left: 20px;
+		}
+	}
+
+}

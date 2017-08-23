@@ -19,8 +19,9 @@ gulp.task('lint', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('scss-new/*.scss')
+    return gulp.src('./scss-new/pattern-library.scss')
         .pipe(sass())
+        .pipe(rename('pattern-library.css'))
         .pipe(gulp.dest('public/css'));
 });
 
@@ -42,23 +43,18 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('header', function() {
-    return gulp.src('scss-new/header.scss')
+gulp.task('wp-style', function() {
+    return gulp.src('./scss-new/wp.scss')
         .pipe(sass())
-        .pipe(gulp.dest('public/css'));
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest('../../../../vvv/www/children/htdocs/wp-content/themes/children_theme/css'));
 });
 
-gulp.task('footer', function() {
-    return gulp.src('scss-new/footer.scss')
+gulp.task('dms-style', function() {
+    return gulp.src('./scss-new/dms.scss')
         .pipe(sass())
-        .pipe(gulp.dest('public/css'));
-});
-
-gulp.task('newstyle', function() {
-    return gulp.src('scss-new/ci-17.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('public/css'))
-        .pipe(gulp.dest('../../ci-inc-dms-test/children-inc-dms/ChildrenIncorporated/Styles/pd'))
+        .pipe(rename('ci-17.css'))
+        .pipe(gulp.dest('../../ci-inc-dms-test/children-inc-dms/ChildrenIncorporated/Styles/pd'));
 });
 
 // Watch Files For Changes

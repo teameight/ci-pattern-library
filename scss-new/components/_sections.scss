@@ -2,6 +2,11 @@
     $Sections
 \*------------------------------------*/
 
+.block-centered {
+	display: block;
+	margin: 0 auto;
+}
+
 #solution-projects {
 	text-align:left;
 	> h2, > h3 {

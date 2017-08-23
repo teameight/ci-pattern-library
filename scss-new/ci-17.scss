@@ -9,6 +9,7 @@
 @import "base/headings";
 @import "base/text";
 @import "base/media";
+@import "base/forms";
 @import "base/pattern-library";
 
 @import "components/header";
@@ -22,5 +23,6 @@
 @import "components/alert";
 
 @import "dms/donate-funds";
+@import "dms/reset-password";
 
 @import "templates/shame";

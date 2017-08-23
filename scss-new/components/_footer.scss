@@ -10,7 +10,7 @@
 		float: left;
 		text-align: center;
 
-		@media screen and (min-width: $bp-med) {
+		@media screen and (min-width: $bp-med-2) {
 			width: auto;
 			text-align: left;
 		}
@@ -19,7 +19,7 @@
 	.menu {
 		padding: 0;
 
-		@media screen and (min-width: $bp-med) {
+		@media screen and (min-width: $bp-med-2) {
 			padding-right: 4em;
 		}
 	}
@@ -28,7 +28,7 @@
 		border-left: 1px solid $grey-lt;
 		width: calc(50% - 1px);
 
-		@media screen and (min-width: $bp-med) {
+		@media screen and (min-width: $bp-med-2) {
 			padding-right: 0;
 			width: auto;
 			border: none;
@@ -37,7 +37,7 @@
 }
 
 #footer {
-	background:#ffffff;
+	background: #ffffff;
 	position: relative;
 	color: $green;
 	border-top: 1px solid $grey-lt;
@@ -45,20 +45,20 @@
 	.footer-nav {
 		line-height: 2;
 		overflow: hidden;
-		width:100%;
+		width: 100%;
 
-		@media screen and (min-width:$bp-med) {
+		@media screen and (min-width:$bp-med-2) {
 			float: left;
-			width:auto;
+			width: auto;
 		}
 	}
 
 	.footer-logo {
 		width: 120px;
 		height: auto;
-		margin:0 auto 4em;
+		margin: 0 auto 4em;
 
-		@media screen and (min-width:$bp-med-2) {
+		@media screen and (min-width:$bp-full) {
 			width: 162px;
 			position: absolute;
 			top: 60px;
@@ -70,8 +70,8 @@
 			outline: 0 none;
 
 			img {
-				width:100%;
-				height:auto;
+				width: 100%;
+				height: auto;
 			}
 		}
 
@@ -82,39 +82,55 @@
 		font-size: 12px;
 		margin-top: 10px;
 
-		@media screen and (max-width:$bp-med) {
-			float:none;
+		@media screen and (max-width:$bp-med-2) {
+			float: none;
 
 			.badges,
 			.social {
-				float:none;
-				margin:2em auto;
+				float: none;
+				margin: 2em auto;
 
 				> div {
-					margin:0 auto;
-					text-align:center;
+					margin: 0 auto;
+					padding: 0 2px;
+					text-align: center;
 				}
 			}
 		}
 	}
 
 	.badges {
-		float:right;
-		clear:both;
-		margin-bottom:3em;
+		float: right;
+		clear: both;
+		margin-bottom: 3em;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 
 		> div {
-			margin-left:2em;
+			margin-left: 2em;
 
 			img {
-				max-width:90px;
-				height:auto;
+				max-width: 90px;
+				height: auto;
+				width: 64px;
+
+				@media screen and (min-width: $bp-small-2) {
+					max-width: 90px;
+					width: auto;
+				}
 			}
 
-			&.bbb img {
-				max-width:50px;
+			&.charity-navigator {
+				img {
+					max-width: 70px;
+				}
+			}
+
+			&.bbb {
+				img {
+					max-width:50px;
+				}
 			}
 		}
 	}
@@ -147,7 +163,7 @@
 			width: 40px;
 			overflow: hidden;
 			text-indent: -999em;
-			margin-right: 11px;
+			margin-right: 8px;
 		}
 		a:hover {
 			opacity: 0.8;
@@ -164,11 +180,11 @@
 	}
 
 	.footer-subfooter {
-		clear:both;
-		margin:3em auto 0;
+		clear: both;
+		margin: 3em auto 0;
 		text-align: center;
 		color: $grey;
-		font-size:.75em;
+		font-size: .75em;
 	}
 
 }

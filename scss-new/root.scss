@@ -25,59 +25,40 @@
  */
 
 @import "generic/fonts";
-
 @import "generic/variables";
 @import "generic/mixins";
-
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
-@import "base/pattern-library";
 @import "base/main";
 @import "base/links";
 @import "base/headings";
 @import "base/text";
 @import "base/media";
-
-
+@import "base/forms";
 
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 @import "components/layout";
 
-
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
 @import "components/header";
 @import "components/nav";
-// @import "components/main";
 @import "components/jumpnav";
 @import "components/footer";
-
-
-
-/*------------------------------------*\
-    $TEXT Styles
-\*------------------------------------*/
-// @import "components/text";
-
 
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
+@import "components/alert";
 @import "components/buttons";
 @import "components/sections";
 @import "components/article";
 @import "components/popup";
 
-/*------------------------------------*\
-    $TEMPLATES
-\*------------------------------------*/
-// @import "templates/default";
-// @import "templates/faqs";
-// @import "templates/on-the-road";
 @import "templates/shame";
 
