@@ -5546,12 +5546,22 @@ a.back-button {
       font-style: italic; }
 
 .ci-subscription-popup {
-  max-width: 633px; }
+  max-width: 633px;
+  position: fixed;
+  bottom: -100%;
+  background-color: #fff;
+  z-index: 100000;
+  border-top: 2px solid #fff;
+  transition: all 0.7s; }
+  .ci-subscription-popup.open {
+    bottom: 0; }
   @media screen and (min-width: 600px) {
     .ci-subscription-popup {
       -webkit-box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.18);
       -moz-box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.18);
-      box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.18); } }
+      box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.18);
+      right: 40px;
+      width: 633px; } }
   .ci-subscription-popup .close {
     display: block;
     background-color: #74b638;
@@ -5564,7 +5574,13 @@ a.back-button {
     cursor: pointer; }
   .ci-subscription-popup form {
     padding: 20px 40px; }
-    .ci-subscription-popup form input[type=text] {
+    .ci-subscription-popup form .gfield_label,
+    .ci-subscription-popup form .gform_title {
+      display: none; }
+    .ci-subscription-popup form .gform_description {
+      display: block;
+      margin-bottom: 1em; }
+    .ci-subscription-popup form input[type=email] {
       width: calc(100% - 44px);
       padding: 14px 20px 16px;
       font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
