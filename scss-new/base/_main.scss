@@ -5,6 +5,7 @@ body {
 	background-color: $white;
 	min-width: 320px;
 	font-family: $font;
+	overflow: hidden;
 }
 
 .c-block .entry:before,

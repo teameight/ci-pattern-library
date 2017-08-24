@@ -703,22 +703,27 @@
     }
 
     input[type=submit] {
-        color:$white;
+        color:$green;
         font-family:$titlefont;
         border:2px solid $green;
         text-decoration:none;
         text-transform:uppercase;
         letter-spacing:$title-spacing;
-        padding:10px .5em;
-        font-size:13px;
+        padding:10px 2em;
+        font-size:18px;
         display: inline-block;
         line-height:2;
-        background-color: $green;
-        margin:0 0 0 .5em; 
+        background-color: transparent;
+        cursor: pointer;
+        margin-top:1em;
+        -moz-transition: color $transition, background-color $transition;
+        -o-transition: color $transition, background-color $transition;
+        -webkit-transition: color $transition, background-color $transition;
+        transition: color $transition, background-color $transition;
 
         &:hover {
-            background-color:$yellow;
-            border:2px solid $yellow;
+            background-color:$green;
+            color:$white;
         }
     }
 }

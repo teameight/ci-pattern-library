@@ -32,7 +32,8 @@ body {
   line-height: 1;
   background-color: #fff;
   min-width: 320px;
-  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif; }
+  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+  overflow: hidden; }
 
 .c-block .entry:before,
 .c-block .entry:after,
@@ -6293,22 +6294,27 @@ label[for="forgot-password-email"] {
 
 .shop-apparel input[type=submit],
 .shop-art input[type=submit] {
-  color: #fff;
+  color: #74b638;
   font-family: "halisgr bold", Impact, Charcoal, sans-serif;
   border: 2px solid #74b638;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  padding: 10px .5em;
-  font-size: 13px;
+  padding: 10px 2em;
+  font-size: 18px;
   display: inline-block;
   line-height: 2;
-  background-color: #74b638;
-  margin: 0 0 0 .5em; }
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 1em;
+  -moz-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease; }
   .shop-apparel input[type=submit]:hover,
   .shop-art input[type=submit]:hover {
-    background-color: #FFC30E;
-    border: 2px solid #FFC30E; }
+    background-color: #74b638;
+    color: #fff; }
 
 .header-full-width {
   background-color: #4F8BCA; }
