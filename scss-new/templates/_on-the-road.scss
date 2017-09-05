@@ -580,6 +580,10 @@ p.wp-caption-text,
 		color: $blue;
 		font-size: 1.25em;
 		margin-bottom: 1em;
+
+		&:hover {
+			color: $green;
+		}
 	}
 
 	.entry-content {

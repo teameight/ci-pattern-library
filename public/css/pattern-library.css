@@ -6795,6 +6795,8 @@ p.wp-caption-text,
     color: #4F8BCA;
     font-size: 1.25em;
     margin-bottom: 1em; }
+    .otr-featured-post .subheading:hover {
+      color: #74b638; }
   .otr-featured-post .entry-content {
     font-size: 1em;
     line-height: 1.75;
