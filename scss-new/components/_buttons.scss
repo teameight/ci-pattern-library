@@ -105,7 +105,11 @@
 	}
 
 }
-a.button, .button, .menu li.buttonwrap a, .c-block input[type=submit] {
+a.button,
+.button,
+.buttonwrap .button,
+.menu li.buttonwrap a,
+.c-block input[type=submit] {
 	color:$green;
 	font-family:$titlefont;
 	border:2px solid $green;
