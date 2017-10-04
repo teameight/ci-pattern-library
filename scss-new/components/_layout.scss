@@ -565,8 +565,7 @@
 	width: 100%;
 
 	@media screen and (min-width:$bp-full) {
-		width: $max-width;
-		max-width: 100%;
+		max-width: $max-width;
 		margin: 0 auto;
 	}
 }
