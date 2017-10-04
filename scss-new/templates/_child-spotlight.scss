@@ -113,16 +113,22 @@
 
 .child-spotlight-secondary {
 	background-color: $grey-lt-3;
-	padding: 2em;
+	padding: 2em 1.25em;
 	border-bottom: 10px solid $yellow;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: center;
+
+	.innerwrap {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+
+		@media screen and (min-width: $bp-med-2) {
+			flex-direction: row;
+		}
+	}
 
 	@media screen and (min-width: $bp-med-2) {
-		padding: 4.6875em;
-		flex-direction: row;
+		padding: 4.6875em 1.25em;
 	}
 }
 
@@ -130,6 +136,7 @@
 	max-width: 360px;
 	margin-right: 0;
 	margin-bottom: 2em;
+	flex: 1 1 0;
 
 	&:last-of-type {
 		margin-bottom: 0;

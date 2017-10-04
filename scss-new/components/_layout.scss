@@ -562,14 +562,11 @@
 }
 
 .innerwrap {
-	padding-left: 5%;
-	padding-right:5%;
-	width: 90%;
+	width: 100%;
 
 	@media screen and (min-width:$bp-full) {
-		width:$max-width;
-		margin:0 auto;
-		padding-left:0;
-		padding-right:0;
+		width: $max-width;
+		max-width: 100%;
+		margin: 0 auto;
 	}
 }
