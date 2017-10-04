@@ -4649,6 +4649,17 @@ img.aligncenter, a img.aligncenter {
   text-align: right;
   box-sizing: border-box; }
 
+.innerwrap {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%; }
+  @media screen and (min-width: 1360px) {
+    .innerwrap {
+      width: 1300px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0; } }
+
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/
 /*------------------------------------*    $HEADER
@@ -7070,10 +7081,14 @@ p.wp-caption-text,
   overflow: hidden;
   background-color: #F5F5F5; }
   .child-spotlight-primary-img img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto; }
+    @media screen and (min-width: 500px) {
+      .child-spotlight-primary-img img {
+        width: auto;
+        height: 100%; } }
 
 .child-spotlight-hello {
   color: #fff;
@@ -7120,15 +7135,15 @@ p.wp-caption-text,
 .child-spotlight-secondary {
   background-color: #F5F5F5;
   padding: 2em;
-  display: flex;
   border-bottom: 10px solid #FFC30E;
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center; }
   @media screen and (min-width: 1024px) {
     .child-spotlight-secondary {
-      flex-direction: row;
-      padding: 4.6875em; } }
+      padding: 4.6875em;
+      flex-direction: row; } }
 
 .child-spotlight-secondary-child {
   max-width: 360px;
