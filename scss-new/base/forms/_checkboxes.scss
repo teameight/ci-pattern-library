@@ -1,0 +1,173 @@
+// Checkbox
+/**
+ * @summary Initializes checkbox
+ *
+ * @name base
+ * @selector .ci-checkbox
+ * @restrict span, label
+ * @required
+ * @variant
+ */
+.ci-checkbox {
+  display: inline-block;
+
+	.ci-form-element__label {
+		margin-top: 5px;
+		margin-bottom: 0;
+		display: inline-block;
+		font-family: $titlefont-book;
+
+		.ci-checkbox__primary & {
+			color: $blue;
+			font-family: $titlefont;
+		}
+	}
+}
+
+	.ci-checkbox__label {
+		display: flex;
+	}
+
+	.ci-checkbox_faux {
+    width: 1.5625em;
+    height: 1.5625em;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    vertical-align: middle;
+    border: 4px solid $blue;
+    background: transparent;
+    transition: border 0.1s linear, background-color 0.1s linear;
+	}
+
+  .ci-checkbox [type="checkbox"] {
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+
+    &:checked {
+    	+ .ci-checkbox_faux:after,
+			+ .ci-checkbox--faux:after,
+			~ .ci-checkbox_faux:after,
+			~ .ci-checkbox--faux:after,
+			+ .ci-checkbox__label .ci-checkbox_faux:after,
+			+ .ci-checkbox__label .ci-checkbox--faux:after {
+		    width: 1.4625em;
+		    height: 1.4625em;
+        content: '';
+        position: absolute;
+        z-index: $zi-below-ground;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        background: $yellow;
+
+	      .ci-has-error & {
+	      	border-color: $error;
+	      }
+			}
+
+			.ci-has-error & {
+				+ .ci-checkbox_faux,
+				+ .ci-checkbox--faux,
+				~ .ci-checkbox_faux,
+				~ .ci-checkbox--faux,
+				+ .ci-checkbox__label .ci-checkbox_faux,
+				+ .ci-checkbox__label .ci-checkbox--faux {
+					border-color: $error;
+				}
+			}
+    }
+
+    &:indeterminate {
+    	+ .ci-checkbox_faux:after,
+			+ .ci-checkbox--faux:after,
+			~ .ci-checkbox_faux:after,
+			~ .ci-checkbox--faux:after,
+			+ .ci-checkbox__label .ci-checkbox_faux:after,
+			+ .ci-checkbox__label .ci-checkbox--faux:after {
+				content: '';
+	      display: block;
+	      position: absolute;
+	      top: 50%;
+	      left: 50%;
+	      width: 0.5rem;
+	      height: 2px;
+	      background: white;
+	      border: 0;
+	      transform: translate3d(-50%, -50%, 0);
+			}
+    }
+
+    &[disabled] {
+    	+ .ci-checkbox_faux,
+			+ .ci-checkbox--faux,
+			~ .ci-checkbox_faux,
+			~ .ci-checkbox--faux,
+			+ .ci-checkbox__label .ci-checkbox_faux,
+			+ .ci-checkbox__label .ci-checkbox--faux {
+				background-color: $grey-lt-3;
+        border-color: $grey-lt;
+        cursor: not-allowed;
+			}
+    }
+
+    .ci-has-error & {
+    	+ .ci-checkbox_faux,
+			+ .ci-checkbox--faux,
+			~ .ci-checkbox_faux,
+			~ .ci-checkbox--faux,
+			+ .ci-checkbox__label .ci-checkbox_faux,
+			+ .ci-checkbox__label .ci-checkbox--faux {
+				border-color: $error;
+			}
+    }
+  }
+
+  // TODO: Checkbox group
+
+/* OLD custom checkbox */
+
+label {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+input[type=checkbox].input-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height:1px;
+  width:1px;
+  margin:-1px;
+  padding:0;
+  border:0;
+}
+input[type=checkbox].input-checkbox + label.checkbox {
+	padding-left: 43px;
+	height:30px;
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 -74px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+input[type=checkbox].input-checkbox:checked + label.checkbox {
+	background-position: 0 -44px;
+}
+label.checkbox{
+	background-image:url(images/custom-checkbox.png);
+	background-repeat: no-repeat;
+	height:44px;
+	display: block !important;
+}
+

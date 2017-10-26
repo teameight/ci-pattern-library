@@ -45,17 +45,23 @@
 .child-spotlight-primary-img {
 	flex-grow: 1;
 	overflow: hidden;
-	background-color: $grey-lt-3;
+	background-color: $blue;
+
+	@media screen and (min-width: $bp-small-2) {
+		background-color: $grey-lt-3
+	}
 
 	img {
 		width: 100%;
 		height: auto;
 		display: block;
 		margin: 0 auto;
+		float: none;
 
 		@media screen and (min-width: $bp-small-2) {
 			width: auto;
 			height: 100%;
+			float: right;
 		}
 	}
 }

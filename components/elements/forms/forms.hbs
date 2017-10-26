@@ -1,0 +1,255 @@
+<p class="pl-label">Text Input</p>
+
+<div class="ci-form-element">
+  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
+  <div class="ci-form-element__control">
+    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
+  </div>
+</div>
+
+<p class="pl-label">Required Text Input</p>
+
+<div class="ci-form-element">
+  <label class="ci-form-element__label" for="input-unique-2">Form Element Label <abbr class="ci-form-required" title="Required">*</abbr></label>
+  <div class="ci-form-element__control">
+    <input type="text" id="input-unique-2" class="ci-input-text" placeholder="Placeholder Text" required />
+  </div>
+</div>
+
+<p class="pl-label">Disabled Text Input</p>
+
+<div class="ci-form-element">
+  <label class="ci-form-element__label" for="input-unique-3">Form Element Label</label>
+  <div class="ci-form-element__control">
+    <input type="text" id="input-unique-3" class="ci-input-text" placeholder="Placeholder Text" disabled />
+  </div>
+</div>
+
+<p class="pl-label">Text Input with error</p>
+
+<div class="ci-has-error ci-form-element">
+  <label class="ci-form-element__label" for="input-unique-4">Form Element Label</label>
+  <div class="ci-form-element__control">
+    <input type="text" id="input-unique-4" class="ci-input-text" placeholder="Placeholder Text" />
+  </div>
+  <div class="ci-form-element__help">Error: Invalid response</div>
+</div>
+
+<p class="pl-label">Radio Group</p>
+
+<fieldset class="ci-form-element">
+  <legend class="ci-form-element__legend ci-form-element__label">Radio Group Label</legend>
+  <div class="ci-form-element__control">
+    <span class="ci-radio">
+      <input type="radio" id="radio-55" name="options" value="on" checked />
+      <label class="ci-radio__label" for="radio-55">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label One</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-56" name="options" value="on" />
+      <label class="ci-radio__label" for="radio-56">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label Two</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-5" name="options" value="on" checked />
+      <label class="ci-radio__label" for="radio-5">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label Three with a really long title or label</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-6" name="options" value="on" />
+      <label class="ci-radio__label" for="radio-6">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label Four</span>
+      </label>
+    </span>
+  </div>
+</fieldset>
+
+<p class="pl-label">Radio Group primary variant</p>
+
+<fieldset class="ci-form-element ci-radio-group__primary">
+  <legend class="ci-form-element__legend ci-form-element__label">I would like to pay for my sponsorship:</legend>
+  <div class="ci-form-element__control">
+    <span class="ci-radio">
+      <input type="radio" id="radio-1" name="options" value="on" checked />
+      <label class="ci-radio__label" for="radio-1">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Monthly ($28)</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-2" name="options" value="on" />
+      <label class="ci-radio__label" for="radio-2">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Quarterly ($84)</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-3" name="options" value="on" checked />
+      <label class="ci-radio__label" for="radio-3">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Semi-annually ($168)</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-4" name="options" value="on" />
+      <label class="ci-radio__label" for="radio-4">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Annually ($336)</span>
+      </label>
+    </span>
+  </div>
+</fieldset>
+
+<p class="pl-label">Radio Group with errors</p>
+
+<fieldset class="ci-form-element ci-has-error">
+  <legend class="ci-form-element__legend ci-form-element__label">Radio Group Label</legend>
+  <div class="ci-form-element__control">
+    <span class="ci-radio">
+      <input type="radio" id="radio-57" name="options-2" value="on" checked />
+      <label class="ci-radio__label" for="radio-57">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label One</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-58" name="options-2" value="on" />
+      <label class="ci-radio__label" for="radio-58">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label Two</span>
+      </label>
+    </span>
+  </div>
+</fieldset>
+
+<p class="pl-label">Radio Group with disabled inputs</p>
+
+<fieldset class="ci-form-element">
+  <legend class="ci-form-element__legend ci-form-element__label">Radio Group Label</legend>
+  <div class="ci-form-element__control">
+    <span class="ci-radio">
+      <input type="radio" id="radio-50" name="options-3" value="on" disabled checked />
+      <label class="ci-radio__label" for="radio-50">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label One</span>
+      </label>
+    </span>
+    <span class="ci-radio">
+      <input type="radio" id="radio-51" name="options-3" value="on" disabled />
+      <label class="ci-radio__label" for="radio-51">
+        <span class="ci-radio_faux"></span>
+        <span class="ci-form-element__label">Radio Label Two</span>
+      </label>
+    </span>
+  </div>
+</fieldset>
+
+
+<p class="pl-label">Checkbox</p>
+
+<div class="ci-form-element">
+  <div class="ci-form-element__control">
+    <span class="ci-checkbox">
+      <input type="checkbox" name="options" id="checkbox-36" value="on" />
+      <label class="ci-checkbox__label" for="checkbox-36">
+        <span class="ci-checkbox_faux"></span>
+        <span class="ci-form-element__label">Checkbox Label</span>
+      </label>
+    </span>
+  </div>
+</div>
+
+<p class="pl-label">Checkbox primary variant</p>
+
+<div class="ci-form-element ci-checkbox__primary">
+  <div class="ci-form-element__control">
+    <span class="ci-checkbox">
+      <input type="checkbox" name="options" id="checkbox-3" value="on" />
+      <label class="ci-checkbox__label" for="checkbox-3">
+        <span class="ci-checkbox_faux"></span>
+        <span class="ci-form-element__label">Checkbox Label</span>
+      </label>
+    </span>
+  </div>
+</div>
+
+
+<p class="pl-label">Checkbox with error</p>
+
+<div class="ci-form-element ci-has-error">
+  <div class="ci-form-element__control">
+    <span class="ci-checkbox">
+      <input type="checkbox" name="options" id="checkbox-1" value="on" />
+      <label class="ci-checkbox__label" for="checkbox-1">
+        <span class="ci-checkbox_faux"></span>
+        <span class="ci-form-element__label">Checkbox Label</span>
+      </label>
+    </span>
+  </div>
+</div>
+
+<p class="pl-label">Checkbox disabled</p>
+
+<div class="ci-form-element">
+  <div class="ci-form-element__control">
+    <span class="ci-checkbox">
+      <input type="checkbox" name="options" id="checkbox-2" value="on" disabled />
+      <label class="ci-checkbox__label" for="checkbox-2">
+        <span class="ci-checkbox_faux"></span>
+        <span class="ci-form-element__label">Checkbox Label</span>
+      </label>
+    </span>
+  </div>
+</div>
+
+<p class="pl-label">Select</p>
+
+<div class="ci-form-element">
+  <label class="ci-form-element__label" for="select-01">Select Label</label>
+  <div class="ci-form-element__control">
+    <div class="ci-select_container">
+      <select class="ci-select" id="select-01">
+        <option>Credit Card &nbsp; ****1234</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<p class="pl-label">Select disabled</p>
+
+<div class="ci-form-element">
+  <label class="ci-form-element__label" for="select-01">Select Label</label>
+  <div class="ci-form-element__control">
+    <div class="ci-select_container">
+      <select class="ci-select" id="select-02" disabled>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<p class="pl-label">Select with error</p>
+
+<div class="ci-form-element ci-has-error">
+  <label class="ci-form-element__label" for="select-01">Select Label</label>
+  <div class="ci-form-element__control">
+    <div class="ci-select_container">
+      <select class="ci-select" id="select-03">
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+      </select>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,11 @@
 /* Main */
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 body {
 	line-height: 1;
 	background-color: $white;
@@ -62,8 +68,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -73,7 +79,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -97,6 +103,10 @@ table {
 input {
 	border-radius: 0;
 	-webkit-appearance: none;
+}
+
+abbr {
+	text-decoration: none;
 }
 
 /************************/
@@ -2026,417 +2036,51 @@ div.radio span.radio-container {
 .woocommerce .price-item {
 	line-height: 1.2em;
 }
-div.radio input { 
-	margin: 0; 
-	padding: 0; 
-	float: left; 
+div.radio input {
+	margin: 0;
+	padding: 0;
+	float: left;
 }
-div.radio label { 
-	display: block; 
-	float: left; 
-	margin-right: 15px; 
+div.radio label {
+	display: block;
+	float: left;
+	margin-right: 15px;
 	cursor: pointer;
 }
 .payment_methods label  {
 	float: none !important;
 }
-div.radio span.radio-container { 
-	position: relative; 
-	float: left; 
-	margin-right: 3px; 
+div.radio span.radio-container {
+	position: relative;
+	float: left;
+	margin-right: 3px;
 }
-div.radio span.radio-container span.radio { 
-	display: block; 
-	width: 22px; 
-	height: 22px;  
-	background: url(images/radio.png) no-repeat top left; 
+div.radio span.radio-container span.radio {
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(images/radio.png) no-repeat top left;
 	margin-right: 13px;
 }
-div.radio span.radio-container span.radio.selected { 
-	background-position: top right; 
+div.radio span.radio-container span.radio.selected {
+	background-position: top right;
 }
-div.radio span.radio-container input { 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	opacity: 0; 
-	filter: alpha(opacity=0); 
-	z-index: 101; 
+div.radio span.radio-container input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 101;
 	cursor: pointer;
-	width: 22px; 
-	height: 22px;   
+	width: 22px;
+	height: 22px;
 }
-.woocommerce-info:before {
-	background: none !important;
-	content: ""  !important;
-	border: 0 !important;
-	box-shadow: none !important;
-	
-}
-.woocommerce-info {
-	border: 3px solid #FFF !important;
-	border-radius: 0 !important;
-	background: none !important;
-	box-shadow: none !important;
-	padding: 15px 20px !important;
-	text-align: center !important;
-	text-shadow: none !important;
-	color: #FFF !important;
-}
-.woocommerce form .form-row.validate-required.woocommerce-invalid .chzn-single, 
-.woocommerce form .form-row.validate-required.woocommerce-invalid .chzn-drop, 
-.woocommerce form .form-row.validate-required.woocommerce-invalid input.input-text, 
-/*.woocommerce form .form-row.validate-required.woocommerce-invalid select, */
-.woocommerce-page form .form-row.validate-required.woocommerce-invalid .chzn-single, 
-.woocommerce-page form .form-row.validate-required.woocommerce-invalid .chzn-drop, 
-.woocommerce-page form .form-row.validate-required.woocommerce-invalid input.input-text  
-/*.woocommerce-page form .form-row.validate-required.woocommerce-invalid select */{
-	border: 3px solid #FFF !important;
-	padding: 15px 20px !important;
-	font-size: 1em !important;
-}
-.woocommerce form .form-row.validate-required.woocommerce-invalid input.input-text, 
-.woocommerce-page form .form-row.validate-required.woocommerce-invalid input.input-text,
-.woocommerce form .form-row input.input-text, 
-.woocommerce form .form-row textarea, 
-.woocommerce-page form .form-row input.input-text, 
-.woocommerce-page form .form-row textarea {
-	border: 3px solid #FFF !important;
-	padding: 20px 20px !important;
-	background-color: transparent !important;
-	color: #FFF  !important;
-	font-size: 1em !important;
-}
-.woocommerce form .form-row textarea, .woocommerce-page form .form-row textarea {
-	height: 200px !important;
-	resize: none !important;
-	color: #FFF;
-  font-size: 1em !important;
-	overflow-y: auto;
-}
-.woocommerce .checkout .col-2 h3, 
-.woocommerce-page .checkout .col-2 h3,
-.woocommerce .checkout #shiptobilling, 
-.woocommerce-page .checkout #shiptobilling {
-	float: none !important;
-}
-.woocommerce table.shop_table td, .woocommerce-page table.shop_table td,
-.woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th, .woocommerce-page table.shop_table tfoot td, .woocommerce-page table.shop_table tfoot th {
-	padding: 5px 0 !important;
-}
-.woocommerce #payment, .woocommerce-page #payment,
-.woocommerce #payment div.payment_box:after, .woocommerce-page #payment div.payment_box:after,
-.woocommerce #payment div.payment_box, .woocommerce-page #payment div.payment_box {
-	background: none !important;
-	box-shadow: none !important;
-	color: #FFF !important;
-  font-size: 1em !important;
-	text-shadow: none !important;
-}
-.woocommerce #payment div.payment_box p , 
-.woocommerce-page #payment div.payment_box p { 
-	padding: 0;
-}
-.woocommerce #payment div.payment_box:after, .woocommerce-page #payment div.payment_box:after {
-	border: none !important; 
-	margin: 0 !important; 
-}
-.woocommerce #payment div.payment_box, .woocommerce-page #payment div.payment_box {
-	margin: 0 !important; 
-}
-.woocommerce-checkout  table.shop_table th, .woocommerce-page table.shop_table th {
-	padding: 5px 0 10px !important; 
-	border-bottom:0 !important;
-}
-h3#order_review_heading {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 35px;
-	margin: 60px 0 30px; 
-}
-.payment_methods label {
-	font-family: 'halisgr bold';
-	text-transform: uppercase;
-}
-label[for="payment_method_paypal"] img {
-	display: none;
-}
-.woocommerce #payment ul.payment_methods, .woocommerce-page #payment ul.payment_methods {
-	border-bottom: 0 !important;
-}
-.woocommerce-checkout h1.title {
-	font-size: 45px !important;
-}
-.woocommerce-checkout #customer_details label {
-	text-transform: uppercase !important;
-	font-family: 'halisgr bold' !important;
-}
-.woocommerce form .form-row .required, .woocommerce-page form .form-row .required {
-	color: #FFF !important;
-}
-.woocommerce-message, .woocommerce-error, .woocommerce-info {
-	background: none !important;
-	color: #FFF !important;
-  font-size: 1em !important;
-	text-shadow: none !important;
-	box-shadow: none !important;	
-	border-radius: 0 !important;
-}
-.woocommerce-error {
-	border: 3px solid #B81C23 !important;
-}
-.woocommerce-message, 
-.woocommerce-info {
-	border: 3px solid #FFF !important;
-}
-.woocommerce .checkout #shiptobilling label, .woocommerce-page .checkout #shiptobilling label {
-	font-size: 1em !important;
-}
+
 .nobr {
 	padding: 0 10px 0 0;
 }
-.woocommerce-checkout table.my_account_subscriptions th, .woocommerce-page table.shop_table th {
-	border-bottom: 2px solid #FFF !important;
-}
-.woocommerce-account h2 {
-	text-align: center;
-	font-size: 35px;
-	margin: 20px 0;
-	text-transform: uppercase;
-}
-.woocommerce-account h3 {
-	text-transform: uppercase;
-}
-.woocommerce-page table.order_details th,
-.woocommerce-page table.cart th,
-.woocommerce-page table.shop_table .cart-subtotal th ,
-.woocommerce-page table.shop_table .shipping th,
-.woocommerce-page table.shop_table .total th,
-.woocommerce-page table.shop_table  th.product-name,
-.woocommerce-page table.shop_table  th.product-total  {
-	border-bottom: 0 none !important;
-}
-.woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button {
-	border: 3px solid #FFF !important;
-	padding: 15px !important;
-	background: none !important;
-	box-shadow: none !important;
-	text-shadow: none !important;
-	color: #FFF !important;
-	border-radius: 0 !important;
-}
-#order_comments_field,
-.shipping_address {
-	margin-top: 20px;
-}
-.chzn-container-single .chzn-single {
-	background: transparent  !important;
-	text-shadow: none !important;
-	box-shadow: none !important;
-	border-radius: 0 !important;
-	border: 3px solid #FFF !important;
-	padding: 15px 20px !important;
-	color: #FFF !important;
-	font-size: 1em !important;
-}
-.chzn-container-single .chzn-single {
-	background-image: none !important;
-	background-color: transparent !important;
-}
-.woocommerce-checkout .woocommerce  .form-row .chzn-container-single .chzn-single div b {
-	background-position: 0 19px !important;
-	box-shadow: none !important;
-	border-radius: 0 !important;
-}
-.woocommerce-checkout .woocommerce .form-row .chzn-container .chzn-drop {
-	color: #000;
-}
-#payment_method_paypal {	
-	display: none;
-	padding-left: 60px;
-}
-label[for="payment_method_paypal"] {
-	background: url(images/paypal_radio.png) no-repeat 0 50%;
-	padding-left: 40px;
-}
-.woocommerce #payment div.form-row, .woocommerce-page #payment div.form-row {
-	border-top: none !important; 
-}
-ul.payment_methods.methods {
-	padding: 0 !important;
-}
-.woocommerce a.button.alt, 
-.woocommerce button.button.alt, 
-.woocommerce input.button.alt, 
-.woocommerce #respond input#submit.alt, 
-.woocommerce #content input.button.alt, 
-.woocommerce-page a.button.alt, 
-.woocommerce-page button.button.alt, 
-.woocommerce-page input.button.alt, 
-.woocommerce-page #respond input#submit.alt, 
-.woocommerce-page #content input.button.alt {
-	background: none !important;
-	border-radius: 0 !important; 
-	border: 3px solid #FFF !important; 
-	width: 100% !important; 
-	box-shadow: none !important; 
-	text-shadow: none !important;
-	font-size: 14px !important;
-	text-transform: uppercase !important;
-	padding: 17px 60px 17px 17px !important;
-	position: relative;
-} 
-.woocommerce table.cart a.remove, 
-.woocommerce #content table.cart a.remove, 
-.woocommerce-page table.cart a.remove, 
-.woocommerce-page #content table.cart a.remove {
-	background: url(images/close_btn.png) no-repeat !important;
-	width: 30px  !important;
-	height:30px  !important;
-	text-indent: -9999px;
-	outline: 0 none;
-	border-radius: 0 !important;
-}
-.cart_table_item .product-name {
-	line-height: 1.3em;
-}
-.woocommerce .cart .button[name="update_cart"] {
-	background:url(images/buttons_sprite.png) no-repeat 0 -1666px !important;
-	border: 0 none!important;
-	border-radius: 0;
-	float: left;
-	height: 68px;
-	outline: 0 none;
-	text-indent: -9999px;
-	width: 407px;
-	margin-top: 30px;
-}
-.woocommerce .cart .actions .checkout-button {
-	background:url(images/buttons_sprite.png) no-repeat 0 -1734px !important;
-	border: 0 none !important;
-	border-radius: 0 !important;
-	float: right !important;
-	height: 68px !important;
-	outline: 0 none !important;
-	text-indent: -9999px !important;
-	width: 407px !important;
-	margin-top: 30px;
-}
-.woocommerce-cart h2 {
-	font-size: 35px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 40px;
-}
-.woocommerce-cart h1.title {
-	font-size: 45px;
-}
-.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
-	float: none!important;
-	margin: 0 auto;
-}
-.woocommerce .cart-collaterals .cart_totals, 
-.woocommerce-page .cart-collaterals .cart_totals {
-	text-align: left !important;
-}
-.woocommerce .button:hover {
-	opacity: 0.8;
-}
-.woocommerce #payment div.form-row, .woocommerce-page #payment div.form-row {
-	padding: 0  !important;
-}
-.cart_totals .cart-subtotal table tr th, {	
-	text-transform: uppercase;
-}
-.cart_totals .total  th,
-.cart_totals .total  td {
-	font-size: 19px  !important;
-}
-.woocommerce .cart-collaterals .cart_totals tr td, 
-.woocommerce .cart-collaterals .cart_totals tr th, 
-.woocommerce-page .cart-collaterals .cart_totals tr td, 
-.woocommerce-page .cart-collaterals .cart_totals tr th{
-	border-top: 0 !important;
-}
-.cart_totals .cart-subtotal th.first {
-	width: 40%;
-}
-.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
-	width: 54% !important;
-}
-.cart_totals th {
-	text-transform: uppercase;
-	font-family: 'halisgr bold';
-}
-.cart-subtotal {
-	text-transform: uppercase;
-}
-.woocommerce-cart #main {
-	margin: -25px 0;
-	background:url(images/green_bg.jpg) repeat;
-}
-.woocommerce-cart #main .entry {
-	padding: 100px 0;
-}
-.woocommerce table.shop_table th, .woocommerce-page table.shop_table th {
-	text-transform: uppercase;
-	font-size: 19px;
-	font-family: 'halisgr bold';
-}
-.woocommerce form.login, 
-.woocommerce form.checkout_coupon, 
-.woocommerce form.register, 
-.woocommerce-page form.login, 
-.woocommerce-page form.checkout_coupon, 
-.woocommerce-page form.register {
-	border: none !important;
-}
 
-/* custom checkbox */
-
-label {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-input[type=checkbox].input-checkbox {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height:1px; 
-  width:1px; 
-  margin:-1px; 
-  padding:0;
-  border:0;
-}
-input[type=checkbox].input-checkbox + label.checkbox {
-	padding-left: 43px;
-	height:30px; 
-	display:inline-block;
-	line-height:30px;
-	background-repeat:no-repeat;
-	background-position: 0 -74px;
-	vertical-align:middle;
-	cursor:pointer;
-}
-input[type=checkbox].input-checkbox:checked + label.checkbox {
-	background-position: 0 -44px;
-}
-label.checkbox{
-	background-image:url(images/custom-checkbox.png);
-	background-repeat: no-repeat;
-	height:44px;
-	display: block !important;
-}
-/* myaccount form */
-.page-id-351 #main {
-	background-image:url(images/myaccount_bg.jpg);
-	background-size: cover;
-}
- 
 /************************/
 /*  TEAM PAGE
 /************************/
@@ -2582,7 +2226,7 @@ svg image:hover {
   width:41px;
   height:41px;
   cursor:pointer;
-  background:url(images/close-btn.png) no-repeat;  
+  background:url(images/close-btn.png) no-repeat;
 }
 #team .team-info .name{
   display:block;
@@ -2592,7 +2236,7 @@ svg image:hover {
   text-transform:uppercase;
 }
 #team .team-info{
-  color:#666;  
+  color:#666;
   font:15px/30px 'halisgr book';
   padding:120px 0 50px;
   background:#f9f9f9 url(images/bg-team-grey.png) no-repeat 50% 0;
@@ -2619,7 +2263,7 @@ svg image:hover {
 }
 #team .quote .inner .quote-entry{
   display:table-cell;
-  color:#fff;  
+  color:#fff;
   font:15px/30px 'halisgr book';
   vertical-align:middle;
 }
@@ -2651,7 +2295,7 @@ svg image:hover {
   color:#fff;
   font:15px/30px 'halisgr book';
 }
-#solution-intro{  
+#solution-intro{
   background:url(images/bg_solution.jpg) no-repeat;
   background-size:cover;
   min-height:390px;
@@ -2674,24 +2318,24 @@ svg image:hover {
 }
 #solution-intro h2{
   font:16px/30px 'halisgr bold';
-  padding:0 20% 0 0;    
+  padding:0 20% 0 0;
 }
 #solution-intro .col-r h2,
 #solution-intro .col-r h3{
   font:25px/27px 'halisgr bold';
   text-transform:uppercase;
-  padding:0 0 35px;    
+  padding:0 0 35px;
 }
 #solution-how-work,
 #solution-more{
 	background: url(images/green_bg.jpg) repeat scroll 0 0;
-	margin-top: 0;   
-	position: relative;   
+	margin-top: 0;
+	position: relative;
 	text-align:center;
 }
 #solution-how-work .inner,
 #solution-more .inner{
-  padding:100px 0;  
+  padding:100px 0;
 }
 #solution-how-work p{
   width:60%;
@@ -2718,7 +2362,7 @@ svg image:hover {
 #solution-how-work h2{
   font:45px/47px 'halisgr bold';
   text-transform:uppercase;
-  padding:0 0 35px;    
+  padding:0 0 35px;
 }
 #solution-how-work .arrow{
   width:96px;
@@ -2824,13 +2468,13 @@ svg image:hover {
 }
 #solution-projects{
    background: url("images/blue_bg.jpg") repeat scroll 0 0;
-   margin-top: 0;   
+   margin-top: 0;
    position: relative;
    z-index: 200;
    text-align:center;
 }
 #solution-projects .inner{
-  padding:100px 0;  
+  padding:100px 0;
 }
 #solution-projects .top {
   background: url(images/blue_top_bg_4.png) repeat-x scroll 50% 0 ;
@@ -2866,7 +2510,7 @@ svg image:hover {
 #solution-projects .col-25{
   float:left;
   width:22%;
-  margin:0 4% 29px 0;  
+  margin:0 4% 29px 0;
 }
 #solution-projects .col-25.last{
   margin:0 0 29px;
@@ -2883,8 +2527,8 @@ svg image:hover {
   padding:0 15px;
   border:12px solid #fff;
 }
-#solution-projects .col-25 .col-inner{  
-  height:279px;  
+#solution-projects .col-25 .col-inner{
+  height:279px;
 }
 #solution-projects .col-100 .col-inner{
   height:27px;

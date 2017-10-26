@@ -1,0 +1,57 @@
+// Select
+.ci-select_container {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    right: 9px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid $grey;
+    top: calc(50% - 3px);
+    pointer-events: none;
+  }
+}
+
+.ci-select {
+	font-family: $titlefont-book;
+	color: $grey-dark-2;
+	background: linear-gradient(to right, $grey-lt-3 0%,$grey-lt-3 calc(100% - 35px),$yellow calc(100% - 35px),$yellow 100%);
+	padding: 1em 1em .789em 1em;
+	font-size: 1.125em;
+	display: block;
+	border: none;
+	transition: border 300ms ease;
+	width: 100%;
+	border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 1em 1em .789em 1em;
+  text-transform: uppercase;
+
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+
+  &[disabled],
+  &.ci-is-disabled {
+    opacity: .35;
+    cursor: not-allowed;
+    user-select: none;
+  }
+
+  .ci-has-error & {
+    border: 1px solid $error;
+  }
+
+}
+
+.ci-select__payment-type {
+  display: inline-block;
+  margin-right: 1em;
+}

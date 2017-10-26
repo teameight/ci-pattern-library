@@ -1,0 +1,58 @@
+input {
+}
+
+// For DMS forgot password
+
+.centered-form {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 400px;
+
+	p {
+		margin-bottom: 1.25em;
+	}
+}
+
+.ci-input { // To be replaced with .ci-input-text
+	border: 2px solid $grey;
+	padding: 17px 20px;
+	margin-bottom: 1.25em;
+	font-size: 0.875em;
+	font-family: $font;
+	box-sizing: border-box;
+}
+
+// Text input
+
+.ci-input-text {
+	font-family: $titlefont-book;
+	color: $grey-dark-2;
+	background-color: $grey-lt-3;
+	padding: 1em 1em .789em 1em;
+	font-size: 1.125em;
+	display: block;
+	border: 1px solid $grey-lt-3;
+	transition: border 300ms ease;
+	width: 100%;
+
+	&:focus,
+	&:active {
+		outline: 0;
+    border-color: $blue;
+	}
+
+	&[disabled] {
+		opacity: .35;
+		cursor: not-allowed;
+	}
+
+	.ci-has-error & {
+		background-color: $grey-pink;
+
+		&:focus,
+		&:active {
+			border-color: $error;
+		}
+	}
+}

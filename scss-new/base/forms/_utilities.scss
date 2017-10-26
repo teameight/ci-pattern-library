@@ -1,0 +1,45 @@
+// Form element wrappers
+
+.ci-form-element {
+	position: relative;
+}
+
+.ci-form-element__control {
+
+	.ci-radio-group__primary & {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		max-width: 260px;
+		margin: 0 auto;
+
+		@media screen and (min-width: $bp-small-3) {
+			flex-direction: row;
+			max-width: none;
+		}
+	}
+}
+
+// Form element label
+
+.ci-form-element__label {
+	font-family: $titlefont;
+	color: $grey-dark-2;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	line-height: 1;
+	margin-bottom: .55em;
+	display: inline-block;
+}
+
+// Form element help text
+.ci-form-element__help {
+	margin-top: .5em;
+	display: block;
+	font-family: $titlefont-book;
+	text-transform: uppercase;
+
+	.ci-has-error & {
+		color: $error;
+	}
+}

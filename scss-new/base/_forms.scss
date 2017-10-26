@@ -1,20 +1,5 @@
-.centered-form {
-	display: block;
-	margin: 0 auto;
-	width: 90%;
-	max-width: 400px;
-
-	p {
-		margin-bottom: 1.25em;
-	}
-}
-
-.ci-input {
-	border: 2px solid $grey;
-	padding: 17px 20px;
-	width: 100%;
-	margin-bottom: 1.25em;
-	font-size: 0.875em;
-	font-family: $font;
-	box-sizing: border-box;
-}
+@import 'forms/utilities';
+@import 'forms/inputs';
+@import 'forms/radios';
+@import 'forms/checkboxes';
+@import 'forms/select';

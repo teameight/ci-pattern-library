@@ -44,7 +44,6 @@
 
 
 	div {
-		
 		font-size:16px;
 		font-family:$titlefont;
 		color:$green;
@@ -53,7 +52,7 @@
 
 		input {
 			font-size:16px;
-			font-family:$titlefont;    
+			font-family:$titlefont;
 			border: none;
     	outline: none;
 	    color:$grey-med;
@@ -73,7 +72,8 @@
 		display: inline-block;
 		line-height:2;
 		background-color: $green;
-		margin:0 0 0 .5em; 
+		margin:0 0 0 .5em;
+		border-radius: 0;
 
 		&:hover {
 			background-color:$yellow;
@@ -86,7 +86,6 @@
 		padding:1.25em;
 
 		div {
-			
 			font-size:22px;
 			padding:0 0 0 0.75em;
 
@@ -105,42 +104,53 @@
 	}
 
 }
-a.button,
+
+
+// TODO Refactor so that yellow solid button is primary, green solid is tied to donation
+
 .button,
+a.button,
 .buttonwrap .button,
-.menu li.buttonwrap a,
-.c-block input[type=submit] {
-	color:$green;
-	font-family:$titlefont;
-	border:2px solid $green;
-	text-decoration:none;
-	text-transform:uppercase;
-	letter-spacing:$title-spacing;
-	padding:10px 2em;
-	font-size:18px;
+.buttonwrap a {
+	color: $green;
+	background-color: transparent;
+	font-family: $titlefont;
+	border: 2px solid $green;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: $title-spacing;
+	padding: 9px 1.6em 10px;
+	font-size: 18px;
 	display: inline-block;
-	line-height:2;
+	line-height: 2;
 	background-color: transparent;
 	cursor: pointer;
-
+	border-radius: 0;
 	margin-top:1em;
+	transition: color $transition, background-color $transition, border-color $transition;
 
 	#header & {
 		font-size:14px;
 		margin:0;
 	}
 
-    -moz-transition: color $transition, background-color $transition;
-    -o-transition: color $transition, background-color $transition;
-    -webkit-transition: color $transition, background-color $transition;
-	transition: color $transition, background-color $transition;
-
 	&:hover {
 		background-color:$green;
 		color:$white;
 	}
 
-	&.blue {
+	&.button-primary-solid {
+		color: $white;
+		background-color: $green;
+
+		&:hover {
+			background-color: $blue;
+			border-color: $blue;
+		}
+	}
+
+	&.button-secondary,
+	&.blue { // TODO refactor .blue out of the system
 		color:$blue;
 		border-color:$blue;
 
@@ -149,15 +159,20 @@ a.button,
 			color:$white;
 		}
 	}
-	&.grey {
-		color:$grey-med;
-		border-color:$grey-med;
+
+	&.button-secondary-solid {
+		background-color: $blue;
+		border-color: $blue;
+		color: $white;
 
 		&:hover {
-			background-color:$grey-med;
-			color:$white	}
+			background-color: transparent;
+			color: $blue;
+		}
 	}
-	&.white {
+
+	&.button-tertiary,
+	&.white { // TODO refactor .white out of system
 		color:$white;
 		border-color:$white;
 
@@ -166,6 +181,49 @@ a.button,
 			color:$black;
 			}
 	}
+
+	&.button-tertiary-solid {
+		background-color: $white;
+		border-color: $white;
+		color: $grey;
+
+		&:hover {
+			background-color: transparent;
+			color: $white;
+		}
+	}
+
+	&.button-accent {
+		border-color: $yellow;
+		color: $yellow;
+
+		&:hover {
+			color: $grey;
+			background-color: darken($yellow, 7%);
+			border-color: darken($yellow, 7%);
+		}
+	}
+
+	&.button-accent-solid {
+		background-color: $yellow;
+		border-color: $yellow;
+		color: $grey;
+
+		&:hover {
+			background-color: darken($yellow, 7%);
+			border-color: darken($yellow, 7%);
+		}
+	}
+
+	&.grey {
+		color:$grey-med;
+		border-color:$grey-med;
+
+		&:hover {
+			background-color:$grey-med;
+			color:$white	}
+	}
+
 	&.full {
 		width:100%;
 		text-align:center;
@@ -269,4 +327,3 @@ a.back-button {
 	right: -4px;
 	margin-top: 0;
 }
-
