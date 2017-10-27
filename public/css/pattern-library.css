@@ -3529,6 +3529,59 @@ p {
   text-align: center;
   letter-spacing: 2px; }
 
+.ci-new-styles h1,
+.ci-new-styles .h1 {
+  font-size: 3em;
+  line-height: 1.187;
+  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: #4F8BCA;
+  text-transform: none; }
+
+.ci-new-styles h2,
+.ci-new-styles .h2 {
+  font-size: 1.75em;
+  line-height: 1.142;
+  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: #4F8BCA;
+  text-transform: none; }
+
+.ci-new-styles h3,
+.ci-new-styles .h3 {
+  font-size: 1.25em;
+  line-height: 1.15;
+  font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+  color: #4F8BCA;
+  text-transform: uppercase; }
+
+.ci-new-styles h4,
+.ci-new-styles .h4 {
+  font-size: 1.125em;
+  line-height: 1.167;
+  font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+  color: #4F8BCA;
+  text-transform: uppercase; }
+
+.ci-new-styles h5,
+.ci-new-styles .h5 {
+  font-size: 1em;
+  line-height: 1.188;
+  font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+  color: #4F8BCA;
+  text-transform: uppercase; }
+
+.ci-new-styles h6,
+.ci-new-styles .h6 {
+  font-size: .875em;
+  line-height: 1.214;
+  font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+  color: #606060;
+  text-transform: uppercase; }
+
+.ci-new-styles .ci-heading--secondary {
+  color: #606060; }
+
 /* Text-Related Elements */
 body {
   font-size: 16px;

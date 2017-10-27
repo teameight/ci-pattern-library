@@ -94,3 +94,68 @@ p {
 	text-align: center;
 	letter-spacing: 2px;
 }
+
+.ci-new-styles {
+
+h1,
+.h1 {
+	font-size: 3em;
+	line-height: 1.187;
+	font-family: $font;
+	font-weight: bold;
+	color: $blue;
+	text-transform: none;
+}
+
+h2,
+.h2 {
+	font-size: 1.75em;
+	line-height: 1.142;
+	font-family: $font;
+	font-weight: bold;
+	color: $blue;
+	text-transform: none;
+}
+
+h3,
+.h3 {
+	font-size: 1.25em;
+	line-height: 1.15;
+	font-family: $titlefont;
+	color: $blue;
+	text-transform: uppercase;
+}
+
+h4,
+.h4 {
+	font-size: 1.125em;
+	line-height: 1.167;
+	font-family: $titlefont;
+	color: $blue;
+	text-transform: uppercase;
+}
+
+h5,
+.h5 {
+	font-size: 1em;
+	line-height: 1.188;
+	font-family: $titlefont;
+	color: $blue;
+	text-transform: uppercase;
+}
+
+h6,
+.h6 {
+	font-size: .875em;
+	line-height: 1.214;
+	font-family: $titlefont;
+	color: $grey-dark-2;
+	text-transform: uppercase;
+}
+
+.ci-heading--secondary {
+	color: $grey-dark-2;
+}
+
+}
+
