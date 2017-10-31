@@ -1,0 +1,144 @@
+/* Fonts */
+@font-face {
+  font-family: 'halisgr bold';
+  src: url("fonts/halisgr-bold-webfont.eot");
+  src: url("fonts/halisgr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/halisgr-bold-webfont.woff") format("woff"), url("fonts/halisgr-bold-webfont.ttf") format("truetype"), url("fonts/halisgr-bold-webfont.svg#halis_grbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'halisgr book';
+  src: url("fonts/halisgr-book-webfont.eot");
+  src: url("fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/halisgr-book-webfont.woff") format("woff"), url("fonts/halisgr-book-webfont.ttf") format("truetype"), url("fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  src: url("fonts/halisgr-book-webfont.eot");
+  src: url("fonts/halisgr-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/halisgr-book-webfont.woff") format("woff"), url("fonts/halisgr-book-webfont.ttf") format("truetype"), url("fonts/halisgr-book-webfont.svg#halis_grbook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*------------------------------------*    $VARIABLES
+\*------------------------------------*/
+/*------------------------------------*    $MIXINS
+\*------------------------------------*/
+/*------------------------------------*    $DMS
+\*------------------------------------*/
+.dms-donate-fund .inner {
+  border-bottom: 1px solid #888;
+  width: 1186px; }
+
+.dms-donate-fund:last-child .inner {
+  border-bottom: none; }
+
+.dms-donate-fund .button {
+  margin-top: 0;
+  vertical-align: middle; }
+
+.dms-donate-featured-fund {
+  background-color: #4F8BCA; }
+  .dms-donate-featured-fund .dms-donate-fund-title {
+    color: #fff;
+    font-size: 2.5em; }
+  .dms-donate-featured-fund .dms-donate-fund-form {
+    border-color: #fff; }
+  .dms-donate-featured-fund .dms-donate-fund-input {
+    border-color: #fff; }
+  .dms-donate-featured-fund .dms-donate-fund-form-helper {
+    color: #fff; }
+  .dms-donate-featured-fund .dms-donate-fund-desc {
+    color: #fff; }
+  .dms-donate-featured-fund .button-primary-solid:hover {
+    color: #fff;
+    background-color: #FFC30E;
+    border-color: #FFC30E; }
+
+.dms-donate-fund-title {
+  color: #4F8BCA;
+  max-width: 500px;
+  font-size: 1.875em;
+  margin-bottom: 1em; }
+
+.dms-donate-fund-flex-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap; }
+  @media screen and (min-width: 767px) {
+    .dms-donate-fund-flex-wrap {
+      flex-direction: row; } }
+
+.dms-donate-fund-form-wrap {
+  display: inline-block;
+  flex: 0 0 0; }
+  @media screen and (min-width: 767px) {
+    .dms-donate-fund-form-wrap {
+      order: 2;
+      flex: 0 0 377px;
+      margin-left: 1em; } }
+
+.dms-donate-fund-form {
+  display: inline-block;
+  position: relative; }
+  .dms-donate-fund-form:before {
+    content: "$";
+    color: #74b638;
+    font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 15px;
+    left: 20px; }
+  @media screen and (min-width: 500px) {
+    .dms-donate-fund-form {
+      border: 1px solid #454545;
+      padding: 18px 17px 22px; }
+      .dms-donate-fund-form:before {
+        top: 30px;
+        left: 40px; } }
+
+.dms-donate-fund-input {
+  border: 2px solid #74b638;
+  border-right: 0;
+  padding: 18px 32px 16px 45px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "halisgr book", Impact, Charcoal, sans-serif;
+  font-weight: normal;
+  width: 68px;
+  height: 17px;
+  vertical-align: middle; }
+  @media screen and (min-width: 500px) {
+    .dms-donate-fund-input {
+      width: 86px; } }
+
+.dms-donate-fund-form-helper {
+  display: block;
+  margin: 0.75em 0 2em;
+  color: #888;
+  text-transform: uppercase;
+  font-family: "halisgr bold", Impact, Charcoal, sans-serif;
+  font-size: 0.875em;
+  text-align: left; }
+  @media screen and (min-width: 767px) {
+    .dms-donate-fund-form-helper {
+      text-align: center; } }
+
+.dms-donate-fund-desc-wrap {
+  flex: 1; }
+
+.dms-donate-fund-desc {
+  margin-bottom: 2em;
+  max-width: 500px; }
+
+label[for="forgot-password-email"] {
+  display: block;
+  margin: 20px 0; }
+
+.forgot-password-message {
+  margin: 20px 0;
+  font-style: italic;
+  font-size: .9em; }
+
+.forgot-password-error {
+  color: #E94348; }

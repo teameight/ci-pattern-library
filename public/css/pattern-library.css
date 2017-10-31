@@ -115,7 +115,6 @@ input {
 abbr {
   text-decoration: none; }
 
-input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
@@ -3871,7 +3870,7 @@ img.aligncenter, a img.aligncenter {
         width: 100%; } }
 
 .ci-form-section {
-  margin-bottom: 2.5em; }
+  margin-bottom: 3em; }
 
 .ci-form-element {
   position: relative;

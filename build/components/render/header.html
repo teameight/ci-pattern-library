@@ -21,13 +21,13 @@
 			  <div class="menu-header-buttons-right-container">
 			  	<ul class="menu menu-row">
 			  		<li class="buttonwrap">
-			  			<a href="https://childrenincorporated.org/wont-you-join-us-in-our-efforts/">Donate</a>
+			  			<button class="button" href="https://childrenincorporated.org/wont-you-join-us-in-our-efforts/">Donate</button>
 		  			</li>
 						<li class="buttonwrap blue">
 							<a href="https://dms.childrenincorporated.org/CI/Donor/CISponsorChild.aspx">Sponsor a Child</a>
 						</li>
 						<li class="accent-nav-link">
-							<a href="https://dms.childrenincorporated.org/CI/Donor/Login.aspx">Login</a>
+							<a href="https://dms.childrenincorporated.org/CI/Donor/Login.aspx">Log in</a>
 						</li>
 					</ul>
 				</div>
@@ -67,6 +67,75 @@
 
 </header>
 
+<p class="pl-label">Marketing Site Header (with Normal Alert)</p>
+
+<header id="header" class="cf">
+
+    <div class="ci-alert ci-alert-normal">We have a new look, but don’t worry– this is the same site you know.</div>
+
+    <div class="inner cf">
+
+        <div class="logo">
+
+            <a href="#"><img src="https://childrenincorporated.org/wp-content/themes/children_theme/images/logo.svg" alt="Children Incorporated"></a>
+
+        </div><!-- .logo -->
+
+        <a id="open-menu" href="javascript:openMenu();">Menu</a>
+
+        <section class="right-menu mobile-menu">
+
+            <nav class="top-menu">
+
+              <div class="menu-header-buttons-right-container">
+                <ul class="menu menu-row">
+                    <li class="buttonwrap">
+                        <a href="https://childrenincorporated.org/wont-you-join-us-in-our-efforts/">Donate</a>
+                    </li>
+                        <li class="buttonwrap blue">
+                            <a href="https://dms.childrenincorporated.org/CI/Donor/CISponsorChild.aspx">Sponsor a Child</a>
+                        </li>
+                        <li class="accent-nav-link">
+                            <a href="https://dms.childrenincorporated.org/CI/Donor/Login.aspx">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <nav class="bottom-menu">
+
+                <div class="menu-header-right-menu-container">
+                    <ul class="menu menu-row dot-separated-list">
+                        <li>
+                            <a href="https://childrenincorporated.org/our-work-2/">Our Work</a>
+                        </li>
+                        <li>
+                            <a href="https://childrenincorporated.org/about/">About</a>
+                        </li>
+                        <li>
+                            <a href="https://childrenincorporated.org/on-the-road/">On the Road</a>
+                        </li>
+                        <li>
+                            <a href="https://childrenincorporated.org/shop/">Shop</a>
+                        </li>
+                        <li>
+                            <a href="https://childrenincorporated.org/meet-the-team/">Team</a>
+                        </li>
+                        <li>
+                            <a href="https://childrenincorporated.org/contact-us/">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </section><!-- #right-menu -->
+
+    </div>
+
+</header>
+
 <p class="pl-label">Donor Header (logged in)</p>
 
 <header id="header" class="cf">
@@ -93,13 +162,13 @@
 
                     <li class="buttonwrap">
 
-                        <button class="button" onclick="__doPostBack('ctl00$btnDonate','')" id="btnDonate">DONATE</button>
+                        <a class="button" onclick="__doPostBack('ctl00$btnDonate','')" id="btnDonate">DONATE</a>
 
                     </li>
 
                     <li class="buttonwrap blue">
 
-                        <button class="button blue" onclick="__doPostBack('ctl00$btnSponsor','')" id="btnSponsor">SPONSOR A CHILD</button>
+                        <a class="button blue" onclick="__doPostBack('ctl00$btnSponsor','')" id="btnSponsor">SPONSOR A CHILD</a>
 
                     </li>
 
@@ -113,7 +182,7 @@
 
                         <div id="logout">
 
-                            <a id="lnkLogout" class="logout" href="CILogout.ashx">Logout</a>
+                            <a id="lnkLogout" class="logout" href="CILogout.ashx">Log out</a>
 
                         </div>
 
@@ -187,13 +256,13 @@
 
                     <li class="buttonwrap">
 
-                        <button class="button" onclick="__doPostBack('ctl00$btnDonate','')" id="btnDonate">DONATE</button>
+                        <a class="button" onclick="__doPostBack('ctl00$btnDonate','')" id="btnDonate">DONATE</a>
 
                     </li>
 
                     <li class="buttonwrap blue">
 
-                        <button class="button blue" onclick="__doPostBack('ctl00$btnSponsor','')" id="btnSponsor">SPONSOR A CHILD</button>
+                        <a class="button blue" onclick="__doPostBack('ctl00$btnSponsor','')" id="btnSponsor">SPONSOR A CHILD</a>
 
                     </li>
 
@@ -201,8 +270,8 @@
 
                         <div id="login">
 
-                            <a id="lnkLogin" class="login" href="Login.aspx">Login</a>
-                        
+                            <a id="lnkLogin" class="login" href="Login.aspx">Log in</a>
+
                         </div>
 
                         <div id="logout">
