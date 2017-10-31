@@ -21,7 +21,7 @@ function goBack() {
 /* Alert Box + Cookie
 /************************************************/
 
-var createCookie = function(name, value, days) {
+function createCookie(name, value, days) {
 	var expires;
 	if (days) {
 		var date = new Date();
@@ -85,3 +85,22 @@ jQuery(document).ready(function () {
 	}
 
 });
+/************************************************/
+/* DMS Modal behavior
+/************************************************/
+
+function openModal() {
+	var modal = jQuery('.ci-checkout-modal');
+
+	if ( modal ) {
+		modal.addClass('active');
+	}
+}
+
+function closeModal() {
+	var modal = jQuery('.ci-checkout-modal');
+
+	if ( modal ) {
+		modal.removeClass('active');
+	}
+}

@@ -2,7 +2,7 @@
 /* Alert Box + Cookie
 /************************************************/
 
-var createCookie = function(name, value, days) {
+function createCookie(name, value, days) {
 	var expires;
 	if (days) {
 		var date = new Date();
