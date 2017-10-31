@@ -2,6 +2,8 @@
 
 .ci-form-element {
 	position: relative;
+	text-align: left;
+	margin-bottom: 1em;
 }
 
 .ci-form-element__control {
@@ -24,6 +26,7 @@
 
 .ci-form-element__label {
 	font-family: $titlefont;
+	font-weight: bold;
 	color: $grey-dark-2;
 	text-transform: uppercase;
 	font-size: 1.125em;
@@ -36,7 +39,7 @@
 .ci-form-element__help {
 	margin-top: .5em;
 	display: block;
-	font-family: $titlefont-book;
+	font-family: $titlefont;
 	text-transform: uppercase;
 
 	.ci-has-error & {

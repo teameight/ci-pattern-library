@@ -39,7 +39,7 @@ a {
 .more-linkold {
 	float:right;
 	display:block;
-	font-family:$titlefont-book;
+	font-family: $titlefont;
 
 	&::before {
 		content:"\000BB";
@@ -55,7 +55,7 @@ a {
     right:0;
     padding: 8px 2em;
 	display:block;
-	font-family:$titlefont-book;
+	font-family: $titlefont;
 	color:$white;
 	background:$green;
 
@@ -70,3 +70,18 @@ a {
 	}
 }
 
+
+.ci-new-styles {
+
+a {
+	color: $blue;
+	text-decoration: underline;
+	text-decoration-skip: ink;
+	font-weight: bold;
+
+	&:hover {
+		color: darken($blue, 7%);
+	}
+}
+
+}

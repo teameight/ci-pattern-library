@@ -45,14 +45,16 @@
 
 	div {
 		font-size:16px;
-		font-family:$titlefont;
+		font-family: $titlefont;
+		font-weight: bold;
 		color:$green;
 		background-color: $white;
 		padding:0 0 0 0.5em;
 
 		input {
 			font-size:16px;
-			font-family:$titlefont;
+			font-family: $titlefont;
+			font-weight: bold;
 			border: none;
     	outline: none;
 	    color:$grey-med;
@@ -63,6 +65,7 @@
 	.button {
 		color:$white;
 		font-family:$titlefont;
+		font-weight: bold;
 		border:2px solid $green;
 		text-decoration:none;
 		text-transform:uppercase;
@@ -115,6 +118,7 @@ a.button,
 	color: $green;
 	background-color: transparent;
 	font-family: $titlefont;
+font-weight: bold;
 	border: 2px solid $green;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -326,4 +330,77 @@ a.back-button {
 	top: -64px;
 	right: -4px;
 	margin-top: 0;
+}
+
+
+
+.ci-new-styles {
+
+.ci-button {
+	font-family: $titlefont;
+	font-weight: bold;
+	border: 2px solid;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: $title-spacing;
+	padding: 11px 1.6em 10px;
+	min-width: 10em;
+	font-size: 1.125em;
+	display: inline-block;
+	line-height: 2;
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 0;
+	margin-top:1em;
+	transition: color $transition, background-color $transition, border-color $transition;
+}
+
+.ci-button--primary {
+	color: $grey;
+	background-color: $yellow;
+	border-color: $yellow;
+
+	&:hover {
+		color: $grey;
+		background-color: darken($yellow, 7%);
+		border-color: darken($yellow, 7%);
+	}
+}
+
+.ci-button--secondary {
+	color: $white;
+	background-color: $blue;
+	border-color: $blue;
+
+	&:hover {
+		color: $white;
+		background-color: darken($blue, 7%);
+		border-color: darken($blue, 7%);
+	}
+
+	&__alt {
+		color: $blue;
+		background-color: transparent;
+		border-color: $blue;
+
+		&:hover {
+			color: $white;
+			background-color: $blue;
+		}
+	}
+}
+
+.ci-button--accent {
+	color: $white;
+	background-color: $green;
+	border-color: $green;
+
+	&:hover {
+		color: $white;
+		background-color: darken($green, 7%);
+		border-color: darken($green, 7%);
+	}
+
+}
+
 }

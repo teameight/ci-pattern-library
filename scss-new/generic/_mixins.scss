@@ -52,9 +52,9 @@
     line-height: $lheight/$fsize;
 }
 @mixin labelfont() {
-  font-family:$titlefont-book;
-  text-transform:uppercase;
-  font-size:.875em;
+  font-family: $titlefont;
+  text-transform: uppercase;
+  font-size: .875em;
   letter-spacing: .08em;
 }
 @mixin font-smoothing($value: antialiased) {

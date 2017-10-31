@@ -542,7 +542,8 @@
 
     p.location {
         color:$grey-med;
-        font-family:$titlefont;
+        font-family: $titlefont;
+        font-weight: bold;
         text-transform: uppercase;
         font-size:1.125em
     }
@@ -551,7 +552,8 @@
         float:left;
         padding:0 16px;
         box-sizing:border-box;
-    }  
+    }
+
     .date {
         background:$grey-med;
         color:$white;
@@ -567,7 +569,8 @@
             display:block;
         }
         .month {
-            font-family:$titlefont;
+            font-family: $titlefont;
+            font-weight: bold;
             text-transform: uppercase;
             font-size: 1.125em;
             margin-bottom: 4px;
@@ -579,7 +582,8 @@
               padding-bottom: .75em;
         }
         .enddate {
-            font-family:$titlefont;
+            font-family: $titlefont;
+            font-weight: bold;
             text-transform: uppercase;
             font-size: .825em;
             border-top: 1px solid $white;
@@ -590,11 +594,12 @@
         }
     }
     .more-info, .events-back {
-        display:block;
-        font-family:$titlefont;
+        display: block;
+        font-family: $titlefont;
+        font-weight: bold;
         text-transform: uppercase;
         font-size: 1em;
-        float:left;
+        float: left;
         margin-top: .5em;
     }
     .more-info {
@@ -704,7 +709,8 @@
 
     input[type=submit] {
         color:$green;
-        font-family:$titlefont;
+        font-family: $titlefont;
+        font-weight: bold;
         border:2px solid $green;
         text-decoration:none;
         text-transform:uppercase;

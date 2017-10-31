@@ -23,7 +23,7 @@
 		margin-bottom: 0;
 		text-align: left;
 		font-size: 1.75em;
-		font-family: $titlefont-book;
+		font-family: $titlefont;
 
 		@media screen and (min-width: $bp-med) {
 			text-align: right;
@@ -411,7 +411,7 @@
 .wp-caption-text,
 p.wp-caption-text,
 .video-container + h6 {
-	font-family: $titlefont-book;
+	font-family: $titlefont;
 	font-size: 14px;
 	color: $grey;
 	border-bottom: 1px solid $grey-med;

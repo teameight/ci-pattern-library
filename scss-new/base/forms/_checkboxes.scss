@@ -15,11 +15,12 @@
 		margin-top: 5px;
 		margin-bottom: 0;
 		display: inline-block;
-		font-family: $titlefont-book;
+		font-family: $titlefont;
 
 		.ci-checkbox__primary & {
 			color: $blue;
 			font-family: $titlefont;
+			font-weight: bold;
 		}
 	}
 }

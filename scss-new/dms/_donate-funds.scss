@@ -87,6 +87,7 @@
 		content: "$";
 		color: $green;
 		font-family: $titlefont;
+		font-weight: bold;
 		font-size: 1.5em;
 		position: absolute;
 		top: 15px;
@@ -114,8 +115,7 @@
 	padding: 24px 32px 25px 45px;
 	font-size: 20px;
 	line-height: 1.3;
-	font-family: $titlefont-book;
-	font-weight: normal;
+	font-family: $titlefont;
 	width: 68px;
 	height: 17px;
 	vertical-align: middle;
@@ -132,6 +132,7 @@
 	color: $grey-med;
 	text-transform: uppercase;
 	font-family: $titlefont;
+	font-weight: bold;
 	font-size: 0.875em;
 	text-align: left;
 

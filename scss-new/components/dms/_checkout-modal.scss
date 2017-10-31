@@ -1,0 +1,139 @@
+.ci-checkout-modal {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $grey-lt-3;
+	overflow: scroll;
+
+	.h1 {
+		margin-bottom: 1em;
+	}
+
+	.ci-button {
+		display: inline-block;
+		margin-bottom: 1em;
+	}
+}
+
+.ci-checkout-modal-wrap {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: $white;
+}
+
+.ci-checkout-modal-inner {
+	text-align: center;
+	padding: 0 2em 3em;
+
+	@media screen and (min-width: $bp-med) {
+		padding: 0 3em 4em;
+	}
+}
+
+.ci-checkout-modal-header {
+	text-align: right;
+	padding: 1em 1em;
+	position: relative;
+
+	@media screen and (min-width: 900px) {
+		padding: 0;
+	}
+}
+
+.ci-checkout-modal-close {
+	background: transparent;
+	border: none;
+
+	@media screen and (min-width: 900px) {
+		position: fixed;
+		top: 10px;
+		right: 20px;
+	}
+}
+
+.ci-checkout-section-header {
+	margin-bottom: 3em;
+}
+
+.ci-checkout-modal-item {
+	display: flex;
+	background-color: $blue;
+	color: $white;
+	position: relative;
+	margin-bottom: 3.125em;
+}
+
+.ci-checkout-modal-item-img {
+	width: 36%;
+
+	img {
+		max-width: 100%;
+		float: left;
+	}
+}
+
+.ci-checkout-modal-item-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 64%;
+	text-align: center;
+	padding: 10px;
+}
+
+.ci-checkout-modal-item-intro {
+	font-style: italic;
+}
+
+.ci-checkout-modal-item-name {
+	color: $yellow;
+	font-size: 1.75em;
+	display: inline-block;
+	margin: .35em 0;
+}
+
+.ci-checkout-modal-item-amount {
+	font-family: $titlefont;
+font-weight: bold;
+	font-size: 1.125em;
+	text-transform: uppercase;
+}
+
+.ci-step-counter {
+	margin-bottom: 2.25em;
+	font-family: $titlefont;
+	text-transform: uppercase;
+	color: $grey-dark-2;
+}
+
+.ci-step-counter-current {
+	display: inline-block;
+	background-color: $blue;
+	border-radius: 50%;
+	color: $white;
+	width: 1.6em;
+	height: 1.6em;
+	font-size: 1.5625em;
+	font-weight: bold;
+	margin: 0 5px;
+	vertical-align: middle;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ci-checkout-modal-forgot-password-link,
+.ci-checkout-modal-guest-checkout-link {
+	margin-bottom: 3.75em;
+	display: block;
+}
+
+.ci-checkout-modal-guest-checkout-paypal-icon {
+	display: inline-block;
+	margin: 3.125em auto 1em;
+	text-align: center;
+}
