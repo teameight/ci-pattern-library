@@ -1,7 +1,11 @@
-<div class="ci-checkout-modal ci-new-styles">
+<div class="ci-new-styles">
+	<button class="ci-button ci-button--primary" onclick="openModal();">Open Modal</button>
+</div>
+
+<div class="ci-checkout-modal active ci-new-styles">
 	<div class="ci-checkout-modal-wrap">
 		<div class="ci-checkout-modal-header">
-			<button class="ci-checkout-modal-close">
+			<button class="ci-checkout-modal-close" onclick="closeModal();">
 				<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <g id="Single---Longform" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 				        <g id="Confirm-Payment" transform="translate(-20.000000, -20.000000)" fill="#508FCC">
@@ -33,126 +37,145 @@
 				<p class="h3 ci-heading--secondary">Create an account</p>
 			</header>
 
-			<div class="ci-form-element">
-			  <label class="ci-form-element__label" for="select-01">Contributing as</label>
-			  <div class="ci-form-element__control">
-			    <div class="ci-select_container">
-			      <select class="ci-select" id="select-01">
-			        <option>Individual</option>
-			        <option>Business</option>
-			        <option>Option Three</option>
-			      </select>
-			    </div>
-			  </div>
-			</div>
+			<fieldset class="ci-form-section">
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="select-01">Contributing as</label>
+				  <div class="ci-form-element__control">
+				    <div class="ci-select_container">
+				      <select class="ci-select" id="select-01">
+				        <option>Individual</option>
+				        <option>Business</option>
+				        <option>Option Three</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
 
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="organization-name">Organization name</label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="organization-name" class="ci-input-text" placeholder="" />
+				  </div>
+				</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="first-name">First name <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="first-name" class="ci-input-text" placeholder="Placeholder Text" />
+				  </div>
+				</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="Last name">Last name <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="Last name" class="ci-input-text" placeholder="" />
+				  </div>
+				</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="suffix">Suffix</label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="suffix" class="ci-input-text" placeholder="" />
+				  </div>
+				</div>
+			</fieldset>
 
-			<div class="ci-form-element">
-			  <label class="ci-form-element__label" for="select-01">State</label>
-			  <div class="ci-form-element__control">
-			    <div class="ci-select_container">
-			      <select class="ci-select" id="select-01">
-			        <option>Individual</option>
-			        <option>Business</option>
-			        <option>Option Three</option>
-			      </select>
-			    </div>
-			  </div>
-			</div>
+			<fieldset class="ci-form-section">
 
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="street-address">Street address <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="street-address" class="ci-input-text" placeholder="" />
+				  </div>
+				</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="street-address-2">Apt #, suite, etc</label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="street-address-2" class="ci-input-text" placeholder="" />
+				  </div>
+				</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="city">City <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="city" class="ci-input-text" placeholder="" />
+				  </div>
+				</div>
 
-			<div class="ci-form-element">
-			  <label class="ci-form-element__label" for="select-01">Country</label>
-			  <div class="ci-form-element__control">
-			    <div class="ci-select_container">
-			      <select class="ci-select" id="select-01">
-			        <option>Individual</option>
-			        <option>Business</option>
-			        <option>Option Three</option>
-			      </select>
-			    </div>
-			  </div>
-			</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="country">Country <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <div class="ci-select_container">
+				      <select class="ci-select" id="country" required>
+				        <option>Individual</option>
+				        <option>Business</option>
+				        <option>Option Three</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
 
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
-<div class="ci-form-element">
-  <label class="ci-form-element__label" for="input-unique-1">Form Element Label</label>
-  <div class="ci-form-element__control">
-    <input type="text" id="input-unique-1" class="ci-input-text" placeholder="Placeholder Text" />
-  </div>
-</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="state">State <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <div class="ci-select_container">
+				      <select class="ci-select" id="state">
+				        <option>Individual</option>
+				        <option>Business</option>
+				        <option>Option Three</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
 
-			<div class="ci-form-element">
-			  <label class="ci-form-element__label" for="select-01">How did you hear about us?</label>
-			  <div class="ci-form-element__control">
-			    <div class="ci-select_container">
-			      <select class="ci-select" id="select-01">
-			        <option>Individual</option>
-			        <option>Business</option>
-			        <option>Option Three</option>
-			      </select>
-			    </div>
-			  </div>
-			</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="postal-code">Postal code <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="text" id="postal-code" class="ci-input-text" placeholder="" />
+				  </div>
+				</div>
+
+			</fieldset>
+
+			<fieldset class="ci-form-section">
+
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="email">Email address <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="email" id="email" class="ci-input-text" placeholder="" required />
+				  </div>
+				</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="password">Password <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="password" id="password" class="ci-input-text" placeholder="" required />
+				  </div>
+				</div>
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="confirm-password">Confirm password <abbr class="ci-form-required" title="Required">*</abbr></label>
+				  <div class="ci-form-element__control">
+				    <input type="password" id="confirm-password" class="ci-input-text" placeholder="" required />
+				  </div>
+					<div class="ci-form-element__help">Password must be between 8 and 20 characters.</div>
+					<div class="ci-form-element__help">Include at least one lowercase letter.</div>
+					<div class="ci-form-element__help">Include at least one uppercase letter.</div>
+					<div class="ci-form-element__help">Include at least one number.</div>
+				</div>
+
+			</fieldset>
+
+			<fieldset class="ci-form-section">
+
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="referral">How did you hear about us?</label>
+				  <div class="ci-form-element__control">
+				    <div class="ci-select_container">
+				      <select class="ci-select" id="referral">
+				        <option>Individual</option>
+				        <option>Business</option>
+				        <option>Option Three</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
+
+			</fieldset>
 
 			<button type="submit" class="ci-button ci-button--primary">Submit</button>
 
