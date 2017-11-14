@@ -153,10 +153,14 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-6ffca5ac9a6326e282fae40ed3ae04d5-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal ci-new-styles"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-new-styles"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"openModal();"</span>&gt;</span>Open Modal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal active ci-new-styles"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-wrap"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-header"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-close"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-close"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"closeModal();"</span>&gt;</span>
 				<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 32 32"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">"http://www.w3.org/1999/xlink"</span>&gt;</span>
 				    <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Single---Longform"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span>&gt;</span>
 				        <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Confirm-Payment"</span> <span class="hljs-attr">transform</span>=<span class="hljs-string">"translate(-20.000000, -20.000000)"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#508FCC"</span>&gt;</span>
@@ -188,126 +192,145 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 ci-heading--secondary"</span>&gt;</span>Create an account<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>Contributing as<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>Contributing as<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"organization-name"</span>&gt;</span>Organization name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"organization-name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"first-name"</span>&gt;</span>First name <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"first-name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>How did you hear about us?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"Last name"</span>&gt;</span>Last name <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Last name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"suffix"</span>&gt;</span>Suffix<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"suffix"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"street-address"</span>&gt;</span>Street address <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"street-address"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"street-address-2"</span>&gt;</span>Apt #, suite, etc<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"street-address-2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"city"</span>&gt;</span>City <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"city"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"country"</span>&gt;</span>Country <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"country"</span> <span class="hljs-attr">required</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"state"</span>&gt;</span>State <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"state"</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"postal-code"</span>&gt;</span>Postal code <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"postal-code"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email address <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"password"</span>&gt;</span>Password <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"confirm-password"</span>&gt;</span>Confirm password <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"confirm-password"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Password must be between 8 and 20 characters.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Include at least one lowercase letter.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Include at least one uppercase letter.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Include at least one number.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"referral"</span>&gt;</span>How did you hear about us?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"referral"</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
@@ -321,10 +344,14 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6ffca5ac9a6326e282fae40ed3ae04d5-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal ci-new-styles"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-new-styles"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"openModal();"</span>&gt;</span>Open Modal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal active ci-new-styles"</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-wrap"</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-header"</span>&gt;</span>
-			<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-close"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-close"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"closeModal();"</span>&gt;</span>
 				<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 32 32"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">"http://www.w3.org/1999/xlink"</span>&gt;</span>
 				    <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Single---Longform"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"evenodd"</span>&gt;</span>
 				        <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Confirm-Payment"</span> <span class="hljs-attr">transform</span>=<span class="hljs-string">"translate(-20.000000, -20.000000)"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#508FCC"</span>&gt;</span>
@@ -356,126 +383,145 @@
 				<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 ci-heading--secondary"</span>&gt;</span>Create an account<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 			<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
-			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>Contributing as<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-			    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-			      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
-			    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>Contributing as<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+				      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+				    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"organization-name"</span>&gt;</span>Organization name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"organization-name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"first-name"</span>&gt;</span>First name <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"first-name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"Last name"</span>&gt;</span>Last name <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Last name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"suffix"</span>&gt;</span>Suffix<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"suffix"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
 
-			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-			    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-			      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
-			    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"street-address"</span>&gt;</span>Street address <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"street-address"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"street-address-2"</span>&gt;</span>Apt #, suite, etc<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"street-address-2"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"city"</span>&gt;</span>City <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"city"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-			    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-			      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
-			    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"country"</span>&gt;</span>Country <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+				      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"country"</span> <span class="hljs-attr">required</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+				    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"input-unique-1"</span>&gt;</span>Form Element Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"input-unique-1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Placeholder Text"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"state"</span>&gt;</span>State <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+				      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"state"</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+				    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"select-01"</span>&gt;</span>How did you hear about us?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-			  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
-			    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
-			      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"select-01"</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-			      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
-			    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"postal-code"</span>&gt;</span>Postal code <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"postal-code"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+			<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+
+			<span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
+
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email address <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"password"</span>&gt;</span>Password <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"confirm-password"</span>&gt;</span>Confirm password <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-required"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Required"</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"confirm-password"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-input-text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">required</span> /&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Password must be between 8 and 20 characters.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Include at least one lowercase letter.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Include at least one uppercase letter.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__help"</span>&gt;</span>Include at least one number.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+			<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+
+			<span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-section"</span>&gt;</span>
+
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"referral"</span>&gt;</span>How did you hear about us?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+				  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__control"</span>&gt;</span>
+				    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select_container"</span>&gt;</span>
+				      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-select"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"referral"</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Individual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				        <span class="hljs-tag">&lt;<span class="hljs-name">option</span>&gt;</span>Option Three<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+				      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+				    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+			<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
 
 			<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
@@ -787,8 +833,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="add-payment-method.html" data-pjax>
-                <span>Add Payment Method</span>
+            <a class="Tree-entityLink" href="confirm-payment.html" data-pjax>
+                <span>Confirm Payment</span>
                 
 
 <div class="Status Status--unlabelled">

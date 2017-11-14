@@ -1,3 +1,16 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/pattern-library.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="../../js/all.js"></script>
+    <title>Preview</title>
+</head>
+<body class="pl-body">
+
 <div class="ci-new-styles">
 	<button class="ci-button ci-button--primary" onclick="openModal();">Open Modal</button>
 </div>
@@ -30,34 +43,65 @@
 		</div>
 		<div class="ci-checkout-modal-inner">
 			<header class="ci-checkout-section-header">
-				<p class="h1">Log in or Register</p>
-				<p class="h3 ci-heading--secondary">Log in</p>
-				<p>If you do not have an account,<br>please use the register button below.</p>
+				<p class="h1">Confirm Payment</p>
 			</header>
 
-			<div class="ci-form-element">
-			  <label class="ci-form-element__label" for="username">Email/Username</label>
+			<fieldset class="ci-form-element ci-radio-group__primary">
+			  <legend class="ci-form-element__legend ci-form-element__label">I would like to pay for my sponsorship:</legend>
 			  <div class="ci-form-element__control">
-			    <input type="email" id="username" class="ci-input-text" placeholder="example@email.com" />
+			    <span class="ci-radio">
+			      <input type="radio" id="radio-1" name="options" value="on" checked />
+			      <label class="ci-radio__label" for="radio-1">
+			        <span class="ci-radio_faux"></span>
+			        <span class="ci-form-element__label">Monthly ($28)</span>
+			      </label>
+			    </span>
+			    <span class="ci-radio">
+			      <input type="radio" id="radio-2" name="options" value="on" />
+			      <label class="ci-radio__label" for="radio-2">
+			        <span class="ci-radio_faux"></span>
+			        <span class="ci-form-element__label">Quarterly ($84)</span>
+			      </label>
+			    </span>
+			    <span class="ci-radio">
+			      <input type="radio" id="radio-3" name="options" value="on" />
+			      <label class="ci-radio__label" for="radio-3">
+			        <span class="ci-radio_faux"></span>
+			        <span class="ci-form-element__label">Semi-annually ($168)</span>
+			      </label>
+			    </span>
+			    <span class="ci-radio">
+			      <input type="radio" id="radio-4" name="options" value="on" />
+			      <label class="ci-radio__label" for="radio-4">
+			        <span class="ci-radio_faux"></span>
+			        <span class="ci-form-element__label">Annually ($336)</span>
+			      </label>
+			    </span>
 			  </div>
-			</div>
+			</fieldset>
 
-			<div class="ci-form-element ci-m-bottom__large">
-			  <label class="ci-form-element__label" for="password">Password</label>
-			  <div class="ci-form-element__control">
-			    <input type="password" id="password" class="ci-input-text" />
-			  </div>
-			</div>
+			<fieldset class="ci-form-section">
+				<div class="ci-form-element">
+				  <label class="ci-form-element__label" for="payment-method">Payment method</label>
+				  <div class="ci-form-element__control">
+				    <div class="ci-select_container">
+				      <select class="ci-select" id="payment-method">
+				        <option>Credit Card ****2031</option>
+				        <option>Credit Card ****0876</option>
+				        <option>Bank Account ****6589</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
+				<a class="" href="">Add new payment method</a>
 
-			<button type="submit" class="ci-button ci-button--primary ci-m-bottom__med">Log in</button>
+			</fieldset>
 
-			<a class="d-block ci-m-bottom__xl" href="">I forgot my password</a>
+			<a href="" class="ci-button ci-button--primary">Pay now</a>
 
-			<p class="h3 ci-heading--secondary ci-m-bottom__med">Don't have an account?</p>
+			<br>
 
-			<a href="" class="ci-button ci-button--primary ci-m-bottom__xl">Register</a>
-
-			<svg class="d-block ci-m-auto ci-m-bottom__med" width="48px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<svg class="ci-checkout-modal-guest-checkout-paypal-icon" width="48px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			    <g id="Single---Longform" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 			        <g id="Add-Payment-Modal-Copy" transform="translate(-214.000000, -1715.000000)" fill-rule="nonzero">
 			            <g id="PayPal" transform="translate(214.000000, 1715.000000)">
@@ -76,8 +120,12 @@
 			    </g>
 			</svg>
 
-			<a class="d-block ci-m-bottom__large" href="">Check out as a guest</a>
+			<a class="ci-checkout-modal-guest-checkout-link" href="">Check out with PayPal</a>
 
 		</div>
 	</div>
 </div>
+
+
+</body>
+</html>

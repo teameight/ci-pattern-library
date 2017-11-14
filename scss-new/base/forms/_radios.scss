@@ -43,7 +43,6 @@
   flex: 1;
 	min-width: 50%;
 
-
   .ci-form-element__label {
   	margin-bottom: 0;
   	font-family: $titlefont;
@@ -61,6 +60,7 @@
 	display: flex;
 	align-items: flex-start;
 	margin-bottom: 1em;
+	cursor: pointer;
 }
 
 .ci-radio_faux {

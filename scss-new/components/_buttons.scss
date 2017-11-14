@@ -351,7 +351,6 @@ a.back-button {
 	background-color: transparent;
 	cursor: pointer;
 	border-radius: 0;
-	margin-top:1em;
 	transition: color $transition, background-color $transition, border-color $transition;
 }
 
@@ -364,6 +363,14 @@ a.back-button {
 		color: $grey;
 		background-color: darken($yellow, 7%);
 		border-color: darken($yellow, 7%);
+	}
+}
+
+.ci-theme_inverse .ci-button--primary {
+	color: $grey;
+
+	&:hover {
+		color: $grey;
 	}
 }
 

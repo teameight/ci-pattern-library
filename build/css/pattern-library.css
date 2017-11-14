@@ -109,6 +109,7 @@ table {
   border-spacing: 0; }
 
 input {
+  background-color: #fff;
   border-radius: 0;
   -webkit-appearance: none; }
 
@@ -3877,17 +3878,6 @@ img.aligncenter, a img.aligncenter {
   text-align: left;
   margin-bottom: 1em; }
 
-.ci-radio-group__primary .ci-form-element__control {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 260px;
-  margin: 0 auto; }
-  @media screen and (min-width: 600px) {
-    .ci-radio-group__primary .ci-form-element__control {
-      flex-direction: row;
-      max-width: none; } }
-
 .ci-form-element__label {
   font-family: "halisgr", Impact, Charcoal, sans-serif;
   font-weight: bold;
@@ -3951,6 +3941,18 @@ img.aligncenter, a img.aligncenter {
  * @restrict span
  * @variant
  */
+.ci-radio-group__primary .ci-form-element__control {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 260px;
+  margin: 0 auto; }
+  @media screen and (min-width: 600px) {
+    .ci-radio-group__primary .ci-form-element__control {
+      flex-direction: row;
+      max-width: 600px;
+      padding-left: 2.5em; } }
+
 .ci-form-element__legend {
   margin-bottom: 1.75em; }
   .ci-radio-group__primary .ci-form-element__legend {

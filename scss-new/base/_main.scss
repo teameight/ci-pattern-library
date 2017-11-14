@@ -3085,15 +3085,21 @@ and (max-device-width : 1024px)  {
 	padding: 0 10px;
 }
 
+.ci-new-styles {
 
+.ci-theme_inverse {
+	background-color: $blue;
 
+	* {
+		color: $white;
+	}
 
+	a {
+		color: $yellow;
 
-
-
-
-
-
-
-
-
+		&:hover {
+			color: darken($yellow, 7%);
+		}
+	}
+}
+}

@@ -14,9 +14,9 @@ h4,
 	padding:0;
 	display: block;
 
-	&:first-child {
-		margin-top:0;
-	}
+	// &:first-child {
+	// 	margin-top:0;
+	// }
 }
 h1,
 .h1 {
@@ -99,11 +99,27 @@ p {
 .ci-new-styles {
 
 h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	display: block;
+	margin-top: unset; // TODO: remove after new-styles are in effect
+	font-weight: bold;
+}
+
+h1,
 .h1 {
 	font-size: 3em;
 	line-height: 1.187;
 	font-family: $font;
-	font-weight: bold;
 	color: $blue;
 	text-transform: none;
 }
@@ -113,7 +129,6 @@ h2,
 	font-size: 1.75em;
 	line-height: 1.142;
 	font-family: $font;
-	font-weight: bold;
 	color: $blue;
 	text-transform: none;
 }
@@ -123,7 +138,6 @@ h3,
 	font-size: 1.25em;
 	line-height: 1.15;
 	font-family: $titlefont;
-	font-weight: bold;
 	color: $blue;
 	text-transform: uppercase;
 }
@@ -133,7 +147,6 @@ h4,
 	font-size: 1.125em;
 	line-height: 1.167;
 	font-family: $titlefont;
-	font-weight: bold;
 	color: $blue;
 	text-transform: uppercase;
 }
@@ -143,7 +156,6 @@ h5,
 	font-size: 1em;
 	line-height: 1.188;
 	font-family: $titlefont;
-	font-weight: bold;
 	color: $blue;
 	text-transform: uppercase;
 }
@@ -153,13 +165,29 @@ h6,
 	font-size: .875em;
 	line-height: 1.214;
 	font-family: $titlefont;
-	font-weight: bold;
 	color: $grey-dark-2;
 	text-transform: uppercase;
 }
 
 .ci-heading--secondary {
 	color: $grey-dark-2;
+}
+
+.ci-theme_inverse {
+	h1,
+	.h1,
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6 {
+		color: $white;
+	}
 }
 
 }
