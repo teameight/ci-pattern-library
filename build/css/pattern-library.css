@@ -3408,6 +3408,15 @@ svg image:hover {
   border: 3px solid #74B638;
   padding: 0 10px; }
 
+.ci-new-styles .ci-theme_inverse {
+  background-color: #4F8BCA; }
+  .ci-new-styles .ci-theme_inverse * {
+    color: #fff; }
+  .ci-new-styles .ci-theme_inverse a {
+    color: #FFC30E; }
+    .ci-new-styles .ci-theme_inverse a:hover {
+      color: #e9af00; }
+
 /* Links */
 a {
   color: #5ea142;
@@ -3480,15 +3489,6 @@ h4,
   font-weight: bold;
   padding: 0;
   display: block; }
-  h1:first-child,
-  .h1:first-child,
-  h2:first-child,
-  .h2:first-child,
-  h3:first-child,
-  .h3:first-child,
-  h4:first-child,
-  .h4:first-child {
-    margin-top: 0; }
 
 h1,
 .h1 {
@@ -3556,11 +3556,26 @@ p {
   letter-spacing: 2px; }
 
 .ci-new-styles h1,
+.ci-new-styles .h1,
+.ci-new-styles h2,
+.ci-new-styles .h2,
+.ci-new-styles h3,
+.ci-new-styles .h3,
+.ci-new-styles h4,
+.ci-new-styles .h4,
+.ci-new-styles h5,
+.ci-new-styles .h5,
+.ci-new-styles h6,
+.ci-new-styles .h6 {
+  display: block;
+  margin-top: unset;
+  font-weight: bold; }
+
+.ci-new-styles h1,
 .ci-new-styles .h1 {
   font-size: 3em;
   line-height: 1.187;
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
   color: #4F8BCA;
   text-transform: none; }
 
@@ -3569,7 +3584,6 @@ p {
   font-size: 1.75em;
   line-height: 1.142;
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
   color: #4F8BCA;
   text-transform: none; }
 
@@ -3578,7 +3592,6 @@ p {
   font-size: 1.25em;
   line-height: 1.15;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
-  font-weight: bold;
   color: #4F8BCA;
   text-transform: uppercase; }
 
@@ -3587,7 +3600,6 @@ p {
   font-size: 1.125em;
   line-height: 1.167;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
-  font-weight: bold;
   color: #4F8BCA;
   text-transform: uppercase; }
 
@@ -3596,7 +3608,6 @@ p {
   font-size: 1em;
   line-height: 1.188;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
-  font-weight: bold;
   color: #4F8BCA;
   text-transform: uppercase; }
 
@@ -3605,12 +3616,25 @@ p {
   font-size: .875em;
   line-height: 1.214;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
-  font-weight: bold;
   color: #606060;
   text-transform: uppercase; }
 
 .ci-new-styles .ci-heading--secondary {
   color: #606060; }
+
+.ci-new-styles .ci-theme_inverse h1,
+.ci-new-styles .ci-theme_inverse .h1,
+.ci-new-styles .ci-theme_inverse h2,
+.ci-new-styles .ci-theme_inverse .h2,
+.ci-new-styles .ci-theme_inverse h3,
+.ci-new-styles .ci-theme_inverse .h3,
+.ci-new-styles .ci-theme_inverse h4,
+.ci-new-styles .ci-theme_inverse .h4,
+.ci-new-styles .ci-theme_inverse h5,
+.ci-new-styles .ci-theme_inverse .h5,
+.ci-new-styles .ci-theme_inverse h6,
+.ci-new-styles .ci-theme_inverse .h6 {
+  color: #fff; }
 
 /* Text-Related Elements */
 body {
@@ -3870,9 +3894,6 @@ img.aligncenter, a img.aligncenter {
         max-width: none;
         width: 100%; } }
 
-.ci-form-section {
-  margin-bottom: 3em; }
-
 .ci-form-element {
   position: relative;
   text-align: left;
@@ -3980,7 +4001,8 @@ img.aligncenter, a img.aligncenter {
 .ci-radio__label {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  cursor: pointer; }
 
 .ci-radio_faux {
   flex-shrink: 0; }
@@ -4228,6 +4250,55 @@ label.checkbox {
 .ci-select__payment-type {
   display: inline-block;
   margin-right: 1em; }
+
+.ci-new-styles .ci-m-bottom {
+  margin-bottom: 1rem; }
+
+.ci-new-styles .ci-m-bottom__med {
+  margin-bottom: 1.5rem; }
+
+.ci-new-styles .ci-m-bottom__large {
+  margin-bottom: 2rem; }
+
+.ci-new-styles .ci-m-bottom__xl {
+  margin-bottom: 4rem; }
+
+.ci-new-styles .ci-m-top {
+  margin-top: 1rem; }
+
+.ci-new-styles .ci-m-top__med {
+  margin-top: 1.5rem; }
+
+.ci-new-styles .ci-m-top__large {
+  margin-top: 2rem; }
+
+.ci-new-styles .ci-m-top__xl {
+  margin-top: 4rem; }
+
+.ci-new-styles .ci-m-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.ci-new-styles .ci-flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.d-block {
+  display: block; }
+
+.d-inline {
+  display: inline; }
+
+.d-inline-block {
+  display: inline-block; }
+
+.ci-flex-row {
+  display: flex;
+  flex-direction: row; }
+
+.ci-flex-column {
+  display: flex;
+  flex-direction: column; }
 
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
@@ -5525,7 +5596,6 @@ a.back-button {
   background-color: transparent;
   cursor: pointer;
   border-radius: 0;
-  margin-top: 1em;
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; }
 
 .ci-new-styles .ci-button--primary {
@@ -5536,6 +5606,11 @@ a.back-button {
     color: #454545;
     background-color: #e9af00;
     border-color: #e9af00; }
+
+.ci-new-styles .ci-theme_inverse .ci-button--primary {
+  color: #454545; }
+  .ci-new-styles .ci-theme_inverse .ci-button--primary:hover {
+    color: #454545; }
 
 .ci-new-styles .ci-button--secondary {
   color: #fff;
@@ -6099,11 +6174,6 @@ label[for="forgot-password-email"] {
   transition: top 400ms ease-in-out; }
   .ci-checkout-modal.active {
     top: 0; }
-  .ci-checkout-modal .h1 {
-    margin-bottom: 1em; }
-  .ci-checkout-modal .ci-button {
-    display: inline-block;
-    margin-bottom: 1em; }
 
 .ci-checkout-modal-wrap {
   width: 100%;
@@ -6113,10 +6183,30 @@ label[for="forgot-password-email"] {
 
 .ci-checkout-modal-inner {
   text-align: center;
-  padding: 0 2em 3em; }
+  padding: 2em; }
+  .ci-checkout-modal-inner:last-of-type {
+    padding: 2em 2em 3em; }
   @media screen and (min-width: 767px) {
     .ci-checkout-modal-inner {
-      padding: 0 3em 4em; } }
+      padding: 3em 3em 4em; }
+      .ci-checkout-modal-inner:last-of-type {
+        padding: 3em 3em 5em; } }
+  .ci-checkout-modal-inner h1,
+  .ci-checkout-modal-inner .h1,
+  .ci-checkout-modal-inner h2,
+  .ci-checkout-modal-inner .h2,
+  .ci-checkout-modal-inner h3,
+  .ci-checkout-modal-inner .h3,
+  .ci-checkout-modal-inner h4,
+  .ci-checkout-modal-inner .h4,
+  .ci-checkout-modal-inner h5,
+  .ci-checkout-modal-inner .h5,
+  .ci-checkout-modal-inner h6,
+  .ci-checkout-modal-inner .h6,
+  .ci-checkout-modal-inner p {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .ci-checkout-modal-header {
   text-align: right;
@@ -6141,8 +6231,7 @@ label[for="forgot-password-email"] {
   display: flex;
   background-color: #4F8BCA;
   color: #fff;
-  position: relative;
-  margin-bottom: 3.125em; }
+  position: relative; }
 
 .ci-checkout-modal-item-img {
   width: 36%; }
@@ -6174,36 +6263,13 @@ label[for="forgot-password-email"] {
   font-size: 1.125em;
   text-transform: uppercase; }
 
-.ci-step-counter {
-  margin-bottom: 2.25em;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
-  text-transform: uppercase;
-  color: #606060; }
-
-.ci-step-counter-current {
-  display: inline-block;
-  background-color: #4F8BCA;
-  border-radius: 50%;
-  color: #fff;
-  width: 1.6em;
-  height: 1.6em;
-  font-size: 1.5625em;
-  font-weight: bold;
-  margin: 0 5px;
-  vertical-align: middle;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center; }
-
-.ci-checkout-modal-forgot-password-link,
-.ci-checkout-modal-guest-checkout-link {
-  margin-bottom: 3.75em;
+.ci-checkout-modal-thank-you__cover img {
+  width: 100%;
+  height: auto;
   display: block; }
 
-.ci-checkout-modal-guest-checkout-paypal-icon {
-  display: inline-block;
-  margin: 3.125em auto 1em;
-  text-align: center; }
+.ci-checkout-modal-footer {
+  border-top: 1px solid #cccccc; }
 
 /*------------------------------------*    $TEMPLATES
 \*------------------------------------*/

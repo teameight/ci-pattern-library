@@ -7430,7 +7430,7 @@ p.wp-caption-text,
   flex-direction: column;
   justify-content: space-between;
   background-color: #4F8BCA; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     .child-spotlight-primary {
       flex-direction: row; }
       .child-spotlight-primary .child-spotlight-primary-info {
@@ -7449,19 +7449,21 @@ p.wp-caption-text,
 .child-spotlight-primary-img {
   flex-grow: 1;
   overflow: hidden;
-  background-color: #4F8BCA; }
-  @media screen and (min-width: 500px) {
+  background-color: #F5F5F5; }
+  @media screen and (min-width: 1200px) {
     .child-spotlight-primary-img {
-      background-color: #F5F5F5; } }
+      background-color: #4F8BCA; } }
   .child-spotlight-primary-img img {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     float: none; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .child-spotlight-primary-img img {
-        width: auto;
+        width: auto; } }
+    @media screen and (min-width: 1200px) {
+      .child-spotlight-primary-img img {
         height: 100%;
         float: right; } }
 
