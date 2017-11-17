@@ -4880,8 +4880,9 @@ label.checkbox {
         height: auto; }
   #header .menu li.buttonwrap a,
   #header .menu li.buttonwrap button {
-    padding: 8px 1.75em;
-    line-height: 2; }
+    font-size: .875em;
+    padding: 1em 1.43em;
+    line-height: 1; }
   #header .right-menu {
     display: block; }
     @media screen and (min-width: 1024px) {
@@ -5002,12 +5003,12 @@ a#open-menu {
   font-family: "halisgr", Impact, Charcoal, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  color: #74b638;
+  color: #4F8BCA;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
-  font-size: 13px;
-  line-height: 24px;
+  font-size: .75em;
+  line-height: 1;
   letter-spacing: 0.03em;
   outline: 0 none;
   -moz-transition: color 0.3s ease;
@@ -5016,7 +5017,7 @@ a#open-menu {
   transition: color 0.3s ease; }
   .menu a:hover,
   .menu button:hover {
-    color: #4F8BCA; }
+    color: #3979bd; }
 
 .dot-separated-list li:after {
   content: "\b7";
@@ -5025,7 +5026,7 @@ a#open-menu {
   top: 0;
   line-height: 24px;
   padding: 10px 0;
-  color: #74b638; }
+  color: #4F8BCA; }
 
 .dot-separated-list li:first-child {
   padding-left: 0; }
@@ -5056,14 +5057,11 @@ a#open-menu {
   float: right;
   text-align: right; }
 
-.bottom-menu {
-  margin-top: 20px; }
-
 .menu .accent-nav-link a {
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   text-transform: none;
-  font-size: 1em;
+  font-size: .875em;
   color: #4F8BCA; }
   .menu .accent-nav-link a:hover {
     color: #3571b1; }
@@ -5267,15 +5265,19 @@ a#open-menu {
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
-.menu li.buttonwrap a:hover {
+.menu li.buttonwrap a {
   background-color: #74b638;
-  color: #fff; }
+  color: #fff;
+  border: none; }
+  .menu li.buttonwrap a:hover {
+    background-color: #639b30;
+    color: #fff; }
 
 .menu li.buttonwrap.blue a {
-  color: #4F8BCA;
+  background-color: #4F8BCA;
   border-color: #4F8BCA; }
   .menu li.buttonwrap.blue a:hover {
-    background-color: #4F8BCA;
+    background-color: #3979bd;
     color: #fff; }
 
 .menu li.buttonwrap.white a {

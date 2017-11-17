@@ -73,14 +73,14 @@ a#open-menu {
 	a,
 	button {
 		font-family: $titlefont;
-font-weight: bold;
+		font-weight: bold;
 		text-decoration: none;
-		color: $green;
+		color: $blue;
 		background-color: transparent;
 		border: none;
 		text-transform: uppercase;
-		font-size: 13px;
-		line-height: 24px;
+		font-size: .75em;
+		line-height: 1;
 		letter-spacing: $title-spacing;
 		outline: 0 none;
 		-moz-transition: color $transition;
@@ -89,7 +89,7 @@ font-weight: bold;
 		transition: color $transition;
 
 		&:hover {
-			color: $blue;
+			color: darken($blue, 7%);
 		}
 	}
 }
@@ -102,7 +102,7 @@ font-weight: bold;
 			top: 0;
 			line-height: 24px;
 			padding: 10px 0;
-			color: $green;
+			color: $blue;
 		}
 		&:first-child {
 			padding-left: 0;
@@ -143,15 +143,11 @@ font-weight: bold;
 	text-align: right;
 }
 
-.bottom-menu {
-	margin-top: 20px;
-}
-
 .menu .accent-nav-link a {
 	font-family: $font;
 	font-style: italic;
 	text-transform: none;
-	font-size: 1em;
+	font-size: .875em;
 	color: $blue;
 
 	&:hover {

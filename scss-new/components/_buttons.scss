@@ -3,32 +3,43 @@
 \*------------------------------------*/
 
 .menu li.buttonwrap {
-	a:hover {
-		background-color:$green;
-		color:$white;
+	a {
+		background-color: $green;
+		color: $white;
+		border: none;
+
+		&:hover {
+			background-color: darken($green, 7%);
+			color: $white;
+		}
 	}
 
 	&.blue a {
-		color:$blue;
-		border-color:$blue;
+		background-color: $blue;
+		border-color: $blue;
 
 		&:hover {
-			background-color:$blue;
-			color:$white	}
+			background-color: darken($blue, 7%);
+			color: $white
+		}
 	}
+
 	&.white a {
 		color:$white;
 		border-color:$white;
 
 		&:hover {
 			background-color:$white;
-			color:$black;	}
+			color:$black;
+		}
 	}
+
 	&.full a {
 		width:100%;
 		text-align:center;
-    	box-sizing: border-box;
+  	box-sizing: border-box;
 	}
+
 	&.small a {
 		font-size: 14px;
 	}

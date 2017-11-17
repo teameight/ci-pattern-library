@@ -45,8 +45,9 @@
 	.menu li.buttonwrap {
 		a,
 		button {
-			padding: 8px 1.75em;
-			line-height: 2;
+			font-size: .875em;
+			padding: 1em 1.43em;
+			line-height: 1;
 		}
 	}
 
@@ -67,7 +68,7 @@
 				box-sizing: border-box;
 			}
 
-			.left-menu{
+			.left-menu {
 
 				display:none;
 
@@ -79,7 +80,7 @@
 					font-size:.825em;
 					text-transform:none;
 					width: auto;
-				    background: transparent;
+			    background: transparent;
 					padding:1.5em 0;
 				}
 
@@ -88,12 +89,12 @@
 					margin: 0;
 				}
 
-				width:100%;
-				text-align:center;
+				width: 100%;
+				text-align: center;
 
 				.menu li {
-					text-align:center;
-					display:block;
+					text-align: center;
+					display: block;
 					padding: 10px 0;
 					a {
 						font-size: 1.25em;
@@ -102,10 +103,10 @@
 			}
 
 			.right-menu {
-				display:none;
-				width:100%;
-				text-align:center;
-				box-sizing:border-box;
+				display: none;
+				width: 100%;
+				text-align: center;
+				box-sizing: border-box;
 				flex-direction: column;
 				justify-content: flex-start;
 
@@ -133,7 +134,7 @@
 			.menu {
 				li {
 					a {
-						&:hover{
+						&:hover {
 						}
 
 					}
