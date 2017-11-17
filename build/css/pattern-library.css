@@ -146,7 +146,8 @@ h1, h2, h3, p {
   padding: 0 0 30px; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   line-height: 100%; }
 
 .left {
@@ -286,7 +287,8 @@ h1, h2, h3, h4, h5 {
   color: #FFF !important;
   margin: 0 5px !important;
   font-size: 20px !important;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   float: left; }
 
 .wp-pagenavi span.current {
@@ -514,7 +516,8 @@ html {
 #homepage-testimonials h3.title,
 #homepage-social h3.title,
 #homepage-get-involved h3.title {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 45px;
   color: #FFF;
   text-transform: uppercase;
@@ -601,7 +604,8 @@ html {
   z-index: 20; }
 
 #homepage-sponsors .entry .title {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 68px;
   color: #FFF;
   text-transform: uppercase;
@@ -640,7 +644,8 @@ html {
   padding-top: 110px; }
 
 #homepage-stories h4 {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 25px;
   text-transform: uppercase;
   text-align: center;
@@ -674,7 +679,8 @@ html {
   line-height: 1.9em; }
 
 #homepage-testimonials h4 {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 13px;
   text-transform: uppercase;
   margin-bottom: 10px; }
@@ -845,7 +851,8 @@ html {
 
 .children-list .text-holder span {
   text-transform: uppercase;
-  font-family: 'halisgr bold'; }
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold; }
 
 .children-list a {
   text-decoration: none; }
@@ -1040,7 +1047,8 @@ h1.title {
 
 #the-problem .column.left,
 #about-us .column.left {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   width: 39%;
   line-height: 2.1em; }
 
@@ -1079,7 +1087,8 @@ h1.title {
 #about-us .financials .title,
 #about-us .administration .title,
 #about-us .community-partners .title {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 65px;
   text-transform: uppercase;
   text-align: center;
@@ -1097,7 +1106,8 @@ h1.title {
   text-align: center; }
 
 #about-us .community-partners strong {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   color: #000; }
 
 #about-us .community-partners .image-holder {
@@ -1196,7 +1206,8 @@ h1.title {
   z-index: 100; }
 
 #stories-of-hope .title {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 57px;
   text-transform: uppercase;
   z-index: 200;
@@ -1230,7 +1241,8 @@ h1.title {
   margin-bottom: 80px; }
 
 #stories-of-hope .share h3 {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 45px;
   text-transform: uppercase; }
 
@@ -1367,7 +1379,8 @@ article.black .bottom {
   color: #000;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   margin: 25px 0;
   overflow: hidden; }
 
@@ -1509,7 +1522,8 @@ div.wpcf7 img.ajax-loader {
   display: none; }
 
 #contact-us span.come {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 65px;
   left: 50%;
   margin-left: -300px;
@@ -1547,7 +1561,8 @@ div.wpcf7 img.ajax-loader {
 .event-link .big {
   text-transform: uppercase;
   font-size: 25px;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   line-height: 100%; }
 
 #events .entry {
@@ -1582,7 +1597,8 @@ div.wpcf7 img.ajax-loader {
   width: 45%; }
 
 #events .columns strong {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 strong, b {
@@ -1660,19 +1676,22 @@ div.type-product,
 
 .woocommerce-account .myaccount_user a {
   text-transform: uppercase;
-  font-family: 'halisgr bold'; }
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold; }
 
 h2.account-info,
 .woocommerce-checkout h2 {
   font-size: 45px;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center; }
 
 h3.account-info,
 .woocommerce-checkout h3 {
   font-size: 19px;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 .customer_details {
@@ -1723,7 +1742,8 @@ p.no-subscriptions {
 .woocommerce-checkout th {
   font-size: 19px;
   text-transform: uppercase;
-  font-family: 'halisgr bold'; }
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold; }
 
 .woocommerce-checkout table thead th,
 .woocommerce-account table thead th,
@@ -1866,7 +1886,8 @@ p.no-subscriptions {
 .single-children .images .custom-fields div span,
 .single-children .images .text-holder strong {
   font-size: 25px;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 .single-children .images .custom-fields .country span {
@@ -1883,7 +1904,8 @@ p.no-subscriptions {
   width: 42%; }
 
 .single-children h3.title {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 45px;
   padding: 15px 0 70px;
   text-transform: uppercase; }
@@ -1893,7 +1915,8 @@ p.no-subscriptions {
   margin-bottom: 20px;
   width: 150px;
   font-size: 14px;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 div.radio span.radio-container {
@@ -1927,7 +1950,8 @@ div.radio span.radio-container {
   height: 51px;
   width: 308px;
   font-size: 25px;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   color: #FFF;
   background: none; }
 
@@ -1943,7 +1967,8 @@ div.radio span.radio-container {
   max-width: 925px !important; }
 
 .single-product .product h3.title {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 45px;
   padding: 15px 0 50px;
   text-transform: uppercase; }
@@ -2188,7 +2213,8 @@ svg image:hover {
 
 #team .item strong {
   display: block;
-  font: 16px/16px 'halisgr bold';
+  font: 16px/16px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   color: #1f1f1f;
   padding: 0 0 6px;
   text-transform: uppercase; }
@@ -2216,7 +2242,8 @@ svg image:hover {
 #team .team-info .name {
   display: block;
   color: #1f1f1f;
-  font: 45px/47px 'halisgr bold';
+  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   padding: 0 0 30px;
   text-transform: uppercase; }
 
@@ -2292,17 +2319,20 @@ svg image:hover {
   padding: 5px 2% 0 0; }
 
 #solution-intro h1 {
-  font: 68px/69px 'halisgr bold';
+  font: 68px/69px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 20px; }
 
 #solution-intro h2 {
-  font: 16px/30px 'halisgr bold';
+  font: 16px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   padding: 0 20% 0 0; }
 
 #solution-intro .col-r h2,
 #solution-intro .col-r h3 {
-  font: 25px/27px 'halisgr bold';
+  font: 25px/27px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 35px; }
 
@@ -2340,7 +2370,8 @@ svg image:hover {
   z-index: 300; }
 
 #solution-how-work h2 {
-  font: 45px/47px 'halisgr bold';
+  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 35px; }
 
@@ -2361,12 +2392,14 @@ svg image:hover {
 
 #solution-sponsor h2 {
   padding: 86px 0 50px;
-  font: 45px/47px 'halisgr bold';
+  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 #solution-sponsor h3 {
   padding: 0 0 25px;
-  font: 25px/27px 'halisgr bold';
+  font: 25px/27px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 #solution-sponsor p {
@@ -2402,7 +2435,8 @@ svg image:hover {
 
 #solution-sponsor .icons .wp-caption p {
   padding: 0;
-  font: 14px/16px 'halisgr bold';
+  font: 14px/16px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 #solution-sponsor .sponsor-child {
@@ -2423,7 +2457,8 @@ svg image:hover {
   display: block;
   border: 3px solid #fff;
   color: #fff;
-  font: 13px/20px 'halisgr bold';
+  font: 13px/20px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   padding: 21px 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -2471,12 +2506,14 @@ svg image:hover {
 
 #solution-projects h2 {
   padding: 0 0 60px;
-  font: 45px/47px 'halisgr bold';
+  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 #solution-projects h3 {
   padding: 0 12% 60px;
-  font: 25px/30px 'halisgr bold';
+  font: 25px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 #solution-projects .col-50 {
@@ -2528,7 +2565,8 @@ svg image:hover {
 
 #solution-coverage h2 {
   padding: 0 0 60px;
-  font: 45px/47px 'halisgr bold';
+  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase; }
 
 #solution-coverage p {
@@ -2599,20 +2637,24 @@ svg image:hover {
 
 #solution .map-hover strong {
   text-transform: uppercase;
-  font: 14px/30px 'halisgr bold'; }
+  font: 14px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold; }
 
 #solution-more h2 {
-  font: 35px/56px 'halisgr bold';
+  font: 35px/56px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 35px; }
 
 #solution-more h3 {
-  font: 25px/27px 'halisgr bold';
+  font: 25px/27px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 60px; }
 
 #solution-more .quote-entry {
-  font: 15px/30px 'halisgr bold';
+  font: 15px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0 18%;
   margin: 0 0 50px; }
@@ -2630,7 +2672,8 @@ svg image:hover {
   margin: 0 auto; }
 
 #solution .watch-heading {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-align: center;
   font-size: 45px;
   text-transform: uppercase; }
@@ -3245,7 +3288,8 @@ svg image:hover {
   #the-problem h3, #about-us h3 {
     font-size: 20px;
     padding-bottom: 12px;
-    font-family: 'halisgr bold'; }
+    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-weight: bold; }
   #the-problem .entry, #about-us .entry {
     padding: 80px 12px 30px; }
   #the-problem .columns, #about-us .columns p {
@@ -3391,7 +3435,8 @@ svg image:hover {
   line-height: 68px;
   /* https://stackoverflow.com/questions/8865458/how-to-align-text-vertically-center-in-div-with-css */
   text-align: center;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 14px;
@@ -3402,7 +3447,8 @@ svg image:hover {
 
 #dmsLoginLink {
   color: #74B638;
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 13px;
   line-height: 41px;
   border: 3px solid #74B638;
@@ -3548,7 +3594,8 @@ p {
 #homepage-testimonials h3.title,
 #homepage-social h3.title,
 #homepage-get-involved h3.title {
-  font-family: 'halisgr bold';
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-weight: bold;
   font-size: 45px;
   color: #fff;
   text-transform: uppercase;
@@ -5475,7 +5522,7 @@ a.button,
       position: absolute;
       right: -52px;
       top: -2px;
-      height: 100%;
+      height: calc(100% + 4px);
       width: 52px;
       border: 2px solid #fff;
       border-left: 0;
@@ -6163,6 +6210,16 @@ label[for="forgot-password-email"] {
 .field-validation-error {
   color: #c23934; }
 
+#smooth-state {
+  animation-duration: 0.4s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: slideIn; }
+  #smooth-state.is-exiting {
+    animation-name: slideOut; }
+    #smooth-state.is-exiting.reverse {
+      animation-direction: alternate-reverse; }
+
 .ci-checkout-modal {
   position: absolute;
   top: 100%;
@@ -6179,7 +6236,8 @@ label[for="forgot-password-email"] {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
 
 .ci-checkout-modal-inner {
   text-align: center;
@@ -6270,6 +6328,22 @@ label[for="forgot-password-email"] {
 
 .ci-checkout-modal-footer {
   border-top: 1px solid #cccccc; }
+
+@keyframes slideIn {
+  0% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0; }
+  100% {
+    transform: none;
+    opacity: 1; } }
+
+@keyframes slideOut {
+  0% {
+    transform: none;
+    opacity: 1; }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0; } }
 
 /*------------------------------------*    $TEMPLATES
 \*------------------------------------*/
@@ -6617,7 +6691,8 @@ label[for="forgot-password-email"] {
     color: #FFF;
     line-height: 1.5em;
     font-size: 20px;
-    font-family: 'halisgr bold';
+    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-weight: bold;
     margin-bottom: 20px; }
 
 .circles {
@@ -6670,7 +6745,8 @@ label[for="forgot-password-email"] {
     .circles .circle .text {
       text-align: center;
       color: #FFF;
-      font-family: 'halisgr bold'; }
+      font-family: "halisgr", Impact, Charcoal, sans-serif;
+      font-weight: bold; }
     .circles .circle .text p {
       font-size: 32px;
       margin-bottom: 8px;
@@ -7430,7 +7506,7 @@ p.wp-caption-text,
   flex-direction: column;
   justify-content: space-between;
   background-color: #4F8BCA; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     .child-spotlight-primary {
       flex-direction: row; }
       .child-spotlight-primary .child-spotlight-primary-info {
@@ -7449,19 +7525,21 @@ p.wp-caption-text,
 .child-spotlight-primary-img {
   flex-grow: 1;
   overflow: hidden;
-  background-color: #4F8BCA; }
-  @media screen and (min-width: 500px) {
+  background-color: #F5F5F5; }
+  @media screen and (min-width: 1200px) {
     .child-spotlight-primary-img {
-      background-color: #F5F5F5; } }
+      background-color: #4F8BCA; } }
   .child-spotlight-primary-img img {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     float: none; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .child-spotlight-primary-img img {
-        width: auto;
+        width: auto; } }
+    @media screen and (min-width: 1200px) {
+      .child-spotlight-primary-img img {
         height: 100%;
         float: right; } }
 

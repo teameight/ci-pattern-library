@@ -1,0 +1,23 @@
+@keyframes slideIn {
+	0% {
+		transform: translate3d(100%, 0, 0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@keyframes slideOut {
+	0% {
+		transform: none;
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate3d(-100%, 0, 0);
+		opacity: 0;
+	}
+}

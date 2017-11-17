@@ -238,21 +238,21 @@ a.button,
 	}
 
 	&.icon {
-		color:$white;
-		border-color:$white;
-		position:relative;
-		border-right:0;
+		color: $white;
+		border-color: $white;
+		position: relative;
+		border-right: 0;
 		padding-right: 1.5em;
 
 		&:after {
-			position:absolute;
-			right:-52px;
-			top:-2px;
-			height:100%;
-			width:52px;
-			border:2px solid $white;
-			border-left:0;
-			content:'';
+			position: absolute;
+			right: -52px;
+			top: -2px;
+			height: calc(100% + 4px);
+			width: 52px;
+			border: 2px solid $white;
+			border-left: 0;
+			content: '';
 			background: url("../images/handheart-icon.png") center center no-repeat;
 			background-size: 34px;
 

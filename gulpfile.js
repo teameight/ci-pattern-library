@@ -35,7 +35,7 @@ gulp.task('css', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src(['js/ci-mobile-menu.js', 'js/ci-alert-box.js', 'js/ci-modal.js'])
+    return gulp.src(['js/jquery.smoothState.min.js', 'js/ci-mobile-menu.js', 'js/ci-alert-box.js', 'js/ci-modal.js'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('public/js'))
         .pipe(rename('all.min.js'))

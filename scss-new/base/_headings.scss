@@ -88,7 +88,8 @@ p {
 #homepage-testimonials h3.title,
 #homepage-social h3.title,
 #homepage-get-involved h3.title  {
-	font-family: 'halisgr bold';
+	font-family: $titlefont;
+font-weight: bold;
 	font-size: 45px;
 	color: $white;
 	text-transform: uppercase;
