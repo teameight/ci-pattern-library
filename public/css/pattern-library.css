@@ -3512,12 +3512,14 @@ a {
     background: #4F8BCA;
     color: #fff; }
 
-.ci-new-styles a {
+.ci-new-styles a,
+.ci-new-styles .ci-faux-link {
   color: #4F8BCA;
   text-decoration: underline;
   text-decoration-skip: ink;
   font-weight: bold; }
-  .ci-new-styles a:hover {
+  .ci-new-styles a:hover,
+  .ci-new-styles .ci-faux-link:hover {
     color: #3979bd; }
 
 /* Headings */

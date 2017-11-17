@@ -73,7 +73,8 @@ a {
 
 .ci-new-styles {
 
-a {
+a,
+.ci-faux-link {
 	color: $blue;
 	text-decoration: underline;
 	text-decoration-skip: ink;
