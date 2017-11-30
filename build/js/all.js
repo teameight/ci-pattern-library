@@ -136,7 +136,7 @@ jQuery(document).ready(function () {
             $container.removeClass('is-exiting');
             // Inject the new content
             $container.html($newContent);
-          	jQuery('.ci-checkout-modal').delay(400).animate({ scrollTop: 0 }, 200);
+          	jQuery('.ci-checkout-modal').animate({ scrollTop: 0 }, 0);
           }
         }
       },

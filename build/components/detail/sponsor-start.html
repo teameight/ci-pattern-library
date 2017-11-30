@@ -158,7 +158,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal active ci-new-styles"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-wrap"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-wrap"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"smooth-state"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-header"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-close"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"closeModal();"</span>&gt;</span>
 				<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 32 32"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">"http://www.w3.org/1999/xlink"</span>&gt;</span>
@@ -183,14 +183,14 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-item-amount"</span>&gt;</span>$28/month<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-inner"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"smooth-state"</span> <span class="hljs-attr">data-viewport</span>=<span class="hljs-string">"0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-inner"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-section-header"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h1"</span>&gt;</span>Log in or Register<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 ci-heading--secondary"</span>&gt;</span>Log in<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you do not have an account,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>please use the register button below.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/confirm-payment"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">_lpchecked</span>=<span class="hljs-string">"1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"__RequestVerificationToken"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1D7x24nmjL3bG-TrcnULB5f6TKcWwJV5piQfTUl0rUPF6M821YBihq90t6viXuwxsJIUWk6HfAdMiubkcw3KGNRD-UnbYlTJIvb5ONQKnJ01"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"/Donate/Checkout/Single"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">""</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">_lpchecked</span>=<span class="hljs-string">"1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"__RequestVerificationToken"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1D7x24nmjL3bG-TrcnULB5f6TKcWwJV5piQfTUl0rUPF6M821YBihq90t6viXuwxsJIUWk6HfAdMiubkcw3KGNRD-UnbYlTJIvb5ONQKnJ01"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"/Donate/Checkout/Single"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
                         <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"EmailAddress"</span>&gt;</span>Email/Username<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -207,7 +207,7 @@
                         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Log in"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../preview/confirm-payment.html"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span>&gt;</span>Log in<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
@@ -218,7 +218,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 ci-heading--secondary"</span>&gt;</span>Don't have an account?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://team-eight.com/dev/childreninc/components/detail/registration.html"</span>&gt;</span>Register<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../preview/registration.html"</span>&gt;</span>Register<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span><span class="css">
                 <span class="hljs-selector-class">.ci-checkout-modal-inner</span><span class="hljs-selector-class">.paypal</span> <span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type="image"]</span> {
@@ -251,7 +251,7 @@
 "</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"PayPal - The safer, easier way to pay online!"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.paypalobjects.com/en_US/i/scr/pixel.gif"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"1"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Check out as a guest<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-faux-link"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Check out as a guest<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -268,7 +268,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal active ci-new-styles"</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-wrap"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-wrap"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"smooth-state"</span>&gt;</span>
 		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-header"</span>&gt;</span>
 			<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-close"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"closeModal();"</span>&gt;</span>
 				<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"32px"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 32 32"</span> <span class="hljs-attr">version</span>=<span class="hljs-string">"1.1"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">xmlns:xlink</span>=<span class="hljs-string">"http://www.w3.org/1999/xlink"</span>&gt;</span>
@@ -293,14 +293,14 @@
 				<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-item-amount"</span>&gt;</span>$28/month<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-inner"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"smooth-state"</span> <span class="hljs-attr">data-viewport</span>=<span class="hljs-string">"0"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-modal-inner"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-checkout-section-header"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h1"</span>&gt;</span>Log in or Register<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 ci-heading--secondary"</span>&gt;</span>Log in<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you do not have an account,<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>please use the register button below.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/confirm-payment"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">_lpchecked</span>=<span class="hljs-string">"1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"__RequestVerificationToken"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1D7x24nmjL3bG-TrcnULB5f6TKcWwJV5piQfTUl0rUPF6M821YBihq90t6viXuwxsJIUWk6HfAdMiubkcw3KGNRD-UnbYlTJIvb5ONQKnJ01"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"/Donate/Checkout/Single"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">""</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">_lpchecked</span>=<span class="hljs-string">"1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"__RequestVerificationToken"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1D7x24nmjL3bG-TrcnULB5f6TKcWwJV5piQfTUl0rUPF6M821YBihq90t6viXuwxsJIUWk6HfAdMiubkcw3KGNRD-UnbYlTJIvb5ONQKnJ01"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ReturnUrl"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"hidden"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"/Donate/Checkout/Single"</span>&gt;</span>
 	<span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-form-element__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"EmailAddress"</span>&gt;</span>Email/Username<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -315,7 +315,7 @@
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Log in"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/components/preview/confirm-payment'}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span>&gt;</span>Log in<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
@@ -326,7 +326,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 ci-heading--secondary"</span>&gt;</span>Don't have an account?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://team-eight.com/dev/childreninc/components/detail/registration.html"</span>&gt;</span>Register<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-button ci-button--primary"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ path '/components/preview/registration'}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>Register<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span><span class="css">
     <span class="hljs-selector-class">.ci-checkout-modal-inner</span><span class="hljs-selector-class">.paypal</span> <span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type="image"]</span> {
@@ -359,7 +359,7 @@
 "</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"PayPal - The safer, easier way to pay online!"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.paypalobjects.com/en_US/i/scr/pixel.gif"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"1"</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Check out as a guest<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ci-faux-link"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Check out as a guest<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -670,6 +670,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="confirm-payment.html" data-pjax>
                 <span>Confirm Payment</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="confirm-payment-2.html" data-pjax>
+                <span>Confirm Payment 2</span>
                 
 
 <div class="Status Status--unlabelled">

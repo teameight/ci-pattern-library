@@ -52,11 +52,11 @@ body {
 .inner, .c-block .entry {
   padding-left: 5%;
   padding-right: 5%;
-  width: 90%; }
+  width: 90%;
+  margin: 0 auto; }
   @media screen and (min-width: 1360px) {
     .inner, .c-block .entry {
       width: 1300px;
-      margin: 0 auto;
       padding-left: 0;
       padding-right: 0; } }
 
@@ -5223,6 +5223,40 @@ a#open-menu {
     text-align: center;
     color: #454545;
     font-size: .75em; }
+
+.ci-new-styles .ci-prefooter .inner {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 1024px) {
+    .ci-new-styles .ci-prefooter .inner {
+      flex-direction: row; } }
+
+.ci-new-styles .ci-prefooter__text {
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .ci-new-styles .ci-prefooter__text {
+      width: 50%; } }
+
+.ci-new-styles .ci-prefooter__logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .ci-new-styles .ci-prefooter__logos {
+      width: 50%; } }
+  .ci-new-styles .ci-prefooter__logos img {
+    max-width: 90px;
+    height: auto;
+    width: 64px; }
+    @media screen and (min-width: 500px) {
+      .ci-new-styles .ci-prefooter__logos img {
+        max-width: 90px;
+        width: auto; } }
+  .ci-new-styles .ci-prefooter__logos .charity-navigator img {
+    max-width: 70px; }
+  .ci-new-styles .ci-prefooter__logos .bbb img {
+    max-width: 50px; }
 
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------*/

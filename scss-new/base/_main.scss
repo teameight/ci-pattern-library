@@ -33,14 +33,14 @@ body {
 
 .inner, .c-block .entry {
 	padding-left: 5%;
-	padding-right:5%;
+	padding-right: 5%;
 	width: 90%;
+	margin: 0 auto;
 
 	@media screen and (min-width:$bp-full) {
-		width:$max-width;
-		margin:0 auto;
-		padding-left:0;
-		padding-right:0;
+		width: $max-width;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 

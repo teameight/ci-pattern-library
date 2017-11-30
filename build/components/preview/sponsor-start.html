@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../css/pattern-library.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
 </div>
 
 <div class="ci-checkout-modal active ci-new-styles">
-	<div class="ci-checkout-modal-wrap">
+	<div class="ci-checkout-modal-wrap" id="smooth-state">
 		<div class="ci-checkout-modal-header">
 			<button class="ci-checkout-modal-close" onclick="closeModal();">
 				<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -41,14 +42,14 @@
 				<span class="ci-checkout-modal-item-amount">$28/month</span>
 			</div>
 		</div>
-<div class="ci-checkout-modal-inner" id="smooth-state" data-viewport="0">
+<div class="ci-checkout-modal-inner">
     <header class="ci-checkout-section-header">
         <p class="h1">Log in or Register</p>
         <p class="h3 ci-heading--secondary">Log in</p>
         <p>If you do not have an account,<br>please use the register button below.</p>
     </header>
 
-<form action="/confirm-payment" method="post" _lpchecked="1"><input name="__RequestVerificationToken" type="hidden" value="1D7x24nmjL3bG-TrcnULB5f6TKcWwJV5piQfTUl0rUPF6M821YBihq90t6viXuwxsJIUWk6HfAdMiubkcw3KGNRD-UnbYlTJIvb5ONQKnJ01"><input id="ReturnUrl" name="ReturnUrl" type="hidden" value="/Donate/Checkout/Single">
+<form action="" method="post" _lpchecked="1"><input name="__RequestVerificationToken" type="hidden" value="1D7x24nmjL3bG-TrcnULB5f6TKcWwJV5piQfTUl0rUPF6M821YBihq90t6viXuwxsJIUWk6HfAdMiubkcw3KGNRD-UnbYlTJIvb5ONQKnJ01"><input id="ReturnUrl" name="ReturnUrl" type="hidden" value="/Donate/Checkout/Single">
 	<fieldset>
             <div class="ci-form-element">
                 <label class="ci-form-element__label" for="EmailAddress">Email/Username</label>
@@ -63,7 +64,7 @@
                 </div>
             </div>
             <p>
-                <input type="submit" class="ci-button ci-button--primary" value="Log in">
+                <a href="confirm-payment.html" class="ci-button ci-button--primary">Log in</a>
             </p>
         </fieldset>
 </form>
@@ -74,7 +75,7 @@
     <p class="h3 ci-heading--secondary">Don't have an account?</p>
 
     <br>
-    <a class="ci-button ci-button--primary" href="http://team-eight.com/dev/childreninc/components/detail/registration.html">Register</a>
+    <a class="ci-button ci-button--primary" href="registration.html">Register</a>
 
 <style type="text/css">
     .ci-checkout-modal-inner.paypal form input[type="image"] {
@@ -107,7 +108,7 @@
 ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-<button type="submit">Check out as a guest</button></form>
+<button class="ci-faux-link" type="submit">Check out as a guest</button></form>
     </div>
 </div>
 	</div>
