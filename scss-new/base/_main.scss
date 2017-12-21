@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+html.no-scroll {
+	overflow: hidden;
+}
+
 body {
 	line-height: 1;
 	background-color: $white;

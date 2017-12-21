@@ -1,0 +1,184 @@
+<div class="ci-new-styles">
+	<button class="ci-button ci-button--primary" onclick="openModal();">Open Modal</button>
+</div>
+
+<div class="ci-checkout-modal active ci-new-styles">
+	<div class="ci-checkout-modal-wrap" id="smooth-state">
+		<div class="ci-checkout-modal-header">
+			<button class="ci-checkout-modal-close" onclick="closeModal();">
+				<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <g id="Single---Longform" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <g id="Confirm-Payment" transform="translate(-20.000000, -20.000000)" fill="#508FCC">
+				            <g id="Group-Copy" transform="translate(36.000000, 36.000000) rotate(-315.000000) translate(-36.000000, -36.000000) translate(16.000000, 16.000000)">
+				                <rect id="Rectangle-7" x="0" y="18" width="40" height="4"></rect>
+				                <rect id="Rectangle-7" transform="translate(20.000000, 20.000000) rotate(-270.000000) translate(-20.000000, -20.000000) " x="0" y="18" width="40" height="4"></rect>
+				            </g>
+				        </g>
+				    </g>
+				</svg>
+			</button>
+		</div>
+		<div class="ci-checkout-modal-item">
+			<div class="ci-checkout-modal-item-img">
+				<img src="http://res.cloudinary.com/dw5sevhx8/image/upload/v1507063650/child-spotlight-demo_uhe5ko.png" alt="">
+			</div>
+			<div class="ci-checkout-modal-item-desc">
+				<span class="ci-checkout-modal-item-intro">I would like to sponsor</span>
+				<span class="ci-checkout-modal-item-name">Anderson Edgardo</span>
+				<span class="ci-checkout-modal-item-amount">$28/month</span>
+			</div>
+		</div>
+		<div class="ci-checkout-modal-inner">
+			<header class="ci-checkout-section-header">
+				<p class="h1">Confirm Payment</p>
+			</header>
+
+			<div class="ci-table ci-table--4cols">
+				<div class="ci-table-cell">Hope In Action Fund gift donation</div>
+				<div class="ci-table-cell">
+					<div class="ci-form-element">
+					  <label class="ci-form-element__label" for="C_Frequency12018">Frequency</label>
+					  <div class="ci-form-element__control">
+					    <div class="ci-select_container">
+					      <select class="ci-select" name="ctl00$C$Frequency12018" id="C_Frequency12018">
+									<option selected="selected" value="4">One-time</option>
+									<option value="1">Monthly</option>
+									<option value="2">Quarterly</option>
+									<option value="5">Semi-annually</option>
+									<option value="3">Yearly</option>
+					      </select>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="ci-table-cell">$28.00</div>
+				<div class="ci-table-cell">
+					<button class="ci-checkout-remove-item" onclick="RemoveCartItem(12018); return false;">
+						<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						    <g id="Single---Longform" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g id="Confirm-Payment" transform="translate(-20.000000, -20.000000)" fill="#000000">
+						            <g id="Group-Copy" transform="translate(36.000000, 36.000000) rotate(-315.000000) translate(-36.000000, -36.000000) translate(16.000000, 16.000000)">
+						                <rect id="Rectangle-7" x="0" y="18" width="40" height="4"></rect>
+						                <rect id="Rectangle-7" transform="translate(20.000000, 20.000000) rotate(-270.000000) translate(-20.000000, -20.000000) " x="0" y="18" width="40" height="4"></rect>
+						            </g>
+						        </g>
+						    </g>
+						</svg>
+					</button>
+					<input name="ctl00$C$Cart12020" type="hidden" id="C_Cart12020" value="12020">
+					<input name="ctl00$C$Monthly12020" type="hidden" id="C_Monthly12020" value="28.0000">
+					<input name="ctl00$C$Purpose12020" type="hidden" id="C_Purpose12020" value="8">
+				</div>
+			</div>
+
+<table id="C_DonorCartTable" style="text-align: left; border-collapse:collapse; font-size:medium; margin-left:auto; margin-right:auto; width:80%">
+	<tbody>
+	<tr>
+		<td id="C_Description12018" class="borderTopBottom">Hope In Action Fund gift donation</td>
+		<td class="borderTopBottom" style="width:170px;"><select name="ctl00$C$Frequency12018" id="C_Frequency12018" style="width:100%;" class="custom-ddl standardDLL inputStyle cartFrequency">
+			<option selected="selected" value="4">One-time</option>
+			<option value="1">Monthly</option>
+			<option value="2">Quarterly</option>
+			<option value="5">Semi-annually</option>
+			<option value="3">Yearly</option>
+		</select></td>
+		<td id="C_Amount12018" class="borderTopBottom" style="width:100px;text-align:right;">$12.00</td>
+		<td class="borderTopBottom" style="width:60px;vertical-align:middle;"><input type="image" name="ctl00$C$Remove12018" id="C_Remove12018" class="tooltipBubble" title="Remove" src="../images/pd/CancelButton.jpg" onclick="RemoveCartItem(12018); return false;" style="height:27px;margin-left:20px;"><input name="ctl00$C$Cart12018" type="hidden" id="C_Cart12018" value="12018"><input name="ctl00$C$Monthly12018" type="hidden" id="C_Monthly12018" value="0"><input name="ctl00$C$Purpose12018" type="hidden" id="C_Purpose12018" value="15"></td>
+	</tr>
+	<tr>
+		<td id="C_Description12019" class="borderTopBottom">New Child Sponsorship<br>Juan Jhoel of Bolivia</td>
+		<td class="borderTopBottom" style="width:170px;"><select name="ctl00$C$Frequency12019" id="C_Frequency12019" style="width:100%;" class="custom-ddl standardDLL inputStyle cartFrequency">
+			<option selected="selected" value="1">Monthly</option>
+			<option value="2">Quarterly</option>
+			<option value="5">Semi-annually</option>
+			<option value="3">Yearly</option>
+		</select></td>
+		<td id="C_Amount12019" class="borderTopBottom" style="width:100px;text-align:right;">$28.00</td>
+		<td class="borderTopBottom" style="width:60px;vertical-align:middle;"><input type="image" name="ctl00$C$Remove12019" id="C_Remove12019" class="tooltipBubble" title="Remove" src="../images/pd/CancelButton.jpg" onclick="RemoveCartItem(12019); return false;" style="height:27px;margin-left:20px;"><input name="ctl00$C$Cart12019" type="hidden" id="C_Cart12019" value="12019"><input name="ctl00$C$Monthly12019" type="hidden" id="C_Monthly12019" value="28.0000"><input name="ctl00$C$Purpose12019" type="hidden" id="C_Purpose12019" value="8"></td>
+	</tr>
+	<tr>
+		<td id="C_Description12020" class="borderTopBottom">New Child Sponsorship<br>Evelin Valentina of Colombia</td>
+		<td class="borderTopBottom" style="width:170px;"><select name="ctl00$C$Frequency12020" id="C_Frequency12020" style="width:100%;" class="custom-ddl standardDLL inputStyle cartFrequency">
+			<option selected="selected" value="1">Monthly</option>
+			<option value="2">Quarterly</option>
+			<option value="5">Semi-annually</option>
+			<option value="3">Yearly</option>
+		</select></td>
+		<td id="C_Amount12020" class="borderTopBottom" style="width:100px;text-align:right;">$28.00</td>
+		<td class="borderTopBottom" style="width:60px;vertical-align:middle;"><input type="image" name="ctl00$C$Remove12020" id="C_Remove12020" class="tooltipBubble" title="Remove" src="../images/pd/CancelButton.jpg" onclick="RemoveCartItem(12020); return false;" style="height:27px;margin-left:20px;"><input name="ctl00$C$Cart12020" type="hidden" id="C_Cart12020" value="12020"><input name="ctl00$C$Monthly12020" type="hidden" id="C_Monthly12020" value="28.0000"><input name="ctl00$C$Purpose12020" type="hidden" id="C_Purpose12020" value="8"></td>
+	</tr>
+	<tr>
+		<td id="C_Description12024" class="borderTopBottom">Hope In Action Fund gift donation</td>
+		<td class="borderTopBottom" style="width:170px;"><select name="ctl00$C$Frequency12024" id="C_Frequency12024" style="width:100%;" class="custom-ddl standardDLL inputStyle cartFrequency">
+			<option selected="selected" value="4">One-time</option>
+			<option value="1">Monthly</option>
+			<option value="2">Quarterly</option>
+			<option value="5">Semi-annually</option>
+			<option value="3">Yearly</option>
+		</select></td>
+		<td id="C_Amount12024" class="borderTopBottom" style="width:100px;text-align:right;">$10.00</td>
+		<td class="borderTopBottom" style="width:60px;vertical-align:middle;"><input type="image" name="ctl00$C$Remove12024" id="C_Remove12024" class="tooltipBubble" title="Remove" src="../images/pd/CancelButton.jpg" onclick="RemoveCartItem(12024); return false;" style="height:27px;margin-left:20px;"><input name="ctl00$C$Cart12024" type="hidden" id="C_Cart12024" value="12024"><input name="ctl00$C$Monthly12024" type="hidden" id="C_Monthly12024" value="0"><input name="ctl00$C$Purpose12024" type="hidden" id="C_Purpose12024" value="15"></td>
+	</tr>
+	<tr>
+		<td id="C_Description12025" class="borderTopBottom">New Child Sponsorship<br>Britany Giovana of Guatemala</td>
+		<td class="borderTopBottom" style="width:170px;"><select name="ctl00$C$Frequency12025" id="C_Frequency12025" style="width:100%;" class="custom-ddl standardDLL inputStyle cartFrequency">
+			<option selected="selected" value="1">Monthly</option>
+			<option value="2">Quarterly</option>
+			<option value="5">Semi-annually</option>
+			<option value="3">Yearly</option>
+		</select></td>
+		<td id="C_Amount12025" class="borderTopBottom" style="width:100px;text-align:right;">$28.00</td>
+		<td class="borderTopBottom" style="width:60px;vertical-align:middle;"><input type="image" name="ctl00$C$Remove12025" id="C_Remove12025" class="tooltipBubble" title="Remove" src="../images/pd/CancelButton.jpg" onclick="RemoveCartItem(12025); return false;" style="height:27px;margin-left:20px;"><input name="ctl00$C$Cart12025" type="hidden" id="C_Cart12025" value="12025"><input name="ctl00$C$Monthly12025" type="hidden" id="C_Monthly12025" value="28.0000"><input name="ctl00$C$Purpose12025" type="hidden" id="C_Purpose12025" value="8"></td>
+	</tr>
+	<tr>
+		<td >TOTAL</td>
+		<td></td>
+		<td align="right">$106.00</td>
+	</tr>
+</tbody></table>
+
+			<fieldset class="ci-form-section ci-m-bottom__xl">
+				<div class="ci-form-element ci-m-bottom__med">
+				  <label class="ci-form-element__label" for="payment-method">Payment method</label>
+				  <div class="ci-form-element__control">
+				    <div class="ci-select_container">
+				      <select class="ci-select" id="payment-method">
+				        <option>Credit Card ****2031</option>
+				        <option>Credit Card ****0876</option>
+				        <option>Bank Account ****6589</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
+				<a class="ci-faux-link" href="">Add new payment method</a>
+
+			</fieldset>
+
+			<a href="{{ path '/components/preview/thank-you'}}" class="ci-button ci-button--primary ci-m-bottom__xl">Pay now</a>
+
+			<br>
+
+			<svg class="d-block ci-m-auto ci-m-bottom__med" width="48px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			    <g id="Single---Longform" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			        <g id="Add-Payment-Modal-Copy" transform="translate(-214.000000, -1715.000000)" fill-rule="nonzero">
+			            <g id="PayPal" transform="translate(214.000000, 1715.000000)">
+			                <path d="M5.64585703,33.8497595 L1.98635946,33.8497595 C1.73593617,33.8497595 1.52296935,34.0316909 1.4839076,34.2789036 L0.00384175948,43.6628207 C-0.0255883278,43.8479627 0.117816461,44.0149116 0.305633927,44.0149116 L2.05271093,44.0149116 C2.30313421,44.0149116 2.51610103,43.8329801 2.55516278,43.5852323 L2.95434178,41.0542448 C2.99286844,40.806497 3.20637035,40.6245655 3.45625854,40.6245655 L4.61473379,40.6245655 C7.02532549,40.6245655 8.41656598,39.4580639 8.77989378,37.1464643 C8.94363208,36.1351395 8.78684998,35.3405272 8.31329312,34.784031 C7.79318322,34.1729553 6.87068376,33.8497595 5.64585703,33.8497595 Z M6.06804501,37.2770269 C5.86792042,38.5901439 4.86462199,38.5901439 3.89449929,38.5901439 L3.34228384,38.5901439 L3.72969081,36.137815 C3.75269978,35.9895943 3.88112198,35.8804355 4.03094788,35.8804355 L4.28404663,35.8804355 C4.94488586,35.8804355 5.56826862,35.8804355 5.8903943,36.2571406 C6.08249251,36.4818794 6.14135268,36.8157772 6.06804501,37.2770269 Z" id="Shape" fill="#253B80"></path>
+			                <path d="M17.0120655,37.5039671 L15.2596376,37.5039671 C15.1103468,37.5039671 14.9813895,37.613126 14.9583805,37.7613466 L14.8807921,38.2514913 L14.7582559,38.0738406 C14.3788754,37.5232304 13.5328941,37.3391586 12.6885182,37.3391586 C10.7520184,37.3391586 9.09804752,38.8058472 8.77592184,40.8632778 C8.60843789,41.8895852 8.84655405,42.8709448 9.42873468,43.5553281 C9.96275699,44.1845969 10.7268691,44.4467922 11.6359912,44.4467922 C13.1963209,44.4467922 14.0615655,43.4434938 14.0615655,43.4434938 L13.983442,43.930428 C13.9540119,44.1166402 14.0974167,44.283589 14.284164,44.283589 L15.8626868,44.283589 C16.1136452,44.283589 16.3255419,44.1016576 16.3651387,43.8539098 L17.3122524,37.856058 C17.3422176,37.6714511 17.1993479,37.5039671 17.0120655,37.5039671 Z M14.5693683,40.9146467 C14.4002791,41.9158047 13.6056667,42.5878809 12.5922015,42.5878809 C12.0833286,42.5878809 11.6766583,42.4246777 11.4155331,42.1153942 C11.1565483,41.8082511 11.0580913,41.3710806 11.1404956,40.8841464 C11.2983479,39.8915498 12.1063375,39.1975349 13.104285,39.1975349 C13.6019211,39.1975349 14.006451,39.3628784 14.272927,39.6748374 C14.5399382,39.9900068 14.6458865,40.4298529 14.5693683,40.9146467 Z" id="Shape" fill="#253B80"></path>
+			                <path d="M26.4841189,37.3391586 L24.7231295,37.3391586 C24.5551104,37.3391586 24.3972581,37.4226331 24.3020117,37.5622922 L21.8732268,41.1399206 L20.8437089,37.7019513 C20.7789627,37.4868442 20.5804434,37.3391586 20.3557045,37.3391586 L18.6252154,37.3391586 C18.414924,37.3391586 18.2688438,37.5446341 18.3357304,37.7426184 L20.2754407,43.4349323 L18.4518454,46.0092623 C18.3084406,46.2120624 18.4529156,46.4908456 18.7006634,46.4908456 L20.4595125,46.4908456 C20.6264613,46.4908456 20.7827083,46.4095115 20.8774197,46.2725278 L26.7345422,37.8180664 C26.8747364,37.6158014 26.7307965,37.3391586 26.4841189,37.3391586 Z" id="Shape" fill="#253B80"></path>
+			                <path d="M32.6887013,33.8497595 L29.0286686,33.8497595 C28.7787804,33.8497595 28.5658136,34.0316909 28.5267519,34.2789036 L27.046686,43.6628207 C27.0172559,43.8479627 27.1606607,44.0149116 27.347408,44.0149116 L29.2255827,44.0149116 C29.4000228,44.0149116 29.5493136,43.8875596 29.5766033,43.7141896 L29.996651,41.0542448 C30.0351776,40.806497 30.2486795,40.6245655 30.4985677,40.6245655 L31.6565079,40.6245655 C34.0676347,40.6245655 35.4583401,39.4580639 35.822203,37.1464643 C35.9864764,36.1351395 35.8286241,35.3405272 35.3550672,34.784031 C34.8354924,34.1729553 33.913528,33.8497595 32.6887013,33.8497595 Z M33.1108893,37.2770269 C32.9112998,38.5901439 31.9080014,38.5901439 30.9373436,38.5901439 L30.3856632,38.5901439 L30.7736053,36.137815 C30.7966142,35.9895943 30.9239663,35.8804355 31.0743272,35.8804355 L31.327426,35.8804355 C31.9877301,35.8804355 32.611648,35.8804355 32.9337737,36.2571406 C33.1258719,36.4818794 33.184197,36.8157772 33.1108893,37.2770269 Z" id="Shape" fill="#179BD7"></path>
+			                <path d="M43.1802694,37.5039671 L41.4289116,37.5039671 C41.2785507,37.5039671 41.1506636,37.613126 41.1281897,37.7613466 L41.0506013,38.2514913 L40.92753,38.0738406 C40.5481494,37.5232304 39.7027033,37.3391586 38.8583273,37.3391586 C36.9218276,37.3391586 35.2683917,38.8058472 34.9462661,40.8632778 C34.7793172,41.8895852 35.0163632,42.8709448 35.5985438,43.5553281 C36.1336363,44.1845969 36.8966782,44.4467922 37.8058004,44.4467922 C39.3661301,44.4467922 40.2313746,43.4434938 40.2313746,43.4434938 L40.1532511,43.930428 C40.1238211,44.1166402 40.2672258,44.283589 40.4550433,44.283589 L42.0330311,44.283589 C42.2829193,44.283589 42.4958861,44.1016576 42.5349478,43.8539098 L43.4825966,37.856058 C43.5114916,37.6714511 43.3680869,37.5039671 43.1802694,37.5039671 Z M40.7375721,40.9146467 C40.5695531,41.9158047 39.7738706,42.5878809 38.7604054,42.5878809 C38.2526026,42.5878809 37.8448621,42.4246777 37.583737,42.1153942 C37.3247522,41.8082511 37.2273654,41.3710806 37.3086994,40.8841464 C37.4676219,39.8915498 38.2745414,39.1975349 39.2724889,39.1975349 C39.7701249,39.1975349 40.1746548,39.3628784 40.4411309,39.6748374 C40.7092122,39.9900068 40.8151606,40.4298529 40.7375721,40.9146467 Z" id="Shape" fill="#179BD7"></path>
+			                <path d="M45.1233367,34.107674 L43.6213321,43.6633558 C43.591902,43.8484978 43.7353068,44.0154467 43.922054,44.0154467 L45.4320851,44.0154467 C45.6830435,44.0154467 45.8960103,43.8335152 45.9345369,43.5857674 L47.415673,34.2023854 C47.445103,34.0172434 47.3016983,33.8497595 47.114951,33.8497595 L45.4240587,33.8497595 C45.2747679,33.8502946 45.1463457,33.9594534 45.1233367,34.107674 Z" id="Shape" fill="#179BD7"></path>
+			                <path d="M20.266,29.154 L20.789,25.832 L19.624,25.805 L14.061,25.805 L17.927,1.292 C17.939,1.218 17.978,1.149 18.035,1.1 C18.092,1.051 18.165,1.024 18.241,1.024 L27.621,1.024 C30.735,1.024 32.884,1.672 34.006,2.951 C34.532,3.551 34.867,4.178 35.029,4.868 C35.199,5.592 35.202,6.457 35.036,7.512 L35.024,7.589 L35.024,8.265 L35.55,8.563 C35.993,8.798 36.345,9.067 36.615,9.375 C37.065,9.888 37.356,10.54 37.479,11.313 C37.606,12.108 37.564,13.054 37.356,14.125 C37.116,15.357 36.728,16.43 36.204,17.308 C35.722,18.117 35.108,18.788 34.379,19.308 C33.683,19.802 32.856,20.177 31.921,20.417 C31.015,20.653 29.982,20.772 28.849,20.772 L28.119,20.772 C27.597,20.772 27.09,20.96 26.692,21.297 C26.293,21.641 26.029,22.111 25.948,22.625 L25.893,22.924 L24.969,28.779 L24.927,28.994 C24.916,29.062 24.897,29.096 24.869,29.119 C24.844,29.14 24.808,29.154 24.773,29.154 L20.266,29.154 Z" id="Shape" fill="#253B80"></path>
+			                <path d="M36.048,7.667 L36.048,7.667 L36.048,7.667 C36.02,7.846 35.988,8.029 35.952,8.217 C34.715,14.568 30.483,16.762 25.078,16.762 L22.326,16.762 C21.665,16.762 21.108,17.242 21.005,17.894 L21.005,17.894 L21.005,17.894 L19.596,26.83 L19.197,29.363 C19.13,29.791 19.46,30.177 19.892,30.177 L24.773,30.177 C25.351,30.177 25.842,29.757 25.933,29.187 L25.981,28.939 L26.9,23.107 L26.959,22.787 C27.049,22.215 27.541,21.795 28.119,21.795 L28.849,21.795 C33.578,21.795 37.28,19.875 38.362,14.319 C38.814,11.998 38.58,10.06 37.384,8.697 C37.022,8.286 36.573,7.945 36.048,7.667 Z" id="Shape" fill="#179BD7"></path>
+			                <path d="M34.754,7.151 C34.565,7.096 34.37,7.046 34.17,7.001 C33.969,6.957 33.763,6.918 33.551,6.884 C32.809,6.764 31.996,6.707 31.125,6.707 L23.773,6.707 C23.592,6.707 23.42,6.748 23.266,6.822 C22.927,6.985 22.675,7.306 22.614,7.699 L21.05,17.605 L21.005,17.894 C21.108,17.242 21.665,16.762 22.326,16.762 L25.078,16.762 C30.483,16.762 34.715,14.567 35.952,8.217 C35.989,8.029 36.02,7.846 36.048,7.667 C35.735,7.501 35.396,7.359 35.031,7.238 C34.941,7.208 34.848,7.179 34.754,7.151 Z" id="Shape" fill="#222D65"></path>
+			                <path d="M22.614,7.699 C22.675,7.306 22.927,6.985 23.266,6.823 C23.421,6.749 23.592,6.708 23.773,6.708 L31.125,6.708 C31.996,6.708 32.809,6.765 33.551,6.885 C33.763,6.919 33.969,6.958 34.17,7.002 C34.37,7.047 34.565,7.097 34.754,7.152 C34.848,7.18 34.941,7.209 35.032,7.238 C35.397,7.359 35.736,7.502 36.049,7.667 C36.417,5.32 36.046,3.722 34.777,2.275 C33.378,0.682 30.853,0 27.622,0 L18.242,0 C17.582,0 17.019,0.48 16.917,1.133 L13.01,25.898 C12.933,26.388 13.311,26.83 13.805,26.83 L19.596,26.83 L21.05,17.605 L22.614,7.699 Z" id="Shape" fill="#253B80"></path>
+			            </g>
+			        </g>
+			    </g>
+			</svg>
+
+			<a class="d-block ci-m-bottom__large" href="">Check out with PayPal</a>
+
+		</div>
+	</div>
+</div>

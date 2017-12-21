@@ -4,9 +4,11 @@
 
 function openModal() {
 	var modal = jQuery('.ci-checkout-modal');
+  var html = jQuery('html');
 
 	if ( modal ) {
 		modal.addClass('active');
+    html.addClass('no-scroll');
 	}
 }
 
@@ -15,35 +17,35 @@ function closeModal() {
 
 	if ( modal ) {
 		modal.removeClass('active');
+    html.removeClass('no-scroll');
+
+    setTimeout(function () {
+        // Reset iframe src to prevent weird flash on next load
+        $('.ci-checkout-modal').find('iframe#ci-checkout-iframe').attr('src', 'about:blank');
+        // Replace security tokens
+      if ($(".sectoken").length) {
+          $.ajax({ url: "/Common/Security/AntiForgeryToken" }).done(function(response) {
+              $(".sectoken").replaceWith(response);
+          });
+      }
+
+    }, 500);
+
 	}
 }
 
 jQuery(document).ready(function () {
-  var $page = jQuery('#smooth-state'),
-      options = {
-        debug: true,
-        prefetch: true,
-        cacheLength: 2,
-        onStart: {
-          duration: 250, // Duration of our animation
-          render: function ($container) {
-            // Add your CSS animation reversing class
-            $container.addClass('is-exiting');
-            // Restart your animation
-            smoothState.restartCSSAnimations();
-          }
-        },
-        onReady: {
-          duration: 0,
-          render: function ($container, $newContent) {
-            // Remove your CSS animation reversing class
-            $container.removeClass('is-exiting');
-            // Inject the new content
-            $container.html($newContent);
-          	jQuery('.ci-checkout-modal').animate({ scrollTop: 0 }, 0);
-          }
-        }
-      },
-      smoothState = $page.smoothState(options).data('smoothState');
+  /* Setup modal checkouts */
+  $("form input.ci-checkout-iframe").closest("form").attr("target", "ci-checkout-iframe");
+  $("form.child-select-form").attr("target", "ci-checkout-iframe");
 
-});
+  $("form input.ci-checkout-iframe, form.child-select-form input[type=submit]").click(function () {
+      openModal();
+  });
+
+  $("a.ci-checkout-iframe").click(function (e) {
+      openModal();
+      $("#ci-checkout-iframe").attr("src", $(this).attr("href"));
+      e.preventDefault();
+  });
+}
