@@ -14,6 +14,7 @@ function openModal() {
 
 function closeModal() {
 	var modal = jQuery('.ci-checkout-modal');
+  var html = jQuery('html');
 
 	if ( modal ) {
 		modal.removeClass('active');
@@ -36,16 +37,16 @@ function closeModal() {
 
 jQuery(document).ready(function () {
   /* Setup modal checkouts */
-  $("form input.ci-checkout-iframe").closest("form").attr("target", "ci-checkout-iframe");
-  $("form.child-select-form").attr("target", "ci-checkout-iframe");
+  jQuery("form input.ci-checkout-iframe").closest("form").attr("target", "ci-checkout-iframe");
+  jQuery("form.child-select-form").attr("target", "ci-checkout-iframe");
 
-  $("form input.ci-checkout-iframe, form.child-select-form input[type=submit]").click(function () {
+  jQuery("form input.ci-checkout-iframe, form.child-select-form input[type=submit]").click(function () {
       openModal();
   });
 
-  $("a.ci-checkout-iframe").click(function (e) {
+  jQuery("a.ci-checkout-iframe").click(function (e) {
       openModal();
-      $("#ci-checkout-iframe").attr("src", $(this).attr("href"));
+      jQuery("#ci-checkout-iframe").attr("src", $(this).attr("href"));
       e.preventDefault();
   });
-}
+});

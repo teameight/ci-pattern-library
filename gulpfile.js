@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var concatCss = require('gulp-concat-css');
 var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
+var gutil = require('gulp-util');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -40,6 +41,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('public/js'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
+        .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
         .pipe(gulp.dest('public/js'));
 });
 

@@ -6340,7 +6340,7 @@ label[for="forgot-password-email"] {
       animation-direction: alternate-reverse; }
 
 .ci-checkout-modal {
-  position: absolute;
+  position: fixed;
   top: 100%;
   bottom: 0;
   left: 0;
