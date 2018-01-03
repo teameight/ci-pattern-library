@@ -49,7 +49,7 @@ gulp.task('wp-style', function() {
     return gulp.src('./scss-new/wp.scss')
         .pipe(sass())
         .pipe(rename('style.css'))
-        .pipe(gulp.dest('../../../../vvv/www/children/htdocs/wp-content/themes/children_theme/css'));
+        .pipe(gulp.dest('../../../../vvv/www/ci/htdocs/wp-content/themes/children_theme/css'));
 });
 
 gulp.task('dms-style', function() {

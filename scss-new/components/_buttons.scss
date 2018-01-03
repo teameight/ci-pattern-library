@@ -343,11 +343,10 @@ a.back-button {
 	margin-top: 0;
 }
 
+// New Button styles
 
-
-.ci-new-styles {
-
-.ci-button {
+.ci-button,
+a.ci-button {
 	font-family: $titlefont;
 	font-weight: bold;
 	border: 2px solid;
@@ -365,7 +364,8 @@ a.back-button {
 	transition: color $transition, background-color $transition, border-color $transition;
 }
 
-.ci-button--primary {
+.ci-button--primary,
+a.ci-button--primary {
 	color: $grey;
 	background-color: $yellow;
 	border-color: $yellow;
@@ -385,7 +385,8 @@ a.back-button {
 	}
 }
 
-.ci-button--secondary {
+.ci-button--secondary,
+a.ci-button--secondary {
 	color: $white;
 	background-color: $blue;
 	border-color: $blue;
@@ -408,7 +409,8 @@ a.back-button {
 	}
 }
 
-.ci-button--accent {
+.ci-button--accent,
+a.ci-button--accent {
 	color: $white;
 	background-color: $green;
 	border-color: $green;
@@ -418,7 +420,5 @@ a.back-button {
 		background-color: darken($green, 7%);
 		border-color: darken($green, 7%);
 	}
-
-}
 
 }

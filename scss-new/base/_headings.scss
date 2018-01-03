@@ -1,103 +1,4 @@
 /* Headings */
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4 {
-	letter-spacing:0;
-	text-transform:uppercase;
-	font-family: $titlefont;
-	font-weight: bold;
-	padding:0;
-	display: block;
-
-	// &:first-child {
-	// 	margin-top:0;
-	// }
-}
-h1,
-.h1 {
-	font-size:3.25em;
-	line-height: 1.1538;
-	margin-bottom: .23em;
-}
-
-h2,
-.h2 {
-	font-size:2.8125em;
-	line-height: 1.1765;
-	margin-top: 12px;
-	margin-bottom: 8px;
-}
-h3,
-.h3 {
-	font-size:1.125em;
-	line-height: 1.25;
-	margin-top: 1.333em;
-	margin-bottom: 12px;
-}
-
-.otr-subhead {
-	margin-bottom: 0;
-}
-
-h4,
-.h4 {
-	font-size:14px;
-	line-height: 1.428;
-	margin-top: 1em;
-	margin-bottom: 4px;
-}
-h5,
-.h5 {
-	color:$grey-med;
-	font-size:14px;
-	line-height: 16px;
-}
-
-h1 + h2,
-h1 + h3,
-h1 + h4,
-h2 + h3,
-h2 + h4,
-h3 + h4,
-h4 + h1,
-h4 + h2 {
-	margin-top:0;
-}
-
-h1, h2, h3, h4, h5 {
-
-	&.alt {
-		border-bottom:2px solid $grey-lt;
-	}
-
-}
-
-p {
-	padding:0;
-}
-
-
-#homepage-mission h3.title,
-#homepage-impact h3.title,
-#homepage-stories h3.title,
-#homepage-testimonials h3.title,
-#homepage-social h3.title,
-#homepage-get-involved h3.title  {
-	font-family: $titlefont;
-font-weight: bold;
-	font-size: 45px;
-	color: $white;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 2px;
-}
-
-.ci-new-styles {
 
 h1,
 .h1,
@@ -170,6 +71,18 @@ h6,
 	text-transform: uppercase;
 }
 
+h1 + h2,
+h1 + h3,
+h1 + h4,
+h2 + h3,
+h2 + h4,
+h3 + h4,
+h4 + h1,
+h4 + h2 {
+	margin-top:0;
+}
+
+
 .ci-heading--secondary {
 	color: $grey-dark-2;
 }
@@ -190,6 +103,3 @@ h6,
 		color: $white;
 	}
 }
-
-}
-
