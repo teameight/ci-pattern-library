@@ -50,6 +50,7 @@ gulp.task('wp-style', function() {
         .pipe(sass())
         .pipe(rename('style.css'))
         .pipe(gulp.dest('../../../../vvv/www/ci/htdocs/wp-content/themes/children_theme/css'));
+        // this needs to be updated to your local path
 });
 
 gulp.task('dms-style', function() {
@@ -57,6 +58,7 @@ gulp.task('dms-style', function() {
         .pipe(sass())
         .pipe(rename('ci-17.css'))
         .pipe(gulp.dest('../../ci-inc-dms-test/children-inc-dms/ChildrenIncorporated/Styles/pd'));
+        // this needs to be updated to your local path
 });
 
 // Watch Files For Changes
