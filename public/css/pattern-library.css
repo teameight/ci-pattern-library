@@ -6198,14 +6198,14 @@ a#open-menu {
     font-weight: bold;
     font-size: 1.5em;
     position: absolute;
-    top: 15px;
+    top: 11px;
     left: 20px; }
   @media screen and (min-width: 500px) {
     .dms-donate-fund-form {
       border: 1px solid #454545;
       padding: 18px 17px 22px; }
       .dms-donate-fund-form:before {
-        top: 36px;
+        top: 29px;
         left: 40px; } }
   @media screen and (min-width: 1024px) {
     .dms-donate-fund-form {
@@ -6235,9 +6235,6 @@ a#open-menu {
   font-weight: bold;
   font-size: 0.875em;
   text-align: left; }
-  @media screen and (min-width: 1024px) {
-    .dms-donate-fund-form-helper {
-      text-align: center; } }
 
 .dms-donate-fund-desc-wrap {
   flex: 1; }
@@ -7550,6 +7547,79 @@ p.wp-caption-text,
     background-color: white;
     display: inline-block;
     padding-right: 35px; }
+
+.ci-home-sponsor-cta {
+  color: #fff;
+  background-size: cover;
+  background-position: center; }
+
+.ci-home-sponsor-cta--content {
+  padding: 2em 0; }
+  .ci-home-sponsor-cta--content header {
+    margin-bottom: 2em; }
+  .ci-home-sponsor-cta--content .h1 {
+    color: #fff;
+    font-family: 'halisgr';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3.625em; }
+  .ci-home-sponsor-cta--content .subtitle {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic; }
+  .ci-home-sponsor-cta--content p {
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    max-width: 533px;
+    line-height: 1.75;
+    font-weight: bold; }
+
+.ci-home-mission {
+  background-color: #4F8BCA;
+  color: #fff;
+  text-align: center;
+  line-height: 2.125; }
+  .ci-home-mission header {
+    max-width: 730px;
+    margin: 0 auto; }
+  .ci-home-mission h2 {
+    color: white; }
+  .ci-home-mission p {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+    line-height: 1.75; }
+
+.ci-home-experiences {
+  background-color: #FFC30E;
+  color: #454545; }
+  .ci-home-experiences h2 {
+    color: #454545; }
+  .ci-home-experiences p {
+    margin-bottom: 0em;
+    font-size: 1.25em;
+    max-width: 533px;
+    line-height: 1.75;
+    padding: 0; }
+    .ci-home-experiences p:first-of-type {
+      margin-bottom: 1em; }
+
+.ci-home-experiences--flexbox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  @media screen and (min-width: 1024px) {
+    .ci-home-experiences--flexbox {
+      align-items: center;
+      flex-direction: row; } }
+
+.ci-home-experiences--video {
+  width: 100%;
+  margin-top: 2em; }
+  @media screen and (min-width: 1024px) {
+    .ci-home-experiences--video {
+      margin-top: 0;
+      padding: 0 2em;
+      width: 50%; } }
 
 .small-title-bar {
   padding: 1em 1.25em; }

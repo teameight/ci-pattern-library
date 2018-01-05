@@ -1,0 +1,100 @@
+.ci-home-sponsor-cta {
+	color: $white;
+	background-size: cover;
+	background-position: center;
+}
+
+.ci-home-sponsor-cta--content {
+	padding: 2em 0;
+
+	header {
+		margin-bottom: 2em;
+	}
+
+	.h1 {
+		color: $white;
+		font-family: 'halisgr';
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 3.625em;
+	}
+
+	.subtitle {
+		font-size: 2em;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	p {
+		margin-bottom: 2em;
+		font-size: 1.25em;
+		max-width: 533px;
+		line-height: 1.75;
+		font-weight: bold;
+	}
+}
+
+.ci-home-mission {
+	background-color: $blue;
+	color: $white;
+	text-align: center;
+	line-height: 2.125;
+
+	header {
+		max-width: 730px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		font-size: 1.25em;
+		margin-bottom: 2em;
+		line-height: 1.75;
+	}
+}
+
+.ci-home-experiences {
+	background-color: $yellow;
+	color: $grey;
+
+	h2 {
+		color: $grey;
+	}
+
+	p {
+		margin-bottom: 0em;
+		font-size: 1.25em;
+		max-width: 533px;
+		line-height: 1.75;
+		padding: 0;
+
+		&:first-of-type {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+.ci-home-experiences--flexbox {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	@media screen and (min-width: $bp-med-2) {
+		align-items: center;
+		flex-direction: row;
+	}
+}
+
+.ci-home-experiences--video {
+	width: 100%;
+	margin-top: 2em;
+
+	@media screen and (min-width: $bp-med-2) {
+		margin-top: 0;
+		padding: 0 2em;
+		width: 50%;
+	}
+}
