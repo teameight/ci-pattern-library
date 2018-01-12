@@ -6,7 +6,9 @@ body {
 	font-family:$font;
 }
 
-h1, h2, h3, p, ul, ol, .entry, .header-landmark, .bfilter-wrap, .nav-links  {
+h1, h2, h3, h4, h5, h6, p, ul, ol, .entry, .header-landmark, .bfilter-wrap, .nav-links, .subtitle,
+.h1, .h2, .h3, .h4, .h5, .h6, blockquote, 
+.ci-button  {
 	@include font-smoothing();
 	text-rendering: optimizeLegibility;
 }
@@ -14,6 +16,15 @@ h1, h2, h3, p, ul, ol, .entry, .header-landmark, .bfilter-wrap, .nav-links  {
 em {
 	font-style: italic;
 }
+
+.ci-subheading {
+	font-family:$font;
+	font-style: italic;
+	color:$blue;
+	text-transform: none;
+	font-weight:normal;
+}
+
 .c-block {
 	p {
 		margin-bottom:.75em;

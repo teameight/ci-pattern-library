@@ -1,7 +1,24 @@
 /*------------------------------------*\
     $Sections
 \*------------------------------------*/
+section.blue {
+	background-color: $blue;
+	color: $white;
+}
+section.yellow {
+	background-color: $yellow;
+}
 
+section.centered {
+	text-align:center;
+}
+
+.inner {
+
+	&.narrow {
+		max-width:730px;
+	}
+}
 .block-centered {
 	display: block;
 	margin: 0 auto;

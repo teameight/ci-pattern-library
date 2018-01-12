@@ -82,6 +82,9 @@
 .dms-donate-fund-form {
 	display: inline-flex;
 	position: relative;
+	@include font-smoothing();
+	text-rendering: optimizeLegibility;
+	font-size: .825em;
 
 	&:before {
 		content: "$";
@@ -90,17 +93,20 @@
 		font-weight: bold;
 		font-size: 1.5em;
 		position: absolute;
-		top: 11px;
-		left: 20px;
+		top: 1em;
+    left: .8em;
+    line-height: 1.4;
 	}
 
 	@media screen and (min-width: $bp-small-2) {
 		border: 1px solid $grey;
 		padding: 18px 17px 22px;
+		font-size: 1em;
+
 
 		&:before {
-			top: 29px;
-			left: 40px;
+			top: 1.62em;
+    	left: 1.7em;
 		}
 	}
 
@@ -112,17 +118,18 @@
 .dms-donate-fund-input {
 	border: 2px solid $green;
 	border-right: 0;
-	padding: 24px 32px 25px 45px;
+	padding: 1em 1em 1em 1.5em;
 	font-size: 20px;
 	line-height: 1.3;
 	font-family: $titlefont;
-	width: 68px;
-	height: 17px;
+	width: 4em;
+	height: 1.2em;
 	vertical-align: middle;
 	box-sizing: content-box;
 
 	@media screen and (min-width: $bp-small-2) {
-		width: 86px;
+		width: 6em;
+		padding: 1.2em 1.5em 1.2em 2em;
 	}
 }
 
@@ -130,11 +137,10 @@
 	display: block;
 	margin: 0.75em 0 2em;
 	color: $grey-med;
-	text-transform: uppercase;
-	font-family: $titlefont;
-	font-weight: bold;
+	@include labelfont();
+	font-weight:700;
 	font-size: 0.875em;
-	text-align: left;
+
 }
 
 .dms-donate-fund-desc-wrap {

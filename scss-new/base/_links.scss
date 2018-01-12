@@ -1,13 +1,11 @@
 /* Links */
 
-a {
-	color:$green-dark;
+a, .ci-faux-link {
+	color:$blue;
 	text-decoration:none;
-	transition:color $transition, background $transition;
+	transition:color $transition, background 80ms ease-out;
+  background-position: 0% 85%;
 
-	&:hover {
-		color:$blue;
-	}
 
 	.c-block.green &, .c-block.blue &, .c-block.grey & {
 		color:$white;
@@ -29,6 +27,12 @@ a {
 
 	}
 }
+
+p a:hover, .ci-faux-link:hover {
+	color:$blue;
+	@include link-underline(white, $blue, $yellow);
+}
+
 .c-block.green, .c-block.blue, .c-block.grey {
 	h1, h2, h3, h4 {
 		a {
@@ -68,21 +72,4 @@ a {
 		background:$blue;
 		color:$white;
 	}
-}
-
-
-.ci-new-styles {
-
-a,
-.ci-faux-link {
-	color: $blue;
-	text-decoration: underline;
-	text-decoration-skip: ink;
-	font-weight: bold;
-
-	&:hover {
-		color: darken($blue, 7%);
-	}
-}
-
 }

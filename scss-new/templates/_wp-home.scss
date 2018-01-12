@@ -1,7 +1,24 @@
-.ci-home-sponsor-cta {
+.ci-home {
+	color:$grey;
+
+	section {
+    position:relative;
+	}
+
+	.dms-donate-fund-form-helper {
+		text-align: center;
+	}
+}
+.cropped-background-image {
 	color: $white;
 	background-size: cover;
 	background-position: center;
+
+	&.no-overlay {
+		padding-bottom: 50%;
+		width: 100%;
+	}
+
 }
 
 .ci-home-sponsor-cta--content {
@@ -20,13 +37,13 @@
 	}
 
 	.subtitle {
-		font-size: 2em;
-		font-weight: bold;
+		font-size: 1.75em;
+		font-weight: 700;
 		font-style: italic;
 	}
 
 	p {
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 		font-size: 1.25em;
 		max-width: 533px;
 		line-height: 1.75;
@@ -35,8 +52,6 @@
 }
 
 .ci-home-mission {
-	background-color: $blue;
-	color: $white;
 	text-align: center;
 	line-height: 2.125;
 
@@ -57,8 +72,6 @@
 }
 
 .ci-home-experiences {
-	background-color: $yellow;
-	color: $grey;
 
 	h2 {
 		color: $grey;
@@ -80,7 +93,7 @@
 .ci-home-experiences--flexbox {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: column;
+	flex-direction: column-reverse;
 
 	@media screen and (min-width: $bp-med-2) {
 		align-items: center;
@@ -91,10 +104,233 @@
 .ci-home-experiences--video {
 	width: 100%;
 	margin-top: 2em;
+	margin-bottom:2em;
 
 	@media screen and (min-width: $bp-med-2) {
-		margin-top: 0;
+		margin-bottom: 0;
 		padding: 0 2em;
 		width: 50%;
 	}
 }
+
+.ci-home-impact {
+	h1 {
+		margin-bottom:1em;
+	}
+}
+
+.ci-home-impact--items {
+	display: flex;
+	flex-wrap:wrap;
+  justify-content: center;
+
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $bp-small-2) {
+  	justify-content: space-between;
+ 	}
+
+ 	@media screen and (min-width: $bp-med-2) {
+ 		max-width: initial;
+ 	}
+
+  li {
+  	width: 200px;
+  	padding:20px 20px 0;
+  	transition: transform $transition;
+
+  	svg {
+  		height:100px;
+  	}
+
+  	&:hover {
+  		transform:scale(1.125);
+  		background: rgba(203,203,203,.2);
+  		border: 1px solid $blue;
+  	}
+  }
+
+  span.number {
+  	display: block;
+    line-height: 1;
+    margin: .5em 0 0.25em;
+    font-size: 1.5em;
+  }
+}
+.ci-home-ontheroad {
+	position: relative;
+	background: linear-gradient(to bottom, $yellow 0%,$yellow 39%,white 39%);
+
+	.inner {
+		z-index: 1;
+	}
+}
+.ci-home-ontheroad--childs {
+	display: flex;
+	border: 1px solid $blue;
+	border-right: none; 
+	margin-bottom:120px;
+	flex-direction: column;
+
+
+	li {
+		width:100%;
+		box-sizing: border-box;
+		background-size: cover;
+		background-position: center center;
+		border-right: 1px solid $blue;
+
+		.ci-home-ontheroad--childstory {
+			opacity:0;
+			background:white;
+			box-sizing: border-box;
+			width: 100%;
+			padding:3em 20%;
+			transition: opacity $transition;
+			text-align: center;
+			display:flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			img {
+				max-height: 100%;
+				width:100%;
+				height:auto;
+			}
+
+			h4 {
+				margin-bottom: 2em;
+			}
+			p {
+				line-height: 1.5;
+			}
+			a {
+				padding: 5% 5% 0;
+			}
+		}
+
+		&:hover .ci-home-ontheroad--childstory {
+			opacity:1;
+		}
+	}
+
+	@media screen and (min-width: $bp-med) {
+
+		flex-direction:row;
+
+		li {
+			width:33.333%
+		}
+	}
+}
+
+.ci-home-ontheroad--globe {
+	display: flex;
+	align-items: center;
+
+	flex-direction: column-reverse;
+
+	@media screen and (min-width: $bp-med) {
+
+		flex-direction: row;
+
+		> div:first-child {
+			width: $col-1 * 5;
+			margin-right:$col-1;
+		}
+
+	}
+	.ci-button--primary {
+		margin-bottom: 1em;
+	}
+
+	.ci-home-ontheroad--map {
+		flex:1;
+	}
+
+	svg {
+		width:100%;
+		height: auto;
+	}
+}
+
+.ci-home-testimonial {
+
+	blockquote {
+		margin:0 auto;
+		font-size:1.25em;
+		line-height: 1.5;
+		max-width: 730px;
+
+		cite {
+			@extend h4;
+			color: white;
+			margin-top:1em;
+			font-size:.875em;
+			line-height: 1.5;
+		}
+
+	}
+}
+
+.ci-home-findachild {
+
+	p {
+		max-width: 45ch;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.ci-form-element {
+		
+		max-width:580px;
+		margin-left:auto;
+		margin-right:auto;
+
+		@media screen and (min-width: $bp-med) {
+			display: flex;
+			align-items: center;
+		}
+
+	}
+
+	.ci-form-element__label {
+		font-family:$font;
+		font-style: italic;
+		font-weight:normal;
+		text-transform: none;
+		color:$blue;
+		display: block;
+		text-align: center;
+
+		@media screen and (min-width: $bp-med) {
+			margin: .25em 1em 0 0;
+			display: inline-block;
+		}
+
+	}
+
+	.ci-form-element__control {
+		flex:1;
+	}
+
+}
+
+.ci-home-testimonial__readstories {
+	a {
+		display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+	}
+	h4 {
+		color:white;
+		margin-left:1em;
+	}
+}
+
+
+
