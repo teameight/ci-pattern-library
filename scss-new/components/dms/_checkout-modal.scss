@@ -19,7 +19,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: $grey-lt-3;
+	background-color: $grey-lt-trans;
 	overflow: scroll;
 	transition: top 400ms ease-in-out;
 	z-index: 1000;
@@ -36,11 +36,16 @@
 	margin: 0 auto;
 	background-color: $white;
 	overflow: hidden;
+
+	background: #fff url(../Styles/images/spinner.gif) center center no-repeat;
+	height:100%;
 }
 
 .ci-checkout-modal-inner {
 	text-align: center;
 	padding: 2em;
+	max-width: 800px;
+	margin: 0 auto;
 
 	&:last-of-type {
 		padding: 2em 2em 3em;
@@ -111,7 +116,7 @@
 	width: 36%;
 
 	img {
-		max-width: 100%;
+		width: 100%;
 		float: left;
 	}
 }

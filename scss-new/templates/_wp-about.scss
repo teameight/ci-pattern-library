@@ -1,0 +1,23 @@
+.ci-about {
+	color:$grey;
+
+	section {
+    position:relative;
+	}
+
+	.dms-donate-fund-form-helper {
+		text-align: center;
+	}
+
+
+}
+
+.ci-about-what, .ci-about-ways {
+	p {
+		line-height: 1.5;
+
+		@media screen and (min-width: $bp-small-3) {
+			font-size: 1.25em;
+		}
+	}
+}

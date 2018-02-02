@@ -694,7 +694,8 @@ p.wp-caption-text,
 		display: inline-block;
 		text-transform: uppercase;
 		padding: 8px 2em;
-    font-family: "halisgr book", Impact, Charcoal, sans-serif;
+    font-family: $titlefont;
+    color:white;
     display: block;
 
     @media screen and (min-width: $bp-med) {

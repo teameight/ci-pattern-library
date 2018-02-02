@@ -7,9 +7,11 @@
 	}
 
 	h1 {
+		@include labelfont();
 		font-size: 1.25em;
 		color: $grey;
 		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -90,9 +92,7 @@
 
 .child-spotlight-cta {
 	color: $yellow;
-	text-transform: uppercase;
-	font-family: $titlefont;
-font-weight: bold;
+	@include labelfont();
 	display: block;
 	font-size: 1.375em;
 	margin-bottom: 1.59em;
@@ -100,11 +100,9 @@ font-weight: bold;
 
 .child-spotlight-phone,
 .child-spotlight-email {
-	text-transform: uppercase;
+	@include labelfont();
 	font-size: 1.125em;
 	display: block;
-	font-family: $titlefont;
-font-weight: bold;
 }
 
 

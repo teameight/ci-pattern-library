@@ -128,7 +128,7 @@
 
 			&.bbb {
 				img {
-					max-width:50px;
+					max-width:120px;
 				}
 			}
 		}
@@ -258,13 +258,12 @@
 	}
 
 	img {
-		max-width: 90px;
 		height: auto;
 		width: 64px;
 		padding: 0 3px;
 
 		@media screen and (min-width: $bp-small-2) {
-			max-width: 90px;
+			max-width: 75px;
 			width: auto;
 			padding: 0;
 		}
@@ -272,13 +271,13 @@
 
 	.charity-navigator {
 		img {
-			max-width: 70px;
+			max-width: 65px;
 		}
 	}
 
 	.bbb {
 		img {
-			max-width:50px;
+			max-width:120px;
 		}
 	}
 }
@@ -352,12 +351,14 @@
 
 .ci-subfooter__buttons {
 
-	.ci-button {
+	a {
 		font-size: .875em;
 		display: block;
 		width: 167px;
 		padding: 11px 0 10px;
 		text-align: center;
 		margin: 0 auto 1.5em;
+		color:white;
+		line-height:2;
 	}
 }

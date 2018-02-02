@@ -90,6 +90,7 @@
 
 	.p-meta {
 		@include labelfont();
+  	font-size: .875em;
 		position:relative;
 		margin: 0;
 		padding: 16px 0;
@@ -178,6 +179,7 @@
 	.entry-meta {
 		color: $grey-med;
 		@include labelfont();
+  	font-size: .875em;
 	}
 	.entry-header {
 

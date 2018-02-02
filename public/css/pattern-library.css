@@ -50,7 +50,10 @@ body {
   clear: both; }
 
 .inner {
-  padding: 120px 0; }
+  padding: 80px 0; }
+  @media screen and (min-width: 600px) {
+    .inner {
+      padding: 120px 0; } }
 
 .inner, .c-block .entry {
   padding-left: 5%;
@@ -3467,24 +3470,24 @@ svg image:hover {
       color: #e9af00; }
 
 /* Links */
-a, .ci-faux-link {
+a:not(.button), .ci-faux-link {
   color: #4F8BCA;
   text-decoration: none;
   transition: color 0.3s ease, background 80ms ease-out;
   background-position: 0% 85%; }
-  .c-block.green a, .c-block.blue a, .c-block.grey a, .c-block.green .ci-faux-link, .c-block.blue .ci-faux-link, .c-block.grey .ci-faux-link {
+  .c-block.green a:not(.button), .c-block.blue a:not(.button), .c-block.grey a:not(.button), .c-block.green .ci-faux-link, .c-block.blue .ci-faux-link, .c-block.grey .ci-faux-link {
     color: #fff;
     text-decoration: underline; }
-    .c-block.green a:hover, .c-block.blue a:hover, .c-block.grey a:hover, .c-block.green .ci-faux-link:hover, .c-block.blue .ci-faux-link:hover, .c-block.grey .ci-faux-link:hover {
+    .c-block.green a:not(.button):hover, .c-block.blue a:not(.button):hover, .c-block.grey a:not(.button):hover, .c-block.green .ci-faux-link:hover, .c-block.blue .ci-faux-link:hover, .c-block.grey .ci-faux-link:hover {
       color: #000; }
-    .c-block.green a.button, .c-block.blue a.button, .c-block.grey a.button, .c-block.green .ci-faux-link.button, .c-block.blue .ci-faux-link.button, .c-block.grey .ci-faux-link.button {
+    .c-block.green a:not(.button).button, .c-block.blue a:not(.button).button, .c-block.grey a:not(.button).button, .c-block.green .ci-faux-link.button, .c-block.blue .ci-faux-link.button, .c-block.grey .ci-faux-link.button {
       text-decoration: none; }
-  .h-landmark a, .h-landmark .ci-faux-link {
+  .h-landmark a:not(.button), .h-landmark .ci-faux-link {
     color: #fff; }
-    .h-landmark a:hover, .h-landmark .ci-faux-link:hover {
+    .h-landmark a:not(.button):hover, .h-landmark .ci-faux-link:hover {
       color: #383535; }
 
-p a:hover, .ci-faux-link:hover {
+p a:not(.button):hover, .ci-faux-link:hover {
   color: #4F8BCA;
   text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
   background-image: linear-gradient(#4F8BCA, #4F8BCA);
@@ -3493,19 +3496,19 @@ p a:hover, .ci-faux-link:hover {
   background-position: 0% 90%;
   color: #4F8BCA;
   text-decoration: none; }
-  p a:hover::selection, .ci-faux-link:hover::selection {
+  p a:not(.button):hover::selection, .ci-faux-link:hover::selection {
     text-shadow: 0.03em 0 #FFC30E, -0.03em 0 #FFC30E, 0 0.03em #FFC30E, 0 -0.03em #FFC30E, 0.06em 0 #FFC30E, -0.06em 0 #FFC30E, 0.09em 0 #FFC30E, -0.09em 0 #FFC30E, 0.12em 0 #FFC30E, -0.12em 0 #FFC30E, 0.15em 0 #FFC30E, -0.15em 0 #FFC30E;
     background: #FFC30E; }
-  p a:hover::-moz-selection, .ci-faux-link:hover::-moz-selection {
+  p a:not(.button):hover::-moz-selection, .ci-faux-link:hover::-moz-selection {
     text-shadow: 0.03em 0 #FFC30E, -0.03em 0 #FFC30E, 0 0.03em #FFC30E, 0 -0.03em #FFC30E, 0.06em 0 #FFC30E, -0.06em 0 #FFC30E, 0.09em 0 #FFC30E, -0.09em 0 #FFC30E, 0.12em 0 #FFC30E, -0.12em 0 #FFC30E, 0.15em 0 #FFC30E, -0.15em 0 #FFC30E;
     background: #FFC30E; }
-  p a:hover *,
-  p a:hover *:after, p a:hover:after,
-  p a:hover *:before, p a:hover:before, .ci-faux-link:hover *,
+  p a:not(.button):hover *,
+  p a:not(.button):hover *:after, p a:not(.button):hover:after,
+  p a:not(.button):hover *:before, p a:not(.button):hover:before, .ci-faux-link:hover *,
   .ci-faux-link:hover *:after, .ci-faux-link:hover:after,
   .ci-faux-link:hover *:before, .ci-faux-link:hover:before {
     text-shadow: none; }
-  p a:hover:visited, .ci-faux-link:hover:visited {
+  p a:not(.button):hover:visited, .ci-faux-link:hover:visited {
     color: #4F8BCA; }
 
 .c-block.green h1 a, .c-block.green h2 a, .c-block.green h3 a, .c-block.green h4 a, .c-block.green .ci-home-testimonial blockquote cite a, .ci-home-testimonial blockquote .c-block.green cite a, .c-block.blue h1 a, .c-block.blue h2 a, .c-block.blue h3 a, .c-block.blue h4 a, .c-block.blue .ci-home-testimonial blockquote cite a, .ci-home-testimonial blockquote .c-block.blue cite a, .c-block.grey h1 a, .c-block.grey h2 a, .c-block.grey h3 a, .c-block.grey h4 a, .c-block.grey .ci-home-testimonial blockquote cite a, .ci-home-testimonial blockquote .c-block.grey cite a {
@@ -3558,19 +3561,23 @@ h6,
 
 h1,
 .h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.187;
-  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
   color: #4F8BCA;
-  text-transform: none; }
+  text-transform: uppercase; }
+  @media screen and (min-width: 767px) {
+    h1,
+    .h1 {
+      font-size: 3em; } }
 
 h2,
 .h2 {
   font-size: 1.75em;
   line-height: 1.142;
-  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+  font-family: "halisgr", Impact, Charcoal, sans-serif;
   color: #4F8BCA;
-  text-transform: none; }
+  text-transform: uppercase; }
 
 h3,
 .h3 {
@@ -3636,13 +3643,55 @@ h4 + h2, .ci-home-testimonial blockquote cite + h2 {
 .ci-theme_inverse .h6 {
   color: #fff; }
 
+.green h1,
+.green .h1,
+.green h2,
+.green .h2,
+.green h3,
+.green .h3,
+.green h4,
+.green .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
+.green cite,
+.green .h4,
+.green h5,
+.green .h5,
+.green h6,
+.green .h6, .blue h1,
+.blue .h1,
+.blue h2,
+.blue .h2,
+.blue h3,
+.blue .h3,
+.blue h4,
+.blue .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
+.blue cite,
+.blue .h4,
+.blue h5,
+.blue .h5,
+.blue h6,
+.blue .h6, .full-image h1,
+.full-image .h1,
+.full-image h2,
+.full-image .h2,
+.full-image h3,
+.full-image .h3,
+.full-image h4,
+.full-image .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
+.full-image cite,
+.full-image .h4,
+.full-image h5,
+.full-image .h5,
+.full-image h6,
+.full-image .h6 {
+  color: white; }
+
 /* Text-Related Elements */
 body {
   font-size: 16px;
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif; }
 
 h1, h2, h3, h4, .ci-home-testimonial blockquote cite, h5, h6, p, ul, ol, .entry, .header-landmark, .bfilter-wrap, .nav-links, .subtitle,
-.h1, .h2, .h3, .h4, .h5, .h6, blockquote,
+.h1, .h2, .h3, .h4, .h5, .h6, blockquote, fieldset, label,
 .ci-button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3680,8 +3729,8 @@ hr {
   clear: both; }
 
 p.emphasized, .single p.emphasized {
-  font-size: 20px;
-  line-height: 32px; }
+  font-size: 1.25em;
+  line-height: 1.6; }
 
 .entry,
 #solution .inner,
@@ -5288,10 +5337,57 @@ section.blue {
   color: #fff; }
 
 section.yellow {
-  background-color: #FFC30E; }
+  background-color: #FFC30E;
+  color: #454545; }
+  section.yellow h1, section.yellow h2, section.yellow h3, section.yellow h4, section.yellow .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote section.yellow cite, section.yellow h5, section.yellow h6,
+  section.yellow .h1, section.yellow .h2, section.yellow .h3, section.yellow .h4, section.yellow .h5, section.yellow .h6 {
+    color: #454545; }
 
 section.centered {
   text-align: center; }
+  section.centered .inner {
+    max-width: 80ch; }
+
+section.text-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media screen and (min-width: 600px) {
+    section.text-image {
+      flex-direction: row; }
+      section.text-image .text-wrap {
+        order: 1;
+        max-width: 58.33333%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      section.text-image .img-wrap {
+        order: 2;
+        display: flex;
+        justify-content: center; } }
+  section.text-image .text-wrap {
+    flex-grow: 3;
+    padding: 3em; }
+    @media screen and (min-width: 1024px) {
+      section.text-image .text-wrap {
+        padding: 5em; } }
+  section.text-image .img-wrap {
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: #F5F5F5; }
+    @media screen and (min-width: 1200px) {
+      section.text-image .img-wrap {
+        background-color: #4F8BCA; } }
+    section.text-image .img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      float: none; }
+      @media screen and (min-width: 600px) {
+        section.text-image .img-wrap img {
+          width: auto;
+          height: 100%; } }
 
 .inner.narrow {
   max-width: 730px; }
@@ -5430,11 +5526,12 @@ section.centered {
   .entry-footer-t8 .p-meta {
     font-family: "halisgr", Impact, Charcoal, sans-serif;
     text-transform: uppercase;
-    font-size: .875em;
-    letter-spacing: .08em;
+    font-weight: bold;
+    letter-spacing: .03em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    font-size: .875em;
     position: relative;
     margin: 0;
     padding: 16px 0; }
@@ -5495,11 +5592,12 @@ section.centered {
   color: #888;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
   text-transform: uppercase;
-  font-size: .875em;
-  letter-spacing: .08em;
+  font-weight: bold;
+  letter-spacing: .03em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  font-size: .875em; }
 
 .single .entry-header {
   margin: 0 0 2em; }
@@ -6033,7 +6131,7 @@ a#open-menu {
       #footer .badges > div.charity-navigator img {
         max-width: 70px; }
       #footer .badges > div.bbb img {
-        max-width: 50px; }
+        max-width: 120px; }
   #footer .social {
     float: right;
     line-height: 24px;
@@ -6118,19 +6216,18 @@ a#open-menu {
       .ci-prefooter__logos .AuthorizeNetSeal {
         width: 90px !important; } }
   .ci-prefooter__logos img {
-    max-width: 90px;
     height: auto;
     width: 64px;
     padding: 0 3px; }
     @media screen and (min-width: 500px) {
       .ci-prefooter__logos img {
-        max-width: 90px;
+        max-width: 75px;
         width: auto;
         padding: 0; } }
   .ci-prefooter__logos .charity-navigator img {
-    max-width: 70px; }
+    max-width: 65px; }
   .ci-prefooter__logos .bbb img {
-    max-width: 50px; }
+    max-width: 120px; }
 
 .ci-subfooter .inner {
   display: flex;
@@ -6173,13 +6270,15 @@ a#open-menu {
   .ci-subfooter__social svg:hover path {
     fill: #3979bd; }
 
-.ci-subfooter__buttons .ci-button {
+.ci-subfooter__buttons a {
   font-size: .875em;
   display: block;
   width: 167px;
   padding: 11px 0 10px;
   text-align: center;
-  margin: 0 auto 1.5em; }
+  margin: 0 auto 1.5em;
+  color: white;
+  line-height: 2; }
 
 /*------------------------------------*    $DMS
 \*------------------------------------*/
@@ -6243,6 +6342,8 @@ a#open-menu {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-size: .825em; }
+  .dms-donate-fund-form .ci-button {
+    margin: 0; }
   .dms-donate-fund-form:before {
     content: "$";
     color: #74b638;
@@ -6287,8 +6388,8 @@ a#open-menu {
   color: #888;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
   text-transform: uppercase;
-  font-size: .875em;
-  letter-spacing: .08em;
+  font-weight: bold;
+  letter-spacing: .03em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -6339,7 +6440,7 @@ label[for="forgot-password-email"] {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #F5F5F5;
+  background-color: rgba(245, 245, 245, 0.78);
   overflow: scroll;
   transition: top 400ms ease-in-out;
   z-index: 1000; }
@@ -6352,11 +6453,15 @@ label[for="forgot-password-email"] {
   max-width: 800px;
   margin: 0 auto;
   background-color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #fff url(../Styles/images/spinner.gif) center center no-repeat;
+  height: 100%; }
 
 .ci-checkout-modal-inner {
   text-align: center;
-  padding: 2em; }
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto; }
   .ci-checkout-modal-inner:last-of-type {
     padding: 2em 2em 3em; }
   @media screen and (min-width: 767px) {
@@ -6411,7 +6516,7 @@ label[for="forgot-password-email"] {
 .ci-checkout-modal-item-img {
   width: 36%; }
   .ci-checkout-modal-item-img img {
-    max-width: 100%;
+    width: 100%;
     float: left; }
 
 .ci-checkout-modal-item-desc {
@@ -7579,7 +7684,8 @@ p.wp-caption-text,
     display: inline-block;
     text-transform: uppercase;
     padding: 8px 2em;
-    font-family: "halisgr book", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    color: white;
     display: block; }
     @media screen and (min-width: 767px) {
       .otr-featured-region-post .more-link {
@@ -7696,21 +7802,37 @@ p.wp-caption-text,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  font-size: .825em;
   max-width: 580px;
   margin-left: auto;
   margin-right: auto; }
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 24em) {
     .ci-home-impact--items {
       justify-content: space-between; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 500px) {
     .ci-home-impact--items {
-      max-width: initial; } }
+      max-width: initial;
+      font-size: 1em; } }
   .ci-home-impact--items li {
-    width: 200px;
+    width: 140px;
     padding: 20px 20px 0;
-    transition: transform 0.3s ease; }
-    .ci-home-impact--items li svg {
-      height: 100px; }
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 500px) {
+      .ci-home-impact--items li {
+        width: 50%; } }
+    .ci-home-impact--items li h3 {
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto; }
+    @media screen and (min-width: 1024px) {
+      .ci-home-impact--items li {
+        width: 200px; } }
+    .ci-home-impact--items li svg, .ci-home-impact--items li object {
+      height: 60px; }
+      @media screen and (min-width: 500px) {
+        .ci-home-impact--items li svg, .ci-home-impact--items li object {
+          height: 100px; } }
     .ci-home-impact--items li:hover {
       transform: scale(1.125);
       background: rgba(203, 203, 203, 0.2);
@@ -7728,36 +7850,64 @@ p.wp-caption-text,
     z-index: 1; }
 
 .ci-home-ontheroad--childs {
-  display: flex;
-  border: 1px solid #4F8BCA;
+  display: block;
   border-right: none;
-  margin-bottom: 120px;
-  flex-direction: column; }
+  margin-bottom: 60px; }
+  @media screen and (min-width: 600px) {
+    .ci-home-ontheroad--childs {
+      border: 1px solid #4F8BCA;
+      margin-bottom: 120px;
+      display: flex;
+      flex-direction: column; } }
   .ci-home-ontheroad--childs li {
     width: 100%;
     box-sizing: border-box;
-    background-size: cover;
-    background-position: center center;
-    border-right: 1px solid #4F8BCA; }
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border: 1px solid #4F8BCA;
+    padding-top: 60%;
+    margin-bottom: 3em; }
+    @media screen and (min-width: 600px) {
+      .ci-home-ontheroad--childs li {
+        border: none;
+        border-right: 1px solid #4F8BCA;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 0;
+        margin-bottom: 0; }
+        .ci-home-ontheroad--childs li:last-child {
+          border: none; } }
     .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory {
-      opacity: 0;
       background: white;
       box-sizing: border-box;
       width: 100%;
-      padding: 3em 20%;
+      padding: 1.5em 7%;
       transition: opacity 0.3s ease;
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
-      .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory img {
+      justify-content: space-between;
+      height: 100%; }
+      @media screen and (min-width: 600px) {
+        .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory {
+          opacity: 0;
+          padding: 3em 20%; } }
+      .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory img, .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory object, .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory svg {
         max-height: 100%;
         width: 100%;
         height: auto; }
       .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory h4, .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory cite {
-        margin-bottom: 2em; }
+        margin-bottom: 12px; }
+        @media screen and (min-width: 600px) {
+          .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory h4, .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory cite {
+            margin-bottom: 2em; } }
       .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory p {
-        line-height: 1.5; }
+        line-height: 1.5;
+        padding-bottom: 0; }
+        @media screen and (min-width: 600px) {
+          .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory p {
+            padding-bottom: 20px; } }
       .ci-home-ontheroad--childs li .ci-home-ontheroad--childstory a {
         padding: 5% 5% 0; }
     .ci-home-ontheroad--childs li:hover .ci-home-ontheroad--childstory {
@@ -7781,8 +7931,9 @@ p.wp-caption-text,
   .ci-home-ontheroad--globe .ci-button--primary {
     margin-bottom: 1em; }
   .ci-home-ontheroad--globe .ci-home-ontheroad--map {
-    flex: 1; }
-  .ci-home-ontheroad--globe svg {
+    flex: 1;
+    margin-bottom: 20px; }
+  .ci-home-ontheroad--globe svg, .ci-home-ontheroad--globe object {
     width: 100%;
     height: auto; }
 
@@ -7838,14 +7989,35 @@ p.wp-caption-text,
   color: white;
   margin-left: 1em; }
 
+.ci-about {
+  color: #454545; }
+  .ci-about section {
+    position: relative; }
+  .ci-about .dms-donate-fund-form-helper {
+    text-align: center; }
+
+.ci-about-what p, .ci-about-ways p {
+  line-height: 1.5; }
+  @media screen and (min-width: 600px) {
+    .ci-about-what p, .ci-about-ways p {
+      font-size: 1.25em; } }
+
 .small-title-bar {
   padding: 1em 1.25em; }
   .small-title-bar.tertiary {
     background-color: #FFC30E; }
   .small-title-bar h1 {
+    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .03em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     font-size: 1.25em;
     color: #454545;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-bottom: 0; }
 
 .child-spotlight-primary {
   display: flex;
@@ -7908,20 +8080,28 @@ p.wp-caption-text,
 
 .child-spotlight-cta {
   color: #FFC30E;
-  text-transform: uppercase;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
+  text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: .03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   display: block;
   font-size: 1.375em;
   margin-bottom: 1.59em; }
 
 .child-spotlight-phone,
 .child-spotlight-email {
-  text-transform: uppercase;
-  font-size: 1.125em;
-  display: block;
   font-family: "halisgr", Impact, Charcoal, sans-serif;
-  font-weight: bold; }
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 1.125em;
+  display: block; }
 
 .child-spotlight-more-info {
   background-color: #FFC30E;
