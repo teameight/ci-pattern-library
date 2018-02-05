@@ -3781,9 +3781,9 @@ svg image:hover {
   background-color: #4F8BCA; }
   .ci-new-styles .ci-theme_inverse * {
     color: #fff; }
-  .ci-new-styles .ci-theme_inverse a {
+  .ci-new-styles .ci-theme_inverse a:not(.ci-button) {
     color: #FFC30E; }
-    .ci-new-styles .ci-theme_inverse a:hover {
+    .ci-new-styles .ci-theme_inverse a:not(.ci-button):hover {
       color: #e9af00; }
 
 /* Links */

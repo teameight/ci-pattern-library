@@ -3148,7 +3148,7 @@ font-weight: bold;
 		color: $white;
 	}
 
-	a {
+	a:not(.ci-button) {
 		color: $yellow;
 
 		&:hover {
