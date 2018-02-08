@@ -4353,8 +4353,7 @@ img.aligncenter, a img.aligncenter {
   @media screen and (min-width: 600px) {
     .ci-radio-group__primary .ci-form-element__control {
       flex-direction: row;
-      max-width: 600px;
-      padding-left: 2.5em; } }
+      max-width: 600px; } }
 
 .ci-form-element__legend {
   margin-bottom: 1.75em; }
@@ -4384,7 +4383,8 @@ img.aligncenter, a img.aligncenter {
   display: flex;
   align-items: flex-start;
   margin-bottom: 1em;
-  cursor: pointer; }
+  cursor: pointer;
+  justify-content: center; }
 
 .ci-radio_faux {
   flex-shrink: 0; }
@@ -6854,19 +6854,26 @@ label[for="forgot-password-email"] {
   padding: 10px; }
 
 .ci-checkout-modal-item-intro {
-  font-style: italic; }
+  font-style: italic;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
 
 .ci-checkout-modal-item-name {
   color: #FFC30E;
   font-size: 1.75em;
   display: inline-block;
-  margin: .35em 0; }
+  margin: .5em 0;
+  font-weight: bold; }
 
 .ci-checkout-modal-item-amount {
   font-family: "halisgr", Impact, Charcoal, sans-serif;
   font-weight: bold;
   font-size: 1.125em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
 
 .ci-checkout-modal-thank-you__cover img {
   width: 100%;
@@ -8313,6 +8320,25 @@ p.wp-caption-text,
 .ci-home-testimonial__readstories h4, .ci-home-testimonial__readstories .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .ci-home-testimonial__readstories cite {
   color: white;
   margin-left: 1em; }
+
+.ci-home-instagram h4 > a, .ci-home-instagram .ci-home-testimonial blockquote cite > a, .ci-home-testimonial blockquote .ci-home-instagram cite > a, .ci-home-instagram .ci-home-instagram__social {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ci-home-instagram h4 > a svg, .ci-home-instagram .ci-home-testimonial blockquote cite > a svg, .ci-home-testimonial blockquote .ci-home-instagram cite > a svg {
+  margin-right: 1em; }
+
+.ci-home-instagram .ci-home-instagram__social {
+  color: #4F8BCA;
+  font-style: italic; }
+
+.ci-home-instagram .ci-subfooter__social {
+  width: auto;
+  margin: 0;
+  display: inline; }
+  .ci-home-instagram .ci-subfooter__social a {
+    margin-left: .5em; }
 
 .ci-about {
   color: #454545; }

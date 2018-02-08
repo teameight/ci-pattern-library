@@ -389,5 +389,34 @@
 	}
 }
 
+.ci-home-instagram {
+
+	h4 > a, .ci-home-instagram__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h4 > a svg {
+		margin-right:1em;
+	}
+
+	.ci-home-instagram__social {
+		color:$blue;
+		font-style: italic;
+	}
+
+	.ci-subfooter__social {
+		width: auto;
+		margin:0;
+		display: inline;
+
+
+		a {
+			margin-left: .5em;
+		}
+	}
+
+}
 
 

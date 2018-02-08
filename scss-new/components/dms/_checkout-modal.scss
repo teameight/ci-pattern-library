@@ -135,20 +135,25 @@
 
 .ci-checkout-modal-item-intro {
 	font-style: italic;
+	@include font-smoothing();
+  text-rendering: optimizeLegibility;
 }
 
 .ci-checkout-modal-item-name {
 	color: $yellow;
 	font-size: 1.75em;
 	display: inline-block;
-	margin: .35em 0;
+	margin: .5em 0;
+	font-weight: bold;
 }
 
 .ci-checkout-modal-item-amount {
 	font-family: $titlefont;
-font-weight: bold;
+	font-weight: bold;
 	font-size: 1.125em;
 	text-transform: uppercase;
+	@include font-smoothing();
+  text-rendering: optimizeLegibility;
 }
 
 // .ci-step-counter {
