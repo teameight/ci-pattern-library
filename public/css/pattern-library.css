@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* common.css */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
 * {
   background-color: transparent; }
 
@@ -465,11 +466,8 @@ button::-moz-focus-inner {
 /************************/
 /* Content
 /************************/
-h1, h2, h3, p {
-  padding: 0 0 30px; }
-
 h1, h2, h3, h4, .ci-home-testimonial blockquote cite, h5 {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   line-height: 100%; }
 
@@ -610,7 +608,7 @@ h1, h2, h3, h4, .ci-home-testimonial blockquote cite, h5 {
   color: #FFF !important;
   margin: 0 5px !important;
   font-size: 20px !important;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   float: left; }
 
@@ -839,7 +837,7 @@ html {
 #homepage-testimonials h3.title,
 #homepage-social h3.title,
 #homepage-get-involved h3.title {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 45px;
   color: #FFF;
@@ -927,7 +925,7 @@ html {
   z-index: 20; }
 
 #homepage-sponsors .entry .title {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 68px;
   color: #FFF;
@@ -967,7 +965,7 @@ html {
   padding-top: 110px; }
 
 #homepage-stories h4, #homepage-stories .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote #homepage-stories cite {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 25px;
   text-transform: uppercase;
@@ -1002,7 +1000,7 @@ html {
   line-height: 1.9em; }
 
 #homepage-testimonials h4, #homepage-testimonials .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote #homepage-testimonials cite {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 13px;
   text-transform: uppercase;
@@ -1174,7 +1172,7 @@ html {
 
 .children-list .text-holder span {
   text-transform: uppercase;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold; }
 
 .children-list a {
@@ -1356,7 +1354,6 @@ html {
 
 h1.title {
   font-size: 67px;
-  text-transform: uppercase;
   line-height: 67px; }
 
 #the-problem .columns,
@@ -1370,7 +1367,7 @@ h1.title {
 
 #the-problem .column.left,
 #about-us .column.left {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   width: 39%;
   line-height: 2.1em; }
@@ -1410,7 +1407,7 @@ h1.title {
 #about-us .financials .title,
 #about-us .administration .title,
 #about-us .community-partners .title {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 65px;
   text-transform: uppercase;
@@ -1429,7 +1426,7 @@ h1.title {
   text-align: center; }
 
 #about-us .community-partners strong {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   color: #000; }
 
@@ -1529,7 +1526,7 @@ h1.title {
   z-index: 100; }
 
 #stories-of-hope .title {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 57px;
   text-transform: uppercase;
@@ -1564,7 +1561,7 @@ h1.title {
   margin-bottom: 80px; }
 
 #stories-of-hope .share h3 {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 45px;
   text-transform: uppercase; }
@@ -1702,7 +1699,7 @@ article.black .bottom {
   color: #000;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   margin: 25px 0;
   overflow: hidden; }
@@ -1845,7 +1842,7 @@ div.wpcf7 img.ajax-loader {
   display: none; }
 
 #contact-us span.come {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 65px;
   left: 50%;
@@ -1884,7 +1881,7 @@ div.wpcf7 img.ajax-loader {
 .event-link .big {
   text-transform: uppercase;
   font-size: 25px;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   line-height: 100%; }
 
@@ -1920,7 +1917,7 @@ div.wpcf7 img.ajax-loader {
   width: 45%; }
 
 #events .columns strong {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -1999,13 +1996,13 @@ div.type-product,
 
 .woocommerce-account .myaccount_user a {
   text-transform: uppercase;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold; }
 
 h2.account-info,
 .woocommerce-checkout h2 {
   font-size: 45px;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center; }
@@ -2013,7 +2010,7 @@ h2.account-info,
 h3.account-info,
 .woocommerce-checkout h3 {
   font-size: 19px;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -2065,7 +2062,7 @@ p.no-subscriptions {
 .woocommerce-checkout th {
   font-size: 19px;
   text-transform: uppercase;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold; }
 
 .woocommerce-checkout table thead th,
@@ -2209,7 +2206,7 @@ p.no-subscriptions {
 .single-children .images .custom-fields div span,
 .single-children .images .text-holder strong {
   font-size: 25px;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -2227,7 +2224,7 @@ p.no-subscriptions {
   width: 42%; }
 
 .single-children h3.title {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 45px;
   padding: 15px 0 70px;
@@ -2238,7 +2235,7 @@ p.no-subscriptions {
   margin-bottom: 20px;
   width: 150px;
   font-size: 14px;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -2273,7 +2270,7 @@ div.radio span.radio-container {
   height: 51px;
   width: 308px;
   font-size: 25px;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   color: #FFF;
   background: none; }
@@ -2290,7 +2287,7 @@ div.radio span.radio-container {
   max-width: 925px !important; }
 
 .single-product .product h3.title {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 45px;
   padding: 15px 0 50px;
@@ -2536,7 +2533,7 @@ svg image:hover {
 
 #team .item strong {
   display: block;
-  font: 16px/16px "halisgr", Impact, Charcoal, sans-serif;
+  font: 16px/16px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   color: #1f1f1f;
   padding: 0 0 6px;
@@ -2565,7 +2562,7 @@ svg image:hover {
 #team .team-info .name {
   display: block;
   color: #1f1f1f;
-  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font: 45px/47px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   padding: 0 0 30px;
   text-transform: uppercase; }
@@ -2642,19 +2639,19 @@ svg image:hover {
   padding: 5px 2% 0 0; }
 
 #solution-intro h1 {
-  font: 68px/69px "halisgr", Impact, Charcoal, sans-serif;
+  font: 68px/69px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 20px; }
 
 #solution-intro h2 {
-  font: 16px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font: 16px/30px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   padding: 0 20% 0 0; }
 
 #solution-intro .col-r h2,
 #solution-intro .col-r h3 {
-  font: 25px/27px "halisgr", Impact, Charcoal, sans-serif;
+  font: 25px/27px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 35px; }
@@ -2693,7 +2690,7 @@ svg image:hover {
   z-index: 300; }
 
 #solution-how-work h2 {
-  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font: 45px/47px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 35px; }
@@ -2715,13 +2712,13 @@ svg image:hover {
 
 #solution-sponsor h2 {
   padding: 86px 0 50px;
-  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font: 45px/47px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
 #solution-sponsor h3 {
   padding: 0 0 25px;
-  font: 25px/27px "halisgr", Impact, Charcoal, sans-serif;
+  font: 25px/27px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -2758,7 +2755,7 @@ svg image:hover {
 
 #solution-sponsor .icons .wp-caption p {
   padding: 0;
-  font: 14px/16px "halisgr", Impact, Charcoal, sans-serif;
+  font: 14px/16px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -2780,7 +2777,7 @@ svg image:hover {
   display: block;
   border: 3px solid #fff;
   color: #fff;
-  font: 13px/20px "halisgr", Impact, Charcoal, sans-serif;
+  font: 13px/20px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   padding: 21px 0;
   text-decoration: none;
@@ -2829,13 +2826,13 @@ svg image:hover {
 
 #solution-projects h2 {
   padding: 0 0 60px;
-  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font: 45px/47px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
 #solution-projects h3 {
   padding: 0 12% 60px;
-  font: 25px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font: 25px/30px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -2888,7 +2885,7 @@ svg image:hover {
 
 #solution-coverage h2 {
   padding: 0 0 60px;
-  font: 45px/47px "halisgr", Impact, Charcoal, sans-serif;
+  font: 45px/47px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
 
@@ -2960,23 +2957,23 @@ svg image:hover {
 
 #solution .map-hover strong {
   text-transform: uppercase;
-  font: 14px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font: 14px/30px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold; }
 
 #solution-more h2 {
-  font: 35px/56px "halisgr", Impact, Charcoal, sans-serif;
+  font: 35px/56px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 35px; }
 
 #solution-more h3 {
-  font: 25px/27px "halisgr", Impact, Charcoal, sans-serif;
+  font: 25px/27px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 0 60px; }
 
 #solution-more .quote-entry {
-  font: 15px/30px "halisgr", Impact, Charcoal, sans-serif;
+  font: 15px/30px "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 18%;
@@ -2995,7 +2992,7 @@ svg image:hover {
   margin: 0 auto; }
 
 #solution .watch-heading {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 45px;
@@ -3611,7 +3608,7 @@ svg image:hover {
   #the-problem h3, #about-us h3 {
     font-size: 20px;
     padding-bottom: 12px;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold; }
   #the-problem .entry, #about-us .entry {
     padding: 80px 12px 30px; }
@@ -3758,7 +3755,7 @@ svg image:hover {
   line-height: 68px;
   /* https://stackoverflow.com/questions/8865458/how-to-align-text-vertically-center-in-div-with-css */
   text-align: center;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -3770,7 +3767,7 @@ svg image:hover {
 
 #dmsLoginLink {
   color: #74B638;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 13px;
   line-height: 41px;
@@ -3804,7 +3801,7 @@ a:not(.button), .ci-faux-link {
     .h-landmark a:not(.button):hover, .h-landmark .ci-faux-link:hover {
       color: #383535; }
 
-p a:not(.button):hover, .ci-faux-link:hover {
+p a:not(.button):not(.ci-button):hover, p a:not(.button):not(.ci-button):active, .ci-faux-link:hover, .ci-faux-link:active, .otr-more-from-category a:hover, .otr-more-from-category a:active {
   color: #4F8BCA;
   text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
   background-image: linear-gradient(#4F8BCA, #4F8BCA);
@@ -3813,50 +3810,34 @@ p a:not(.button):hover, .ci-faux-link:hover {
   background-position: 0% 90%;
   color: #4F8BCA;
   text-decoration: none; }
-  p a:not(.button):hover::selection, .ci-faux-link:hover::selection {
+  p a:not(.button):not(.ci-button):hover::selection, p a:not(.button):not(.ci-button):active::selection, .ci-faux-link:hover::selection, .ci-faux-link:active::selection, .otr-more-from-category a:hover::selection, .otr-more-from-category a:active::selection {
     text-shadow: 0.03em 0 #FFC30E, -0.03em 0 #FFC30E, 0 0.03em #FFC30E, 0 -0.03em #FFC30E, 0.06em 0 #FFC30E, -0.06em 0 #FFC30E, 0.09em 0 #FFC30E, -0.09em 0 #FFC30E, 0.12em 0 #FFC30E, -0.12em 0 #FFC30E, 0.15em 0 #FFC30E, -0.15em 0 #FFC30E;
     background: #FFC30E; }
-  p a:not(.button):hover::-moz-selection, .ci-faux-link:hover::-moz-selection {
+  p a:not(.button):not(.ci-button):hover::-moz-selection, p a:not(.button):not(.ci-button):active::-moz-selection, .ci-faux-link:hover::-moz-selection, .ci-faux-link:active::-moz-selection, .otr-more-from-category a:hover::-moz-selection, .otr-more-from-category a:active::-moz-selection {
     text-shadow: 0.03em 0 #FFC30E, -0.03em 0 #FFC30E, 0 0.03em #FFC30E, 0 -0.03em #FFC30E, 0.06em 0 #FFC30E, -0.06em 0 #FFC30E, 0.09em 0 #FFC30E, -0.09em 0 #FFC30E, 0.12em 0 #FFC30E, -0.12em 0 #FFC30E, 0.15em 0 #FFC30E, -0.15em 0 #FFC30E;
     background: #FFC30E; }
-  p a:not(.button):hover *,
-  p a:not(.button):hover *:after, p a:not(.button):hover:after,
-  p a:not(.button):hover *:before, p a:not(.button):hover:before, .ci-faux-link:hover *,
+  p a:not(.button):not(.ci-button):hover *,
+  p a:not(.button):not(.ci-button):hover *:after, p a:not(.button):not(.ci-button):hover:after,
+  p a:not(.button):not(.ci-button):hover *:before, p a:not(.button):not(.ci-button):hover:before, p a:not(.button):not(.ci-button):active *,
+  p a:not(.button):not(.ci-button):active *:after, p a:not(.button):not(.ci-button):active:after,
+  p a:not(.button):not(.ci-button):active *:before, p a:not(.button):not(.ci-button):active:before, .ci-faux-link:hover *,
   .ci-faux-link:hover *:after, .ci-faux-link:hover:after,
-  .ci-faux-link:hover *:before, .ci-faux-link:hover:before {
+  .ci-faux-link:hover *:before, .ci-faux-link:hover:before, .ci-faux-link:active *,
+  .ci-faux-link:active *:after, .ci-faux-link:active:after,
+  .ci-faux-link:active *:before, .ci-faux-link:active:before, .otr-more-from-category a:hover *,
+  .otr-more-from-category a:hover *:after, .otr-more-from-category a:hover:after,
+  .otr-more-from-category a:hover *:before, .otr-more-from-category a:hover:before, .otr-more-from-category a:active *,
+  .otr-more-from-category a:active *:after, .otr-more-from-category a:active:after,
+  .otr-more-from-category a:active *:before, .otr-more-from-category a:active:before {
     text-shadow: none; }
-  p a:not(.button):hover:visited, .ci-faux-link:hover:visited {
+  p a:not(.button):not(.ci-button):hover:visited, p a:not(.button):not(.ci-button):active:visited, .ci-faux-link:hover:visited, .ci-faux-link:active:visited, .otr-more-from-category a:hover:visited, .otr-more-from-category a:active:visited {
     color: #4F8BCA; }
 
 .c-block.green h1 a, .c-block.green h2 a, .c-block.green h3 a, .c-block.green h4 a, .c-block.green .ci-home-testimonial blockquote cite a, .ci-home-testimonial blockquote .c-block.green cite a, .c-block.blue h1 a, .c-block.blue h2 a, .c-block.blue h3 a, .c-block.blue h4 a, .c-block.blue .ci-home-testimonial blockquote cite a, .ci-home-testimonial blockquote .c-block.blue cite a, .c-block.grey h1 a, .c-block.grey h2 a, .c-block.grey h3 a, .c-block.grey h4 a, .c-block.grey .ci-home-testimonial blockquote cite a, .ci-home-testimonial blockquote .c-block.grey cite a {
   text-decoration: none; }
 
-.more-linkold {
-  float: right;
-  display: block;
-  font-family: "halisgr", Impact, Charcoal, sans-serif; }
-  .more-linkold::before {
-    content: "\000BB";
-    margin-right: .25em;
-    font-size: 1.25em; }
-
-.more-link {
-  position: relative;
-  top: 8px;
-  text-align: center;
-  right: 0;
-  padding: 8px 2em;
-  display: block;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
-  color: #fff;
-  background: #74b638; }
-  @media screen and (min-width: 767px) {
-    .more-link {
-      position: absolute;
-      top: 0; } }
-  .more-link:hover {
-    background: #4F8BCA;
-    color: #fff; }
+a h1, a h2, a h3, a h4, a .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote a cite {
+  transition: color 0.3s ease; }
 
 /* Headings */
 h1,
@@ -3874,13 +3855,28 @@ h6,
 .h6 {
   display: block;
   margin-top: unset;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 8px; }
+  h1.grey,
+  .h1.grey,
+  h2.grey,
+  .h2.grey,
+  h3.grey,
+  .h3.grey,
+  h4.grey,
+  .ci-home-testimonial blockquote cite.grey,
+  .h4.grey,
+  h5.grey,
+  .h5.grey,
+  h6.grey,
+  .h6.grey {
+    color: #606060; }
 
 h1,
 .h1 {
   font-size: 2.5em;
-  line-height: 1.187;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  line-height: 1.2;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #4F8BCA;
   text-transform: uppercase; }
   @media screen and (min-width: 767px) {
@@ -3891,40 +3887,40 @@ h1,
 h2,
 .h2 {
   font-size: 1.75em;
-  line-height: 1.142;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  line-height: 1.14286;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #4F8BCA;
   text-transform: uppercase; }
 
 h3,
 .h3 {
   font-size: 1.25em;
-  line-height: 1.15;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  line-height: 1.2;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #4F8BCA;
   text-transform: uppercase; }
 
 h4, .ci-home-testimonial blockquote cite,
 .h4 {
   font-size: 1.125em;
-  line-height: 1.167;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  line-height: 1.33333;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #4F8BCA;
   text-transform: uppercase; }
 
 h5,
 .h5 {
   font-size: 1em;
-  line-height: 1.188;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  line-height: 1.25;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #4F8BCA;
   text-transform: uppercase; }
 
 h6,
 .h6 {
-  font-size: .875em;
-  line-height: 1.214;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.42857;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #606060;
   text-transform: uppercase; }
 
@@ -3941,9 +3937,9 @@ h4 + h1, .ci-home-testimonial blockquote cite + h1,
 h4 + h2, .ci-home-testimonial blockquote cite + h2 {
   margin-top: 0; }
 
-.ci-home, footer, .ci-new-styles {
+body {
   color: #454545; }
-  .ci-home h1, .ci-home h2, .ci-home .h1, .ci-home .h2, footer h1, footer h2, footer .h1, footer .h2, .ci-new-styles h1, .ci-new-styles h2, .ci-new-styles .h1, .ci-new-styles .h2 {
+  body h1, body h2, body .h1, body .h2 {
     font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
     text-transform: none; }
 
@@ -4020,8 +4016,29 @@ h1, h2, h3, h4, .ci-home-testimonial blockquote cite, h5, h6, p, ul, ol, .entry,
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
+.numbers, .number {
+  font-family: "Open Sans Condensed", "Lucida Sans Unicode", "Lucida Grande", monospace;
+  font-weight: 700;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+p {
+  margin-bottom: 1em; }
+  p + h1, p + h2, p + h3, p + h4, .ci-home-testimonial blockquote p + cite, p + h5, p + h6 {
+    margin-top: 20px; }
+
+section p {
+  margin-bottom: 24px;
+  line-height: 1.75; }
+
 em {
   font-style: italic; }
+
+p.centered, a.centered {
+  margin-left: auto;
+  margin-right: auto; }
 
 .ci-subheading {
   font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
@@ -4109,7 +4126,7 @@ p.emphasized, .single p.emphasized {
 .single blockquote {
   margin: 24px 0 32px 10%; }
   .single blockquote p {
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-size: 1.5em;
     line-height: 1.33333;
     color: #4F8BCA;
@@ -4132,15 +4149,31 @@ article pre {
   color: #94520f; }
 
 .bigquote blockquote p {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-size: 1.5em;
   line-height: 1.33333;
   color: #4F8BCA;
   font-style: normal; }
 
+.badge-number {
+  background: #FFC30E;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  line-height: 1.5em;
+  border-radius: 50%;
+  font-family: "Open Sans Condensed", "Lucida Sans Unicode", "Lucida Grande", monospace;
+  font-weight: 700;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 24px; }
+
 /*------------------------------------*    $MEDIA ELEMENTS
 \*------------------------------------*/
-.entry-content img {
+.entry-content img,
+.inner img {
   max-width: 100%;
   height: auto; }
 
@@ -4159,7 +4192,8 @@ a img.alignright {
 img.aligncenter, a img.aligncenter {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 100%; }
 
 .video-container {
   position: relative;
@@ -4282,7 +4316,7 @@ img.aligncenter, a img.aligncenter {
   margin-bottom: 1em; }
 
 .ci-form-element__label {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   color: #606060;
   text-transform: uppercase;
@@ -4294,10 +4328,14 @@ img.aligncenter, a img.aligncenter {
 .ci-form-element__help {
   margin-top: .5em;
   display: block;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   text-transform: uppercase; }
   .ci-has-error .ci-form-element__help {
     color: #c23934; }
+
+.pp-fund + h4, .ci-home-testimonial blockquote .pp-fund + cite {
+  font-size: 14px;
+  margin-top: 8px; }
 
 .centered-form {
   display: block;
@@ -4316,7 +4354,7 @@ img.aligncenter, a img.aligncenter {
   box-sizing: border-box; }
 
 .ci-input-text {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #606060;
   background-color: #F5F5F5;
   padding: 1em 1em .789em 1em;
@@ -4372,11 +4410,11 @@ img.aligncenter, a img.aligncenter {
   min-width: 50%; }
   .ci-radio .ci-form-element__label {
     margin-bottom: 0;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     margin-top: 5px; }
     .ci-radio-group__primary .ci-radio .ci-form-element__label {
       color: #4F8BCA;
-      font-family: "halisgr", Impact, Charcoal, sans-serif;
+      font-family: "halisgr", Verdana, Geneva, sans-serif;
       font-weight: bold; }
 
 .ci-radio__label {
@@ -4461,10 +4499,10 @@ img.aligncenter, a img.aligncenter {
     margin-top: 5px;
     margin-bottom: 0;
     display: inline-block;
-    font-family: "halisgr", Impact, Charcoal, sans-serif; }
+    font-family: "halisgr", Verdana, Geneva, sans-serif; }
     .ci-checkbox__primary .ci-checkbox .ci-form-element__label {
       color: #4F8BCA;
-      font-family: "halisgr", Impact, Charcoal, sans-serif;
+      font-family: "halisgr", Verdana, Geneva, sans-serif;
       font-weight: bold; }
 
 .ci-checkbox__label {
@@ -4606,7 +4644,7 @@ label.checkbox {
     pointer-events: none; }
 
 .ci-select {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   color: #606060;
   background: linear-gradient(to right, #F5F5F5 0%, #F5F5F5 calc(100% - 35px), #FFC30E calc(100% - 35px), #FFC30E 100%);
   padding: 1em 1em .789em 1em;
@@ -4686,6 +4724,16 @@ label.checkbox {
 \*------------------------------------*/
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
+.row-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: column; }
+  @media screen and (min-width: 600px) {
+    .row-wrap {
+      flex-direction: row; } }
+
 .t8-cols-wrap.cols-2 > .t8-col {
   width: 100%;
   box-sizing: border-box;
@@ -4826,6 +4874,29 @@ label.checkbox {
     .col-12 {
       width: 100%; } }
 
+@media screen and (min-width: 767px) {
+  .cols {
+    display: flex; } }
+
+.cols > div, .cols > a, .cols > p {
+  float: none; }
+  @media screen and (min-width: 767px) {
+    .cols > div, .cols > a, .cols > p {
+      float: none; } }
+
+.cols img, .cols svg {
+  max-width: 100%;
+  height: auto; }
+
+.cols-7-5, .cols-6-6 {
+  max-width: 1024px;
+  margin: 0 auto; }
+  .cols-7-5 > div:first-child, .cols-6-6 > div:first-child {
+    margin-bottom: 20px; }
+    @media screen and (min-width: 767px) {
+      .cols-7-5 > div:first-child, .cols-6-6 > div:first-child {
+        margin-bottom: 0; } }
+
 .col-6 img, .col-8 img, .col-3 img {
   width: 100%;
   max-width: 100%;
@@ -4833,6 +4904,9 @@ label.checkbox {
 
 .col-6 form img, .col-8 form img, .col-3 form img {
   width: auto; }
+
+.col-6 .video-container {
+  margin-bottom: 20px; }
 
 .t8-col img {
   width: auto;
@@ -5025,12 +5099,15 @@ label.checkbox {
     padding-bottom: 0; }
   .bfilter-wrap > div .filters-label, .bfilter-wrap > div li a {
     color: #fff;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .03em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     font-size: .75em;
     line-height: 2;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 1px !important;
-    box-sizing: border-box;
     display: inline-block;
     padding: 0;
     margin: 10px; }
@@ -5251,7 +5328,7 @@ label.checkbox {
 .menu li.buttonwrap.small a {
   font-size: 14px; }
 
-.c-block input[type=submit] {
+.c-block input[type=submit]:not(.ci-button) {
   background: #ffffff; }
 
 .inlineform.pp-fund {
@@ -5261,14 +5338,14 @@ label.checkbox {
   justify-content: center; }
   .inlineform.pp-fund div {
     font-size: 16px;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold;
     color: #74b638;
     background-color: #fff;
     padding: 0 0 0 0.5em; }
     .inlineform.pp-fund div input {
       font-size: 16px;
-      font-family: "halisgr", Impact, Charcoal, sans-serif;
+      font-family: "halisgr", Verdana, Geneva, sans-serif;
       font-weight: bold;
       border: none;
       outline: none;
@@ -5276,7 +5353,7 @@ label.checkbox {
       width: 8ch; }
   .inlineform.pp-fund .button {
     color: #fff;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold;
     border: 2px solid #74b638;
     text-decoration: none;
@@ -5311,7 +5388,7 @@ a.button,
 .buttonwrap a {
   color: #74b638;
   background-color: transparent;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   border: 2px solid #74b638;
   text-decoration: none;
@@ -5325,7 +5402,10 @@ a.button,
   cursor: pointer;
   border-radius: 0;
   margin-top: 1em;
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; }
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
   #header .button, #header
   a.button, #header
   .buttonwrap .button, #header
@@ -5589,8 +5669,9 @@ a.back-button {
   margin-top: 0; }
 
 .ci-button,
-a.ci-button {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+a.ci-button,
+input.ci-button {
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   border: 2px solid;
   text-decoration: none;
@@ -5604,15 +5685,21 @@ a.ci-button {
   background-color: transparent;
   cursor: pointer;
   border-radius: 0;
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; }
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
 
 .ci-button--primary,
-a.ci-button--primary {
+a.ci-button--primary,
+input.ci-button--primary {
   color: #454545;
   background-color: #FFC30E;
   border-color: #FFC30E; }
   .ci-button--primary:hover,
-  a.ci-button--primary:hover {
+  a.ci-button--primary:hover,
+  input.ci-button--primary:hover {
     color: #454545;
     background-color: #e9af00;
     border-color: #e9af00; }
@@ -5623,35 +5710,41 @@ a.ci-button--primary {
     color: #454545; }
 
 .ci-button--secondary,
-a.ci-button--secondary {
+a.ci-button--secondary,
+input.ci-button--secondary {
   color: #fff;
   background-color: #4F8BCA;
   border-color: #4F8BCA; }
   .ci-button--secondary:hover,
-  a.ci-button--secondary:hover {
+  a.ci-button--secondary:hover,
+  input.ci-button--secondary:hover {
     color: #fff;
-    background-color: #3979bd;
-    border-color: #3979bd; }
+    background-color: #336ca9;
+    border-color: #336ca9; }
   .ci-button--secondary__alt,
-  a.ci-button--secondary__alt {
+  a.ci-button--secondary__alt,
+  input.ci-button--secondary__alt {
     color: #4F8BCA;
     background-color: transparent;
     border-color: #4F8BCA; }
     .ci-button--secondary__alt:hover,
-    a.ci-button--secondary__alt:hover {
+    a.ci-button--secondary__alt:hover,
+    input.ci-button--secondary__alt:hover {
       color: #fff;
       background-color: #4F8BCA; }
 
 .ci-button--accent,
-a.ci-button--accent {
+a.ci-button--accent,
+input.ci-button--accent {
   color: #fff;
   background-color: #74b638;
   border-color: #74b638; }
   .ci-button--accent:hover,
-  a.ci-button--accent:hover {
+  a.ci-button--accent:hover,
+  input.ci-button--accent:hover {
     color: #fff;
-    background-color: #639b30;
-    border-color: #639b30; }
+    background-color: #5e932d;
+    border-color: #5e932d; }
 
 /*------------------------------------*    $Sections
 \*------------------------------------*/
@@ -5666,10 +5759,25 @@ section.yellow {
   section.yellow .h1, section.yellow .h2, section.yellow .h3, section.yellow .h4, section.yellow .h5, section.yellow .h6 {
     color: #454545; }
 
-section.centered {
+section.grey {
+  background-color: #F5F5F5; }
+
+.inner h1, .inner h2, .inner h3, .inner h4, .inner .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .inner cite, .inner h5, .inner h6,
+.inner .h1, .inner .h2, .inner .h3, .inner .h4, .inner .h5, .inner .h6 {
+  margin-bottom: 1em; }
+
+.centered {
   text-align: center; }
-  section.centered .inner {
+  .centered .inner {
     max-width: 80ch; }
+  .centered header p {
+    line-height: 1.5; }
+    @media screen and (min-width: 600px) {
+      .centered header p {
+        font-size: 1.25em; } }
+
+.narrow .inner {
+  max-width: 70ch; }
 
 section.text-image {
   display: flex;
@@ -5678,26 +5786,45 @@ section.text-image {
   @media screen and (min-width: 600px) {
     section.text-image {
       flex-direction: row; }
+      section.text-image:not(.image-left) .text-wrap {
+        order: 1; }
+      section.text-image:not(.image-left) .img-wrap {
+        order: 2; }
       section.text-image .text-wrap {
-        order: 1;
         max-width: 58.33333%;
         display: flex;
         flex-direction: column;
         justify-content: center; }
       section.text-image .img-wrap {
-        order: 2;
         display: flex;
         justify-content: center; } }
   section.text-image .text-wrap {
     flex-grow: 3;
     padding: 3em; }
+    section.text-image .text-wrap > * {
+      max-width: 55ch; }
+    section.text-image .text-wrap p {
+      line-height: 1.5; }
+      @media screen and (min-width: 600px) {
+        section.text-image .text-wrap p {
+          font-size: 1.25em; } }
     @media screen and (min-width: 1024px) {
       section.text-image .text-wrap {
-        padding: 5em; } }
+        padding: 100px 8em 100px 11vw;
+        min-height: 55vh; } }
+    section.text-image .text-wrap h1 {
+      margin-bottom: .75em; }
   section.text-image .img-wrap {
     flex-grow: 1;
     overflow: hidden;
-    background-color: #F5F5F5; }
+    background-color: #F5F5F5;
+    background-position: center center;
+    background-size: cover;
+    /* DEPRECATED 2-15-2018 */ }
+    @media screen and (max-width: 600px) {
+      section.text-image .img-wrap {
+        width: 100%;
+        height: 50vh; } }
     @media screen and (min-width: 1200px) {
       section.text-image .img-wrap {
         background-color: #4F8BCA; } }
@@ -5815,8 +5942,13 @@ section.text-image {
     text-align: center; }
     .bloglist .nav-links .nav-previous, .bloglist .nav-links .nav-next {
       display: inline;
-      font-family: "halisgr", Impact, Charcoal, sans-serif;
+      font-family: "halisgr", Verdana, Geneva, sans-serif;
       text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: .03em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
       padding: 0 1em; }
 
 .entry-thumb {
@@ -5847,7 +5979,7 @@ section.text-image {
   padding: 0;
   border-top: 1px solid #dddddd; }
   .entry-footer-t8 .p-meta {
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .03em;
@@ -5864,8 +5996,6 @@ section.text-image {
         width: 66.66%; } }
     .bloglist .entry-footer-t8 .p-meta {
       width: 100%;
-      float: none;
-      border-bottom: 1px solid #dddddd;
       padding: 8px 0; }
   .entry-footer-t8 .p-meta > span:after {
     content: " | "; }
@@ -5884,7 +6014,8 @@ section.text-image {
         text-align: right !important; } }
   .entry-footer-t8 .nl-signup {
     clear: both;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 100%; }
     .entry-footer-t8 .nl-signup a.button {
       margin-top: 0; }
   .entry-footer-t8 h4, .entry-footer-t8 .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .entry-footer-t8 cite, .entry-footer-t8 h3 {
@@ -5913,7 +6044,7 @@ section.text-image {
 
 .single .entry-meta {
   color: #888;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .03em;
@@ -5962,23 +6093,20 @@ section.text-image {
   .single p {
     color: #454545;
     font-size: 1em;
-    line-height: 1.75;
-    margin-bottom: .75em;
-    padding-bottom: 0; }
+    line-height: 1.75; }
   .bloglist h1.entry-title,
   .single h1.entry-title {
-    font-size: 1.5em;
-    line-height: 1.25;
+    font-size: 1.75em;
+    line-height: 1.14286;
     margin-top: 0;
     margin-bottom: 4px;
-    text-transform: uppercase;
     color: #4F8BCA; }
     .bloglist h1.entry-title a,
     .single h1.entry-title a {
       color: #4F8BCA; }
       .bloglist h1.entry-title a:hover,
       .single h1.entry-title a:hover {
-        color: #74b638; }
+        color: #454545; }
     .bloglist h1.entry-title + p,
     .single h1.entry-title + p {
       font-size: 17px;
@@ -6040,7 +6168,7 @@ section.text-image {
     color: #fff;
     padding: 14px 40px;
     font-size: 14px;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold; }
   .ci-subscription-popup .close-text {
     cursor: pointer; }
@@ -6266,14 +6394,14 @@ a#open-menu {
 
 .menu a,
 .menu button {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: #4F8BCA;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
-  font-size: .75em;
+  font-size: .875em;
   line-height: 1;
   letter-spacing: 0.03em;
   outline: 0 none;
@@ -6285,24 +6413,22 @@ a#open-menu {
   .menu button:hover {
     color: #3979bd; }
 
-.dot-separated-list li:after {
-  content: "\b7";
-  position: absolute;
-  right: -.25em;
-  top: 0;
-  line-height: 24px;
-  padding: 10px 0;
-  color: #4F8BCA; }
-
-.dot-separated-list li:first-child {
-  padding-left: 0; }
-
-.dot-separated-list li:last-child {
-  padding-right: 0; }
-
-.dot-separated-list li:last-child:after {
-  content: '';
-  display: none; }
+@media screen and (min-width: 1024px) {
+  .dot-separated-list li:after {
+    content: "\b7";
+    position: absolute;
+    right: -.25em;
+    top: 0;
+    line-height: 24px;
+    padding: 10px 0;
+    color: #4F8BCA; }
+  .dot-separated-list li:first-child {
+    padding-left: 0; }
+  .dot-separated-list li:last-child {
+    padding-right: 0; }
+  .dot-separated-list li:last-child:after {
+    content: '';
+    display: none; } }
 
 .menu-row li {
   display: inline-block;
@@ -6356,13 +6482,10 @@ a#open-menu {
   display: block;
   outline: none;
   border: 0;
-  text-transform: uppercase;
-  font-size: 1.125em;
-  line-height: 1.25;
+  font-size: 1em;
+  line-height: 1.5;
   margin-top: 1.333em;
-  margin-bottom: 12px;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
-  font-weight: bold; }
+  margin-bottom: 12px; }
 
 /*------------------------------------*    $FOOTER
 \*------------------------------------*/
@@ -6574,7 +6697,7 @@ a#open-menu {
 .ci-subfooter__nav {
   text-align: center;
   margin: 0 auto 1em;
-  max-width: 361px; }
+  max-width: 400px; }
   .ci-subfooter__nav li {
     padding: 0.5em 0.5em; }
     @media screen and (min-width: 1024px) {
@@ -6670,7 +6793,7 @@ a#open-menu {
   .dms-donate-fund-form:before {
     content: "$";
     color: #74b638;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     position: absolute;
@@ -6695,7 +6818,7 @@ a#open-menu {
   padding: 1em 1em 1em 1.5em;
   font-size: 20px;
   line-height: 1.3;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   width: 4em;
   height: 1.2em;
   vertical-align: middle;
@@ -6709,7 +6832,7 @@ a#open-menu {
   display: block;
   margin: 0.75em 0 2em;
   color: #888;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .03em;
@@ -6867,7 +6990,7 @@ label[for="forgot-password-email"] {
   font-weight: bold; }
 
 .ci-checkout-modal-item-amount {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   font-size: 1.125em;
   text-transform: uppercase;
@@ -6899,7 +7022,7 @@ label[for="forgot-password-email"] {
     transform: translate3d(-100%, 0, 0);
     opacity: 0; } }
 
-/*------------------------------------*    $TEMPLATES
+/*------------------------------------*    $WP TEMPLATES
 \*------------------------------------*/
 /*------------------------------------*    $Builder Page template
 \*------------------------------------*/
@@ -7245,7 +7368,7 @@ label[for="forgot-password-email"] {
     color: #FFF;
     line-height: 1.5em;
     font-size: 20px;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold;
     margin-bottom: 20px; }
 
@@ -7299,7 +7422,7 @@ label[for="forgot-password-email"] {
     .circles .circle .text {
       text-align: center;
       color: #FFF;
-      font-family: "halisgr", Impact, Charcoal, sans-serif;
+      font-family: "halisgr", Verdana, Geneva, sans-serif;
       font-weight: bold; }
     .circles .circle .text p {
       font-size: 32px;
@@ -7326,7 +7449,7 @@ label[for="forgot-password-email"] {
 
 .event p.location {
   color: #888;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.125em; }
@@ -7348,7 +7471,7 @@ label[for="forgot-password-email"] {
   .event .date span {
     display: block; }
   .event .date .month {
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.125em;
@@ -7359,7 +7482,7 @@ label[for="forgot-password-email"] {
     line-height: 1;
     padding-bottom: .75em; }
   .event .date .enddate {
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: .825em;
@@ -7371,7 +7494,7 @@ label[for="forgot-password-email"] {
 
 .event .more-info, .event .events-back {
   display: block;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1em;
@@ -7456,7 +7579,7 @@ label[for="forgot-password-email"] {
 .shop-apparel input[type=submit],
 .shop-art input[type=submit] {
   color: #74b638;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-weight: bold;
   border: 2px solid #74b638;
   text-decoration: none;
@@ -7548,13 +7671,22 @@ label[for="forgot-password-email"] {
   display: block; }
 
 .otr-page-header h1 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
 
 .otr-page-header p {
   margin-bottom: 0;
+  padding-bottom: 0;
   text-align: left;
   font-size: 1.75em;
-  font-family: "halisgr", Impact, Charcoal, sans-serif; }
+  font-family: "halisgr", Verdana, Geneva, sans-serif; }
   @media screen and (min-width: 767px) {
     .otr-page-header p {
       text-align: right;
@@ -7610,18 +7742,46 @@ label[for="forgot-password-email"] {
     @media screen and (min-width: 1024px) {
       .single.long-form-post article.post {
         padding-left: 8.33333%; } }
-    .single.long-form-post article.post .entry-content > p, .single.long-form-post article.post .wp-caption {
+    .single.long-form-post article.post .entry-content > p,
+    .single.long-form-post article.post .entry-content > h1,
+    .single.long-form-post article.post .entry-content > h2,
+    .single.long-form-post article.post .entry-content > h3,
+    .single.long-form-post article.post .entry-content > h4,
+    .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite, .ci-home-testimonial blockquote
+    .single.long-form-post article.post .entry-content > cite,
+    .single.long-form-post article.post .entry-content > h5,
+    .single.long-form-post article.post .entry-content > h6,
+    .single.long-form-post article.post .wp-caption {
       max-width: 100%;
       position: relative; }
       @media screen and (min-width: 767px) {
-        .single.long-form-post article.post .entry-content > p, .single.long-form-post article.post .wp-caption {
+        .single.long-form-post article.post .entry-content > p,
+        .single.long-form-post article.post .entry-content > h1,
+        .single.long-form-post article.post .entry-content > h2,
+        .single.long-form-post article.post .entry-content > h3,
+        .single.long-form-post article.post .entry-content > h4,
+        .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite, .ci-home-testimonial blockquote
+        .single.long-form-post article.post .entry-content > cite,
+        .single.long-form-post article.post .entry-content > h5,
+        .single.long-form-post article.post .entry-content > h6,
+        .single.long-form-post article.post .wp-caption {
           max-width: 70%; } }
       @media screen and (min-width: 1024px) {
-        .single.long-form-post article.post .entry-content > p, .single.long-form-post article.post .wp-caption {
+        .single.long-form-post article.post .entry-content > p,
+        .single.long-form-post article.post .entry-content > h1,
+        .single.long-form-post article.post .entry-content > h2,
+        .single.long-form-post article.post .entry-content > h3,
+        .single.long-form-post article.post .entry-content > h4,
+        .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite, .ci-home-testimonial blockquote
+        .single.long-form-post article.post .entry-content > cite,
+        .single.long-form-post article.post .entry-content > h5,
+        .single.long-form-post article.post .entry-content > h6,
+        .single.long-form-post article.post .wp-caption {
           max-width: 66.66667%; } }
     @media screen and (min-width: 767px) {
       .single.long-form-post article.post .wp-caption.alignleft {
-        float: left; } }
+        float: left;
+        padding-right: 2.5em; } }
     .single.long-form-post article.post blockquote {
       margin: 32px auto 32px;
       border-top: 1px solid #888;
@@ -7680,13 +7840,6 @@ label[for="forgot-password-email"] {
             width: 100%; }
           .single.long-form-post article.post .wp-caption.aligncenter p {
             max-width: none; } }
-  .single.long-form-post .entry-footer-t8 {
-    margin-top: 24px;
-    max-width: 100%;
-    position: relative; }
-    @media screen and (min-width: 1024px) {
-      .single.long-form-post .entry-footer-t8 {
-        max-width: 66.66667%; } }
   .single.long-form-post .otr-aside {
     padding-bottom: 20px; }
     @media screen and (min-width: 767px) {
@@ -7788,10 +7941,14 @@ label[for="forgot-password-email"] {
     margin-bottom: 0;
     padding-top: 47%; }
   .otr-single-header .otr-single-heading {
-    color: #fff; }
+    color: #fff;
+    padding-bottom: 0; }
   .otr-single-header .otr-single-subheading {
     color: #fff;
-    font-size: 18px; }
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.3;
+    display: block; }
   @media screen and (min-width: 767px) {
     .otr-single-header .otr-single-heading, .otr-single-header .otr-single-subheading {
       padding-left: 8.33333%;
@@ -7822,7 +7979,7 @@ label[for="forgot-password-email"] {
 .wp-caption-text,
 p.wp-caption-text,
 .video-container + h6 {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
   font-size: 14px;
   color: #454545;
   border-bottom: 1px solid #888;
@@ -7883,55 +8040,59 @@ p.wp-caption-text,
       clear: both;
       width: auto; } }
 
-.otr-category-intro .otr-category-img-vid {
-  margin-bottom: 1em; }
+.otr-category-intro + .content-area,
+.otr-category-header + .content-area,
+.otr-featured-post + .content-area {
+  padding-top: 0;
+  padding-bottom: 0; }
 
-@media screen and (min-width: 767px) {
-  .otr-category-intro .otr-category-intro-text {
-    float: right; } }
-
-.otr-category-intro .gform_description {
-  color: #4F8BCA;
-  font-size: 1.25em;
-  margin-bottom: 1em; }
-
-.otr-category-intro .gfield_required {
-  display: none; }
-
-.otr-category-intro .ginput_container input {
-  font-family: "Merriweather",Georgia,Times,"Times New Roman",serif;
-  text-transform: none;
-  font-size: 15px;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  color: #666;
-  padding: 14px 20px 16px;
-  margin-top: 20px;
-  font-style: italic;
-  border: 2px solid #666; }
-
-.otr-category-intro input[type="submit"] {
-  width: 100%;
-  color: #fff;
-  border-color: #FFC30E;
-  background-color: #FFC30E;
-  margin-bottom: 40px;
-  cursor: pointer; }
-  .otr-category-intro input[type="submit"]:hover {
-    background-color: #daa400;
-    border-color: #daa400; }
-
-.otr-category-intro .otr-category-intro-desc p {
-  line-height: 1.75; }
+.otr-category-intro {
+  padding-top: 40px;
+  padding-bottom: 60px; }
+  .otr-category-intro .otr-category-img-vid {
+    margin-bottom: 1em; }
+  @media screen and (min-width: 767px) {
+    .otr-category-intro .otr-category-intro-text {
+      float: right; } }
+  .otr-category-intro .gform_description {
+    color: #4F8BCA;
+    font-size: 1.25em;
+    margin-bottom: 1em; }
+  .otr-category-intro .gfield_required {
+    display: none; }
+  .otr-category-intro .ginput_container input {
+    font-family: "Merriweather",Georgia,Times,"Times New Roman",serif;
+    text-transform: none;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #666;
+    padding: 14px 20px 16px;
+    margin-top: 20px;
+    font-style: italic;
+    border: 2px solid #666; }
+  .otr-category-intro input[type="submit"] {
+    width: 100%;
+    color: #fff;
+    border-color: #FFC30E;
+    background-color: #FFC30E;
+    margin-bottom: 40px;
+    cursor: pointer; }
+    .otr-category-intro input[type="submit"]:hover {
+      background-color: #daa400;
+      border-color: #daa400; }
+  .otr-category-intro .otr-category-intro-desc p {
+    line-height: 1.75; }
 
 .otr-featured-post {
   padding-top: 0; }
   .otr-featured-post .entry-title {
     font-size: 2.75em;
-    color: #4F8BCA; }
+    color: #4F8BCA;
+    margin-bottom: 20px; }
     .otr-featured-post .entry-title:hover {
-      color: #74b638; }
+      color: #454545; }
   .otr-featured-post .featured-thumb {
     margin-bottom: 2em; }
     .otr-featured-post .featured-thumb img {
@@ -7948,18 +8109,11 @@ p.wp-caption-text,
     line-height: 1.75;
     margin-bottom: .75em;
     padding-bottom: 0; }
-  .otr-featured-post .entry-footer-t8 {
-    margin-bottom: 2em; }
-    .otr-featured-post .entry-footer-t8 .p-meta {
-      line-height: 1.75;
-      width: 100%;
-      float: none;
-      border-bottom: 1px solid #dddddd;
-      padding: 8px 0; }
   .otr-featured-post .otr-more-from-category {
     float: left; }
     .otr-featured-post .otr-more-from-category h3 {
-      color: #4F8BCA; }
+      color: #4F8BCA;
+      padding-bottom: 4px; }
     .otr-featured-post .otr-more-from-category li {
       border-bottom: 1px solid #cccccc;
       line-height: 1.5;
@@ -7969,6 +8123,38 @@ p.wp-caption-text,
     @media screen and (min-width: 767px) {
       .otr-featured-post .otr-more-from-category {
         float: right; } }
+
+.entry-footer-t8 {
+  margin-bottom: 2em;
+  margin-top: 24px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  flex-direction: column; }
+  @media screen and (min-width: 1024px) {
+    .entry-footer-t8 {
+      flex-direction: row; } }
+  .single.long-form-post .entry-footer-t8 {
+    flex-direction: column; }
+    @media screen and (min-width: 1024px) {
+      .single.long-form-post .entry-footer-t8 {
+        max-width: 66.66667%; } }
+  .entry-footer-t8 .p-meta {
+    line-height: 1.75;
+    width: 100%;
+    padding: 8px 0; }
+  .entry-footer-t8 .ci-button {
+    padding: 4px 1.6em;
+    display: block;
+    width: 100%;
+    font-size: 16px; }
+    @media screen and (min-width: 1024px) {
+      .entry-footer-t8 .ci-button {
+        width: auto;
+        display: inline-block; } }
 
 .otr-featured-regions {
   padding-bottom: 0;
@@ -7999,9 +8185,10 @@ p.wp-caption-text,
   position: relative;
   margin-bottom: 4em; }
   .otr-featured-region-post a h3 {
-    color: #4F8BCA; }
+    color: #4F8BCA;
+    padding-bottom: 8px; }
     .otr-featured-region-post a h3:hover {
-      color: #74b638; }
+      color: #454545; }
   .otr-featured-region-post img {
     width: 100%;
     height: auto;
@@ -8011,19 +8198,11 @@ p.wp-caption-text,
     line-height: 1.75;
     margin-bottom: 1.5em;
     padding-bottom: 0; }
-  .otr-featured-region-post .more-link {
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-    padding: 8px 2em;
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
-    color: white;
+  .otr-featured-region-post .ci-button {
     display: block; }
     @media screen and (min-width: 767px) {
-      .otr-featured-region-post .more-link {
+      .otr-featured-region-post .ci-button {
         display: inline-block; } }
-    .otr-featured-region-post .more-link p {
-      margin-bottom: 0; }
   @media screen and (min-width: 767px) {
     .otr-featured-region-post {
       width: 30%; } }
@@ -8031,21 +8210,189 @@ p.wp-caption-text,
 .otr-category-header {
   padding-top: 0;
   padding-bottom: 0;
-  position: relative; }
+  position: relative;
+  margin-top: 60px; }
+  .otr-category-header + .content-area {
+    padding-top: 20px; }
   .otr-category-header:after {
     content: "";
     height: 1px;
     width: 100%;
     background-color: #4F8BCA;
     position: absolute;
-    bottom: 30px;
-    left: 650px;
+    bottom: 15px;
     z-index: -1; }
   .otr-category-header h2 {
     color: #4F8BCA;
     background-color: white;
     display: inline-block;
-    padding-right: 35px; }
+    padding-right: 35px;
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .03em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility; }
+
+.small-title-bar {
+  padding: 1em 1.25em; }
+  .small-title-bar.tertiary {
+    background-color: #FFC30E; }
+  .small-title-bar h1 {
+    font-family: "halisgr", Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .03em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 1.25em;
+    color: #454545;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+
+.child-spotlight-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #4F8BCA; }
+  @media screen and (min-width: 1200px) {
+    .child-spotlight-primary {
+      flex-direction: row; }
+      .child-spotlight-primary .child-spotlight-primary-info {
+        order: 1; }
+      .child-spotlight-primary .child-spotlight-primary-img {
+        order: 2; } }
+
+.child-spotlight-primary-info {
+  flex-grow: 3;
+  text-align: center;
+  padding: 2.8em 2em 5em; }
+  .child-spotlight-primary-info .child-spotlight-phone,
+  .child-spotlight-primary-info .child-spotlight-email {
+    color: #fff; }
+
+.child-spotlight-primary-img {
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: #F5F5F5; }
+  @media screen and (min-width: 1200px) {
+    .child-spotlight-primary-img {
+      background-color: #4F8BCA; } }
+  .child-spotlight-primary-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none; }
+    @media screen and (min-width: 600px) {
+      .child-spotlight-primary-img img {
+        width: auto; } }
+    @media screen and (min-width: 1200px) {
+      .child-spotlight-primary-img img {
+        height: 100%;
+        float: right; } }
+
+.child-spotlight-hello {
+  color: #fff;
+  font-size: 3em;
+  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
+  text-transform: none;
+  font-weight: bold;
+  margin-top: 1.31em;
+  margin-bottom: .83em; }
+
+.child-spotlight-desc {
+  color: #fff;
+  max-width: 643px;
+  margin: 0 auto;
+  line-height: 1.76;
+  font-size: 1.0625em;
+  margin-bottom: 1.94em; }
+
+.child-spotlight-cta {
+  color: #FFC30E;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  display: block;
+  font-size: 1.375em;
+  margin-bottom: 1.59em; }
+
+.child-spotlight-phone,
+.child-spotlight-email {
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 1.125em;
+  display: block; }
+
+.child-spotlight-more-info {
+  background-color: #FFC30E;
+  padding: 3.75em 2em;
+  text-align: center;
+  color: #454545; }
+  .child-spotlight-more-info p {
+    font-size: 1.0625em;
+    line-height: 1.76;
+    margin-bottom: 1.35em; }
+
+.child-spotlight-secondary {
+  background-color: #F5F5F5;
+  padding: 2em 1.25em;
+  border-bottom: 10px solid #FFC30E; }
+  .child-spotlight-secondary .innerwrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 1024px) {
+      .child-spotlight-secondary .innerwrap {
+        flex-direction: row; } }
+  @media screen and (min-width: 1024px) {
+    .child-spotlight-secondary {
+      padding: 4.6875em 1.25em; } }
+
+.child-spotlight-secondary-child {
+  max-width: 360px;
+  margin-right: 0;
+  margin-bottom: 2em;
+  flex: 1 1 0; }
+  .child-spotlight-secondary-child:last-of-type {
+    margin-bottom: 0; }
+  @media screen and (min-width: 1024px) {
+    .child-spotlight-secondary-child {
+      margin-right: 3em;
+      margin-bottom: 0; }
+      .child-spotlight-secondary-child:last-of-type {
+        margin-right: 0; } }
+
+.child-spotlight-secondary-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5625em; }
+
+.child-spotlight-secondary-name {
+  color: #4F8BCA;
+  font-size: 1.75em;
+  font-weight: bold;
+  display: block; }
+
+.child-spotlight-secondary-region {
+  font-size: .875em;
+  text-transform: uppercase;
+  font-family: "halisgr", Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  color: #606060; }
 
 .ci-home {
   color: #454545; }
@@ -8057,7 +8404,8 @@ p.wp-caption-text,
 .cropped-background-image {
   color: #fff;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-color: #4F8BCA; }
   .cropped-background-image.no-overlay {
     padding-bottom: 50%;
     width: 100%; }
@@ -8071,7 +8419,8 @@ p.wp-caption-text,
     font-family: 'halisgr';
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 3.625em; }
+    font-size: 3.625em;
+    margin-bottom: 8px; }
   .ci-home-sponsor-cta--content .subtitle {
     font-size: 1.75em;
     font-weight: 700;
@@ -8097,7 +8446,8 @@ p.wp-caption-text,
     line-height: 1.75; }
 
 .ci-home-experiences h2 {
-  color: #454545; }
+  color: #454545;
+  margin-bottom: 16px; }
 
 .ci-home-experiences p {
   margin-bottom: 0em;
@@ -8140,7 +8490,8 @@ p.wp-caption-text,
   margin-right: auto; }
   @media screen and (min-width: 24em) {
     .ci-home-impact--items {
-      justify-content: space-between; } }
+      justify-content: space-between;
+      margin-top: 80px; } }
   @media screen and (min-width: 500px) {
     .ci-home-impact--items {
       max-width: initial;
@@ -8173,7 +8524,7 @@ p.wp-caption-text,
     display: block;
     line-height: 1;
     margin: .5em 0 0.25em;
-    font-size: 1.5em; }
+    font-size: 2.25em; }
 
 .ci-home-ontheroad {
   position: relative;
@@ -8287,8 +8638,7 @@ p.wp-caption-text,
 
 .ci-home-findachild .ci-form-element {
   max-width: 580px;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 40px auto; }
   @media screen and (min-width: 767px) {
     .ci-home-findachild .ci-form-element {
       display: flex;
@@ -8319,7 +8669,8 @@ p.wp-caption-text,
 
 .ci-home-testimonial__readstories h4, .ci-home-testimonial__readstories .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .ci-home-testimonial__readstories cite {
   color: white;
-  margin-left: 1em; }
+  margin-left: 1em;
+  margin-bottom: 0; }
 
 .ci-home-instagram h4 > a, .ci-home-instagram .ci-home-testimonial blockquote cite > a, .ci-home-testimonial blockquote .ci-home-instagram cite > a, .ci-home-instagram .ci-home-instagram__social {
   display: flex;
@@ -8332,6 +8683,12 @@ p.wp-caption-text,
 .ci-home-instagram .ci-home-instagram__social {
   color: #4F8BCA;
   font-style: italic; }
+
+.ci-home-instagram .ci-home-instagram__feed {
+  margin: 40px 0; }
+
+.ci-home-instagram .sbi_photo_wrap {
+  border: 1px solid #FFC30E; }
 
 .ci-home-instagram .ci-subfooter__social {
   width: auto;
@@ -8353,164 +8710,294 @@ p.wp-caption-text,
     .ci-about-what p, .ci-about-ways p {
       font-size: 1.25em; } }
 
-.small-title-bar {
-  padding: 1em 1.25em; }
-  .small-title-bar.tertiary {
-    background-color: #FFC30E; }
-  .small-title-bar h1 {
-    font-family: "halisgr", Impact, Charcoal, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .03em;
+.ci-about-sponsorship .cols-7-5 {
+  margin-bottom: 60px; }
+  .ci-about-sponsorship .cols-7-5:last-child {
+    margin-bottom: 0; }
+  .ci-about-sponsorship .cols-7-5 h2 {
+    color: #606060; }
+
+@media screen and (min-width: 767px) {
+  .ci-about-sponsorship .col-5 img {
+    padding-left: 20%; } }
+
+.ci-about-sponsorship .inner {
+  padding-bottom: 0; }
+
+.ci-about-special-funds .inner {
+  max-width: 560px;
+  padding-left: 0;
+  padding-right: 0; }
+  .ci-about-special-funds .inner > h2 {
+    color: #606060; }
+
+.ci-about-special-funds .funds-list {
+  margin-top: 60px; }
+  .ci-about-special-funds .funds-list a {
+    font-size: 14px; }
+  .ci-about-special-funds .funds-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #888;
+    padding-bottom: 16px;
+    margin-bottom: 24px; }
+    .ci-about-special-funds .funds-list li:last-child {
+      border-bottom: none; }
+    .ci-about-special-funds .funds-list li > div:first-child {
+      text-align: left; }
+  .ci-about-special-funds .funds-list .ci-button {
+    padding: .625em 1.5em;
+    min-width: unset;
+    line-height: 1;
+    font-size: 14px; }
+  .ci-about-special-funds .funds-list h5 {
+    margin-bottom: 8px; }
+
+.ci-about-ctas .inner {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.ci-about-ctas path {
+  fill: #454545; }
+
+.ci-about-ctas a {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px; }
+  @media screen and (min-width: 767px) {
+    .ci-about-ctas a {
+      margin-bottom: 0; } }
+  .ci-about-ctas a h4, .ci-about-ctas a .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .ci-about-ctas a cite {
+    margin-left: 1em;
+    margin-bottom: 0;
+    max-width: 15ch; }
+
+@media screen and (min-width: 767px) {
+  .ci-about-history .col-5 img {
+    padding-left: 20%; } }
+
+.ci-work {
+  color: #454545; }
+  .ci-work .cols-6-6 {
+    align-items: center; }
+  .ci-work .cols-6-6 .text-wrap h2 {
+    margin-bottom: 32px; }
+
+@media screen and (min-width: 767px) {
+  .ci-work-regions .cols {
+    align-items: center; }
+  .ci-work-regions .col-7 {
+    padding-right: 8%; } }
+
+.ci-work-regions .inner {
+  padding-bottom: 0; }
+
+@media screen and (min-width: 767px) {
+  .ci-work-us .col-6:last-child {
+    padding-left: 8%; } }
+
+@media screen and (min-width: 600px) {
+  .ci-work-us-stories.text-image .text-wrap {
+    max-width: 55%; } }
+
+.ci-work-where-primary-info h2 {
+  font-size: 1.5em;
+  line-height: 1.33333;
+  margin-bottom: 32px; }
+
+.ci-work-where-primary-info h3 a {
+  color: white; }
+
+@media screen and (min-width: 767px) {
+  .ci-work-intnl .col-6:first-child {
+    padding-right: 8%; } }
+
+@media screen and (min-width: 600px) {
+  .ci-work-us-stories.text-image .text-wrap p,
+  .ci-work-intnl-stories.text-image .text-wrap p {
+    font-size: 1.125em; } }
+
+.ci-work-impact.centered .inner {
+  max-width: 1024px; }
+
+.ci-work-impact header {
+  max-width: 65ch;
+  margin: 0 auto; }
+
+.ci-work-impact-row article {
+  margin: 80px 0; }
+
+.ci-work-impact-row .excerpt {
+  text-align: left; }
+
+@media screen and (min-width: 767px) {
+  .ci-work-impact-row {
+    display: flex; }
+    .ci-work-impact-row article {
+      padding-right: 5%;
+      padding-left: 5%;
+      width: 50%; } }
+
+.icon-div {
+  position: relative;
+  margin: 12px 0; }
+  .icon-div:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #4F8BCA;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0; }
+  .icon-div .svg-wrap {
+    background: white;
+    border: 5px solid white;
+    z-index: 2;
+    position: relative;
+    display: inline-block; }
+
+.ci-accountability {
+  color: #454545; }
+  .ci-accountability .cols-6-6 {
+    align-items: center; }
+  .ci-accountability .cols-6-6 .text-wrap h2 {
+    margin-bottom: 32px; }
+
+.ci-accountability-financials {
+  text-align: center; }
+  .ci-accountability-financials header {
+    margin-bottom: 120px; }
+  .ci-accountability-financials .pie-chart {
+    padding: 20px 8%; }
+  .ci-accountability-financials .ci-accountability-financials--legend {
+    margin-bottom: 60px; }
+  .ci-accountability-financials .narrow {
+    max-width: 41ch;
+    margin: 0 auto; }
+  @media screen and (min-width: 767px) {
+    .ci-accountability-financials {
+      text-align: left; }
+      .ci-accountability-financials .cols {
+        flex-direction: row-reverse; }
+      .ci-accountability-financials .col-6:last-child {
+        padding-right: 8%; }
+      .ci-accountability-financials .ci-accountability-financials--legend {
+        margin-bottom: 0; } }
+  @media screen and (min-width: 1024px) {
+    .ci-accountability-financials .col-6:first-child {
+      display: flex;
+      align-items: center; }
+    .ci-accountability-financials .ci-accountability-financials--legend {
+      padding-left: 8%; }
+    .ci-accountability-financials .pie-chart {
+      padding: 0;
+      width: 50%; } }
+  .ci-accountability-financials strong, .ci-accountability-financials b {
+    font-family: "Open Sans Condensed", "Lucida Sans Unicode", "Lucida Grande", monospace;
+    font-weight: 700;
+    letter-spacing: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    font-size: 1.25em;
-    color: #454545;
-    margin-bottom: 0;
-    padding-bottom: 0; }
-
-.child-spotlight-primary {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #4F8BCA; }
-  @media screen and (min-width: 1200px) {
-    .child-spotlight-primary {
-      flex-direction: row; }
-      .child-spotlight-primary .child-spotlight-primary-info {
-        order: 1; }
-      .child-spotlight-primary .child-spotlight-primary-img {
-        order: 2; } }
-
-.child-spotlight-primary-info {
-  flex-grow: 3;
-  text-align: center;
-  padding: 2.8em 2em 5em; }
-  .child-spotlight-primary-info .child-spotlight-phone,
-  .child-spotlight-primary-info .child-spotlight-email {
-    color: #fff; }
-
-.child-spotlight-primary-img {
-  flex-grow: 1;
-  overflow: hidden;
-  background-color: #F5F5F5; }
-  @media screen and (min-width: 1200px) {
-    .child-spotlight-primary-img {
-      background-color: #4F8BCA; } }
-  .child-spotlight-primary-img img {
-    width: 100%;
-    height: auto;
-    display: block;
+    font-size: 1.375em;
+    color: #4F8BCA; }
+  .ci-accountability-financials circle {
+    fill: transparent;
+    stroke: #FFC30E;
+    stroke-width: 32;
+    stroke-dasharray: 100 100;
+    transition: stroke-dasharray .3s ease; }
+    .ci-accountability-financials circle.blue {
+      stroke: #4F8BCA;
+      stroke-dasharray: 86.6 100; }
+    .ci-accountability-financials circle.green {
+      stroke: #74b638;
+      stroke-dasharray: 8.8 100;
+      stroke-dashoffset: -86.6; }
+  .ci-accountability-financials svg {
     margin: 0 auto;
-    float: none; }
-    @media screen and (min-width: 600px) {
-      .child-spotlight-primary-img img {
-        width: auto; } }
-    @media screen and (min-width: 1200px) {
-      .child-spotlight-primary-img img {
-        height: 100%;
-        float: right; } }
+    transform: rotate(-90deg);
+    background: #FFC30E;
+    border-radius: 50%;
+    display: block; }
+  .ci-accountability-financials .ci-accountability-financials--legend h3 {
+    color: #606060; }
+  .ci-accountability-financials li {
+    line-height: 2.2; }
+    .ci-accountability-financials li:before {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      background: #FFC30E;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: .5em;
+      position: relative;
+      top: .35em; }
+    .ci-accountability-financials li.blue-dot:before {
+      background: #4F8BCA; }
+    .ci-accountability-financials li.green-dot:before {
+      background: #74b638; }
 
-.child-spotlight-hello {
-  color: #fff;
-  font-size: 3em;
-  font-family: "Merriweather", Georgia, Times, "Times New Roman", serif;
-  text-transform: none;
-  font-weight: bold;
-  margin-top: 1.31em;
-  margin-bottom: .83em; }
+@media screen and (min-width: 767px) {
+  .ci-accountability-donors .col-6 {
+    padding: 0 5%; } }
 
-.child-spotlight-desc {
-  color: #fff;
-  max-width: 643px;
-  margin: 0 auto;
-  line-height: 1.76;
-  font-size: 1.0625em;
-  margin-bottom: 1.94em; }
+.ci-accountability-donors .col-6 img {
+  width: auto; }
 
-.child-spotlight-cta {
-  color: #FFC30E;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: .03em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  display: block;
-  font-size: 1.375em;
-  margin-bottom: 1.59em; }
-
-.child-spotlight-phone,
-.child-spotlight-email {
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: .03em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-size: 1.125em;
-  display: block; }
-
-.child-spotlight-more-info {
-  background-color: #FFC30E;
-  padding: 3.75em 2em;
-  text-align: center;
-  color: #454545; }
-  .child-spotlight-more-info p {
-    font-size: 1.0625em;
-    line-height: 1.76;
-    margin-bottom: 1.35em; }
-
-.child-spotlight-secondary {
-  background-color: #F5F5F5;
-  padding: 2em 1.25em;
-  border-bottom: 10px solid #FFC30E; }
-  .child-spotlight-secondary .innerwrap {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center; }
-    @media screen and (min-width: 1024px) {
-      .child-spotlight-secondary .innerwrap {
-        flex-direction: row; } }
-  @media screen and (min-width: 1024px) {
-    .child-spotlight-secondary {
-      padding: 4.6875em 1.25em; } }
-
-.child-spotlight-secondary-child {
-  max-width: 360px;
-  margin-right: 0;
-  margin-bottom: 2em;
-  flex: 1 1 0; }
-  .child-spotlight-secondary-child:last-of-type {
+.ci-accountability-donors .icon-pair {
+  display: flex;
+  align-items: center;
+  margin: 60px 0; }
+  .ci-accountability-donors .icon-pair p {
     margin-bottom: 0; }
-  @media screen and (min-width: 1024px) {
-    .child-spotlight-secondary-child {
-      margin-right: 3em;
-      margin-bottom: 0; }
-      .child-spotlight-secondary-child:last-of-type {
-        margin-right: 0; } }
 
-.child-spotlight-secondary-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1.5625em; }
+.ci-accountability-donors .icon {
+  width: 80px;
+  min-width: 80px;
+  text-align: center; }
 
-.child-spotlight-secondary-name {
-  color: #4F8BCA;
-  font-size: 1.75em;
-  font-weight: bold;
-  display: block; }
+.ci-accountability-donors .text {
+  margin-left: 1em; }
 
-.child-spotlight-secondary-region {
-  font-size: .875em;
-  text-transform: uppercase;
-  font-family: "halisgr", Impact, Charcoal, sans-serif;
-  font-weight: bold;
+.ci-accountability-forms .inner {
+  padding-bottom: 0; }
+
+.ci-accountability-forms h2 {
   color: #606060; }
+
+@media screen and (min-width: 767px) {
+  .ci-accountability-forms .col-6 {
+    padding: 0 5%; } }
+
+.ci-accountability-more-info h2 {
+  color: #606060; }
+
+@media screen and (min-width: 767px) {
+  .ci-accountability-more-info .inner > * {
+    padding: 0 5%; } }
+
+#region-how-tos h1 {
+  text-align: left; }
+
+#region-how-tos img {
+  float: none;
+  margin-bottom: 20px;
+  height: auto; }
+  @media screen and (min-width: 1200px) {
+    #region-how-tos img {
+      float: right;
+      max-width: 350px;
+      margin-left: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  #region-how-tos .col-8 {
+    padding-left: 8.33333%; } }
 
 .pl-label {
   font-size: .7em;

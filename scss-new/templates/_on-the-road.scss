@@ -17,10 +17,13 @@
 
 	h1 {
 		margin-bottom: 0;
+		padding-bottom: 0;
+		@include labelfont();
 	}
 
 	p {
 		margin-bottom: 0;
+		padding-bottom: 0;
 		text-align: left;
 		font-size: 1.75em;
 		font-family: $titlefont;
@@ -101,7 +104,14 @@
 		    padding-left: $col-1;
 		}
 
-		.entry-content > p, .wp-caption {
+		.entry-content > p,
+		.entry-content > h1,
+		.entry-content > h2,
+		.entry-content > h3,
+		.entry-content > h4,
+		.entry-content > h5,
+		.entry-content > h6,
+		.wp-caption {
 			max-width: 100%;
 			position: relative;
 
@@ -118,6 +128,7 @@
 		.wp-caption.alignleft {
 			@media screen and (min-width:$bp-med){
 				float:left;
+				padding-right: 2.5em;
 			}
 
 		}
@@ -208,17 +219,7 @@
 		}
 	}
 
-	.entry-footer-t8 {
-    	margin-top: 24px;
-    	max-width: 100%;
-		position: relative;
-
-		@media screen and (min-width:$bp-med-2){
-			max-width: 66.66667%;
-		}
-    }
-
-    .otr-aside {
+  .otr-aside {
 		padding-bottom:20px;
 
 		@media screen and (min-width:$bp-med){
@@ -232,11 +233,11 @@
 		    border-left: 1px solid $grey-lt;
 	  	}
 
-	    h4 {
-	    	padding-top: 4px;
-	    	color:$green;
-    	}
-    }
+    h4 {
+    	padding-top: 4px;
+    	color:$green;
+  	}
+  }
 
 	hr {
 		margin: 12px 0;
@@ -365,11 +366,15 @@
 
 	.otr-single-heading {
 		color: $white;
+    padding-bottom: 0;
 	}
 
 	.otr-single-subheading {
 		color: $white;
 		font-size: 18px;
+		font-style:italic;
+		line-height: 1.3;
+		display: block;
 	}
 
     @media screen and (min-width:$bp-med){
@@ -495,8 +500,22 @@ p.wp-caption-text,
 	}
 }
 
+
+.otr-category-intro,
+.otr-category-header,
+.otr-featured-post {
+
+	+ .content-area {
+		padding-top:0;
+		padding-bottom:0;
+	}
+}
+
 // OTR Category Intro
 .otr-category-intro {
+
+	padding-top:40px;
+	padding-bottom: 60px;
 
 	.otr-category-img-vid {
 		margin-bottom: 1em;
@@ -561,9 +580,10 @@ p.wp-caption-text,
 	.entry-title {
 		font-size: 2.75em;
 		color: $blue;
+		margin-bottom: 20px;
 
 		&:hover {
-			color: $green;
+			color: $grey;
 		}
 	}
 
@@ -593,23 +613,12 @@ p.wp-caption-text,
     padding-bottom: 0;
   }
 
-  .entry-footer-t8 {
-  	margin-bottom: 2em;
-
-  	.p-meta {
-  		line-height: 1.75;
-  		width: 100%;
-	    float: none;
-	    border-bottom: 1px solid #dddddd;
-	    padding: 8px 0;
-  	}
-  }
-
 	.otr-more-from-category {
 		float: left;
 
 		h3 {
 			color: $blue;
+			padding-bottom:4px;
 		}
 
 		li {
@@ -625,6 +634,51 @@ p.wp-caption-text,
 		@media screen and (min-width: $bp-med) {
 			float: right;
 		}
+	}
+}
+
+.entry-footer-t8 {
+	margin-bottom: 2em;
+  margin-top: 24px;
+  max-width: 100%;
+	position: relative;
+	display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  flex-direction: column;
+
+	@media screen and (min-width:$bp-med-2){
+		flex-direction:row;
+	}
+
+	.single.long-form-post & {
+
+		flex-direction: column;
+
+		@media screen and (min-width:$bp-med-2){
+			max-width: 66.66667%;
+		}
+
+	}
+
+	.p-meta {
+		line-height: 1.75;
+		width: 100%;
+    padding: 8px 0;
+	}
+
+	.ci-button {
+		padding: 4px 1.6em;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+
+    @media screen and (min-width:$bp-med-2){
+			width: auto;
+			display:inline-block;
+		}
+
 	}
 }
 
@@ -670,9 +724,10 @@ p.wp-caption-text,
 
 	a h3 {
 		color: $blue;
+		padding-bottom: 8px;
 
 		&:hover {
-			color: $green;
+			color: $grey;
 		}
 	}
 
@@ -689,21 +744,11 @@ p.wp-caption-text,
     padding-bottom: 0;
 	}
 
-	.more-link {
-		position: relative;
-		display: inline-block;
-		text-transform: uppercase;
-		padding: 8px 2em;
-    font-family: $titlefont;
-    color:white;
+	.ci-button {
     display: block;
 
     @media screen and (min-width: $bp-med) {
     	display: inline-block;
-    }
-
-    p {
-    	margin-bottom: 0;
     }
 	}
 
@@ -716,6 +761,11 @@ p.wp-caption-text,
 	padding-top: 0;
 	padding-bottom: 0;
 	position: relative;
+	margin-top:60px;
+
+	+ .content-area {
+		padding-top:20px;
+	}
 
 	&:after {
 		content: "";
@@ -723,8 +773,7 @@ p.wp-caption-text,
 		width: 100%;
 		background-color: $blue;
 		position: absolute;
-		bottom: 30px;
-		left: 650px;
+		bottom: 15px;
 		z-index: -1;
 	}
 
@@ -733,5 +782,6 @@ p.wp-caption-text,
 		background-color: white;
 		display: inline-block;
 		padding-right: 35px;
+		@include labelfont();
 	}
 }

@@ -79,7 +79,7 @@ a#open-menu {
 		background-color: transparent;
 		border: none;
 		text-transform: uppercase;
-		font-size: .75em;
+		font-size: .875em;
 		line-height: 1;
 		letter-spacing: $title-spacing;
 		outline: 0 none;
@@ -95,6 +95,7 @@ a#open-menu {
 }
 
 .dot-separated-list li {
+	@media screen and (min-width: $bp-med-2) {
 		&:after {
 			content: "\b7";
 			position: absolute;
@@ -114,6 +115,7 @@ a#open-menu {
 			content: '';
 			display: none;
 		}
+	}
 }
 
 .menu-row {

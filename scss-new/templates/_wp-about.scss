@@ -21,3 +21,112 @@
 		}
 	}
 }
+
+.ci-about-sponsorship {
+
+	.cols-7-5 {
+		margin-bottom:60px;
+
+		&:last-child {
+			margin-bottom:0;
+		}
+
+		h2 {
+			color:$grey-dark-2;
+		}
+	}
+
+	.col-5 img {
+		@media screen and (min-width: $bp-med) {
+			padding-left: 20%;
+		}
+	}
+
+	.inner {
+		padding-bottom: 0;
+	}
+
+}
+
+.ci-about-special-funds {
+	.inner {
+		max-width:560px;
+		padding-left:0;
+		padding-right: 0;
+
+		> h2 {
+			color: $grey-dark-2;
+		}
+	}
+	.funds-list {
+
+		margin-top:60px;
+
+		a {
+			font-size:14px;
+		}
+
+		li {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid $grey-med;
+			padding-bottom: 16px;
+			margin-bottom: 24px;
+
+			&:last-child {
+				border-bottom:none;
+			}
+
+			> div:first-child {
+				text-align: left;
+			}
+		}
+		.ci-button {
+			padding: .625em 1.5em;
+	    min-width: unset;
+	    line-height: 1;
+	    font-size: 14px;
+		}
+		h5 {
+			margin-bottom: 8px;
+		}
+	}
+}
+.ci-about-ctas {
+	
+	.inner {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	path {
+		fill: $grey;
+	}
+	a {
+		display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $bp-med) {
+	    margin-bottom: 0;
+	  }
+
+    h4 {
+    	margin-left:1em;
+    	margin-bottom: 0;
+    	max-width: 15ch;
+    }
+	}
+}
+
+.ci-about-history {
+
+	.col-5 img {
+		@media screen and (min-width: $bp-med) {
+			padding-left: 20%;
+		}
+	}
+
+}

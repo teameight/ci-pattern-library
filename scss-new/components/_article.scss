@@ -49,8 +49,7 @@
 
 		.nav-previous, .nav-next {
 			display:inline;
-			font-family:$titlefont;
-			text-transform:uppercase;
+			@include labelfont();
 			padding:0 1em;
 		}
 	}
@@ -102,8 +101,6 @@
 
 		.bloglist & {
 			width:100%;
-			float:none;
-			border-bottom: 1px solid #dddddd;
 			padding: 8px 0;
 		}
 	}
@@ -135,6 +132,7 @@
 	.nl-signup {
 		clear: both;
 		padding-top: $padpx;
+		width:100%;
 
 		a.button {
 			margin-top:0;
@@ -240,23 +238,19 @@
 	p {
 		color: $grey;
 		@include font-sizing(16, 28);
-		margin-bottom: .75em;
-		padding-bottom: 0;
 
 	}
 	h1.entry-title {
-		font-size: 1.5em;
-		line-height: 1.25;
+		@include font-sizing(28, 32);
 		margin-top: 0;
 		margin-bottom: 4px;
-		text-transform: uppercase;
 		color: $blue;
 
 		a {
 			color: $blue;
 
 			&:hover {
-				color: $green;
+				color: $grey;
 			}
 		}
 

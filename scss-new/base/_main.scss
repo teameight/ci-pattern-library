@@ -145,9 +145,6 @@ button::-moz-focus-inner {
 /************************/
 
 
-h1,h2,h3, p {
-	padding: 0 0 30px;
-}
 h1,h2,h3,h4,h5 {
 	font-family: $titlefont;
 font-weight: bold;
@@ -1050,7 +1047,6 @@ font-weight: bold;
 }
 h1.title {	
 	font-size: 67px;
-	text-transform: uppercase;
 	line-height: 67px;
 }
 #the-problem .columns,

@@ -28,9 +28,12 @@ a:not(.button), .ci-faux-link {
 	}
 }
 
-p a:not(.button):hover, .ci-faux-link:hover {
-	color:$blue;
-	@include link-underline(white, $blue, $yellow);
+p a:not(.button):not(.ci-button), .ci-faux-link, .otr-more-from-category a {
+
+	&:hover, &:active {
+		color:$blue;
+		@include link-underline(white, $blue, $yellow);
+	}
 }
 
 .c-block.green, .c-block.blue, .c-block.grey {
@@ -40,36 +43,9 @@ p a:not(.button):hover, .ci-faux-link:hover {
 		}
 	}
 }
-.more-linkold {
-	float:right;
-	display:block;
-	font-family: $titlefont;
 
-	&::before {
-		content:"\000BB";
-		margin-right:.25em;
-		font-size:1.25em;
-	}
-}
-.more-link {
-	position: relative;
-    top: 8px;
-    text-align:center;
-
-    right:0;
-    padding: 8px 2em;
-	display:block;
-	font-family: $titlefont;
-	color:$white;
-	background:$green;
-
-	@media screen and (min-width:$bp-med){
-		position: absolute;
-    	top: 0;
-	}
-
-	&:hover {
-		background:$blue;
-		color:$white;
+a {
+	h1, h2, h3, h4 {
+		transition: color $transition;
 	}
 }

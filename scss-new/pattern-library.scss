@@ -47,13 +47,16 @@
 @import "components/dms/modal-animations";
 
 /*------------------------------------*\
-    $TEMPLATES
+    $WP TEMPLATES
 \*------------------------------------*/
 @import "templates/default";
 @import "templates/faqs";
 @import "templates/on-the-road";
+@import "templates/child-spotlight";
 @import "templates/wp-home";
 @import "templates/wp-about";
-@import "templates/child-spotlight";
+@import "templates/wp-work";
+@import "templates/wp-accountability";
+@import "templates/region-how-tos";
 
 @import "base/pattern-library";

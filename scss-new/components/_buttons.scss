@@ -44,7 +44,7 @@
 		font-size: 14px;
 	}
 }
-.c-block input[type=submit] {
+.c-block input[type=submit]:not(.ci-button) {
 	background:#ffffff;
 }
 .inlineform.pp-fund {
@@ -119,9 +119,6 @@
 
 }
 
-
-// TODO Refactor so that yellow solid button is primary, green solid is tied to donation
-
 .button,
 a.button,
 .buttonwrap .button,
@@ -142,7 +139,10 @@ a.button,
 	cursor: pointer;
 	border-radius: 0;
 	margin-top:1em;
-	transition: color $transition, background-color $transition, border-color $transition;
+	transition: color $transition, background-color $transition, border-color $transition;		
+	@include font-smoothing();
+	text-rendering: optimizeLegibility;
+
 
 	#header & {
 		font-size:14px;
@@ -346,7 +346,8 @@ a.back-button {
 // New Button styles
 
 .ci-button,
-a.ci-button {
+a.ci-button,
+input.ci-button {
 	font-family: $titlefont;
 	font-weight: bold;
 	border: 2px solid;
@@ -362,10 +363,16 @@ a.ci-button {
 	cursor: pointer;
 	border-radius: 0;
 	transition: color $transition, background-color $transition, border-color $transition;
+	text-align: center;
+
+  @include font-smoothing();
+  text-rendering: optimizeLegibility;
+
 }
 
 .ci-button--primary,
-a.ci-button--primary {
+a.ci-button--primary,
+input.ci-button--primary {
 	color: $grey;
 	background-color: $yellow;
 	border-color: $yellow;
@@ -386,15 +393,16 @@ a.ci-button--primary {
 }
 
 .ci-button--secondary,
-a.ci-button--secondary {
+a.ci-button--secondary,
+input.ci-button--secondary {
 	color: $white;
 	background-color: $blue;
 	border-color: $blue;
 
 	&:hover {
 		color: $white;
-		background-color: darken($blue, 7%);
-		border-color: darken($blue, 7%);
+		background-color: darken($blue, 12%);
+		border-color: darken($blue, 12%);
 	}
 
 	&__alt {
@@ -410,15 +418,16 @@ a.ci-button--secondary {
 }
 
 .ci-button--accent,
-a.ci-button--accent {
+a.ci-button--accent,
+input.ci-button--accent {
 	color: $white;
 	background-color: $green;
 	border-color: $green;
 
 	&:hover {
 		color: $white;
-		background-color: darken($green, 7%);
-		border-color: darken($green, 7%);
+		background-color: darken($green, 9%);
+		border-color: darken($green, 9%);
 	}
 
 }

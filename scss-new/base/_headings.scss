@@ -15,12 +15,17 @@ h6,
 	display: block;
 	margin-top: unset; // TODO: remove after new-styles are in effect
 	font-weight: bold;
+	margin-bottom:8px;
+
+
+	&.grey {
+		color:$grey-dark-2;
+	}
 }
 
 h1,
 .h1 {
-	font-size: 2.5em;
-	line-height: 1.187;
+	@include font-sizing(40, 48);
 	font-family: $titlefont;
 	color: $blue;
 	text-transform: uppercase;
@@ -32,8 +37,7 @@ h1,
 
 h2,
 .h2 {
-	font-size: 1.75em;
-	line-height: 1.142;
+	@include font-sizing(28, 32);
 	font-family: $titlefont;
 	color: $blue;
 	text-transform: uppercase;
@@ -41,8 +45,7 @@ h2,
 
 h3,
 .h3 {
-	font-size: 1.25em;
-	line-height: 1.15;
+	@include font-sizing(20, 24);
 	font-family: $titlefont;
 	color: $blue;
 	text-transform: uppercase;
@@ -50,8 +53,7 @@ h3,
 
 h4,
 .h4 {
-	font-size: 1.125em;
-	line-height: 1.167;
+	@include font-sizing(18, 24);
 	font-family: $titlefont;
 	color: $blue;
 	text-transform: uppercase;
@@ -59,8 +61,7 @@ h4,
 
 h5,
 .h5 {
-	font-size: 1em;
-	line-height: 1.188;
+	@include font-sizing(16, 20);
 	font-family: $titlefont;
 	color: $blue;
 	text-transform: uppercase;
@@ -68,8 +69,7 @@ h5,
 
 h6,
 .h6 {
-	font-size: .875em;
-	line-height: 1.214;
+	@include font-sizing(14, 20);
 	font-family: $titlefont;
 	color: $grey-dark-2;
 	text-transform: uppercase;
@@ -86,7 +86,7 @@ h4 + h2 {
 	margin-top:0;
 }
 
-.ci-home, footer, .ci-new-styles {
+body {
 	color:$grey;
 
 	h1, h2, .h1, .h2 {

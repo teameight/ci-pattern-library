@@ -53,3 +53,18 @@
 		}
 	}
 }
+
+.ci-alert.ci-alert-blue {
+	background: #4F8BCA;
+	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+}
+
+.ui-tabs-panel .ci-alert.ci-alert-blue {
+	margin: 20px auto;
+	max-width: 1027px;
+	display: block;
+}
+
+.ui-dialog-content .ci-alert.ci-alert-blue {
+    margin-bottom: 20px;
+}

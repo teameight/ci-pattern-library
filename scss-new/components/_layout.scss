@@ -1,6 +1,18 @@
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
+.row-wrap {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+  flex-direction: column;
+
+	@media screen and (min-width:$bp-small-3) {
+    flex-direction: row;
+  }
+}
+
 .t8-cols-wrap {
 
 	&.cols-2 > .t8-col {
@@ -70,6 +82,40 @@
     @include columns(12);
 }
 
+.cols {
+	@media screen and (min-width:$bp-med){
+		display:flex;
+	}
+
+	> div, > a, > p {
+		float:none;
+
+		@media screen and (min-width: $bp-med) {
+			float: none;
+		}
+
+
+	}
+
+	img, svg {
+		max-width:100%;
+		height:auto;
+	}
+}
+
+.cols-7-5, .cols-6-6 {
+	max-width: $bp-med-2;
+	margin: 0 auto;
+
+	> div:first-child {
+		margin-bottom:20px;	
+
+		@media screen and (min-width: $bp-med) {
+			margin-bottom: 0;
+		}
+	}
+}
+
 
 .col-6, .col-8, .col-3 {
 
@@ -83,6 +129,13 @@
 		width:auto;
 	}
 }
+
+.col-6 {
+	.video-container {
+		margin-bottom:20px;
+	}
+}
+
 .t8-col {
 
 	img {
@@ -327,12 +380,9 @@
 
 		.filters-label, li a {
 			color:$white;
+			@include labelfont();
 			font-size:.75em;
 			line-height:2;
-			font-weight:normal;
-			text-transform:uppercase;
-			letter-spacing:1px!important;
-			box-sizing:border-box;
 			display:inline-block;
 			padding: 0;
 			margin: 10px;

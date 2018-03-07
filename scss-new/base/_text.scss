@@ -13,8 +13,32 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, .entry, .header-landmark, .bfilter-wrap, .nav
 	text-rendering: optimizeLegibility;
 }
 
+.numbers, .number {
+	@include numberfont();
+}
+
+p {
+		margin-bottom: 1em;
+
+		+ h1, + h2, + h3, + h4, + h5, + h6 {
+			margin-top:20px;
+		}
+}
+
+section p {
+	margin-bottom: 24px;
+	line-height: 1.75;
+}
+
 em {
 	font-style: italic;
+}
+
+p, a {
+	&.centered {
+		margin-left:auto;
+		margin-right:auto;
+	}
 }
 
 .ci-subheading {
@@ -169,4 +193,15 @@ article {
 		color:$blue;
 		font-style:normal;
 	}
+}
+
+.badge-number {
+	  background: $yellow;
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.5em;
+    border-radius: 50%;
+    @include numberfont();
+    font-size: 24px;
 }

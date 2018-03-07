@@ -1,7 +1,7 @@
 #region-how-tos {
 
 	h1 {
-		text-align: center;
+		text-align: left;
 	}
 
 	img {
@@ -16,4 +16,9 @@
 		}
 	}
 
+	@media screen and (min-width: $bp-large) {
+		.col-8 {
+			padding-left:$col-1; 
+		}
+	}
 }
