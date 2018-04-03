@@ -395,6 +395,12 @@
     @include aspect-ratio-half(16, 9);
 }
 
+.partners-logos h3 {
+    border-bottom: 1px solid $blue;
+    margin: 20px 0 60px;
+    padding-bottom: 7px;
+}
+
 /*------------------------------------*\
     $Landing Page template
 \*------------------------------------*/
