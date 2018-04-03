@@ -5296,6 +5296,18 @@ label.checkbox {
         right: initial;
         position: relative; } }
 
+.ci-alert.ci-alert-blue {
+  background: #4F8BCA;
+  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif; }
+
+.ui-tabs-panel .ci-alert.ci-alert-blue {
+  margin: 20px auto;
+  max-width: 1027px;
+  display: block; }
+
+.ui-dialog-content .ci-alert.ci-alert-blue {
+  margin-bottom: 20px; }
+
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
 .menu li.buttonwrap a {
@@ -5746,6 +5758,39 @@ input.ci-button--accent {
     background-color: #5e932d;
     border-color: #5e932d; }
 
+.ci-button--icon,
+a.ci-button--icon,
+input.ci-button--icon {
+  display: flex;
+  align-items: center;
+  padding: 0; }
+  .ci-button--icon span.icon,
+  a.ci-button--icon span.icon,
+  input.ci-button--icon span.icon {
+    width: 66px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    display: flex;
+    align-items: center; }
+    .ci-button--icon span.icon svg,
+    a.ci-button--icon span.icon svg,
+    input.ci-button--icon span.icon svg {
+      width: 100%;
+      height: auto; }
+    .ci-button--icon span.icon path,
+    a.ci-button--icon span.icon path,
+    input.ci-button--icon span.icon path {
+      fill: #454545; }
+    .ci-button--icon span.icon circle,
+    a.ci-button--icon span.icon circle,
+    input.ci-button--icon span.icon circle {
+      stroke: #454545; }
+  .ci-button--icon span:last-child,
+  a.ci-button--icon span:last-child,
+  input.ci-button--icon span:last-child {
+    flex: 1;
+    padding: 11px 0.6em 10px; }
+
 /*------------------------------------*    $Sections
 \*------------------------------------*/
 section.blue {
@@ -6001,16 +6046,16 @@ section.text-image {
     content: " | "; }
   .entry-footer-t8 .p-meta > span:last-of-type:after {
     content: ""; }
-  .entry-footer-t8 .ssba-wrap > div {
+  .entry-footer-t8 .ssbp-wrap > div {
     text-align: left !important; }
-  .entry-footer-t8 .ssba-wrap img {
+  .entry-footer-t8 .ssbp-wrap img {
     width: 28px;
     padding: 14px 3px; }
   @media screen and (min-width: 500px) {
-    .entry-footer-t8 .ssba-wrap {
+    .entry-footer-t8 .ssbp-wrap {
       float: right;
       width: 33.33%; }
-      .entry-footer-t8 .ssba-wrap > div {
+      .entry-footer-t8 .ssbp-wrap > div {
         text-align: right !important; } }
   .entry-footer-t8 .nl-signup {
     clear: both;
@@ -6021,25 +6066,25 @@ section.text-image {
   .entry-footer-t8 h4, .entry-footer-t8 .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote .entry-footer-t8 cite, .entry-footer-t8 h3 {
     color: #888; }
 
-.entry-meta .ssba-wrap {
+.entry-meta .ssbp-wrap {
   width: 100%;
   float: left;
   margin-top: 20px;
   margin-right: 0;
   margin-bottom: 20px; }
-  .entry-meta .ssba-wrap > div {
+  .entry-meta .ssbp-wrap > div {
     text-align: left !important; }
-  .entry-meta .ssba-wrap img {
+  .entry-meta .ssbp-wrap img {
     width: 28px;
     padding: 0 3px; }
   @media screen and (min-width: 767px) {
-    .entry-meta .ssba-wrap {
+    .entry-meta .ssbp-wrap {
       float: right;
       width: 33.33%;
       margin-right: 0;
       margin-top: -30px;
       margin-bottom: 0; }
-      .entry-meta .ssba-wrap > div {
+      .entry-meta .ssbp-wrap > div {
         text-align: right !important; } }
 
 .single .entry-meta {
@@ -6900,7 +6945,7 @@ label[for="forgot-password-email"] {
   margin: 0 auto;
   background-color: #fff;
   overflow: hidden;
-  background: #fff url(../Styles/images/spinner.gif) center center no-repeat;
+  background: #fff url(../images/spinner.gif) center center no-repeat;
   height: 100%;
   overflow: scroll; }
 
@@ -7337,6 +7382,11 @@ label[for="forgot-password-email"] {
     left: 0;
     right: 0;
     bottom: 0; }
+
+.partners-logos h3 {
+  border-bottom: 1px solid #4F8BCA;
+  margin: 20px 0 60px;
+  padding-bottom: 7px; }
 
 /*------------------------------------*    $Landing Page template
 \*------------------------------------*/
