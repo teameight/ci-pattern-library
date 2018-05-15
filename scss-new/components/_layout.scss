@@ -368,8 +368,8 @@
 }
 
 .bfilter-wrap {
-	color:$white;
-	background:$blue;
+	color:$grey;
+	background:$yellow;
 
 	.inner {
 		padding-top:0;
@@ -379,7 +379,7 @@
 	> div {
 
 		.filters-label, li a {
-			color:$white;
+			color:$grey;
 			@include labelfont();
 			font-size:.75em;
 			line-height:2;
@@ -416,10 +416,10 @@
 		}
 
 		a {
-			color: $white;
+			color: $grey;
 
 			&:hover {
-				color: $white;
+				color: $grey;
 			}
 		}
 	}
@@ -452,17 +452,17 @@
 		> div {
 
 			li.current-menu-item a {
-				background: linear-gradient( to bottom, transparent, transparent 93%, $white 93%, $white 100% );
-				color:$white;
+				background: linear-gradient( to bottom, transparent, transparent 93%, $grey 93%, $grey 100% );
+				color:$grey;
 			}
 
 			a {
 				transition:color $transition, background $transition;
-				color: $white;
+				color: $grey;
 
 				&:hover {
-					background: linear-gradient( to bottom, transparent, transparent 93%, $white 93%, $white 100% );
-					color:$white;
+					background: linear-gradient( to bottom, transparent, transparent 93%, $grey 93%, $grey 100% );
+					color:$grey;
 				}
 			}
 
@@ -525,6 +525,10 @@
 		position: absolute;
 		right: -35px;
 		top: 5px;
+
+		path {
+			stroke: $grey;
+		}
 	}
 
 	@media (min-width: $bp-med) {
@@ -572,21 +576,21 @@
 				background: transparent;
 
 				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-				  color: $white;
+				  color: $grey;
 				}
 				&::-moz-placeholder { /* Firefox 19+ */
-				  color: $white;
+				  color: $grey;
 				}
 				&:-ms-input-placeholder { /* IE 10+ */
-				  color: $white;
+				  color: $grey;
 				}
 				&:-moz-placeholder { /* Firefox 18- */
-				  color: $white;
+				  color: $grey;
 				}
 			}
 
 			input[type="text"]:focus {
-				background: $white;
+				background: $yellow;
 			}
 		}
 

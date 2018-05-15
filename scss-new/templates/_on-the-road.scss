@@ -11,14 +11,27 @@
 
 .otr-page-header {
 
+	letter-spacing: 0.05em;
+
 	.entry {
+		display: block;
+	}
+
+	.otr-subhead {
+    text-transform: none;
+    margin-bottom: 0;
+		font-family: $font;
 		display: block;
 	}
 
 	h1 {
 		margin-bottom: 0;
 		padding-bottom: 0;
-		@include labelfont();
+
+		.otr-subhead {
+			font-size: .375em;
+			font-style: italic;
+		}
 	}
 
 	p {
