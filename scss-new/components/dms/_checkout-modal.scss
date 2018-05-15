@@ -34,16 +34,16 @@
 	min-height: 100%;
 	max-width: 800px;
 	margin: 0 auto;
-	background-color: $white;
 	overflow: hidden;
 
 	background: #fff url(../images/spinner.gif) center center no-repeat;
 	height: 100%;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .ci-checkout-modal-inner {
 	text-align: center;
+	background-color: $white;
 	padding: 2em;
 	max-width: 800px;
 	margin: 0 auto;
