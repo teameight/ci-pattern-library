@@ -49,33 +49,48 @@
 }
 
 .ci-about-special-funds {
-	.inner {
+	.inner.header-wrap {
 		max-width:560px;
 		padding-left:0;
 		padding-right: 0;
+		padding-bottom: 0;
 
 		> h2 {
 			color: $grey-dark-2;
 		}
 	}
-	.funds-list {
 
-		margin-top:60px;
+	.funds-wrap {
+		padding-top: 60px;
+		padding-bottom: 0;
+
+		&.-projects {
+			padding-bottom: 60px;
+		}
+	}
+
+	.fund-list-heading {
+		text-align: left;
+		padding-bottom: 8px;
+		margin-bottom: 32px;
+		border-bottom: 1px solid $grey-med;
+	}
+
+	.funds-list,
+	.projects-list {
+
+
+		@media screen and (min-width: $bp-med) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+	  }
 
 		a {
 			font-size:14px;
 		}
 
 		li {
-			display: flex;
-			justify-content: space-between;
-			border-bottom: 1px solid $grey-med;
-			padding-bottom: 16px;
-			margin-bottom: 24px;
-
-			&:last-child {
-				border-bottom:none;
-			}
 
 			> div:first-child {
 				text-align: left;
@@ -90,6 +105,67 @@
 		h5 {
 			margin-bottom: 8px;
 		}
+	}
+
+	.funds-list {
+		li {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid $grey-med;
+			padding-bottom: 16px;
+			margin-bottom: 24px;
+			flex: 0 0 48%;
+
+			> div:first-child {
+				text-align: left;
+			}
+		}
+	}
+
+	.projects-list {
+		li {
+			flex: 0 0 30%;
+
+			.img-wrap {
+				position: relative;
+				height: 260px;
+				margin-bottom: 24px;
+				overflow: hidden;
+
+				@media screen and (min-width: $bp-med) and (max-width: $bp-large) {
+			    height: 180px;
+			  }
+
+				img {
+					
+					@supports( object-fit: cover ){
+						object-fit: cover;
+						height: 100%;
+					}
+
+				}
+			}
+
+			.text-wrap {
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 16px;
+				margin-bottom: 24px;
+
+				@media screen and (min-width: $bp-med) and (max-width: $bp-full) {
+					display: block;
+					text-align: center;
+
+					.btn-wrap {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-top: 12px;
+					}
+				}
+			}
+		}
+
 	}
 }
 .ci-about-ctas {

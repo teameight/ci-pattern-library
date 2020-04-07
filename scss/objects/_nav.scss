@@ -105,6 +105,10 @@ a#open-menu {
 .menu, .footer-menu {
 	li {
 		position:relative;
+
+		&:nth-child(2):after {
+			content:'';
+		}
 	}
 
 	a,

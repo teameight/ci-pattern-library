@@ -15,6 +15,21 @@ section.yellow {
 		color:$grey;
 	}
 }
+	
+@media screen and (min-width: $bp-small-3) {
+
+	section.-transparent-md {
+
+		background-color: transparent;
+		
+		h1, h2, h3,h4,h5,h6,
+		.h1,.h2,.h3,.h4,.h5,.h6,
+		.subtitle, p {
+			color: $white;
+		}
+	}
+}
+
 section.grey {
 	background-color: $grey-lt-3;
 }
@@ -110,7 +125,7 @@ section.text-image {
 		background-position: center center;
     background-size: cover;
 
-    @media screen and (max-width: $bp-small-3) {
+    @media screen and (max-width: $bp-small-3 - 1) {
 	    width: 100%;
 	    height: 50vh;
 	  }

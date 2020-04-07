@@ -96,14 +96,17 @@ a#open-menu {
 
 .dot-separated-list li {
 	@media screen and (min-width: $bp-med-2) {
+
+		display:inline;
+
+		a {
+			white-space:nowrap
+		}
+
 		&:after {
-			content: "\b7";
-			position: absolute;
-			right: -.25em;
-			top: 0;
-			line-height: 24px;
-			padding: 10px 0;
-			color: $blue;
+			content:" "; 
+			letter-spacing:1em;  
+			background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAD1BMVEVPi8pPi8pPi8pPi8pPi8rd+1/eAAAABHRSTlMAR5q2b+qJ9gAAABtJREFUeAFjYGBkYgQSLCwsjAzMQJIZwoaIAwADSAA3y88IJgAAAABJRU5ErkJggg==) center center no-repeat;
 		}
 		&:first-child {
 			padding-left: 0;
