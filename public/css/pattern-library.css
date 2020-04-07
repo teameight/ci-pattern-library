@@ -332,11 +332,14 @@ body .ui-tooltip {
   font-weight: normal;
   font-style: normal; }
 
-/*------------------------------------*    $VARIABLES
+/*------------------------------------*\
+    $VARIABLES
 \*------------------------------------*/
-/*------------------------------------*    $MIXINS
+/*------------------------------------*\
+    $MIXINS
 \*------------------------------------*/
-/*------------------------------------*    $GLOBAL ELEMENTS
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
 \*------------------------------------*/
 /* Main */
 *,
@@ -715,7 +718,7 @@ a.center {
   width: 100%; }
 
 .green-block .bottom {
-  background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 transparent;
+  background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
   height: 60px;
   position: absolute;
   width: 100%;
@@ -736,7 +739,7 @@ a.center {
   top: -93px; }
 
 .green-block2 .bottom {
-  background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 transparent;
+  background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
   height: 60px;
   position: absolute;
   width: 100%;
@@ -1498,7 +1501,7 @@ h1.title {
 
 #stories-of-hope .green .bottom,
 .green .bottom {
-  background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 transparent;
+  background: url(images/green_bottom_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
   height: 60px;
   position: absolute;
   width: 100%;
@@ -1814,7 +1817,8 @@ article.black .bottom {
   background: none repeat scroll 0 0 #FFFFFF;
   top: -244px; }
 
-.wpcf7-form-control, .wpcf7-textarea {
+.wpcf7-form-control,
+.wpcf7-textarea {
   resize: none; }
 
 .wpcf7-form div.wpcf7-response-output {
@@ -1978,7 +1982,7 @@ div.type-product,
 
 .woocommerce-account #main,
 .woocommerce-checkout #main {
-  background: url("images/green_bg.jpg") repeat scroll 0 0 transparent;
+  background: url("images/green_bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
   margin-top: -30px;
   position: relative;
   padding: 100px 0; }
@@ -2084,7 +2088,10 @@ p.no-subscriptions {
 .woocommerce table tr td.subscription-actions {
   padding: 0 !important; }
 
-.woocommerce table.my_account_orders th, .woocommerce table.my_account_orders td, .woocommerce-page table.my_account_orders th, .woocommerce-page table.my_account_orders td {
+.woocommerce table.my_account_orders th,
+.woocommerce table.my_account_orders td,
+.woocommerce-page table.my_account_orders th,
+.woocommerce-page table.my_account_orders td {
   vertical-align: top !important; }
 
 .woocommerce a.button-all {
@@ -2150,11 +2157,13 @@ p.no-subscriptions {
 .post-type-archive-product h1.page-title {
   padding: 0 0 80px; }
 
-.woocommerce-page #main .entry, div.type-product, .woocommerce-checkout #main .entry {
+.woocommerce-page #main .entry,
+div.type-product,
+.woocommerce-checkout #main .entry {
   /*max-width: 820px !important;*/ }
 
 #solution-how-work .top, #solution-more .top {
-  background: url(../images/green_top_bg.png) repeat-x scroll 50% 0 transparent;
+  background: url(../images/green_top_bg.png) repeat-x scroll 50% 0 rgba(0, 0, 0, 0);
   height: 60px;
   position: absolute;
   top: -60px;
@@ -2671,8 +2680,7 @@ svg image:hover {
   width: 60%;
   margin: 0 auto; }
 
-#solution-how-work .top,
-#solution-more .top {
+#solution-how-work .top, #solution-more .top {
   background: url(images/green_top_bg.png) repeat-x scroll 50% 0;
   height: 60px;
   position: absolute;
@@ -3004,7 +3012,8 @@ svg image:hover {
 @media screen and (max-width: 1900px) {
   /* Homepage */
   /* The problem */
-  #the-problem .entry, #about-us .entry {
+  #the-problem .entry,
+  #about-us .entry {
     padding: 80px 30px; } }
 
 @media screen and (max-width: 1650px) {
@@ -3043,7 +3052,8 @@ svg image:hover {
   /* Stories of hope */
   #stories-of-hope .title {
     margin-left: 3%; }
-  #stories-of-hope .short-story, #stories-of-hope .full-story {
+  #stories-of-hope .short-story,
+  #stories-of-hope .full-story {
     padding: 0 12px; } }
 
 @media screen and (max-width: 969px) {
@@ -3173,7 +3183,8 @@ svg image:hover {
   #homepage-sponsors .girl {
     left: -221px; }
   /* Events */
-  #events .columns .left, #events .columns .right {
+  #events .columns .left,
+  #events .columns .right {
     width: 47%; }
   /* Child */
   .single-children .price-item {
@@ -3199,7 +3210,8 @@ svg image:hover {
     padding: 0 40px;
     text-align: center;
     margin-bottom: 20px; }
-  #homepage-mission .columns .left, #homepage-mission .columns .right {
+  #homepage-mission .columns .left,
+  #homepage-mission .columns .right {
     float: none;
     width: 100%;
     line-height: 1.5em; }
@@ -3212,7 +3224,8 @@ svg image:hover {
     font-size: 33px;
     letter-spacing: normal;
     margin-bottom: 20px; }
-  #homepage-mission .columns .left, #homepage-mission .columns .right {
+  #homepage-mission .columns .left,
+  #homepage-mission .columns .right {
     font-size: 13px; }
   #homepage-mission .columns .left {
     margin-left: 0; }
@@ -3268,7 +3281,8 @@ svg image:hover {
     padding: 40px 0; }
   #homepage-stories .columns {
     margin-bottom: 20px; }
-  #homepage-stories .columns .left, #homepage-stories .columns .right {
+  #homepage-stories .columns .left,
+  #homepage-stories .columns .right {
     float: none;
     width: 100%; }
   #homepage-stories .columns .left {
@@ -3313,7 +3327,8 @@ svg image:hover {
     font-size: 33px;
     letter-spacing: normal;
     margin-bottom: 0; }
-  #homepage-social .columns .left, #homepage-social .columns .right {
+  #homepage-social .columns .left,
+  #homepage-social .columns .right {
     float: none;
     width: auto; }
   #homepage-social .btn.share-with-post, #homepage-social .btn.share-with-a-post {
@@ -3455,7 +3470,8 @@ svg image:hover {
   #stories-of-hope div.black .bottom, #stories-of-hope article.black .bottom {
     display: none; }
   /* Events */
-  #events .columns .left, #events .columns .right {
+  #events .columns .left,
+  #events .columns .right {
     width: auto;
     float: none; }
   /* Content */
@@ -3539,7 +3555,8 @@ svg image:hover {
     padding: 30px 15px; }
   .single-children .amount {
     margin-top: 20px; }
-  .single-children .images .custom-fields div span, .single-children .images .text-holder strong {
+  .single-children .images .custom-fields div span,
+  .single-children .images .text-holder strong {
     font-size: 18px; } }
 
 @media screen and (max-width: 600px) {
@@ -3584,7 +3601,8 @@ svg image:hover {
   #homepage-sponsors .text-holder {
     width: 177px;
     font-size: 13px; }
-  #homepage-stories .columns .left, #homepage-stories .columns .right {
+  #homepage-stories .columns .left,
+  #homepage-stories .columns .right {
     font-size: 13px;
     line-height: 1.8em; }
   #homepage-testimonials .entry {
@@ -3597,7 +3615,8 @@ svg image:hover {
     max-width: 226px;
     margin: 0 auto; }
   /* The problem , About Us*/
-  #the-problem, #about-us .photo {
+  #the-problem,
+  #about-us .photo {
     background-position: 50% 0; }
   #the-problem h1.title, #about-us h1.title {
     line-height: 46px; }
@@ -3605,12 +3624,14 @@ svg image:hover {
     line-height: 1.5em; }
   #about-us .entry p {
     padding: 0; }
-  #the-problem h3, #about-us h3 {
+  #the-problem h3,
+  #about-us h3 {
     font-size: 20px;
     padding-bottom: 12px;
     font-family: "halisgr", Verdana, Geneva, sans-serif;
     font-weight: bold; }
-  #the-problem .entry, #about-us .entry {
+  #the-problem .entry,
+  #about-us .entry {
     padding: 80px 12px 30px; }
   #the-problem .columns, #about-us .columns p {
     padding: 0 0 10px; }
@@ -3719,7 +3740,8 @@ svg image:hover {
     padding: 30px 7px; }
   .single-children .images .custom-fields div {
     font-size: 13px; }
-  .single-children .images .custom-fields div span, .single-children .images .text-holder strong {
+  .single-children .images .custom-fields div span,
+  .single-children .images .text-holder strong {
     font-size: 17px; } }
 
 @media screen and (max-width: 1024px) {
@@ -3845,9 +3867,7 @@ h1,
 h2,
 .h2,
 h3,
-.h3,
-h4,
-.ci-home-testimonial blockquote cite,
+.h3, h4, .ci-home-testimonial blockquote cite,
 .h4,
 h5,
 .h5,
@@ -3926,15 +3946,17 @@ h6,
 
 h1 + h2,
 h1 + h3,
-h1 + h4, .ci-home-testimonial blockquote
-h1 + cite,
+h1 + h4,
+.ci-home-testimonial blockquote h1 + cite,
 h2 + h3,
-h2 + h4, .ci-home-testimonial blockquote
-h2 + cite,
-h3 + h4, .ci-home-testimonial blockquote
-h3 + cite,
-h4 + h1, .ci-home-testimonial blockquote cite + h1,
-h4 + h2, .ci-home-testimonial blockquote cite + h2 {
+h2 + h4,
+.ci-home-testimonial blockquote h2 + cite,
+h3 + h4,
+.ci-home-testimonial blockquote h3 + cite,
+h4 + h1,
+.ci-home-testimonial blockquote cite + h1,
+h4 + h2,
+.ci-home-testimonial blockquote cite + h2 {
   margin-top: 0; }
 
 body {
@@ -3953,8 +3975,8 @@ body {
 .ci-theme_inverse h3,
 .ci-theme_inverse .h3,
 .ci-theme_inverse h4,
-.ci-theme_inverse .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
-.ci-theme_inverse cite,
+.ci-theme_inverse .ci-home-testimonial blockquote cite,
+.ci-home-testimonial blockquote .ci-theme_inverse cite,
 .ci-theme_inverse .h4,
 .ci-theme_inverse h5,
 .ci-theme_inverse .h5,
@@ -3969,8 +3991,8 @@ body {
 .green h3,
 .green .h3,
 .green h4,
-.green .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
-.green cite,
+.green .ci-home-testimonial blockquote cite,
+.ci-home-testimonial blockquote .green cite,
 .green .h4,
 .green h5,
 .green .h5,
@@ -3982,8 +4004,8 @@ body {
 .blue h3,
 .blue .h3,
 .blue h4,
-.blue .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
-.blue cite,
+.blue .ci-home-testimonial blockquote cite,
+.ci-home-testimonial blockquote .blue cite,
 .blue .h4,
 .blue h5,
 .blue .h5,
@@ -3995,8 +4017,8 @@ body {
 .full-image h3,
 .full-image .h3,
 .full-image h4,
-.full-image .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
-.full-image cite,
+.full-image .ci-home-testimonial blockquote cite,
+.ci-home-testimonial blockquote .full-image cite,
 .full-image .h4,
 .full-image h5,
 .full-image .h5,
@@ -4170,7 +4192,8 @@ article pre {
   text-rendering: optimizeLegibility;
   font-size: 24px; }
 
-/*------------------------------------*    $MEDIA ELEMENTS
+/*------------------------------------*\
+    $MEDIA ELEMENTS
 \*------------------------------------*/
 .entry-content img,
 .inner img {
@@ -4215,8 +4238,8 @@ img.aligncenter, a img.aligncenter {
 .video-container + h1,
 .video-container + h2,
 .video-container + h3,
-.video-container + h4, .ci-home-testimonial blockquote
-.video-container + cite,
+.video-container + h4,
+.ci-home-testimonial blockquote .video-container + cite,
 .video-container + h5 {
   margin-top: 2em; }
 
@@ -4720,9 +4743,11 @@ label.checkbox {
   display: flex;
   flex-direction: column; }
 
-/*------------------------------------*    $LAYOUT
+/*------------------------------------*\
+    $LAYOUT
 \*------------------------------------*/
-/*------------------------------------*    $LAYOUT
+/*------------------------------------*\
+    $LAYOUT
 \*------------------------------------*/
 .row-wrap {
   display: flex;
@@ -5259,7 +5284,8 @@ label.checkbox {
       max-width: 1300px;
       margin: 0 auto; } }
 
-/*------------------------------------*    $COMPONENTS
+/*------------------------------------*\
+    $COMPONENTS
 \*------------------------------------*/
 .ci-alert {
   font-size: 1em;
@@ -5310,7 +5336,8 @@ label.checkbox {
 .ui-dialog-content .ci-alert.ci-alert-blue {
   margin-bottom: 20px; }
 
-/*------------------------------------*    $BUTTONS
+/*------------------------------------*\
+    $BUTTONS
 \*------------------------------------*/
 .menu li.buttonwrap a {
   background-color: #74b638;
@@ -5449,19 +5476,19 @@ a.button,
   a.button.blue,
   .buttonwrap .button.button-secondary,
   .buttonwrap .button.blue,
-  .buttonwrap .ci-subscription-popup form input[type=submit], .ci-subscription-popup form
-  .buttonwrap input[type=submit],
+  .buttonwrap .ci-subscription-popup form input[type=submit],
+  .ci-subscription-popup form .buttonwrap input[type=submit],
   .buttonwrap a.button-secondary,
   .buttonwrap a.blue {
     color: #4F8BCA;
     border-color: #4F8BCA; }
-    .button.button-secondary:hover, .button.blue:hover, .ci-subscription-popup form input[type=submit]:hover,
+    .button.button-secondary:hover, .button.blue:hover, .ci-subscription-popup form input:hover[type=submit],
     a.button.button-secondary:hover,
     a.button.blue:hover,
     .buttonwrap .button.button-secondary:hover,
     .buttonwrap .button.blue:hover,
-    .buttonwrap .ci-subscription-popup form input[type=submit]:hover, .ci-subscription-popup form
-    .buttonwrap input[type=submit]:hover,
+    .buttonwrap .ci-subscription-popup form input:hover[type=submit],
+    .ci-subscription-popup form .buttonwrap input:hover[type=submit],
     .buttonwrap a.button-secondary:hover,
     .buttonwrap a.blue:hover {
       background-color: #4F8BCA;
@@ -5794,7 +5821,8 @@ input.ci-button--icon {
     flex: 1;
     padding: 11px 0.6em 10px; }
 
-/*------------------------------------*    $Sections
+/*------------------------------------*\
+    $Sections
 \*------------------------------------*/
 section.blue {
   background-color: #4F8BCA;
@@ -5806,6 +5834,14 @@ section.yellow {
   section.yellow h1, section.yellow h2, section.yellow h3, section.yellow h4, section.yellow .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote section.yellow cite, section.yellow h5, section.yellow h6,
   section.yellow .h1, section.yellow .h2, section.yellow .h3, section.yellow .h4, section.yellow .h5, section.yellow .h6 {
     color: #454545; }
+
+@media screen and (min-width: 600px) {
+  section.-transparent-md {
+    background-color: transparent; }
+    section.-transparent-md h1, section.-transparent-md h2, section.-transparent-md h3, section.-transparent-md h4, section.-transparent-md .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote section.-transparent-md cite, section.-transparent-md h5, section.-transparent-md h6,
+    section.-transparent-md .h1, section.-transparent-md .h2, section.-transparent-md .h3, section.-transparent-md .h4, section.-transparent-md .h5, section.-transparent-md .h6,
+    section.-transparent-md .subtitle, section.-transparent-md p {
+      color: #fff; } }
 
 section.grey {
   background-color: #F5F5F5; }
@@ -5869,7 +5905,7 @@ section.text-image {
     background-position: center center;
     background-size: cover;
     /* DEPRECATED 2-15-2018 */ }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 599px) {
       section.text-image .img-wrap {
         width: 100%;
         height: 50vh; } }
@@ -6267,7 +6303,8 @@ section.text-image {
   margin: 40px 20px; }
   @media screen and (min-width: 1024px) {
     #MainContent {
-      overflow-x: auto; } }
+      overflow-x: auto;
+      margin: 40px 0; } }
 
 table {
   border-collapse: separate;
@@ -6289,9 +6326,11 @@ td {
 .left {
   float: none; }
 
-/*------------------------------------*    $PAGE STRUCTURE
+/*------------------------------------*\
+    $PAGE STRUCTURE
 \*------------------------------------*/
-/*------------------------------------*    $HEADER
+/*------------------------------------*\
+    $HEADER
 \*------------------------------------*/
 #header {
   background: #fff;
@@ -6388,7 +6427,8 @@ td {
     #header .right-menu .menu li .accent-nav-link {
       font-size: 1.25em; } }
 
-/*------------------------------------*    $NAVIGATION
+/*------------------------------------*\
+    $NAVIGATION
 \*------------------------------------*/
 a#open-menu {
   background: #454545;
@@ -6462,21 +6502,21 @@ a#open-menu {
     color: #3979bd; }
 
 @media screen and (min-width: 1024px) {
-  .dot-separated-list li:after {
-    content: "\b7";
-    position: absolute;
-    right: -.25em;
-    top: 0;
-    line-height: 24px;
-    padding: 10px 0;
-    color: #4F8BCA; }
-  .dot-separated-list li:first-child {
-    padding-left: 0; }
-  .dot-separated-list li:last-child {
-    padding-right: 0; }
-  .dot-separated-list li:last-child:after {
-    content: '';
-    display: none; } }
+  .dot-separated-list li {
+    display: inline; }
+    .dot-separated-list li a {
+      white-space: nowrap; }
+    .dot-separated-list li:after {
+      content: " ";
+      letter-spacing: 1em;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAD1BMVEVPi8pPi8pPi8pPi8pPi8rd+1/eAAAABHRSTlMAR5q2b+qJ9gAAABtJREFUeAFjYGBkYgQSLCwsjAzMQJIZwoaIAwADSAA3y88IJgAAAABJRU5ErkJggg==) center center no-repeat; }
+    .dot-separated-list li:first-child {
+      padding-left: 0; }
+    .dot-separated-list li:last-child {
+      padding-right: 0; }
+    .dot-separated-list li:last-child:after {
+      content: '';
+      display: none; } }
 
 .menu-row li {
   display: inline-block;
@@ -6509,7 +6549,8 @@ a#open-menu {
 .menu-welcome {
   font-size: 14px; }
 
-/*----------------------------------------*    $JUMPNAV - FOLLOWING TABLE OF CONTENTS
+/*----------------------------------------*\
+    $JUMPNAV - FOLLOWING TABLE OF CONTENTS
 \*----------------------------------------*/
 #jumpnav {
   display: none;
@@ -6535,7 +6576,8 @@ a#open-menu {
   margin-top: 1.333em;
   margin-bottom: 12px; }
 
-/*------------------------------------*    $FOOTER
+/*------------------------------------*\
+    $FOOTER
 \*------------------------------------*/
 .footer-nav .menu {
   width: 50%;
@@ -6747,10 +6789,10 @@ a#open-menu {
   margin: 0 auto 1em;
   max-width: 400px; }
   .ci-subfooter__nav li {
-    padding: 0.5em 0.5em; }
-    @media screen and (min-width: 1024px) {
-      .ci-subfooter__nav li {
-        display: inline-block; } }
+    padding: 0; }
+    .ci-subfooter__nav li a {
+      padding: 0.5em 0.5em;
+      display: inline-block; }
 
 .ci-subfooter__social {
   margin: 0 auto 2em;
@@ -6764,6 +6806,9 @@ a#open-menu {
   .ci-subfooter__social svg:hover path {
     fill: #3979bd; }
 
+.ci-subfooter__contact {
+  text-align: center; }
+
 .ci-subfooter__buttons a {
   font-size: .875em;
   display: block;
@@ -6774,7 +6819,8 @@ a#open-menu {
   color: white;
   line-height: 2; }
 
-/*------------------------------------*    $DMS
+/*------------------------------------*\
+    $DMS
 \*------------------------------------*/
 .dms-donate-fund .inner {
   border-bottom: 1px solid #888;
@@ -6971,8 +7017,8 @@ label[for="forgot-password-email"] {
   .ci-checkout-modal-inner h3,
   .ci-checkout-modal-inner .h3,
   .ci-checkout-modal-inner h4,
-  .ci-checkout-modal-inner .ci-home-testimonial blockquote cite, .ci-home-testimonial blockquote
-  .ci-checkout-modal-inner cite,
+  .ci-checkout-modal-inner .ci-home-testimonial blockquote cite,
+  .ci-home-testimonial blockquote .ci-checkout-modal-inner cite,
   .ci-checkout-modal-inner .h4,
   .ci-checkout-modal-inner h5,
   .ci-checkout-modal-inner .h5,
@@ -7070,9 +7116,11 @@ label[for="forgot-password-email"] {
     transform: translate3d(-100%, 0, 0);
     opacity: 0; } }
 
-/*------------------------------------*    $WP TEMPLATES
+/*------------------------------------*\
+    $WP TEMPLATES
 \*------------------------------------*/
-/*------------------------------------*    $Builder Page template
+/*------------------------------------*\
+    $Builder Page template
 \*------------------------------------*/
 .c-block {
   overflow: hidden;
@@ -7391,7 +7439,8 @@ label[for="forgot-password-email"] {
   margin: 20px 0 60px;
   padding-bottom: 7px; }
 
-/*------------------------------------*    $Landing Page template
+/*------------------------------------*\
+    $Landing Page template
 \*------------------------------------*/
 .page-template-template-landing #header .logo {
   float: right;
@@ -7404,7 +7453,8 @@ label[for="forgot-password-email"] {
 .page-template-template-landing #header #menu-header-buttons-right li:last-child {
   display: none; }
 
-/*------------------------------------*    $Home Page template
+/*------------------------------------*\
+    $Home Page template
 \*------------------------------------*/
 #homepage-impact {
   padding: 60px 0;
@@ -7488,7 +7538,8 @@ label[for="forgot-password-email"] {
       line-height: 1.5em;
       margin-top: 10px; }
 
-/*------------------------------------*    $Events Page template
+/*------------------------------------*\
+    $Events Page template
 \*------------------------------------*/
 .event h2 {
   font-size: 1.75em;
@@ -7711,6 +7762,9 @@ label[for="forgot-password-email"] {
 #slb_viewer_wrap .slb_theme_slb_baseline .slb_details {
   display: none; }
 
+#dd-container img, .dtd-plugin img {
+  width: auto; }
+
 #faqs h1 {
   text-align: center; }
 
@@ -7797,8 +7851,8 @@ label[for="forgot-password-email"] {
     .single.long-form-post article.post .entry-content > h2,
     .single.long-form-post article.post .entry-content > h3,
     .single.long-form-post article.post .entry-content > h4,
-    .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite, .ci-home-testimonial blockquote
-    .single.long-form-post article.post .entry-content > cite,
+    .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite,
+    .ci-home-testimonial blockquote .single.long-form-post article.post .entry-content > cite,
     .single.long-form-post article.post .entry-content > h5,
     .single.long-form-post article.post .entry-content > h6,
     .single.long-form-post article.post .wp-caption {
@@ -7810,8 +7864,8 @@ label[for="forgot-password-email"] {
         .single.long-form-post article.post .entry-content > h2,
         .single.long-form-post article.post .entry-content > h3,
         .single.long-form-post article.post .entry-content > h4,
-        .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite, .ci-home-testimonial blockquote
-        .single.long-form-post article.post .entry-content > cite,
+        .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite,
+        .ci-home-testimonial blockquote .single.long-form-post article.post .entry-content > cite,
         .single.long-form-post article.post .entry-content > h5,
         .single.long-form-post article.post .entry-content > h6,
         .single.long-form-post article.post .wp-caption {
@@ -7822,8 +7876,8 @@ label[for="forgot-password-email"] {
         .single.long-form-post article.post .entry-content > h2,
         .single.long-form-post article.post .entry-content > h3,
         .single.long-form-post article.post .entry-content > h4,
-        .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite, .ci-home-testimonial blockquote
-        .single.long-form-post article.post .entry-content > cite,
+        .single.long-form-post article.post .ci-home-testimonial blockquote .entry-content > cite,
+        .ci-home-testimonial blockquote .single.long-form-post article.post .entry-content > cite,
         .single.long-form-post article.post .entry-content > h5,
         .single.long-form-post article.post .entry-content > h6,
         .single.long-form-post article.post .wp-caption {
@@ -8467,6 +8521,44 @@ p.wp-caption-text,
     padding-bottom: 50%;
     width: 100%; }
 
+@media screen and (max-width: 599px) {
+  section.text-image .ci-home-sponsor-cta-img.img-wrap {
+    left: -30%;
+    width: 130%;
+    position: relative; }
+  .ci-home-sponsor-cta--content.text-wrap {
+    text-align: center; }
+    .ci-home-sponsor-cta--content.text-wrap header {
+      font-size: 0.75em; }
+    .ci-home-sponsor-cta--content.text-wrap p {
+      font-size: 1em; }
+    .ci-home-sponsor-cta--content.text-wrap .ci-button.ci-button--primary {
+      color: #fff;
+      border-color: #4F8BCA;
+      background-color: #4F8BCA; }
+      .ci-home-sponsor-cta--content.text-wrap .ci-button.ci-button--primary:hover, .ci-home-sponsor-cta--content.text-wrap .ci-button.ci-button--primary:focus {
+        background-color: #2f659d;
+        border-color: #2f659d;
+        color: #fff; } }
+
+@media screen and (min-width: 600px) {
+  .ci-home-sponsor-cta-img.img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .ci-home-sponsor-cta-img.img-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(75deg, rgba(0, 0, 0, 0.38) 35%, rgba(0, 0, 0, 0) 70%); }
+  .ci-home-sponsor-cta--content.text-wrap {
+    position: relative; } }
+
 .ci-home-sponsor-cta--content {
   padding: 2em 0; }
   .ci-home-sponsor-cta--content header {
@@ -8781,34 +8873,90 @@ p.wp-caption-text,
 .ci-about-sponsorship .inner {
   padding-bottom: 0; }
 
-.ci-about-special-funds .inner {
+.ci-about-special-funds .inner.header-wrap {
   max-width: 560px;
   padding-left: 0;
-  padding-right: 0; }
-  .ci-about-special-funds .inner > h2 {
+  padding-right: 0;
+  padding-bottom: 0; }
+  .ci-about-special-funds .inner.header-wrap > h2 {
     color: #606060; }
 
-.ci-about-special-funds .funds-list {
-  margin-top: 60px; }
-  .ci-about-special-funds .funds-list a {
-    font-size: 14px; }
-  .ci-about-special-funds .funds-list li {
+.ci-about-special-funds .funds-wrap {
+  padding-top: 60px;
+  padding-bottom: 0; }
+  .ci-about-special-funds .funds-wrap.-projects {
+    padding-bottom: 60px; }
+
+.ci-about-special-funds .fund-list-heading {
+  text-align: left;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #888; }
+
+@media screen and (min-width: 767px) {
+  .ci-about-special-funds .funds-list,
+  .ci-about-special-funds .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+.ci-about-special-funds .funds-list a,
+.ci-about-special-funds .projects-list a {
+  font-size: 14px; }
+
+.ci-about-special-funds .funds-list li > div:first-child,
+.ci-about-special-funds .projects-list li > div:first-child {
+  text-align: left; }
+
+.ci-about-special-funds .funds-list .ci-button,
+.ci-about-special-funds .projects-list .ci-button {
+  padding: .625em 1.5em;
+  min-width: unset;
+  line-height: 1;
+  font-size: 14px; }
+
+.ci-about-special-funds .funds-list h5,
+.ci-about-special-funds .projects-list h5 {
+  margin-bottom: 8px; }
+
+.ci-about-special-funds .funds-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #888;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  flex: 0 0 48%; }
+  .ci-about-special-funds .funds-list li > div:first-child {
+    text-align: left; }
+
+.ci-about-special-funds .projects-list li {
+  flex: 0 0 30%; }
+  .ci-about-special-funds .projects-list li .img-wrap {
+    position: relative;
+    height: 260px;
+    margin-bottom: 24px;
+    overflow: hidden; }
+    @media screen and (min-width: 767px) and (max-width: 1200px) {
+      .ci-about-special-funds .projects-list li .img-wrap {
+        height: 180px; } }
+    @supports (object-fit: cover) {
+      .ci-about-special-funds .projects-list li .img-wrap img {
+        object-fit: cover;
+        height: 100%; } }
+  .ci-about-special-funds .projects-list li .text-wrap {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #888;
     padding-bottom: 16px;
     margin-bottom: 24px; }
-    .ci-about-special-funds .funds-list li:last-child {
-      border-bottom: none; }
-    .ci-about-special-funds .funds-list li > div:first-child {
-      text-align: left; }
-  .ci-about-special-funds .funds-list .ci-button {
-    padding: .625em 1.5em;
-    min-width: unset;
-    line-height: 1;
-    font-size: 14px; }
-  .ci-about-special-funds .funds-list h5 {
-    margin-bottom: 8px; }
+    @media screen and (min-width: 767px) and (max-width: 1360px) {
+      .ci-about-special-funds .projects-list li .text-wrap {
+        display: block;
+        text-align: center; }
+        .ci-about-special-funds .projects-list li .text-wrap .btn-wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 12px; } }
 
 .ci-about-ctas .inner {
   padding-top: 80px;
