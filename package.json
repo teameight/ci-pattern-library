@@ -3,17 +3,19 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.5",
+    "gulp": "^4.0.2",
     "gulp-jshint": "^2.0.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-jshint": "^2.0.4",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.4.0",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.8",
-    "jshint": "^2.9.4"
+    "jshint": "^2.11.0"
   }
 }

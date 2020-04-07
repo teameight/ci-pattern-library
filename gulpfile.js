@@ -28,7 +28,7 @@ gulp.task('sass', function() {
 
 // Concatenate CSS
 gulp.task('css', function() {
-    return gulp.src(['public/css/style.css'])
+    return gulp.src('public/css/style.css')
         .pipe(concatCss('ci-17-style.css', { rebaseUrls : false} ))
         .pipe(cleanCss())
         .pipe(gulp.dest('../../children-inc-dms/ChildrenIncorporated/Styles/pd'));
@@ -36,7 +36,7 @@ gulp.task('css', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src(['js/ci-mobile-menu.js', 'js/ci-alert-box.js', 'js/ci-modal.js'])
+    return gulp.src(gulp.series('js/ci-mobile-menu.js', 'js/ci-alert-box.js', 'js/ci-modal.js'))
         .pipe(concat('all.js'))
         .pipe(gulp.dest('public/js'))
         .pipe(rename('all.min.js'))
@@ -49,7 +49,7 @@ gulp.task('wp-style', function() {
     return gulp.src('./scss-new/wp.scss')
         .pipe(sass())
         .pipe(rename('style.css'))
-        .pipe(gulp.dest('../childreninc-wp/wp-content/themes/children_theme/css'));
+        .pipe(gulp.dest('../children-incorporated/wp-content/themes/children_theme/css'));
         // this needs to be updated to your local path
 });
 
@@ -63,9 +63,9 @@ gulp.task('dms-style', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss-new/**/*.scss', ['sass']);
+    gulp.watch('js/*.js', gulp.series('lint', 'scripts'));
+    gulp.watch('scss-new/**/*.scss', gulp.series('sass'));
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', gulp.series('lint', 'sass', 'scripts', 'watch'));
